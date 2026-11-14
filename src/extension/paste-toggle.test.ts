@@ -175,8 +175,19 @@ describe('composer paste toggle', () => {
     expect(root.querySelector('.warm-text')!.textContent).toBe(
       'Starting on-device AI…',
     );
-    vi.advanceTimersByTime(35_000);
+    expect(root.querySelector('[role="status"].sr')!.textContent).toContain(
+      'starting on-device AI',
+    );
+    vi.advanceTimersByTime(70_000);
     expect(Number(bar.getAttribute('aria-valuenow'))).toBeGreaterThan(50);
+    // By now the visible line is one of the light-hearted ones; screen
+    // readers still have the plain status, unchanged.
+    expect(root.querySelector('.warm-text')!.textContent).not.toBe(
+      'Starting on-device AI…',
+    );
+    expect(root.querySelector('.warm-text')!.getAttribute('aria-hidden')).toBe(
+      'true',
+    );
     toggle!.stopWarming(true);
     expect(bar.getAttribute('aria-valuenow')).toBe('100');
     expect(root.querySelector('.warm-text')!.textContent).toBe(

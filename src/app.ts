@@ -75,6 +75,11 @@ import {
   type Imported,
 } from './core/import';
 import {JazzPlayer} from './core/jazz';
+import {
+  loadingMessage,
+  shuffledMessages,
+  warmPercent,
+} from './core/loading-messages';
 import {SAMPLES} from './core/samples';
 import {icon, type IconName} from './icons';
 
@@ -210,6 +215,7 @@ export class RedactobotApp extends LitElement {
   @state() private warmStart = 0;
   @state() private warmNow = 0;
   @state() private warmReady = false;
+  private warmOrder: number[] = [];
   // Optional music while the model starts: an original loop synthesised in the
   // browser. It starts only from the Play button and stops when the model is
   // ready.
@@ -360,6 +366,7 @@ export class RedactobotApp extends LitElement {
           const now = Date.now();
           this.warmNow = now;
           this.warmStart = now;
+          this.warmOrder = shuffledMessages();
           this.warmReady = false;
           tick = setInterval(() => {
             this.warmNow = Date.now();
@@ -1144,16 +1151,18 @@ export class RedactobotApp extends LitElement {
   /** The cold-start card: an estimated, animated bar plus elapsed time. */
   private warmCard() {
     const ms = Math.max(0, this.warmNow - this.warmStart);
-    const pct = this.warmReady
-      ? 100
-      : Math.round(95 * (1 - Math.exp(-ms / 35000)));
+    const pct = warmPercent(ms, this.warmReady);
+    const line = this.warmReady
+      ? 'On-device AI is ready.'
+      : loadingMessage(this.warmOrder, ms, 'Starting the on-device AI model…');
     const secs = Math.floor(ms / 1000);
     const clock = `${Math.floor(secs / 60)}:${String(secs % 60).padStart(2, '0')}`;
     return html`
       <div class="notice warm-card ${this.warmReady ? 'done' : ''}">
         ${icon(this.warmReady ? 'check_circle' : 'downloading')}
         <div class="md-typescale-body-medium">
-          <strong role="status">${this.warmReady ? 'On-device AI is ready.' : 'Starting the on-device AI model…'}</strong>
+          <strong aria-hidden="true">${line}</strong>
+          <span class="visually-hidden" role="status">${this.warmReady ? 'On-device AI is ready.' : 'Starting the on-device AI model. This can take a minute or two.'}</span>
           <div class="warm-bar" role="progressbar" aria-label="Starting the on-device AI model" aria-valuemin="0" aria-valuemax="100"
             aria-valuenow=${pct} aria-valuetext=${this.warmReady ? 'Ready' : `About ${pct}%, ${secs} seconds so far`}>
             <div class="warm-fill" style=${styleMap({width: `${pct}%`})}></div>

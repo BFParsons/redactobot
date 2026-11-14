@@ -119,6 +119,8 @@ Every AI call, on-device and cloud, goes through **Firebase AI Logic** (`firebas
 [+] The cloud only ever receives placeholder text, and you see the exact text first.
 [+] The placeholder-to-real-value mapping is never saved or sent anywhere.
 [+] The extension never presses Send.
+[+] The site turns off camera, microphone, location and other browser features
+    it never uses, and is served over HTTPS only.
 [!] Removing names does not guarantee anonymity. Always read the result.
 ```
 
@@ -174,15 +176,16 @@ The cloud model defaults to `gemini-3.5-flash-lite` (`VITE_CLOUD_MODEL` changes 
  ┌─────────────────────────────────────────────────────────────────────────────┐
  │ Message...                                                                  │
  │                                                                             │
- │  Starting on-device AI...  0:23  ████░░░░░░    Redactobot [ON]   Data types │
+ │  Herding the tensors...    0:23  ████░░░░░░    Redactobot [ON]   Data types │
  └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
 1. **Switch it on.** The `Redactobot` switch under the chat box starts **Off** on every page
    load and only affects that tab. Nothing loads until you switch it on.
 2. **Wait for the bar, if there is one.** After a break, Chrome needs a minute or two to
-   load its on-device model. A progress bar in the site's own colours shows it. Switch off
-   and loading stops at once.
+   load its on-device model. A progress bar in the site's own colours shows it, with a
+   rotating set of fifty loading messages ("Triangulating the parabolas…") to pass the
+   time. The bar only moves forward. Switch off and loading stops at once.
 3. **Paste as usual.** Clear private details are swapped for placeholders before the text
    reaches the chat box. This usually takes well under two seconds.
 4. **Review when asked.** If something is uncertain, a small review opens. Choose
@@ -198,15 +201,35 @@ uploads or images.
 
 1. **Add text.** Paste notes or open a file. Supported: PDF (with text), Word, Excel,
    PowerPoint, OpenDocument, RTF, `.eml`, HTML, CSV and plain text. Files are read on your
-   device and never uploaded.
+   device and never uploaded. No document to hand? **Use a sample document** cycles through
+   ten fictional ones, such as a Death Star workplace incident report, a House Atreides
+   relocation claim and Dr. Jones's faculty expense review.
 2. **Pick what to replace.** Choose by **Data type** (sorted by measured accuracy) or by
    **Regulatory** rule: HIPAA Safe Harbor, Fed. R. Civ. P. 5.2, IRC § 7216, GLBA, CCPA,
-   PCI DSS, GDPR and NIST SP 800-122.
+   PCI DSS, GDPR and NIST SP 800-122. FOIA release is in the same list.
 3. **Find private details.** The cleaned text types out live. Placeholders are highlighted;
    sensitive topics that were flagged but not removed show in red, and one click removes them.
 4. **Read the verdict.** Green: it looks clean. Orange: something needs your eye first.
 5. **Use it.** Copy the cleaned text into any AI chat, or prepare an exact preview and run
    cloud cleanup and a question. Real values are restored in the answer locally.
+
+### While the model starts
+
+Chrome can take a minute or two to load its on-device model after a break. The app starts
+loading it as soon as the page opens and shows a progress card, so a scan never begins
+half-ready. While you wait:
+
+```text
+ Folding the matrices into swans...
+ ████████████░░░░░░░░░░░░░░░░░░░░   About 38%   0:29
+ Your local AI is getting set up. It will take a moment.
+ In the meantime, why not listen to smooth jazz?      [ > Play smooth jazz ]
+```
+
+- Fifty loading messages rotate above the bar.
+- **Play smooth jazz** plays "Waiting Room", an original loop synthesised in your browser.
+  It stops by itself when the model is ready.
+- While it plays, musical notes appear in the robot's eyes in the logo and drift away.
 
 ### FOIA release mode (US)
 
@@ -237,7 +260,7 @@ contrast of at least 8.2:1 on status colours · a layout that works on phones.
 Small development measurements on fictional documents, not a guarantee.
 
 ```text
-TESTS        718 unit tests · 20 end-to-end tests on the real extension in Chromium
+TESTS        723 unit tests · 20 end-to-end tests on the real extension in Chromium
 ACCURACY     rules + Gemini Nano, unseen test set, paste-sized text:
                  person names ........ 93.9% caught
                  critical details .... 95.1% caught
@@ -343,14 +366,17 @@ Notes: [`evaluation/RESEARCH-FAST-PII-METHODS.md`](evaluation/RESEARCH-FAST-PII-
 ## `$ redactobot tree`
 
 ```text
-src/core/         detection, replacement, routing, FOIA markings, file import
+src/core/         detection, replacement, routing, FOIA markings, file import,
+                  sample documents, loading messages and the jazz loop
 src/extension/    Chrome extension: paste guard, switch, background, on-device scanner
 src/app.ts        the web app
+public/           logo, icons, privacy policy and response headers for the site
 taxonomy/         detectors, checksums, regulation lists and their sources
 evaluation/       fictional test sets, scoring, accuracy and speed logs, research
 bench/            in-browser benchmarks for Gemini Nano
 tests/e2e/        end-to-end tests of the real extension
 tools/            build scripts
+wrangler.jsonc    hosting config for redactobot.org (Cloudflare, static files only)
 ```
 
 ```sh

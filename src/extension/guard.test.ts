@@ -199,6 +199,36 @@ describe('paste gate', () => {
     expect(paste('unchecked').defaultPrevented).toBe(false);
     expect(ports).toHaveLength(0);
   });
+  it('keeps one progress bar running through a long cold start, never restarting it', async () => {
+    guard.setEnabled(false);
+    ports = [];
+    guard.setEnabled(true);
+    const first = ports.find(p => p.sent.some(m => m.type === 'prepare'))!;
+    await vi.advanceTimersByTimeAsync(800);
+    const bar = toggleRoot.querySelector<HTMLElement>('[role="progressbar"]')!;
+    const warm = toggleRoot.querySelector<HTMLElement>('.warm')!;
+    expect(warm.classList.contains('on')).toBe(true);
+    // Past the once-a-minute keep-alive: the same request is still the only one.
+    await vi.advanceTimersByTimeAsync(65_000);
+    expect(first.disconnected).toBe(false);
+    expect(
+      ports.filter(p => p.sent.some(m => m.type === 'prepare')),
+    ).toHaveLength(1);
+    const atOneMinute = Number(bar.getAttribute('aria-valuenow'));
+    expect(atOneMinute).toBeGreaterThan(40);
+    // Past the request's own timeout: it asks again, and the bar carries on.
+    await vi.advanceTimersByTimeAsync(100_000);
+    expect(
+      ports.filter(p => p.sent.some(m => m.type === 'prepare')),
+    ).toHaveLength(2);
+    expect(warm.classList.contains('on')).toBe(true);
+    expect(Number(bar.getAttribute('aria-valuenow'))).toBeGreaterThan(
+      atOneMinute,
+    );
+    const second = ports.filter(p => p.sent.some(m => m.type === 'prepare'))[1];
+    second.emit({type: 'prepared', ok: true});
+    expect(bar.getAttribute('aria-valuenow')).toBe('100');
+  });
   it('stops a cold start at once when switched off, and starts fresh when switched back on', async () => {
     guard.setEnabled(false);
     ports = [];

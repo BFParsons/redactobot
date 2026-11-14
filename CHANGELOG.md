@@ -2,6 +2,18 @@
 
 ## Unreleased
 
+### Cold start: the bar no longer restarts; loading messages
+
+- **Fix (extension):** during a long cold start the progress bar under the chat box stopped and
+  began again from zero. The once-a-minute keep-alive cancelled the load request that was still
+  running and sent a new one, and a 155-second timeout did the same. A running load is now left
+  alone; if it times out or the background worker restarts, the extension asks again without
+  resetting the bar. Progress only moves forward.
+- Fifty light-hearted loading messages ("Calculating the square root of infinity…") rotate above the
+  bar every few seconds, in a fresh random order each time, in the extension and the web app. The
+  first line still says plainly what is happening, and screen readers hear the plain status once.
+- The estimate now eases towards 95% over about three minutes instead of stalling after one.
+
 ### Smooth jazz while the model starts
 
 - The cold-start card now reads "Your local AI is getting set up. It will take a moment. In the

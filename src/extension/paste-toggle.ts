@@ -11,6 +11,11 @@
 
 import {composersFor, type Composer} from './editor';
 import {applyTheme, themeFor} from './themes';
+import {
+  loadingMessage,
+  shuffledMessages,
+  warmPercent,
+} from '../core/loading-messages';
 import type {Site} from './protocol';
 
 const css = `
@@ -23,7 +28,7 @@ button:focus-visible{outline:2px solid var(--rb-accent);outline-offset:2px}butto
 .thumb{width:12px;height:12px;border-radius:50%;background:var(--rb-surface);transform:translateX(0);transition:transform 120ms ease}
 [aria-checked="true"] .track{background:var(--rb-accent)}[aria-checked="true"] .thumb{background:var(--rb-onAccent);transform:translateX(10px)}
 .warm{display:none;flex:1 1 200px;min-width:0;max-width:420px;margin-right:auto;flex-direction:column;gap:3px;padding:2px 0;color:var(--rb-muted);font:var(--rb-fontStyle) var(--rb-fontWeight) 12px/16px var(--rb-font);letter-spacing:var(--rb-letterSpacing)}
-.warm.on{display:flex}.warm-top{display:flex;justify-content:space-between;gap:8px;white-space:nowrap}.warm-text{overflow:hidden;text-overflow:ellipsis}.warm-clock{font-variant-numeric:tabular-nums}
+.warm.on{display:flex}.warm-top{display:flex;justify-content:space-between;gap:8px;white-space:nowrap}.warm-text{overflow:hidden;text-overflow:ellipsis}.warm-clock{font-variant-numeric:tabular-nums}.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .bar{position:relative;height:4px;border-radius:999px;overflow:hidden;background:color-mix(in srgb,var(--rb-accent) 18%,var(--rb-border))}
 .fill{position:relative;height:100%;width:0;border-radius:inherit;background:var(--rb-accent);overflow:hidden;transition:width .5s cubic-bezier(.2,0,0,1)}
 .fill::after{content:"";position:absolute;inset:0;width:45%;background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--rb-onAccent) 55%,transparent),transparent);animation:rb-sheen 1.4s ease-in-out infinite}
@@ -40,18 +45,10 @@ interface Control {
   theme: string;
   warm: HTMLElement;
   warmText: HTMLElement;
+  warmStatus: HTMLElement;
   warmClock: HTMLElement;
   bar: HTMLElement;
   fill: HTMLElement;
-}
-
-/**
- * Estimated cold-start progress: Chrome reports none while it loads the model,
- * so ease towards 95% over the typical one to three minutes, and fill when the
- * model answers.
- */
-export function warmPercent(ms: number, done: boolean) {
-  return done ? 100 : Math.round(95 * (1 - Math.exp(-ms / 35000)));
 }
 
 /**
@@ -64,6 +61,7 @@ export class PasteToggle {
   private saving = false;
   private error = '';
   private warmStart = 0;
+  private warmOrder: number[] = [];
   private warmDone = false;
   private warmTick?: ReturnType<typeof setInterval>;
   private warmHide?: ReturnType<typeof setTimeout>;
@@ -87,6 +85,7 @@ export class PasteToggle {
     clearTimeout(this.warmHide);
     if (this.warmStart && !this.warmDone) return;
     this.warmStart = Date.now();
+    this.warmOrder = shuffledMessages();
     this.warmDone = false;
     clearInterval(this.warmTick);
     this.warmTick = setInterval(() => this.paintWarm(), 500);
@@ -129,10 +128,18 @@ export class PasteToggle {
     const ms = Date.now() - this.warmStart;
     const pct = warmPercent(ms, this.warmDone);
     const secs = Math.floor(ms / 1000);
+    // The visible line changes every few seconds for fun; screen readers get
+    // the plain state once, from a separate status element.
+    const line = this.warmDone
+      ? 'On-device AI is ready'
+      : loadingMessage(this.warmOrder, ms, 'Starting on-device AI…');
+    if (control.warmText.textContent !== line) {
+      control.warmText.textContent = line;
+    }
     if (announce) {
-      control.warmText.textContent = this.warmDone
-        ? 'On-device AI is ready'
-        : 'Starting on-device AI…';
+      control.warmStatus.textContent = this.warmDone
+        ? 'Redactobot: on-device AI is ready'
+        : 'Redactobot: starting on-device AI. This can take a minute or two.';
     }
     control.warmClock.textContent = this.warmDone
       ? ''
@@ -197,12 +204,15 @@ export class PasteToggle {
     top.className = 'warm-top';
     const warmText = document.createElement('span');
     warmText.className = 'warm-text';
-    warmText.setAttribute('role', 'status');
-    warmText.setAttribute('aria-live', 'polite');
+    warmText.setAttribute('aria-hidden', 'true');
+    const warmStatus = document.createElement('span');
+    warmStatus.className = 'sr';
+    warmStatus.setAttribute('role', 'status');
+    warmStatus.setAttribute('aria-live', 'polite');
     const warmClock = document.createElement('span');
     warmClock.className = 'warm-clock';
     warmClock.setAttribute('aria-hidden', 'true');
-    top.append(warmText, warmClock);
+    top.append(warmText, warmStatus, warmClock);
     const bar = document.createElement('div');
     bar.className = 'bar';
     bar.setAttribute('role', 'progressbar');
@@ -236,6 +246,7 @@ export class PasteToggle {
       theme: '',
       warm,
       warmText,
+      warmStatus,
       warmClock,
       bar,
       fill,
@@ -303,3 +314,5 @@ export class PasteToggle {
     this.controls.clear();
   }
 }
+
+export {warmPercent};

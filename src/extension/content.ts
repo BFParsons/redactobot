@@ -118,6 +118,7 @@ export function installPasteGuard(
   let notice: ReturnType<typeof setTimeout> | undefined;
   let lastPage = location.href;
   let warmed = false;
+  let warmRetries = 0;
   let stopWarming: ((abandon?: boolean) => void) | undefined;
   let lastTheme = '';
   let lastComposer: HTMLElement | undefined;
@@ -502,15 +503,18 @@ export function installPasteGuard(
           /* disconnect handles this */
         }
       }, 20000);
+      // The request can outlive this timer (a cold start may take minutes).
+      // Ask again, and leave the progress bar running where it is.
       const timer = setTimeout(() => {
         warmed = false;
-        stop();
+        stop(false, true);
+        warm();
       }, 155000);
       // A warm model answers at once; only a real cold start (Chrome reloading
       // the model) shows the progress bar under the chat box.
       const slow = setTimeout(() => toggle.startWarming(), 700);
       let ended = false;
-      const stop = (abandon = false) => {
+      const stop = (abandon = false, keepBar = false) => {
         ended = true;
         clearInterval(heartbeat);
         clearTimeout(timer);
@@ -525,24 +529,34 @@ export function installPasteGuard(
           }
         }
         port.disconnect();
-        if (!confirmed && !active) toggle.stopWarming(false);
+        if (!confirmed && !active && !keepBar) toggle.stopWarming(false);
       };
       stopWarming = stop;
       port.onMessage.addListener(message => {
         if (!ended && message.type === 'prepared') {
           warmed = message.ok === true;
           confirmed = warmed;
+          warmRetries = 0;
           toggle.stopWarming(confirmed);
           stop();
         }
       });
       port.onDisconnect.addListener(() => {
+        // Our own stop() already tidied up.
+        if (ended) return;
+        ended = true;
         clearInterval(heartbeat);
         clearTimeout(timer);
         clearTimeout(slow);
-        if (!confirmed) {
-          warmed = false;
-          if (!active) toggle.stopWarming(false);
+        stopWarming = undefined;
+        warmed = false;
+        // The background worker went away mid-load. Ask again a few times
+        // without resetting the bar; give up quietly if it keeps happening.
+        if (enabled && !disposed && warmRetries < 3) {
+          warmRetries++;
+          setTimeout(warm, 1000);
+        } else if (!active) {
+          toggle.stopWarming(false);
         }
       });
       port.postMessage({type: 'prepare'});
@@ -566,7 +580,9 @@ export function installPasteGuard(
     ) {
       return;
     }
-    stopWarming?.();
+    // A load that is still running must not be restarted: that reset the
+    // progress bar to zero once a minute during a cold start.
+    if (stopWarming) return;
     warmed = false;
     warm();
   };

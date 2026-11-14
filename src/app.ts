@@ -975,11 +975,12 @@ export class RedactobotApp extends LitElement {
             : html`
           <md-icon-button aria-label="Back" @click=${this.back}>${icon('arrow_back')}</md-icon-button>`
         }
-        <span class="logo-wrap ${this.view === 'compose' ? 'no-lead' : ''} ${this.jazzOn ? 'jazzing' : ''}">
+        <a class="logo-wrap ${this.view === 'compose' ? 'no-lead' : ''} ${this.jazzOn ? 'jazzing' : ''}" href="/" title="Reload Redactobot"
+          @click=${this.reloadPage}>
           <img class="logo for-dark" src="/redactobot-logo.webp" alt="Redactobot" width="307" height="120">
           <img class="logo for-light" src="/redactobot-logo-light.webp" alt="Redactobot" width="307" height="120">
           ${this.jazzOn ? this.eyeNotes() : nothing}
-        </span>
+        </a>
         <h1 class="title md-typescale-title-large ${this.view === 'compose' ? 'visually-hidden' : ''}">${title}</h1>
         <md-icon-button class="github-link" href="https://github.com/BFParsons/redactobot/releases/latest" target="_blank"
           aria-label="Download from GitHub: the Chrome extension and the source code (opens in a new tab)" title="Download from GitHub">
@@ -1087,6 +1088,21 @@ export class RedactobotApp extends LitElement {
     }
     return nothing;
   }
+
+  /** The logo reloads the page, from a fresh start. */
+  private reloadPage = (event: MouseEvent) => {
+    // Let a new-tab click (middle button, Ctrl or Cmd) open the page as a link.
+    if (
+      event.button !== 0 ||
+      event.ctrlKey ||
+      event.metaKey ||
+      event.shiftKey
+    ) {
+      return;
+    }
+    event.preventDefault();
+    location.reload();
+  };
 
   // Each click loads the next sample, starting from a random one.
   private sampleIndex = Math.floor(Math.random() * SAMPLES.length);

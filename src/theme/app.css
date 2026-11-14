@@ -626,6 +626,18 @@ md-icon > svg {
 }
 
 /* Logo in the app bar, left. The image has its own black background, so it sits in a rounded badge. */
+.app-bar a.logo-wrap {
+  color: inherit;
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.app-bar a.logo-wrap:focus-visible {
+  outline: 3px solid var(--md-sys-color-primary);
+  outline-offset: 2px;
+}
+
 .app-bar .logo-wrap {
   --logo-h: 120px;
 

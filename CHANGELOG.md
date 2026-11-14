@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+### Web app: the logo reloads the page
+
+- Clicking the Redactobot logo (top left) reloads the page for a fresh start, clearing the text and
+  any results. It is a real link to the home page, so it works from the keyboard, and a middle-click
+  or Ctrl/Cmd-click opens a new tab instead.
+
 ### Twenty more sample documents
 
 - **Use a sample document** now cycles through thirty fictional, comical documents. The twenty new

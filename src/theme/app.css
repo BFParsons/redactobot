@@ -626,8 +626,20 @@ md-icon > svg {
 }
 
 /* Logo in the app bar, left. The image has its own black background, so it sits in a rounded badge. */
+.app-bar .logo-wrap {
+  --logo-h: 120px;
+
+  position: relative;
+  display: block;
+  flex: none;
+}
+
+.app-bar.scrolled .logo-wrap {
+  --logo-h: 48px;
+}
+
 .app-bar .logo {
-  height: 120px;
+  height: var(--logo-h);
   width: auto;
   border-radius: 10px;
   display: block;
@@ -635,11 +647,7 @@ md-icon > svg {
 }
 
 /* Once the page scrolls, the sticky bar shrinks the logo so it does not take a third of the screen. */
-.app-bar.scrolled .logo {
-  height: 48px;
-}
-
-.app-bar .logo.no-lead {
+.app-bar .logo-wrap.no-lead {
   margin-left: calc(var(--margin) - 4px);
 }
 
@@ -871,12 +879,12 @@ main:focus {
 }
 
 @media (max-width: 599px) {
-  .app-bar .logo {
-    height: 56px;
+  .app-bar .logo-wrap {
+    --logo-h: 56px;
   }
 
-  .app-bar.scrolled .logo {
-    height: 40px;
+  .app-bar.scrolled .logo-wrap {
+    --logo-h: 40px;
   }
 
   .app-bar .title {
@@ -1227,4 +1235,118 @@ main:focus {
     outline: 0;
     text-decoration: none;
   }
+}
+
+/* ---- Smooth jazz while the model starts: notes in the robot's eyes, and
+        fainter ones drifting up and fading. Positions are the eyes' centres as
+        a share of the logo image. ---- */
+.jazz-button {
+  margin-top: 10px;
+}
+
+.eye-notes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  font-family:
+    'Segoe UI Symbol', 'Apple Symbols', 'Noto Sans Symbols 2', sans-serif;
+  line-height: 1;
+}
+
+.eye-note,
+.float-note {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.eye-note {
+  color: #0b2a12;
+  font-size: calc(var(--logo-h) * 0.115);
+  font-weight: 700;
+  animation: eye-bob 1.46s ease-in-out infinite;
+}
+
+.eye-note.left,
+.float-note.left {
+  left: 17.4%;
+  top: 65.6%;
+}
+
+.eye-note.right,
+.float-note.right {
+  left: 25.7%;
+  top: 61.5%;
+}
+
+.eye-note.right {
+  animation-delay: -0.73s;
+}
+
+.float-note {
+  color: var(--md-sys-color-primary);
+  font-size: calc(var(--logo-h) * 0.17);
+  opacity: 0;
+  animation: note-drift 4.4s ease-out infinite;
+  animation-delay: calc(var(--i) * -0.73s);
+}
+
+.float-note.right {
+  animation-name: note-drift-right;
+}
+
+@keyframes eye-bob {
+  50% {
+    transform: translate(-50%, -62%) rotate(-8deg);
+  }
+}
+
+@keyframes note-drift {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+
+  15% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-190%, -330%) scale(1.25) rotate(-18deg);
+  }
+}
+
+@keyframes note-drift-right {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+
+  15% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(120%, -360%) scale(1.25) rotate(16deg);
+  }
+}
+
+/* Reduced motion: notes sit in the eyes, nothing drifts. */
+@media (prefers-reduced-motion: reduce) {
+  .eye-note {
+    animation: none;
+  }
+
+  .float-note {
+    display: none;
+  }
+}
+
+:root[data-motion='reduced'] .eye-note {
+  animation: none;
+}
+
+:root[data-motion='reduced'] .float-note {
+  display: none;
 }

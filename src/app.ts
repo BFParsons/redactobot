@@ -74,6 +74,7 @@ import {
   importFile,
   type Imported,
 } from './core/import';
+import {JazzPlayer} from './core/jazz';
 import {SAMPLES} from './core/samples';
 import {icon, type IconName} from './icons';
 
@@ -209,6 +210,11 @@ export class RedactobotApp extends LitElement {
   @state() private warmStart = 0;
   @state() private warmNow = 0;
   @state() private warmReady = false;
+  // Optional music while the model starts: an original loop synthesised in the
+  // browser. It starts only from the Play button and stops when the model is
+  // ready.
+  @state() private jazzOn = false;
+  private jazz = new JazzPlayer();
   // Typewriter reveal: position in the original text, and the found detail
   // animating there.
   @state() private anim: {pos: number; found: Map<number, number>} | null =
@@ -303,6 +309,7 @@ export class RedactobotApp extends LitElement {
     window.addEventListener('paste', this.onPaste);
   }
   disconnectedCallback() {
+    this.stopJazz();
     cancelAnimationFrame(this.typer);
     this.cloudAbort?.abort();
     window.removeEventListener('dragenter', this.onDragEnter);
@@ -362,6 +369,7 @@ export class RedactobotApp extends LitElement {
       );
       try {
         await warmDevice();
+        this.stopJazz();
         if (this.modelState === 'warming') {
           this.warmReady = true;
           setTimeout(() => {
@@ -370,6 +378,7 @@ export class RedactobotApp extends LitElement {
         }
         this.modelState = 'ready';
       } catch {
+        this.stopJazz();
         this.modelState = 'off';
       } finally {
         // the scan reports a real failure
@@ -959,8 +968,11 @@ export class RedactobotApp extends LitElement {
             : html`
           <md-icon-button aria-label="Back" @click=${this.back}>${icon('arrow_back')}</md-icon-button>`
         }
-        <img class="logo for-dark ${this.view === 'compose' ? 'no-lead' : ''}" src="/redactobot-logo.webp" alt="Redactobot" width="307" height="120">
-        <img class="logo for-light ${this.view === 'compose' ? 'no-lead' : ''}" src="/redactobot-logo-light.webp" alt="Redactobot" width="307" height="120">
+        <span class="logo-wrap ${this.view === 'compose' ? 'no-lead' : ''} ${this.jazzOn ? 'jazzing' : ''}">
+          <img class="logo for-dark" src="/redactobot-logo.webp" alt="Redactobot" width="307" height="120">
+          <img class="logo for-light" src="/redactobot-logo-light.webp" alt="Redactobot" width="307" height="120">
+          ${this.jazzOn ? this.eyeNotes() : nothing}
+        </span>
         <h1 class="title md-typescale-title-large ${this.view === 'compose' ? 'visually-hidden' : ''}">${title}</h1>
         <md-icon-button aria-label="Display: theme, colours and motion" title="Display settings" @click=${() => {
           this.displayOpen = true;
@@ -1105,6 +1117,30 @@ export class RedactobotApp extends LitElement {
       </div>`;
   }
 
+  private toggleJazz = () => {
+    if (this.jazzOn) this.stopJazz();
+    else this.jazzOn = this.jazz.start();
+  };
+  private stopJazz() {
+    this.jazz.stop();
+    this.jazzOn = false;
+  }
+  /**
+   * Notes in the robot's eyes, and fainter ones drifting up from them, while
+   * the music plays. Decorative only.
+   */
+  private eyeNotes() {
+    const drifting = ['♪', '♫', '♩', '♪', '♬', '♫'];
+    return html`<span class="eye-notes" aria-hidden="true">
+      <span class="eye-note left">♪</span>
+      <span class="eye-note right">♫</span>
+      ${drifting.map(
+        (glyph, i) =>
+          html`<span class="float-note ${i % 2 ? 'right' : 'left'}" style=${styleMap({'--i': String(i)})}>${glyph}</span>`,
+      )}
+    </span>`;
+  }
+
   /** The cold-start card: an estimated, animated bar plus elapsed time. */
   private warmCard() {
     const ms = Math.max(0, this.warmNow - this.warmStart);
@@ -1126,8 +1162,11 @@ export class RedactobotApp extends LitElement {
           ${
             this.warmReady
               ? nothing
-              : html`<div>After a break this can take a minute or two. Nothing is scanned until it is ready,
-            and nothing leaves this computer. You can paste text or open a file meanwhile.</div>`
+              : html`<div>Your local AI is getting set up. It will take a moment. In the meantime, why not listen to
+            smooth jazz?</div>
+          <md-outlined-button class="jazz-button" aria-pressed=${this.jazzOn ? 'true' : 'false'} @click=${this.toggleJazz}>
+            ${icon(this.jazzOn ? 'pause' : 'play_arrow', 'icon')}${this.jazzOn ? 'Pause the jazz' : 'Play smooth jazz'}
+          </md-outlined-button>`
           }
         </div>
       </div>`;

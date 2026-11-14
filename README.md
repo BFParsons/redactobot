@@ -237,7 +237,7 @@ contrast of at least 8.2:1 on status colours · a layout that works on phones.
 Small development measurements on fictional documents, not a guarantee.
 
 ```text
-TESTS        713 unit tests · 20 end-to-end tests on the real extension in Chromium
+TESTS        718 unit tests · 20 end-to-end tests on the real extension in Chromium
 ACCURACY     rules + Gemini Nano, unseen test set, paste-sized text:
                  person names ........ 93.9% caught
                  critical details .... 95.1% caught
@@ -327,6 +327,8 @@ Notes: [`evaluation/RESEARCH-FAST-PII-METHODS.md`](evaluation/RESEARCH-FAST-PII-
 
 - **Artwork.** The Redactobot logo is AI-generated (Google Gemini) and background-keyed for
   light and dark themes with `tools/key_logo.py`. The robot animation was supplied by the author.
+- **Music.** "Waiting Room", the loop offered while the model starts, is an original piece written
+  for this project and synthesised in the browser (`src/core/jazz.ts`). No recording is included.
 - **Test data.** Every name, number and document in this repository is fictional.
 - **Built with AI assistance.** Developed with AI coding assistants (OpenAI Codex and
   Anthropic's Claude Code), with all changes reviewed and tested by the author.

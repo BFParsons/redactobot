@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+### Smooth jazz while the model starts
+
+- The cold-start card now reads "Your local AI is getting set up. It will take a moment. In the
+  meantime, why not listen to smooth jazz?" with a **Play smooth jazz** button. The music stops by
+  itself when the model is ready, or when paused.
+- The music is "Waiting Room", an original eight-bar loop written as data in `src/core/jazz.ts` and
+  synthesised with the Web Audio API (electric piano, bass, a reed lead, brushes). There is no audio
+  file and no third-party recording or arrangement.
+- While it plays, notes sit in the robot's eyes in the logo and fainter notes drift up and fade.
+  Reduced motion keeps the notes still.
+
 ### Copyright, privacy law and contact
 
 - Licence headers now read `Copyright 2026 B Parsons`.

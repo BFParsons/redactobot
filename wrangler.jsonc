@@ -8,4 +8,10 @@
   "assets": {
     "directory": "./dist",
   },
+  // Serve the site on the project's own domain. Cloudflare creates the DNS
+  // records and certificates for these on deploy.
+  "routes": [
+    {"pattern": "redactobot.org", "custom_domain": true},
+    {"pattern": "www.redactobot.org", "custom_domain": true},
+  ],
 }

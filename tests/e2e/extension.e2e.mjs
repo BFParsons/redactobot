@@ -230,7 +230,12 @@ async function waitForText(page, name, predicate, timeout = 15000) {
     if (predicate(value)) return value;
     await page.waitForTimeout(100);
   }
-  assert.fail(`Composer never matched. Last value: ${JSON.stringify(value)}`);
+  // Say where it stopped: the guard's own status line and the switch state.
+  const status = await guardStatus(page).catch(() => '(unreadable)');
+  const state = await switchState(page).catch(() => '(unreadable)');
+  assert.fail(
+    `Composer never matched. Last value: ${JSON.stringify(value)}. Guard status: ${JSON.stringify(status)}. Switch on: ${state}`,
+  );
 }
 const reviewFrame = page =>
   page.frames().find(frame => frame.url().includes('/review.html'));

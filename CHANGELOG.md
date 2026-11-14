@@ -2,6 +2,22 @@
 
 ## Unreleased
 
+### Without the on-device model, and a cloud answer fix
+
+- **Notice for visitors without the on-device model.** The first screen now says when on-device AI is
+  not available and why (another browser, a phone or tablet, an old Chrome, the feature switched off,
+  hardware that cannot run it, or a model not yet downloaded), what still works (the pattern rules)
+  and what to check by hand. **How to get on-device AI** opens steps for that visitor's situation.
+  The review screen's "Names were not checked" warning links to the same steps
+  (`src/core/model-help.ts`).
+- **Fix: the cloud model refused to answer.** Asked a question about cleaned text, it replied that the
+  document "contains only placeholders". Its instructions said never to guess placeholder values and
+  to explain when information was removed, which it read as a reason to decline. The new instructions
+  tell it to treat each placeholder as the real value, use placeholders in its answer exactly as
+  written (the device restores the real values) and never refuse because details were replaced.
+  Checked against the live model: it now summarises and lists the people involved, with names
+  restored locally.
+
 ### Web app: the logo reloads the page
 
 - Clicking the Redactobot logo (top left) reloads the page for a fresh start, clearing the text and

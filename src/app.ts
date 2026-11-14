@@ -80,6 +80,7 @@ import {
   shuffledMessages,
   warmPercent,
 } from './core/loading-messages';
+import {MIN_CHROME, modelHelp, type ModelStatus} from './core/model-help';
 import {SAMPLES} from './core/samples';
 import {icon, type IconName} from './icons';
 
@@ -215,6 +216,10 @@ export class RedactobotApp extends LitElement {
   @state() private warmStart = 0;
   @state() private warmNow = 0;
   @state() private warmReady = false;
+  // What Chrome said about its on-device model, once known. Drives the notice
+  // for visitors who cannot use it (another browser, a phone, older hardware).
+  @state() private modelStatus?: ModelStatus;
+  @state() private modelHelpOpen = false;
   private warmOrder: number[] = [];
   // Optional music while the model starts: an original loop synthesised in the
   // browser. It starts only from the Play button and stops when the model is
@@ -355,6 +360,7 @@ export class RedactobotApp extends LitElement {
     if (this.warming) return;
     this.warming = (async () => {
       const status = await deviceStatus();
+      this.modelStatus = status;
       if (status !== 'available') {
         this.modelState = 'off';
         return;
@@ -1004,6 +1010,7 @@ export class RedactobotApp extends LitElement {
       ${this.ruleDialogView()}
       ${this.aboutDialogView()}
       ${this.displayDialogView()}
+      ${this.modelHelpDialogView()}
 `;
   }
 
@@ -1120,6 +1127,7 @@ export class RedactobotApp extends LitElement {
       <div class="panes">
         <div class="stack">
           ${(this.modelState === 'warming' || this.warmReady) && this.plan.usesModel ? this.warmCard() : nothing}
+          ${this.modelHelpNotice()}
           <p class="md-typescale-body-large muted">
             Add a document or paste text to remove sensitive information like names, birthdays, addresses and
             financial details. This is a technology demonstration and not a validated compliance tool. Use at
@@ -1143,6 +1151,124 @@ export class RedactobotApp extends LitElement {
         </div>
         <aside class="supporting">${this.robotVideo()}${this.rulesCard()}</aside>
       </div>`;
+  }
+
+  /** Why this visitor has no on-device model, or undefined when they do. */
+  private get modelGap() {
+    if (!this.modelStatus || !this.plan.usesModel) return undefined;
+    return modelHelp(this.modelStatus, navigator.userAgent);
+  }
+  /**
+   * A notice on the first screen for visitors without the on-device model: what
+   * still works, what does not, and a way to find out how to get it.
+   */
+  private modelHelpNotice() {
+    const help = this.modelGap;
+    if (!help) return nothing;
+    if (help.gap === 'download') {
+      return html`
+        <div class="notice" role="status">${icon('downloading')}
+          <div class="md-typescale-body-medium"><strong>Chrome needs to download its on-device AI model once.</strong>
+            The download starts when you select Find private details, and can take several minutes. Nothing you
+            type is sent anywhere.
+            <md-text-button class="inline-help" @click=${() => {
+              this.modelHelpOpen = true;
+            }}>More about this</md-text-button></div></div>`;
+    }
+    const why = {
+      'other-browser': `${help.browser} does not include it.`,
+      mobile: 'It is not available on phones and tablets.',
+      'old-chrome': `It needs Chrome ${MIN_CHROME} or later.`,
+      'switched-off':
+        'It is switched off or not installed in this copy of Chrome.',
+      hardware: 'This computer does not meet what the model needs.',
+    }[help.gap];
+    return html`
+      <div class="notice caution" role="status">${icon('warning')}
+        <div class="md-typescale-body-medium"><strong>On-device AI is not available here.</strong> ${why}
+          Redactobot still finds email addresses, phone numbers, account and card numbers, IDs and many names
+          by pattern, but it will miss some names, places and sensitive topics. Check those yourself.
+          <md-text-button class="inline-help" @click=${() => {
+            this.modelHelpOpen = true;
+          }}>How to get on-device AI</md-text-button></div></div>`;
+  }
+  /** How to get the on-device model, for the visitor's own situation. */
+  private modelHelpDialogView() {
+    const help = this.modelGap;
+    const gap = help?.gap;
+    const steps = {
+      'other-browser': html`
+        <p>${help?.browser} does not include an on-device AI model that Redactobot can use. The model, Gemini
+          Nano, is built into Google Chrome.</p>
+        <ol>
+          <li>On a desktop or laptop computer, install or open
+            <a href="https://www.google.com/chrome/" target="_blank" rel="noopener noreferrer">Google Chrome</a>,
+            version ${MIN_CHROME} or later.</li>
+          <li>Open redactobot.org in Chrome.</li>
+          <li>The first time, Chrome downloads the model. A progress bar shows it.</li>
+        </ol>`,
+      mobile: html`
+        <p>Chrome's on-device AI model does not run on phones or tablets yet.</p>
+        <ol>
+          <li>Open redactobot.org on a desktop or laptop computer.</li>
+          <li>Use Google Chrome, version ${MIN_CHROME} or later.</li>
+        </ol>`,
+      'old-chrome': html`
+        <p>This copy of Chrome is older than version ${MIN_CHROME}, the first that Redactobot supports.</p>
+        <ol>
+          <li>Open Chrome's menu, then Help, then About Google Chrome.</li>
+          <li>Let it update, then select Relaunch.</li>
+          <li>Come back to redactobot.org.</li>
+        </ol>`,
+      'switched-off': html`
+        <p>This is a recent copy of Chrome, but its built-in AI is not switched on. It may be turned off by a
+          setting, by your organization, or not yet rolled out to this computer.</p>
+        <ol>
+          <li>Type <code>chrome://flags/#optimization-guide-on-device-model</code> in the address bar and set
+            it to Enabled.</li>
+          <li>Do the same for <code>chrome://flags/#prompt-api-for-gemini-nano-multimodal-input</code>.</li>
+          <li>Select Relaunch, then come back to redactobot.org.</li>
+        </ol>
+        <p class="muted">On a work computer, your organization may have turned this off; ask your IT team.</p>`,
+      hardware: html`
+        <p>Chrome has the feature, but reports that this computer cannot run the model. It needs:</p>
+        <ul>
+          <li>about 22 GB of free space on the drive that holds your Chrome profile;</li>
+          <li>16 GB of memory and four or more processor cores, or a graphics card with more than 4 GB of
+            memory;</li>
+          <li>Windows 10 or 11, macOS 13 or later, Linux, or a Chromebook Plus.</li>
+        </ul>
+        <p>Freeing up disk space is the most common fix. Type <code>chrome://on-device-internals</code> in the
+          address bar to see what Chrome found.</p>`,
+      download: html`
+        <p>Chrome has the feature and this computer can run it, but the model has not been downloaded yet.</p>
+        <ol>
+          <li>Add some text and select Find private details. The download starts then.</li>
+          <li>It is a few gigabytes and happens once. A progress bar shows it.</li>
+          <li>Keep this tab open until it finishes.</li>
+        </ol>`,
+    };
+    return html`
+      <md-dialog ?open=${this.modelHelpOpen && Boolean(gap)} @closed=${() => {
+        this.modelHelpOpen = false;
+      }}>
+        <div slot="headline">Getting on-device AI</div>
+        <div slot="content" class="dialog-list md-typescale-body-medium">
+          ${gap ? steps[gap] : nothing}
+          <md-divider></md-divider>
+          <p><strong>Why it matters.</strong> The on-device model is what finds names, places and sensitive
+            topics the patterns miss. It runs on your computer, so your text is never sent anywhere to be
+            checked.</p>
+          <p><strong>Without it,</strong> Redactobot still works: it replaces email addresses, phone numbers,
+            account and card numbers, IDs, dates and many names. Read the result with extra care and select any
+            name it missed.</p>
+        </div>
+        <div slot="actions">
+          <md-text-button @click=${() => {
+            this.modelHelpOpen = false;
+          }}>Close</md-text-button>
+        </div>
+      </md-dialog>`;
   }
 
   private toggleJazz = () => {
@@ -1640,7 +1766,10 @@ export class RedactobotApp extends LitElement {
             ? 'This browser has no on-device AI model. Use Chrome on a desktop computer.'
             : 'This computer cannot run the on-device AI model.'
         }
-        Numbers and contact details are marked. Select each name yourself before sending.`,
+        Numbers and contact details are marked. Select each name yourself before sending.
+        <md-text-button class="inline-help" @click=${() => {
+          this.modelHelpOpen = true;
+        }}>How to get on-device AI</md-text-button>`,
         'alert',
       );
     }

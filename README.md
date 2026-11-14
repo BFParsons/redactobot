@@ -275,7 +275,7 @@ contrast of at least 8.2:1 on status colours · a layout that works on phones.
 Small development measurements on fictional documents, not a guarantee.
 
 ```text
-TESTS        732 unit tests · 20 end-to-end tests on the real extension in Chromium
+TESTS        758 unit tests · 20 end-to-end tests on the real extension in Chromium
 ACCURACY     rules + Gemini Nano, unseen test set, paste-sized text:
                  person names ........ 93.9% caught
                  critical details .... 95.1% caught
@@ -295,6 +295,8 @@ research notes) and [`bench/RESULTS.md`](bench/RESULTS.md).
 
 ```text
 [!] Detection can miss details, and what remains can still identify someone.
+[!] The on-device model needs desktop Chrome 148+ on capable hardware. In other
+    browsers Redactobot says so, explains how to get it, and still runs the rules.
 [!] No OCR: scanned documents and images are not read.
 [!] The extension covers pasted and dropped text, not typing or uploads.
 [!] Chat sites change their layouts; the extension may need updates.

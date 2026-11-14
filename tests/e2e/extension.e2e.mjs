@@ -91,7 +91,14 @@ let profile;
 before(async () => {
   const built = spawnSync(
     process.execPath,
-    ['tools/build_extension.mjs', '--out', extensionDir, '--fake-nano'],
+    [
+      'tools/build_extension.mjs',
+      '--out',
+      extensionDir,
+      '--fake-nano',
+      // E2E_PUBLIC=1 runs the same tests against the published variant.
+      ...(process.env.E2E_PUBLIC ? ['--public'] : []),
+    ],
     {cwd: root, encoding: 'utf8'},
   );
   assert.equal(built.status, 0, built.stderr);

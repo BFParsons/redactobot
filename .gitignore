@@ -21,3 +21,5 @@ evaluation/results/pg-*/
 CLAUDE.local.md
 # Cloudflare local state.
 .wrangler/
+extension/public-build/
+extension/releases/

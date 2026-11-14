@@ -27,3 +27,5 @@ src/core/import/fixtures/
 # either changes text nodes or emits split closing tags (`</span\n>`).
 *.html
 .wrangler/
+extension/public-build/
+extension/releases/

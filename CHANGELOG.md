@@ -2,6 +2,20 @@
 
 ## Unreleased
 
+### Extension: a build for publication
+
+- `npm run package:extension` builds the extension for the Chrome Web Store and GitHub releases and
+  zips it. The published build has no Firebase project and no App Check debug token, asks for no
+  host permissions and cannot connect to any server (`connect-src 'none'`): it checks pastes on the
+  device only. The packaging step refuses to zip a build that contains a Firebase key.
+- In an extension without cloud access, settings now say "Cloud cleanup is not part of the extension
+  … use redactobot.org" instead of asking for a debug token.
+- `E2E_PUBLIC=1 npm run test:e2e` runs the end-to-end tests against the published variant.
+- Store listing text, permission justifications, data-use answers and reviewer notes are in
+  `extension/STORE-LISTING.md`; five 1280 × 800 screenshots and two promo images are in
+  `extension/store/`.
+- The web app links to the extension download.
+
 ### Names: fewer false alarms, surname particles, and a startup fix
 
 - **Not names any more:** everyday phrases in capitals ("this Past Weekend", "Game Seven", "Happy New

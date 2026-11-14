@@ -38,11 +38,14 @@ const extension = () =>
  * Firebase project, or no App Check setup), or undefined when it can.
  */
 export function cloudSetupProblem(): string | undefined {
+  // The published extension has no cloud access at all: App Check's web
+  // provider cannot run inside an extension, and a debug token must never
+  // ship. Everything it does stays on the device.
+  if (extension() && !registeredDebug) {
+    return 'Cloud cleanup is not part of the extension. Pastes are checked on this device only. For cloud cleanup, use redactobot.org.';
+  }
   if (!cloudConfigured) {
     return 'Connect a Firebase project to use cloud cleanup.';
-  }
-  if (extension() && !registeredDebug) {
-    return 'This development extension needs a registered Firebase App Check debug token.';
   }
   if (!registeredDebug && !env.VITE_RECAPTCHA_ENTERPRISE_SITE_KEY) {
     return 'Configure Firebase App Check before using cloud cleanup.';

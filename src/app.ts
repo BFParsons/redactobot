@@ -1104,6 +1104,7 @@ export class RedactobotApp extends LitElement {
             Add a document or paste text to remove sensitive information like names, birthdays, addresses and
             financial details. This is a technology demonstration and not a validated compliance tool. Use at
             your own risk. <a href="/privacy.html">Privacy and terms</a>
+            · <a href="https://github.com/BFParsons/redactobot/releases/latest" target="_blank" rel="noopener noreferrer">Get the Chrome extension</a>
           </p>
           ${this.dropZone()}
           <md-outlined-text-field type="textarea" rows="12" label=${this.imported ? 'Text from the document' : 'Paste here'}

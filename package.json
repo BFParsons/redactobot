@@ -15,7 +15,8 @@
     "lint": "oxlint . && prettier --check .",
     "fix": "oxlint --fix . && prettier --write .",
     "lint:py": "python -m black --check tools evaluation",
-    "fix:py": "python -m black tools evaluation"
+    "fix:py": "python -m black tools evaluation",
+    "package:extension": "tsc --noEmit && node tools/package_extension.mjs"
   },
   "dependencies": {
     "@fontsource/roboto": "5.3.0",

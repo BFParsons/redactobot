@@ -147,7 +147,9 @@ defaults off and is unavailable without project/App Check configuration. Clear c
 scans can proceed automatically; uncertain identifying context requires review first.
 The cloud receives only the identity-scrubbed text, which may still contain medical or
 other sensitive facts. Identity mappings, filenames and chat history are excluded.
-Do not publish a development build containing an App Check debug token.
+Do not publish a development build containing an App Check debug token. Use `npm run package:extension` for the published build: it has no Firebase
+project, no debug token, no host permissions and no network access. See
+[STORE-LISTING.md](STORE-LISTING.md) for the Chrome Web Store text and screenshots.
 
 Tests cover forged/reused/expired approvals, full document-and-question scanning,
 mandatory identity removal, new scans after edits, stale results, cloud failures,

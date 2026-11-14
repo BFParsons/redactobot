@@ -147,14 +147,29 @@ Local detection, review and replacement work with no Firebase setup at all.
 
 ### Chrome extension
 
+**The quick way: download it.**
+
+1. Download `redactobot-extension-0.3.0.zip` from the
+   [latest release](https://github.com/BFParsons/redactobot/releases/latest) and unzip it.
+2. Open `chrome://extensions` and turn on **Developer mode** (top right).
+3. Click **Load unpacked** and choose the unzipped folder.
+4. Open ChatGPT, Claude or Gemini and switch **Redactobot** on under the chat box.
+
+This is the same package submitted to the Chrome Web Store. It makes no network requests
+and asks only for `storage` and `offscreen`; cloud cleanup is on the website, not in the
+extension.
+
+**Or build it yourself:**
+
 ```sh
-npm run build:extension
+npm run build:extension      # development build → extension/build
+npm run package:extension    # the published build, zipped → extension/releases
 ```
 
-1. Open `chrome://extensions` and turn on **Developer mode**.
-2. Click **Load unpacked** and choose the `extension/build` folder.
-3. In the extension's settings, click **Prepare on-device AI**, then **Test a fictional paste**.
-4. Refresh any open ChatGPT, Claude or Gemini tabs.
+Load `extension/build` the same way. In the extension's settings, click **Prepare
+on-device AI**, then **Test a fictional paste**, and refresh any open chat tabs. The
+development build can use cloud cleanup with your own Firebase project and an App Check
+debug token; the published build cannot, by design.
 
 ### Cloud cleanup (optional)
 
@@ -376,6 +391,7 @@ evaluation/       fictional test sets, scoring, accuracy and speed logs, researc
 bench/            in-browser benchmarks for Gemini Nano
 tests/e2e/        end-to-end tests of the real extension
 tools/            build scripts
+extension/        manifest, settings and review pages, store listing and screenshots
 wrangler.jsonc    hosting config for redactobot.org (Cloudflare, static files only)
 ```
 

@@ -17,6 +17,9 @@ const arg = key =>
     ? process.argv[process.argv.indexOf(key) + 1]
     : undefined;
 const fakeNano = process.argv.includes('--fake-nano');
+// The build that is published: no Firebase project, no debug token, and no
+// network access of any kind. See tools/package_extension.mjs.
+const publicBuild = process.argv.includes('--public');
 const outDir = resolve(root, arg('--out') || 'extension/build');
 if (fakeNano && outDir === resolve(root, 'extension/build')) {
   throw new Error('--fake-nano needs a separate --out directory.');
@@ -24,7 +27,7 @@ if (fakeNano && outDir === resolve(root, 'extension/build')) {
 // The test build must never reach a real Firebase project: blank the settings
 // Vite would read from .env.local (process.env takes precedence over .env
 // files).
-if (fakeNano) {
+if (fakeNano || publicBuild) {
   for (const key of [
     'VITE_FIREBASE_API_KEY',
     'VITE_FIREBASE_AUTH_DOMAIN',
@@ -110,6 +113,20 @@ if (fakeNano) {
       '<script src="fake-nano.js"></script><script src="scanner.js">',
     ),
   );
+}
+if (publicBuild) {
+  // Ask Chrome for nothing the published build does not use: it never
+  // contacts a server, so it needs no host permissions and its pages may not
+  // connect anywhere.
+  const file = resolve(outDir, 'manifest.json');
+  const manifest = JSON.parse(await readFile(file, 'utf8'));
+  delete manifest.host_permissions;
+  manifest.content_security_policy.extension_pages =
+    manifest.content_security_policy.extension_pages.replace(
+      /connect-src [^;]*/,
+      "connect-src 'none'",
+    );
+  await writeFile(file, `${JSON.stringify(manifest, null, 2)}\n`);
 }
 console.log(
   `Load unpacked extension from: ${outDir}${fakeNano ? ' (TEST BUILD with fake on-device model)' : ''}`,

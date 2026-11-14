@@ -1,0 +1,11 @@
+// Cloudflare Workers static hosting for the web app (redactobot.org).
+// Cloudflare runs `npm run build`, then `npx wrangler deploy` uploads ./dist.
+// There is no server code: the site is static files only. Response headers
+// come from public/_headers, which the build copies into dist.
+{
+  "name": "redactobot",
+  "compatibility_date": "2026-11-13",
+  "assets": {
+    "directory": "./dist",
+  },
+}

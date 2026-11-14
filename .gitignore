@@ -19,3 +19,5 @@ tests/e2e/.build/
 evaluation/results/pg-*/
 # Local-only assistant notes.
 CLAUDE.local.md
+# Cloudflare local state.
+.wrangler/

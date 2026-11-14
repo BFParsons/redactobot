@@ -26,3 +26,4 @@ src/core/import/fixtures/
 # HTML is formatted by hand: Prettier's whitespace-sensitive HTML printer
 # either changes text nodes or emits split closing tags (`</span\n>`).
 *.html
+.wrangler/

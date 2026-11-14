@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+### Twenty more sample documents
+
+- **Use a sample document** now cycles through thirty fictional, comical documents. The twenty new
+  ones are parody paperwork about The Lord of the Rings, Jaws, The Terminator, Alien, The Godfather,
+  Home Alone, Die Hard, The Wizard of Oz, Titanic, Top Gun, Shrek, Toy Story, Finding Nemo, Mad Max,
+  Rocky, Ferris Bueller's Day Off, The Princess Bride, Monty Python and the Holy Grail, The Big
+  Lebowski and Groundhog Day. Original wording throughout; contact details use reserved test ranges.
+
 ### Extension: a build for publication
 
 - `npm run package:extension` builds the extension for the Chrome Web Store and GitHub releases and

@@ -217,7 +217,7 @@ uploads or images.
 1. **Add text.** Paste notes or open a file. Supported: PDF (with text), Word, Excel,
    PowerPoint, OpenDocument, RTF, `.eml`, HTML, CSV and plain text. Files are read on your
    device and never uploaded. No document to hand? **Use a sample document** cycles through
-   ten fictional ones, such as a Death Star workplace incident report, a House Atreides
+   thirty fictional ones, such as a Death Star workplace incident report, a House Atreides
    relocation claim and Dr. Jones's faculty expense review.
 2. **Pick what to replace.** Choose by **Data type** (sorted by measured accuracy) or by
    **Regulatory** rule: HIPAA Safe Harbor, Fed. R. Civ. P. 5.2, IRC § 7216, GLBA, CCPA,
@@ -370,7 +370,7 @@ Notes: [`evaluation/RESEARCH-FAST-PII-METHODS.md`](evaluation/RESEARCH-FAST-PII-
 - **Test data.** Every name, number and document in this repository is fictional.
 - **Built with AI assistance.** Developed with AI coding assistants (OpenAI Codex and
   Anthropic's Claude Code), with all changes reviewed and tested by the author.
-- **Sample documents.** The ten built-in samples are original parody paperwork about fictional
+- **Sample documents.** The thirty built-in samples are original parody paperwork about fictional
   characters from popular films and series. They are not affiliated with or endorsed by the
   owners of those works.
 - **Privacy and terms.** [redactobot.org/privacy](https://redactobot.org/privacy)

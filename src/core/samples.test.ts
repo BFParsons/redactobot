@@ -12,10 +12,10 @@ import {NO_TOPICS} from './redact';
 import {SAMPLES} from './samples';
 
 describe('sample documents', () => {
-  it('offers ten distinct documents', () => {
-    expect(SAMPLES).toHaveLength(10);
-    expect(new Set(SAMPLES.map(s => s.title)).size).toBe(10);
-    expect(new Set(SAMPLES.map(s => s.text)).size).toBe(10);
+  it('offers thirty distinct documents', () => {
+    expect(SAMPLES).toHaveLength(30);
+    expect(new Set(SAMPLES.map(s => s.title)).size).toBe(30);
+    expect(new Set(SAMPLES.map(s => s.text)).size).toBe(30);
   });
 
   it.each(SAMPLES.map(s => [s.title, s.text]))(

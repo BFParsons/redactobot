@@ -25,6 +25,8 @@
 **Scrub private details out of your text *before* an AI ever sees them.**
 On your device. In your browser. Before you hit paste.
 
+**Try it: [redactobot.org](https://redactobot.org)** (desktop Chrome)
+
 `v0.3.0` · `Apache-2.0` · `Chrome 148+` · `Firebase AI Logic` · `Gemini Nano + Gemini` · built for **#BuildHybridAI 2026**
 
 </div>
@@ -132,6 +134,8 @@ npm install
 ```
 
 ### Web app
+
+The hosted copy is at **https://redactobot.org**. To run it yourself:
 
 ```sh
 npm run dev          # → http://127.0.0.1:5173
@@ -329,7 +333,8 @@ Notes: [`evaluation/RESEARCH-FAST-PII-METHODS.md`](evaluation/RESEARCH-FAST-PII-
 - **Sample documents.** The ten built-in samples are original parody paperwork about fictional
   characters from popular films and series. They are not affiliated with or endorsed by the
   owners of those works.
-- **Privacy and terms.** [`public/privacy.html`](public/privacy.html): a technology demonstration,
+- **Privacy and terms.** [redactobot.org/privacy](https://redactobot.org/privacy)
+  ([source](public/privacy.html)): a technology demonstration,
   not a validated compliance tool. Do not enter real sensitive data.
 - **Not legal advice.** Redactobot is a drafting aid. You remain responsible for what you share.
 

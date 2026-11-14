@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+### Hosting
+
+- The web app is hosted at https://redactobot.org (Cloudflare static hosting, `wrangler.jsonc`;
+  response headers from `public/_headers`). The extension's card links to the privacy policy there.
+
 ### Web app: browser features blocked by default
 
 - The web app now sends a `Permissions-Policy` header (hosted site via `firebase.json`, local server

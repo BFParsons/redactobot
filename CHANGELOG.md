@@ -2,6 +2,26 @@
 
 ## Unreleased
 
+### Names: fewer false alarms, surname particles, and a startup fix
+
+- **Not names any more:** everyday phrases in capitals ("this Past Weekend", "Game Seven", "Happy New
+  Year") and countries and continents ("America", "South America", "Team America"). "America" is on
+  the public baby-name list, and two capitalized words in mid-sentence were assumed to be a person.
+  New lists of everyday words and large places (`src/core/common-words.ts`) veto guesses that rest
+  only on capital letters, in the rules, in the "Worth a look" list and for names the on-device model
+  reports. Countries and continents are also no longer treated as places smaller than a state.
+- **Now found:** names with a lower-case surname particle, anywhere in a sentence: "Nik van der
+  Giesen", "Ludwig von Hartmann", "Pieter van den Berg", "Anna de la Cruz", "Sofia di Marco".
+  "Tour de France" and "the van der Waals force" are left alone.
+- People whose names are also places or everyday words are still found ("India Wilson", "Kenya
+  Moore", "Jordan Smith", "Sarah Green"), as are unfamiliar company names ("Payworks Midwest").
+- Measured on both test sets, with and without the model: recall is unchanged on every category;
+  text removed that was not in the answer key fell (unseen set, whole documents: 7.2% to 6.6%).
+- **Fix (extension):** the first paste after startup could stop with "The local scanner could not
+  start." Switching on and pasting both asked for the scanner; the second saw none yet and failed to
+  create a duplicate. Callers now share one attempt, and the first message is retried briefly if the
+  new scanner is not listening yet. This was the cause of an intermittent end-to-end test failure.
+
 ### Cold start: the bar no longer restarts; loading messages
 
 - **Fix (extension):** during a long cold start the progress bar under the chat box stopped and

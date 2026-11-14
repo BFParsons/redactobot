@@ -504,3 +504,53 @@ it('exposes scanner status only to settings without sending any document text', 
   });
   expect(cloud.cleanup).not.toHaveBeenCalled();
 });
+
+it('creates one scanner when switching on and pasting arrive together', async () => {
+  // No scanner yet; Chrome refuses a second one.
+  let created = 0;
+  api.runtime.getContexts.mockImplementation(async () => (created ? [{}] : []));
+  api.offscreen = {
+    createDocument: vi.fn(async () => {
+      if (created) {
+        throw new Error('Only a single offscreen document may be created.');
+      }
+      await Promise.resolve();
+      created++;
+    }),
+  };
+  api.storage.sync.get.mockResolvedValue({});
+  owner.onMessage.emit({type: 'prepare'});
+  const scan = await start('Margaret Whitfield called.');
+  await flush();
+  expect(api.offscreen.createDocument).toHaveBeenCalledOnce();
+  expect(scan.type).toBe('scan');
+  expect(
+    owner.postMessage.mock.calls.map(c => c[0]).some(m => m.type === 'failed'),
+  ).toBe(false);
+});
+
+it('retries the first message when a new scanner is not listening yet', async () => {
+  api.storage.sync.get.mockResolvedValue({});
+  let calls = 0;
+  api.runtime.sendMessage.mockImplementation(
+    async (message: {type: string}) => {
+      if (message.type === 'scan' && calls++ < 2) {
+        throw new Error(
+          'Could not establish connection. Receiving end does not exist.',
+        );
+      }
+      return {accepted: true};
+    },
+  );
+  owner.onMessage.emit({
+    type: 'start',
+    id: 'retry',
+    text: 'Margaret Whitfield called.',
+    theme: {},
+  });
+  await vi.advanceTimersByTimeAsync(600);
+  expect(calls).toBe(3);
+  expect(
+    owner.postMessage.mock.calls.map(c => c[0]).some(m => m.type === 'failed'),
+  ).toBe(false);
+});

@@ -61,24 +61,54 @@ interface Job {
   phase: 'scanning' | 'review' | 'cloud' | 'ready' | 'failed';
 }
 const jobs = new Map<string, Job>();
-let creating: Promise<void> | undefined;
-async function scanner() {
-  const existing = await browser.runtime.getContexts({
-    contextTypes: ['OFFSCREEN_DOCUMENT'],
-    documentUrls: [browser.runtime.getURL('scanner.html')],
-  });
-  if (existing.length) return;
-  creating ??= browser.offscreen
-    .createDocument({
-      url: 'scanner.html',
-      reasons: ['WORKERS'],
-      justification:
-        'Run local document detection in a dedicated worker, with on-device AI in its owning document.',
+let startingScanner: Promise<void> | undefined;
+const scannerExists = async () =>
+  (
+    await browser.runtime.getContexts({
+      contextTypes: ['OFFSCREEN_DOCUMENT'],
+      documentUrls: [browser.runtime.getURL('scanner.html')],
     })
-    .finally(() => {
-      creating = undefined;
-    });
-  await creating;
+  ).length > 0;
+/**
+ * Make sure the offscreen scanner document exists. Callers share one attempt:
+ * switching Redactobot on and pasting straight away both ask for the scanner,
+ * and Chrome allows only one such document. Checking and creating separately
+ * let the second caller see "none yet", then fail to create a duplicate, which
+ * left the first paste after startup held with "could not start".
+ */
+function scanner(): Promise<void> {
+  startingScanner ??= (async () => {
+    if (await scannerExists()) return;
+    try {
+      await browser.offscreen.createDocument({
+        url: 'scanner.html',
+        reasons: ['WORKERS'],
+        justification:
+          'Run local document detection in a dedicated worker, with on-device AI in its owning document.',
+      });
+    } catch (error) {
+      // Another caller, or an earlier worker, created it first.
+      if (!(await scannerExists())) throw error;
+    }
+  })().finally(() => {
+    startingScanner = undefined;
+  });
+  return startingScanner;
+}
+/**
+ * Send a message to the scanner. A document that has only just been created may
+ * not be listening yet, in which case Chrome rejects the send; try again
+ * briefly instead of failing the paste.
+ */
+async function toScanner(message: object): Promise<Untyped> {
+  for (let attempt = 0; ; attempt++) {
+    try {
+      return await browser.runtime.sendMessage({target: 'scanner', ...message});
+    } catch (error) {
+      if (attempt >= 4) throw error;
+      await new Promise(resolve => setTimeout(resolve, 120));
+    }
+  }
 }
 // A startup load the user opted into is not canceled by a tab switching off.
 let preloading = false;
@@ -214,8 +244,7 @@ async function scanJob(job: Job) {
   try {
     await scanner();
     if (jobs.get(job.id) !== job || job.scanId !== scanId) return;
-    const response = await browser.runtime.sendMessage({
-      target: 'scanner',
+    const response = await toScanner({
       type: 'scan',
       id: scanId,
       text: job.text,

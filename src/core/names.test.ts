@@ -89,6 +89,51 @@ describe('names read straight off the page, with no model', () => {
       ]),
     );
   });
+  it('leaves everyday phrases and large places in capitals alone', () => {
+    for (const text of [
+      'I visited America last year.',
+      'This Past Weekend I went hiking with friends.',
+      'Over the Past Weekend we finished the report.',
+      'My trip to South America and Saudi Arabia was fun.',
+      'The recap: Team America won the match in Game Seven.',
+      'Thanks, see you Next Week. Happy New Year and Merry Christmas.',
+      'We watched the Tour de France. The van der Waals force is weak.',
+    ]) {
+      expect(discoverNames(text).people, text).toEqual([]);
+    }
+  });
+
+  it('still finds people whose names are also places or everyday words', () => {
+    const found = discoverNames(
+      'Yesterday his partner Leland Forsythe wrote to Sarah Green about India Wilson and Kenya Moore, then called Jordan Smith and Georgia Brown.',
+    );
+    for (const name of [
+      'Leland Forsythe',
+      'Sarah Green',
+      'India Wilson',
+      'Kenya Moore',
+      'Jordan Smith',
+      'Georgia Brown',
+    ]) {
+      expect(found.people, name).toContain(name);
+    }
+  });
+
+  it('finds names with a lower-case surname particle, anywhere in a sentence', () => {
+    const found = discoverNames(
+      'Nik van der Giesen sent the files. I spoke with Ludwig von Hartmann, Pieter van den Berg, Anna de la Cruz and Sofia di Marco.',
+    );
+    for (const name of [
+      'Nik van der Giesen',
+      'Ludwig von Hartmann',
+      'Pieter van den Berg',
+      'Anna de la Cruz',
+      'Sofia di Marco',
+    ]) {
+      expect(found.people, name).toContain(name);
+    }
+  });
+
   it('leaves ordinary capitalized phrases alone', () => {
     const found = discoverNames(
       'A. Background\nSee Fed. R. Civ. P. 26 and the Internal Revenue Code. The Bank declined. Filed in Superior Court on Monday.',

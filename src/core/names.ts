@@ -19,6 +19,7 @@
  * restored, and the user can untick it.
  */
 
+import {COMMON_WORDS, GEOGRAPHY, isLargePlace} from './common-words';
 import {AMBIGUOUS_NAMES, GIVEN_NAMES} from './given-names';
 import {SSA_GIVEN_NAMES} from './given-names-ssa';
 import {PLACE_NAMES} from '../../taxonomy/places-data.js';
@@ -1616,6 +1617,46 @@ export function discoverNames(text: string): Names {
   )) {
     companies.add(collapse(m[0]));
   }
+  // A name with a lower-case surname particle: "Nik van der Giesen", "Ludwig
+  // von Hartmann", "Anna de la Cruz". The particle between two capitalized
+  // words is the cue, so this works at the start of a sentence too. Dutch and
+  // German particles are rarely anything but a surname. Romance ones also
+  // join place and product names ("Tour de France", "Pico de Gallo"), so
+  // those need a known first name in front.
+  for (const m of text.matchAll(
+    new RegExp(
+      `(?<![p{L}p{N}'’-])(${NAME_WORD}) (van der|van den|van de|van het|van|von der|von dem|von|ter|ten|te|zu|op de|op den|af|bin|ibn|de la|de los|de las|del|della|dello|degli|de|di|da|dos|das|du|le|la) (${NAME_WORD})(?![p{L}'’-])`,
+      'gu',
+    ),
+  )) {
+    const [whole, first, particle, last] = m;
+    const firstKey = key(first);
+    const lastKey = key(last);
+    if (
+      COMMON_WORDS.has(firstKey) ||
+      ORDINARY.has(firstKey) ||
+      NOT_A_NAME.has(firstKey) ||
+      plainWord(first)
+    ) {
+      continue; // "The van der Waals force", "Call von Braun"
+    }
+    const surnameOnly = /^(?:van|von|ter|ten|te|zu|op|af|bin|ibn)\b/.test(
+      particle,
+    );
+    if (
+      !surnameOnly &&
+      !(
+        (GIVEN_NAMES.has(firstKey) || SSA_GIVEN_NAMES.has(firstKey)) &&
+        !GEOGRAPHY.has(lastKey) &&
+        !COMMON_WORDS.has(lastKey) &&
+        !ORDINARY.has(lastKey) &&
+        !PLACE_NAMES.has(key(whole))
+      )
+    ) {
+      continue;
+    }
+    addPerson(whole);
+  }
   // Two capitalized words in mid-sentence, neither of them an ordinary word:
   // very likely a person the other cues missed ("his partner Leland Forsythe
   // wrote").
@@ -1629,6 +1670,18 @@ export function discoverNames(text: string): Names {
     // "Privacy Practices", "Managing Member", "Toyota Corolla"
     if (plainWord(m[1]) || plainWord(m[2])) continue;
     if (ORG_TAIL.test(m[2])) continue; // "Animal Rescue"
+    // "this Past Weekend", "Game Seven", "Happy Birthday": two everyday words
+    // in capitals are a phrase, not a person.
+    if (COMMON_WORDS.has(key(m[1])) && COMMON_WORDS.has(key(m[2]))) continue;
+    // "South America", "Saudi Arabia", "Team Canada": a large place, or an
+    // everyday word in front of one. An unfamiliar word in front ("Payworks
+    // Midwest") is still a name of some kind.
+    if (
+      isLargePlace(m[0]) ||
+      (GEOGRAPHY.has(key(m[2])) && COMMON_WORDS.has(key(m[1])))
+    ) {
+      continue;
+    }
     if (
       !ORDINARY.has(key(m[1])) &&
       !ORDINARY.has(key(m[2])) &&
@@ -1662,6 +1715,10 @@ export function discoverNames(text: string): Names {
     // broken. Kalkidan said", "tell Ksenia", "and Shirin").
     if (
       SSA_GIVEN_NAMES.has(k) &&
+      // "America", "India" and "Kenya" are on the name list, but in running
+      // text they are nearly always the place.
+      !GEOGRAPHY.has(k) &&
+      !COMMON_WORDS.has(k) &&
       !PLACE_NAMES.has(k) &&
       !SSA_WORDS.has(k) &&
       !ALSO_A_WORD.has(k) &&

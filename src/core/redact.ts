@@ -83,6 +83,7 @@ export const NO_TOPICS: Topics = {
 
 import {GIVEN_NAMES} from './given-names';
 import {sensitiveTerms, generalTopicQuestion} from './sensitive-terms';
+import {COMMON_WORDS, GEOGRAPHY, isLargePlace} from './common-words';
 import {
   collapse,
   definedTerms,
@@ -698,6 +699,8 @@ export function buildDetections(
   }
   const pushPattern = (m: ReturnType<typeof detectPatterns>[number]) => {
     if (!free(m.start, m.end)) return;
+    // A country or continent is not a place smaller than a state.
+    if (m.type === 'places' && isLargePlace(m.text)) return;
     push({
       start: m.start,
       end: m.end,
@@ -1199,7 +1202,14 @@ export function buildDetections(
       const here = ordinaryWordsOf(text);
       const plain = (w: string) => {
         const k = w.replace(/[^\p{L}]/gu, '').toLocaleLowerCase('en-US');
-        return here.has(k) || NOT_NAME_WORDS.has(k);
+        // Everyday words and large places the model sometimes calls a person:
+        // "America", "Past Weekend".
+        return (
+          here.has(k) ||
+          NOT_NAME_WORDS.has(k) ||
+          COMMON_WORDS.has(k) ||
+          GEOGRAPHY.has(k)
+        );
       };
       const said = new Set(names.people.map(n => collapse(n)));
       all.people = all.people.filter(n => {
@@ -1554,7 +1564,9 @@ export function buildDetections(
     for (const name of [...new Set(topics.places.map(collapse))].sort(
       (a, b) => b.length - a.length,
     )) {
-      if (!/\p{L}/u.test(name) || isRegion(name)) continue;
+      if (!/\p{L}/u.test(name) || isRegion(name) || isLargePlace(name)) {
+        continue;
+      }
       for (const [s, e] of viewOccurrences(view, name)) {
         // "Chesapeake" + " Senior Meals": the place is the start of an organization's name.
         const grown = growOrg(text, e);
@@ -1873,6 +1885,17 @@ export function unexplainedCapitals(
     if (covered(m.index)) continue;
     const k = key(m[0]);
     if (seen.has(k) || STOP_CAPS.has(k)) continue;
+    // A phrase made only of everyday words or large place names ("Next Week",
+    // "New Year", "South America") is not worth a second look.
+    if (
+      k
+        .split(' ')
+        .every(
+          w => COMMON_WORDS.has(w) || GEOGRAPHY.has(w) || NOT_NAME_WORDS.has(w),
+        )
+    ) {
+      continue;
+    }
     seen.add(k);
     out.push(m[0]);
   }

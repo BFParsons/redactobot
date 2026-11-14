@@ -981,6 +981,10 @@ export class RedactobotApp extends LitElement {
           ${this.jazzOn ? this.eyeNotes() : nothing}
         </span>
         <h1 class="title md-typescale-title-large ${this.view === 'compose' ? 'visually-hidden' : ''}">${title}</h1>
+        <md-icon-button class="github-link" href="https://github.com/BFParsons/redactobot/releases/latest" target="_blank"
+          aria-label="Download from GitHub: the Chrome extension and the source code (opens in a new tab)" title="Download from GitHub">
+          ${icon('github')}
+        </md-icon-button>
         <md-icon-button aria-label="Display: theme, colours and motion" title="Display settings" @click=${() => {
           this.displayOpen = true;
         }}>

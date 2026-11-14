@@ -14,7 +14,8 @@
 - Store listing text, permission justifications, data-use answers and reviewer notes are in
   `extension/STORE-LISTING.md`; five 1280 × 800 screenshots and two promo images are in
   `extension/store/`.
-- The web app links to the extension download.
+- The web app links to the extension download, and has a GitHub icon in its header that opens the
+  latest release (the extension zip and the source code).
 
 ### Names: fewer false alarms, surname particles, and a startup fix
 

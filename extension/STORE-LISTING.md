@@ -80,7 +80,8 @@ Privacy policy: https://redactobot.org/privacy
 
 **Marquee promo tile** (1400 × 560, optional): `extension/store/promo-marquee-1400x560.png`
 
-**Store icon** (128 × 128): `extension/icons/icon-128.png` (already in the zip)
+**Store icon** (128 × 128): `extension/store/store-icon-128.png` (the robot head at 96 × 96
+with 16 pixels of clear padding, as the store asks)
 
 **Homepage URL:** https://redactobot.org
 

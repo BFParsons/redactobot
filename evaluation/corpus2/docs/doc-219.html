@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>It offboarding ticket</title>
+<style>body{font-family:Georgia,serif;max-width:52em;margin:2em auto;line-height:1.45}table{border-collapse:collapse}td,th{border:1px solid #999;padding:4px 8px;text-align:left}h1{font-size:1.4em}h2{font-size:1.1em}</style>
+</head>
+<body>
+<main>
+<h1>Ticket ITSD-48213 - Offboarding: Cassius Holloway</h1>
+<table>
+<tr><th>Field</th><th>Value</th></tr>
+<tr><td>Status</td><td>Closed</td></tr>
+<tr><td>Priority</td><td>High</td></tr>
+<tr><td>Requester</td><td>Stacy-Ann Thackeray (HR), sthackeray@ravenmoor.example</td></tr>
+<tr><td>Assignee</td><td>Obinna Nwachukwu, Bluff City Managed Systems</td></tr>
+<tr><td>Opened</td><td>2026-02-18 09:02 Central</td></tr>
+<tr><td>Closed</td><td>2026-02-27 16:40 Central</td></tr>
+</table>
+<h2>Summary</h2>
+<p>Employee C. Holloway (ID E-20417, Platform Engineering, manager Yevgenia Markova) resigned Feb 17. Last day Friday, February 20, 2026. Reason given to HR: he is joining Tessellate Data Labs, a direct competitor, so Legal asked for same-day access removal. HR note, not for the team channel: he had been on a PIP since January.</p>
+<h2>Access</h2>
+<table>
+<tr><th>Account</th><th>Identifier</th><th>Step</th><th>Who / When</th><th>Result</th></tr>
+<tr><td>SSO (Okta)</td><td>cholloway</td><td>Disabled</td><td>ON, 2/20 17:05</td><td>OK</td></tr>
+<tr><td>VPN</td><td>cert rmg-vpn-cholloway-03</td><td>Revoked</td><td>ON, 2/20 17:06</td><td>last connected from 198.51.100.77</td></tr>
+<tr><td>GitLab (https://git.ravenmoor.example/cholloway)</td><td>personal access token glpat-Xw4Tq9ZrL2mVb8Ns</td><td>Revoked</td><td>ON, 2/20 17:11</td><td>2 deploy keys also removed</td></tr>
+<tr><td>AWS IAM</td><td>svc-etl-cassius</td><td>Rotated</td><td>L. Rosenthal, 2/23</td><td>key was still active - see comments</td></tr>
+<tr><td>Wi-Fi</td><td>guest PSK Raven-Guest-0226</td><td>Rotated</td><td>ON, 2/23</td><td></td></tr>
+<tr><td>Shared mailbox</td><td>platform-alerts@ravenmoor.example</td><td>Removed</td><td>ON, 2/20</td><td></td></tr>
+</table>
+<h2>Hardware</h2>
+<table>
+<tr><th>Asset</th><th>Identifier</th><th>Notes</th></tr>
+<tr><td>Laptop, MacBook Pro 14</td><td>S/N C02ZK4QWMD6T; host RMG-MBP-0417</td><td>Wi-Fi MAC 3C:22:FB:9A:41:0E; Ethernet MAC 3c-22-fb-9a-41-0f</td></tr>
+<tr><td>Phone</td><td>IMEI 356942523595919</td><td>company line (901) 555-0157, ported out at his request</td></tr>
+<tr><td>YubiKey 5C NFC</td><td>serial 19884207</td><td>returned</td></tr>
+<tr><td>Badge</td><td>#004417</td><td>disabled 2/20; last door event 2/20 16:52</td></tr>
+<tr><td>Monitor</td><td>tag RMG-MON-1188</td><td>stays at his home until the box arrives</td></tr>
+</table>
+<h2>Timeline</h2>
+<ul>
+<li>2/18 - Shipping box and UPS label sent to his home, 2208 Cooper Young Lane, Memphis, TN 38104. Label 1Z 84W 07E 03 9921 4470.</li>
+<li>2/20 - Cassius signed out. Laptop on macOS 15.2 with FileVault; recovery key escrowed. Local account password he gave us to unlock it: tr0ub4dor&amp;Grits.</li>
+<li>2/23 - Lior Rosenthal (Security) found the service key above used on Feb 21 at 02:14 from 2001:db8:41c:9::2f and again from 10.40.12.186. Second address is our own CI runner. First one is unexplained. Logged as SEC-2026-0031 for the SOC 2 CC6.2 evidence folder.</li>
+<li>2/24 - Markova confirmed nothing in Slack or Jira needs to be reassigned. His personal address for the COBRA packet: cass.holloway@mailbox.example, cell 901.555.0122.</li>
+<li>2/27 - Laptop received and wiped by Obinna. Monitor still pending.</li>
+</ul>
+<h2>Comments</h2>
+<p>Yevgenia: please do not delete his home directory until March 20, we need two notebooks out of it.</p>
+<p>Stacy-Ann: final paycheck goes out 3/6; Ravenmoor Analytics Group (Ravenmoor) will deduct $240.00 if the monitor is not back by then.</p>
+</main>
+</body>
+</html>

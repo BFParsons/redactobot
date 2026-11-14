@@ -1,0 +1,1417 @@
+{
+  "experiment": "Time to first warning, not completion of redaction",
+  "method": "Eight fictional cases, four strategies, three repetitions, rotating strategy order. Every strategy stops on a match; a no-match result requires processing all chunks. Local rules precede Nano in the hybrid strategy. Whole-text requests measure token usage before inference and fall back to chunks if needed.",
+  "limits": "The tab was hidden during part of this run. Model startup and warning rendering are excluded. Repeated neutral filler is not representative of every document. Clean long controls produce false warnings, so positives on name-bearing long variants are not proof of reliable name detection.",
+  "report": {
+    "version": 4,
+    "experiment": "first-warning-latency",
+    "startedAt": "2026-11-12T17:43:05.658Z",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+    "state": "Finished. Timings and incorrect decisions are shown below.",
+    "hiddenDuringRun": true,
+    "samples": [
+      {
+        "id": "clean-short",
+        "label": "Ordinary request",
+        "expected": false,
+        "words": 12,
+        "results": {
+          "chunks-500": [
+            {
+              "ms": 281,
+              "verdict": "no-match",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "no-match"
+              ],
+              "elapsedMs": 281
+            },
+            {
+              "ms": 287.4,
+              "verdict": "no-match",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "no-match"
+              ],
+              "elapsedMs": 287.4
+            },
+            {
+              "ms": 291.9,
+              "verdict": "no-match",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "no-match"
+              ],
+              "elapsedMs": 291.9
+            }
+          ],
+          "chunks-1000": [
+            {
+              "ms": 281.6,
+              "verdict": "no-match",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "no-match"
+              ],
+              "elapsedMs": 281.6
+            },
+            {
+              "ms": 285.4,
+              "verdict": "no-match",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "no-match"
+              ],
+              "elapsedMs": 285.4
+            },
+            {
+              "ms": 296,
+              "verdict": "no-match",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "no-match"
+              ],
+              "elapsedMs": 296
+            }
+          ],
+          "whole": [
+            {
+              "ms": 283.8,
+              "verdict": "no-match",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "no-match"
+              ],
+              "tokens": 24,
+              "tokenCheckMs": 3.4,
+              "elapsedMs": 283.8
+            },
+            {
+              "ms": 284.1,
+              "verdict": "no-match",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "no-match"
+              ],
+              "tokens": 24,
+              "tokenCheckMs": 3.9,
+              "elapsedMs": 284.1
+            },
+            {
+              "ms": 283.5,
+              "verdict": "no-match",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "no-match"
+              ],
+              "tokens": 24,
+              "tokenCheckMs": 0.2,
+              "elapsedMs": 283.5
+            }
+          ],
+          "rules-first": [
+            {
+              "ms": 321.3,
+              "verdict": "no-match",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "no-match"
+              ],
+              "localMatches": 0,
+              "localMs": 41.9,
+              "tokens": 24,
+              "tokenCheckMs": 0.6,
+              "elapsedMs": 321.3
+            },
+            {
+              "ms": 287,
+              "verdict": "no-match",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "no-match"
+              ],
+              "localMatches": 0,
+              "localMs": 0.5,
+              "tokens": 24,
+              "tokenCheckMs": 3.5,
+              "elapsedMs": 287
+            },
+            {
+              "ms": 282.7,
+              "verdict": "no-match",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "no-match"
+              ],
+              "localMatches": 0,
+              "localMs": 0.5,
+              "tokens": 24,
+              "tokenCheckMs": 0.3,
+              "elapsedMs": 282.7
+            }
+          ]
+        }
+      },
+      {
+        "id": "clean-placeholder",
+        "label": "Already replaced text",
+        "expected": false,
+        "words": 13,
+        "results": {
+          "chunks-500": [
+            {
+              "ms": 289.5,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 289.5,
+              "elapsedMs": 289.5
+            },
+            {
+              "ms": 291,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 291,
+              "elapsedMs": 291
+            },
+            {
+              "ms": 295,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 295,
+              "elapsedMs": 295
+            }
+          ],
+          "chunks-1000": [
+            {
+              "ms": 283.7,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 283.7,
+              "elapsedMs": 283.8
+            },
+            {
+              "ms": 289.2,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 289.2,
+              "elapsedMs": 289.3
+            },
+            {
+              "ms": 294.5,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 294.5,
+              "elapsedMs": 294.6
+            }
+          ],
+          "whole": [
+            {
+              "ms": 287.2,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "tokens": 33,
+              "tokenCheckMs": 0.4,
+              "firstWarningMs": 287.2,
+              "elapsedMs": 287.3
+            },
+            {
+              "ms": 288.7,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "tokens": 33,
+              "tokenCheckMs": 0.2,
+              "firstWarningMs": 288.7,
+              "elapsedMs": 288.7
+            },
+            {
+              "ms": 290.8,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "tokens": 33,
+              "tokenCheckMs": 4,
+              "firstWarningMs": 290.8,
+              "elapsedMs": 290.8
+            }
+          ],
+          "rules-first": [
+            {
+              "ms": 287.6,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "localMatches": 0,
+              "localMs": 0.6,
+              "tokens": 33,
+              "tokenCheckMs": 2.4,
+              "firstWarningMs": 287.6,
+              "elapsedMs": 287.6
+            },
+            {
+              "ms": 289.4,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "localMatches": 0,
+              "localMs": 0.5,
+              "tokens": 33,
+              "tokenCheckMs": 0.3,
+              "firstWarningMs": 289.4,
+              "elapsedMs": 289.5
+            },
+            {
+              "ms": 289.2,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "localMatches": 0,
+              "localMs": 0.5,
+              "tokens": 33,
+              "tokenCheckMs": 3.7,
+              "firstWarningMs": 289.2,
+              "elapsedMs": 289.2
+            }
+          ]
+        }
+      },
+      {
+        "id": "clean-health",
+        "label": "General health question",
+        "expected": false,
+        "words": 18,
+        "results": {
+          "chunks-500": [
+            {
+              "ms": 280.6,
+              "verdict": "no-match",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "no-match"
+              ],
+              "elapsedMs": 280.6
+            },
+            {
+              "ms": 282.6,
+              "verdict": "no-match",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "no-match"
+              ],
+              "elapsedMs": 282.6
+            },
+            {
+              "ms": 284.5,
+              "verdict": "no-match",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "no-match"
+              ],
+              "elapsedMs": 284.5
+            }
+          ],
+          "chunks-1000": [
+            {
+              "ms": 282.4,
+              "verdict": "no-match",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "no-match"
+              ],
+              "elapsedMs": 282.4
+            },
+            {
+              "ms": 279.6,
+              "verdict": "no-match",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "no-match"
+              ],
+              "elapsedMs": 279.6
+            },
+            {
+              "ms": 284.9,
+              "verdict": "no-match",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "no-match"
+              ],
+              "elapsedMs": 284.9
+            }
+          ],
+          "whole": [
+            {
+              "ms": 284.3,
+              "verdict": "no-match",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "no-match"
+              ],
+              "tokens": 31,
+              "tokenCheckMs": 3.5,
+              "elapsedMs": 284.3
+            },
+            {
+              "ms": 283.2,
+              "verdict": "no-match",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "no-match"
+              ],
+              "tokens": 31,
+              "tokenCheckMs": 4,
+              "elapsedMs": 283.2
+            },
+            {
+              "ms": 294.1,
+              "verdict": "no-match",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "no-match"
+              ],
+              "tokens": 31,
+              "tokenCheckMs": 4.3,
+              "elapsedMs": 294.1
+            }
+          ],
+          "rules-first": [
+            {
+              "ms": 0.9,
+              "verdict": "warn",
+              "requests": 0,
+              "completed": 0,
+              "fallback": false,
+              "chunks": [],
+              "localMatches": 1,
+              "localMs": 0.9,
+              "firstWarningMs": 0.9,
+              "elapsedMs": 0.9
+            },
+            {
+              "ms": 0.5,
+              "verdict": "warn",
+              "requests": 0,
+              "completed": 0,
+              "fallback": false,
+              "chunks": [],
+              "localMatches": 1,
+              "localMs": 0.5,
+              "firstWarningMs": 0.5,
+              "elapsedMs": 0.5
+            },
+            {
+              "ms": 0.6,
+              "verdict": "warn",
+              "requests": 0,
+              "completed": 0,
+              "fallback": false,
+              "chunks": [],
+              "localMatches": 1,
+              "localMs": 0.6,
+              "firstWarningMs": 0.6,
+              "elapsedMs": 0.6
+            }
+          ]
+        }
+      },
+      {
+        "id": "late-2000",
+        "label": "2,000 words, sensitive ending",
+        "expected": true,
+        "words": 2000,
+        "results": {
+          "chunks-500": [
+            {
+              "ms": 2300.8,
+              "verdict": "warn",
+              "requests": 4,
+              "completed": 4,
+              "fallback": false,
+              "chunks": [
+                "no-match",
+                "no-match",
+                "no-match",
+                "warn"
+              ],
+              "firstWarningMs": 2300.8,
+              "elapsedMs": 2300.8
+            },
+            {
+              "ms": 573.1,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 573.1,
+              "elapsedMs": 573.1
+            },
+            {
+              "ms": 2346,
+              "verdict": "warn",
+              "requests": 4,
+              "completed": 4,
+              "fallback": false,
+              "chunks": [
+                "no-match",
+                "no-match",
+                "no-match",
+                "warn"
+              ],
+              "firstWarningMs": 2346,
+              "elapsedMs": 2346
+            }
+          ],
+          "chunks-1000": [
+            {
+              "ms": 843.9,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 843.9,
+              "elapsedMs": 843.9
+            },
+            {
+              "ms": 838.2,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 838.2,
+              "elapsedMs": 838.2
+            },
+            {
+              "ms": 849.4,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 849.4,
+              "elapsedMs": 849.4
+            }
+          ],
+          "whole": [
+            {
+              "ms": 1497.8,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "tokens": 2213,
+              "tokenCheckMs": 3.1,
+              "firstWarningMs": 1497.8,
+              "elapsedMs": 1497.8
+            },
+            {
+              "ms": 1495.7,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "tokens": 2213,
+              "tokenCheckMs": 3.6,
+              "firstWarningMs": 1495.7,
+              "elapsedMs": 1495.7
+            },
+            {
+              "ms": 1530.8,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "tokens": 2213,
+              "tokenCheckMs": 4.3,
+              "firstWarningMs": 1530.8,
+              "elapsedMs": 1530.8
+            }
+          ],
+          "rules-first": [
+            {
+              "ms": 22.5,
+              "verdict": "warn",
+              "requests": 0,
+              "completed": 0,
+              "fallback": false,
+              "chunks": [],
+              "localMatches": 2,
+              "localMs": 22.5,
+              "firstWarningMs": 22.5,
+              "elapsedMs": 22.5
+            },
+            {
+              "ms": 20.9,
+              "verdict": "warn",
+              "requests": 0,
+              "completed": 0,
+              "fallback": false,
+              "chunks": [],
+              "localMatches": 2,
+              "localMs": 20.8,
+              "firstWarningMs": 20.9,
+              "elapsedMs": 20.9
+            },
+            {
+              "ms": 20.5,
+              "verdict": "warn",
+              "requests": 0,
+              "completed": 0,
+              "fallback": false,
+              "chunks": [],
+              "localMatches": 2,
+              "localMs": 20.4,
+              "firstWarningMs": 20.5,
+              "elapsedMs": 20.5
+            }
+          ]
+        }
+      },
+      {
+        "id": "clean-2000",
+        "label": "2,000 words, clean",
+        "expected": false,
+        "words": 2000,
+        "results": {
+          "chunks-500": [
+            {
+              "ms": 2289.5,
+              "verdict": "warn",
+              "requests": 4,
+              "completed": 4,
+              "fallback": false,
+              "chunks": [
+                "no-match",
+                "no-match",
+                "no-match",
+                "warn"
+              ],
+              "firstWarningMs": 2289.5,
+              "elapsedMs": 2289.5
+            },
+            {
+              "ms": 1150.3,
+              "verdict": "warn",
+              "requests": 2,
+              "completed": 2,
+              "fallback": false,
+              "chunks": [
+                "no-match",
+                "warn"
+              ],
+              "firstWarningMs": 1150.3,
+              "elapsedMs": 1150.3
+            },
+            {
+              "ms": 2316.5,
+              "verdict": "warn",
+              "requests": 4,
+              "completed": 4,
+              "fallback": false,
+              "chunks": [
+                "no-match",
+                "no-match",
+                "no-match",
+                "warn"
+              ],
+              "firstWarningMs": 2316.5,
+              "elapsedMs": 2316.5
+            }
+          ],
+          "chunks-1000": [
+            {
+              "ms": 837.9,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 837.9,
+              "elapsedMs": 838
+            },
+            {
+              "ms": 834.2,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 834.2,
+              "elapsedMs": 834.2
+            },
+            {
+              "ms": 846.9,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 846.9,
+              "elapsedMs": 846.9
+            }
+          ],
+          "whole": [
+            {
+              "ms": 1501.6,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "tokens": 2207,
+              "tokenCheckMs": 3.2,
+              "firstWarningMs": 1501.6,
+              "elapsedMs": 1501.6
+            },
+            {
+              "ms": 1501.4,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "tokens": 2207,
+              "tokenCheckMs": 3.6,
+              "firstWarningMs": 1501.4,
+              "elapsedMs": 1501.4
+            },
+            {
+              "ms": 1520.3,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "tokens": 2207,
+              "tokenCheckMs": 7.2,
+              "firstWarningMs": 1520.3,
+              "elapsedMs": 1520.3
+            }
+          ],
+          "rules-first": [
+            {
+              "ms": 1503.9,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "localMatches": 0,
+              "localMs": 13.8,
+              "tokens": 2207,
+              "tokenCheckMs": 7.6,
+              "firstWarningMs": 1503.9,
+              "elapsedMs": 1503.9
+            },
+            {
+              "ms": 1506.4,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "localMatches": 0,
+              "localMs": 13.8,
+              "tokens": 2207,
+              "tokenCheckMs": 3,
+              "firstWarningMs": 1506.4,
+              "elapsedMs": 1506.5
+            },
+            {
+              "ms": 1543,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "localMatches": 0,
+              "localMs": 14.6,
+              "tokens": 2207,
+              "tokenCheckMs": 3.1,
+              "firstWarningMs": 1543,
+              "elapsedMs": 1543
+            }
+          ]
+        }
+      },
+      {
+        "id": "name-start-2000",
+        "label": "2,000 words, first name at start",
+        "expected": true,
+        "words": 2000,
+        "results": {
+          "chunks-500": [
+            {
+              "ms": 571.8,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 571.8,
+              "elapsedMs": 571.8
+            },
+            {
+              "ms": 576.7,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 576.7,
+              "elapsedMs": 576.8
+            },
+            {
+              "ms": 580.8,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 580.8,
+              "elapsedMs": 580.8
+            }
+          ],
+          "chunks-1000": [
+            {
+              "ms": 848.2,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 848.2,
+              "elapsedMs": 848.2
+            },
+            {
+              "ms": 838.7,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 838.7,
+              "elapsedMs": 838.7
+            },
+            {
+              "ms": 853.3,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 853.3,
+              "elapsedMs": 853.3
+            }
+          ],
+          "whole": [
+            {
+              "ms": 1497,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "tokens": 2209,
+              "tokenCheckMs": 4,
+              "firstWarningMs": 1497,
+              "elapsedMs": 1497
+            },
+            {
+              "ms": 1506.5,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "tokens": 2209,
+              "tokenCheckMs": 3.9,
+              "firstWarningMs": 1506.5,
+              "elapsedMs": 1506.5
+            },
+            {
+              "ms": 1513.7,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "tokens": 2209,
+              "tokenCheckMs": 6.9,
+              "firstWarningMs": 1513.7,
+              "elapsedMs": 1513.7
+            }
+          ],
+          "rules-first": [
+            {
+              "ms": 1512.5,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "localMatches": 0,
+              "localMs": 13.8,
+              "tokens": 2209,
+              "tokenCheckMs": 3.1,
+              "firstWarningMs": 1512.5,
+              "elapsedMs": 1512.5
+            },
+            {
+              "ms": 1514.8,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "localMatches": 0,
+              "localMs": 13.5,
+              "tokens": 2209,
+              "tokenCheckMs": 3.1,
+              "firstWarningMs": 1514.8,
+              "elapsedMs": 1514.8
+            },
+            {
+              "ms": 1545.6,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "localMatches": 0,
+              "localMs": 13.4,
+              "tokens": 2209,
+              "tokenCheckMs": 8.5,
+              "firstWarningMs": 1545.6,
+              "elapsedMs": 1545.6
+            }
+          ]
+        }
+      },
+      {
+        "id": "name-middle-2000",
+        "label": "2,000 words, first name in middle",
+        "expected": true,
+        "words": 2000,
+        "results": {
+          "chunks-500": [
+            {
+              "ms": 575,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 575,
+              "elapsedMs": 575
+            },
+            {
+              "ms": 586,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 586,
+              "elapsedMs": 586
+            },
+            {
+              "ms": 583.9,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 583.9,
+              "elapsedMs": 584
+            }
+          ],
+          "chunks-1000": [
+            {
+              "ms": 836.1,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 836.1,
+              "elapsedMs": 836.1
+            },
+            {
+              "ms": 861.5,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 861.5,
+              "elapsedMs": 861.5
+            },
+            {
+              "ms": 848.7,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 848.7,
+              "elapsedMs": 848.7
+            }
+          ],
+          "whole": [
+            {
+              "ms": 1502,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "tokens": 2209,
+              "tokenCheckMs": 3.9,
+              "firstWarningMs": 1502,
+              "elapsedMs": 1502
+            },
+            {
+              "ms": 1513.8,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "tokens": 2209,
+              "tokenCheckMs": 2.9,
+              "firstWarningMs": 1513.8,
+              "elapsedMs": 1513.9
+            },
+            {
+              "ms": 1510.7,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "tokens": 2209,
+              "tokenCheckMs": 4.3,
+              "firstWarningMs": 1510.7,
+              "elapsedMs": 1510.7
+            }
+          ],
+          "rules-first": [
+            {
+              "ms": 1551.4,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "localMatches": 0,
+              "localMs": 57.1,
+              "tokens": 2209,
+              "tokenCheckMs": 3.4,
+              "firstWarningMs": 1551.4,
+              "elapsedMs": 1551.5
+            },
+            {
+              "ms": 1510.9,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "localMatches": 0,
+              "localMs": 13.9,
+              "tokens": 2209,
+              "tokenCheckMs": 3.2,
+              "firstWarningMs": 1510.9,
+              "elapsedMs": 1510.9
+            },
+            {
+              "ms": 1523.5,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "localMatches": 0,
+              "localMs": 13.8,
+              "tokens": 2209,
+              "tokenCheckMs": 3.2,
+              "firstWarningMs": 1523.5,
+              "elapsedMs": 1523.6
+            }
+          ]
+        }
+      },
+      {
+        "id": "name-end-2000",
+        "label": "2,000 words, first name at end",
+        "expected": true,
+        "words": 2000,
+        "results": {
+          "chunks-500": [
+            {
+              "ms": 2314.3,
+              "verdict": "warn",
+              "requests": 4,
+              "completed": 4,
+              "fallback": false,
+              "chunks": [
+                "no-match",
+                "no-match",
+                "no-match",
+                "warn"
+              ],
+              "firstWarningMs": 2314.3,
+              "elapsedMs": 2314.3
+            },
+            {
+              "ms": 3068.1,
+              "verdict": "warn",
+              "requests": 5,
+              "completed": 5,
+              "fallback": false,
+              "chunks": [
+                "no-match",
+                "no-match",
+                "no-match",
+                "no-match",
+                "warn"
+              ],
+              "firstWarningMs": 3068.1,
+              "elapsedMs": 3068.1
+            },
+            {
+              "ms": 579.8,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 579.8,
+              "elapsedMs": 579.8
+            }
+          ],
+          "chunks-1000": [
+            {
+              "ms": 843.2,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 843.2,
+              "elapsedMs": 843.2
+            },
+            {
+              "ms": 856,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 856,
+              "elapsedMs": 856
+            },
+            {
+              "ms": 850.4,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "firstWarningMs": 850.4,
+              "elapsedMs": 850.5
+            }
+          ],
+          "whole": [
+            {
+              "ms": 1496.8,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "tokens": 2207,
+              "tokenCheckMs": 3.1,
+              "firstWarningMs": 1496.8,
+              "elapsedMs": 1496.9
+            },
+            {
+              "ms": 1697.6,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "tokens": 2207,
+              "tokenCheckMs": 3,
+              "firstWarningMs": 1697.6,
+              "elapsedMs": 1697.6
+            },
+            {
+              "ms": 1507.5,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "tokens": 2207,
+              "tokenCheckMs": 5.7,
+              "firstWarningMs": 1507.5,
+              "elapsedMs": 1507.6
+            }
+          ],
+          "rules-first": [
+            {
+              "ms": 1504,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "localMatches": 0,
+              "localMs": 14,
+              "tokens": 2207,
+              "tokenCheckMs": 3.2,
+              "firstWarningMs": 1504,
+              "elapsedMs": 1504.1
+            },
+            {
+              "ms": 1551.7,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "localMatches": 0,
+              "localMs": 21.4,
+              "tokens": 2207,
+              "tokenCheckMs": 3,
+              "firstWarningMs": 1551.7,
+              "elapsedMs": 1551.7
+            },
+            {
+              "ms": 1519.7,
+              "verdict": "warn",
+              "requests": 1,
+              "completed": 1,
+              "fallback": false,
+              "chunks": [
+                "warn"
+              ],
+              "localMatches": 0,
+              "localMs": 13.8,
+              "tokens": 2207,
+              "tokenCheckMs": 3,
+              "firstWarningMs": 1519.7,
+              "elapsedMs": 1519.7
+            }
+          ]
+        }
+      }
+    ],
+    "createMs": 445.5,
+    "contextWindow": 9216,
+    "contextUsage": 142
+  }
+}

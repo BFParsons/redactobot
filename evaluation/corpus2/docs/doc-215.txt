@@ -1,0 +1,55 @@
+KINGFISHER ARCHITECTURAL GLASS, LLC
+INTERNAL MEMO - ACCOUNTING
+
+TO:      Alasdair McKendrick, CFO
+FROM:    Renata Vukovic, Controller
+CC:      Bo-ra Seong (AP)
+DATE:    April 9, 2026
+RE:      March P-card reconciliation - Stonebridge program, stmt closing 3/28
+
+Al -
+
+Recon for the March cycle is done except for the items below. Program acct w/ Stonebridge Commercial Card Services
+is 5512-88-004417; statement total $48,216.09, tied to GL 2150 after two reclass entries
+(JE-0326-14 and JE-0326-15).
+
+CARDS IN THE PROGRAM
+  Holder               Card          Limit     March        Receipts in Expensify?
+  A. McKendrick        MC ...5348    25,000    6,114.20     all
+  T. Eastman           MC ...6981    10,000    11,902.77    missing 3
+  Guadalupe Valdez     MC ...5194    7,500     4,280.00     all
+  H. Fitzgerald        MC ...7290    7,500     2,871.46     none - see #2
+  (ghost card - AP)    MC ...0031    50,000    23,047.66    n/a, vendor pays only
+
+1. Over limit. Terrence Eastman went $1,902.77 over on the Scottsdale install. Mirabelle Resort Scottsdale
+   folio HM-448120, 6 nights 3/8 to 3/14, $2,346.18 incl. $312 minibar/spa
+   that I've coded to employee receivable. Terry doesn't dispute it.
+
+2. Terminated holder. Hank Fitzgerald was let go March 6 (HR tells me it was a failed post-accident drug screen
+   - please keep that between us). Card ...7290 was not shut off until 3/19.
+   Charges after his last day: $640.12 at a Tucson tire shop 3/10; $1,188.00 to
+   Roadrunner Crating Co. on 3/12 (legit - crates for job KAG-2611); and $203.34 gas and food.
+   Sent a demand letter 4/2 to his last address, 9142 N. Camino del Fierro, Tucson AZ 85742.
+   He called back from 520-555-0198 and says take the 843.46 out of his final commission check.
+
+3. Disputed charge. $4,875.00 from Vetro Tempering Supply posted twice (03/17 and 03/18) on
+   Lupe's card. Dispute filed, case SCC-DSP-7730291; provisional credit expected by April 24.
+   Vetro's AR contact, Ilse Brandtner, confirms the duplicate on their side (inv VT-20318).
+
+4. Card-not-present fraud - your card. Three charges on 3/22 from an online electronics seller totalling
+   $1,611.93. Stonebridge closed 5348 and is reissuing. FYI when I called they read the whole old number
+   back to me to confirm - 5512 6579 8878 5348, exp 04/27 - and I wrote it on the call sheet, which
+   I have since shredded. New card ends 8545, exp 04/29. Fraud claim FR-26-0098812.
+
+5. Amex. The old corporate Amex (x-09827) in Bo-ra's name still gets a $95 annual fee
+   every March. OK to close? Need your signature, since you are the only remaining officer on the account.
+
+ACTION
+- Alasdair: sign the dispute affidavit by Friday 4/17.
+- Me: reclass the Eastman receivable; payroll deduction of $156.00 x 2 starting 4/24.
+- Seong: pull NetSuite vendor history on Roadrunner.
+
+Autopay drafts on 4/22 from the operating acct ...2206 at Copperfield Bank of Arizona.
+
+- RV
+rvukovic@kingfisherglass.example | direct 480-555-0115

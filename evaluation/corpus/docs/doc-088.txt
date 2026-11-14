@@ -1,0 +1,39 @@
+Kowalczyk & Farrow CPAs, LLC                     2025 TAX ORGANIZER -- RENTAL REAL ESTATE (Schedule E)
+Client no. C-10447                              Preparer: B. Kowalczyk   Reviewer: IF
+
+TAXPAYER    Santos de Oliveira, Rafael      SSN 502-39-8615     DOB 11/02/1971
+SPOUSE      Santos, Mei-Ling                SSN 461261522       DOB 2 Feb 1974
+Home        18 Wappoo Creek Place, Charleston, SC 29412
+Phone       843 555 0177 (R)   843-555-0102 (M-L)      Email rafa.santos@santosrentals.example
+
+Properties are held in Santos Family Rentals LLC (disregarded; EIN 47-2290618) unless noted.
+
+PROPERTY A -- 212-B Ashley Avenue, Charleston 29403? (client wrote 29403, deed says 29401)
+  Type: duplex, both units long-term        Placed in service: 06/15/2014      Basis (bldg): $418,000
+  Rents received ........................ 52,800
+  Mgmt fees (Palmetto Coastal Property Management) ........ 5,280
+  Mortgage int. (Form 1098, Lowcountry Federal Savings Bank, loan #0091-447820) ... 9,611.48
+  Property tax .......................... 6,940
+  Insurance ............................. 4,125
+  Repairs -- see note 1 ................. 23,750
+  Depreciation (27.5 yrs, Form 4562) .... computed by firm
+
+PROPERTY B -- 9 Egret Landing Ct, Unit 304, Folly Beach, SC 29439   (held personally, NOT in the LLC)
+  Type: condo, short-term (avg stay 4 nights)    Personal use days: 19     Rented days: 141
+  Gross bookings ........................ 71,366.20
+  Platform fees ......................... 10,704.93
+  Cleaning (Darnell Whitlock, paid by Zelle -- 1099? see note 2) .... 8,460
+  HOA ................................... 7,200
+
+NOTES FROM CLIENT CALL 1/29/26
+1. Roof on A replaced after the storm. Sea Island Roofing & Sheet Metal inv. #SI-8821 dated
+   Sept. 9, 2025, $23,750.00. Insurance paid $15,000 of it in January 2026. Repair vs improvement?
+   Whole roof = improvement in my view. Ask Ignatius.
+2. Rafael paid Whitlock more than the threshold and has no W-9. Mr. Whitlock "doesn't do paperwork."
+   Told Rafael to get it or we back-up withhold going forward. Whitlock cell per Rafael: (843) 555-0190.
+3. Mei-Ling qualifies as a real estate professional? She says 900+ hrs but also works 30 hrs/wk
+   as a dental hygienist. Not on these facts. Passive loss limits apply (Form 8582).
+4. Refund direct deposit: Lowcountry Federal checking, routing 053255064, account 20 4471 08836.
+5. Our fee ($1,650) to the card on file: Mastercard 5577-4144-8335-0067, exp. 04/27, code 339.
+   (Moved to the vault 2/3; shred this line.)
+6. Estimated payments made: 4/15 $3,000; 6/16 $3,000; 9/15 $3,000; 1/15/26 $4,500.

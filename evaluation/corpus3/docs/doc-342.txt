@@ -1,0 +1,54 @@
+MEDICAL CHRONOLOGY - ATTORNEY WORK PRODUCT
+Prepared for: Tucker Royce, Royce & Maldonado-Byrd, LLP            Firm file: RMB-24-0612
+Prepared by: Gwendolyn Spratt, RN, BSN, LNCC, Spratt Legal Nurse Consulting     Draft 2, 11/09/2025
+Patient: APPLEWHITE, Vernon L.     DOB: 4/18/1967     MRN (Saint Agnes): SA-00771209
+Records reviewed: Saint Agnes ED and inpatient (Bates APP-SA-000001 to APP-SA-000412); EMS run report; Wabash Valley Neurology Group; Sugar Creek Rehabilitation Hospital; pharmacy; employer file.
+
+BACKGROUND
+Mr. Applewhite, 57 at the time, a long-haul driver. Known history per primary care: hypertension, poorly controlled; atrial fibrillation diagnosed 2022, prescribed apixaban; type 2 diabetes; smoker, one pack a day. Pharmacy fill history shows no apixaban refill after November 2023 (he told his wife it cost too much after he lost insurance).
+
+DATE / TIME        SOURCE (BATES)        EVENT                                                    COMMENT
+-----------------------------------------------------------------------------------------------------------------
+03/09/2024  21:47   EMS run report        Wife, Deborah Applewhite, calls 911 from home,              Onset time documented by EMS
+                   (APP-EMS-0003)        1127 Vigo Street, Terre Haute IN. "Dizzy, can't walk               as "approx 21:15." This is
+                                         straight, threw up twice." BP 198/112. Glucose 164.                the only clear onset time.
+03/09/2024  22:31   ED triage             Triage RN Kristof Nagy. Chief complaint entered as              No stroke scale done at
+                   (APP-SA-000014)       "vertigo / N&V." Triage level 3. No NIHSS recorded.                triage. Policy requires one.
+03/09/2024  23:40   ED physician note     Dr. Cyrus Tehrani. Exam: "nystagmus, unsteady gait, no             Did not document finger-to-
+                   (APP-SA-000019-22)    focal weakness." Impression: peripheral vertigo.                   nose, speech, or visual
+                                         Orders: meclizine, ondansetron, IV fluids. CT head ordered.        fields. A-fib not mentioned.
+3/10/24     00:52   Radiology             CT head without contrast: "no acute intracranial                   CT is insensitive for
+                   (APP-SA-000031)       abnormality." No CTA or MRI ordered.                               posterior strokes.
+3/10/24     02:15   ED nursing note       "Pt states room still spinning, c/o double vision."                 NEW SYMPTOM. Not relayed to
+                   (APP-SA-000027)       RN Nagy. No physician notified per the record.                the physician per the chart.
+3/10/24     03:05   Discharge             Discharged home with meclizine. Dx: vertigo (not coded as          Discharged 5 h 50 min after
+                   (APP-SA-000033)       stroke). Instructions: follow up with PCP in 3 days.               onset; inside any extended
+                                         Mrs. Applewhite signed; pt "too dizzy to sign."                  window for evaluation.
+March 10, 2024  11:20   EMS / ED (second visit)   Found on bathroom floor by wife. Slurred speech, left facial droop, cannot swallow.
+                   (APP-SA-000040)       NIHSS 14 on arrival. 17 hours after first triage.
+3/10/24     12:02   MRI brain             Acute infarct, left cerebellum and lateral medulla; basilar artery thrombus.
+                   (APP-SA-000058)       Posterior circulation stroke. ICD-10 I63.9 used.
+3/10/24     12:40   Neurology consult     Dr. Folasade Akintola (Wabash Valley Neurology). "Outside            Her note is the key
+                   (APP-SA-000061-64)    t-PA window.         causation document.
+                                         Presentation last night was, in retrospect, a posterior circulation event." Transferred to ICU.
+3/10 - 3/29/24      Inpatient             ICU 6 days. PEG tube placed 3/14. Aspiration pneumonia 3/17.      19-day admission. Charges
+                   (APP-SA-000070-398)   Speech, PT, OT daily.                                              $214,880.16.
+29 Mar 2024 -       Sugar Creek Rehab   Inpatient rehabilitation under Dr. Marguerite Duchesne.              Rehab charges $96,412.00.
+May 17, 2024       (APP-SC-0001-0220)    Discharge status: 
+                                         wheelchair for distance, walker in home, pureed diet, persistent double vision, left-sided ataxia.
+Sept. 2024          Neurology follow-up   Dr. Akintola: "plateaued." Depression, started sertraline.          Permanent restrictions.
+                   (APP-WV-0012)         Cannot return to commercial driving; CDL medical card
+                                         surrendered.
+10/2024            Employer file         Terminated after exhausting leave. Last gross annual pay           Lost earnings base.
+                                         $71,340. Applied for SSDI; awarded effective September 2024,
+                                         $2,214 per month.
+
+NURSE CONSULTANT'S OBSERVATIONS (not opinions on the standard of care)
+1. No stroke scale at either triage or physician evaluation on the first visit, despite vomiting, gait instability, severe hypertension and a charted history of atrial fibrillation in the hospital's own prior records (visit of 8/2/2022, APP-SA-000405).
+2. The 02:15 nursing note of new double vision was not escalated. Mr. Nagy was a travel nurse on his third shift at the facility; ask for his orientation file.
+3. Dr. Tehrani was covering the ED alone with 31 patients on the board at 23:00 per the tracking log (APP-SA-000409).
+4. Defense will raise the stopped apixaban and the smoking. Note also one prior ED visit (12/31/2023) where the chart records "ETOH on breath"; nothing similar on 3/9.
+5. Missing: audit trail for the triage record; I count two edits on 3/10 after the second arrival. Request metadata.
+
+Client contact for questions on home care: Deborah, 812-555-0146 (she works nights at the candle factory; call before 2 pm).
+Invoice for this draft: 14.5 hours at $165 = $2,392.50.   G. Spratt

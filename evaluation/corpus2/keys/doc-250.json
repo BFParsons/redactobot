@@ -1,0 +1,243 @@
+{
+ "id": "doc-250",
+ "file": "docs/doc-250.eml",
+ "format": "eml",
+ "title": "Settlement payout wire instructions",
+ "doc_type": "settlement wire instructions email",
+ "audience": "legal",
+ "jurisdiction": "US",
+ "word_count": 68,
+ "items": [
+  {
+   "value": "Ludmila Hrabovska",
+   "category": "person_name",
+   "subtype": "full name",
+   "occurrences": 1,
+   "entity": "p2",
+   "canonical": "Ludmila Hrabovska",
+   "variant": "full",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "lhrabovska@hrabovskatrial.example",
+   "category": "email",
+   "subtype": "email",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "direct contact detail"
+  },
+  {
+   "value": "Clementine Faucheux",
+   "category": "person_name",
+   "subtype": "full name",
+   "occurrences": 1,
+   "entity": "p3",
+   "canonical": "Clementine Faucheux",
+   "variant": "full",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "c.faucheux@harlowindemnity.example",
+   "category": "email",
+   "subtype": "email",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "direct contact detail"
+  },
+  {
+   "value": "Okwudili",
+   "category": "person_name",
+   "subtype": "surname only",
+   "occurrences": 1,
+   "entity": "p1",
+   "canonical": "Ignatius Okwudili",
+   "variant": "surname",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "HI-2025-338104",
+   "category": "record_number",
+   "subtype": "claim number",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "record identifier that links to a person or matter"
+  },
+  {
+   "value": "11 Aug 2026",
+   "category": "date",
+   "subtype": "email date",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "date tied to a person or matter"
+  },
+  {
+   "value": "Clementine",
+   "category": "person_name",
+   "subtype": "first name only",
+   "occurrences": 1,
+   "entity": "p3",
+   "canonical": "Clementine Faucheux",
+   "variant": "first-name",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "$237,500.00",
+   "category": "money_amount",
+   "subtype": "money amount",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "confidential financial detail"
+  },
+  {
+   "value": "Aug. 21",
+   "category": "date",
+   "subtype": "abbreviated date without year",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "date tied to a person or matter"
+  },
+  {
+   "value": "Hrabovska Trial Lawyers, APC",
+   "category": "organization_name",
+   "subtype": "full name",
+   "occurrences": 1,
+   "entity": "o1",
+   "canonical": "Hrabovska Trial Lawyers, APC",
+   "variant": "full",
+   "difficulty": "standard",
+   "why": "identifies a client, party or organization"
+  },
+  {
+   "value": "Ignatius Okwudili",
+   "category": "person_name",
+   "subtype": "full name",
+   "occurrences": 1,
+   "entity": "p1",
+   "canonical": "Ignatius Okwudili",
+   "variant": "full",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "Queensway Harbor Bank",
+   "category": "organization_name",
+   "subtype": "full name",
+   "occurrences": 1,
+   "entity": "o2",
+   "canonical": "Queensway Harbor Bank",
+   "variant": "full",
+   "difficulty": "standard",
+   "why": "identifies a client, party or organization"
+  },
+  {
+   "value": "Long Beach",
+   "category": "place",
+   "subtype": "city name made of common words",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "locates the person or matter"
+  },
+  {
+   "value": "033783611",
+   "category": "routing_number",
+   "subtype": "routing number",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "bank identifier tied to an account"
+  },
+  {
+   "value": "5520 0417 7366",
+   "category": "bank_account",
+   "subtype": "account number with spaces",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "financial account identifier"
+  },
+  {
+   "value": "STL-24-0932",
+   "category": "record_number",
+   "subtype": "firm matter number",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "record identifier that links to a person or matter"
+  },
+  {
+   "value": "562-555-0115",
+   "category": "phone",
+   "subtype": "phone",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "direct contact detail"
+  },
+  {
+   "value": "Ludmila",
+   "category": "person_name",
+   "subtype": "first name only",
+   "occurrences": 1,
+   "entity": "p2",
+   "canonical": "Ludmila Hrabovska",
+   "variant": "first-name",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  }
+ ],
+ "distractors": [
+  "IOLTA",
+  "Fedwire"
+ ],
+ "reviewed_not_sensitive": [
+  "0700",
+  "16:42:07",
+  "ABA",
+  "Account",
+  "Bank",
+  "Call",
+  "Date",
+  "From",
+  "Never",
+  "Payee",
+  "Please",
+  "Ref",
+  "Signed",
+  "Subject",
+  "To",
+  "Tue"
+ ]
+}

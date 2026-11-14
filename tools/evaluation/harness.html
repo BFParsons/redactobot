@@ -1,0 +1,15 @@
+<!doctype html>
+<!--
+  Copyright 2026 The Redactobot Authors
+  SPDX-License-Identifier: Apache-2.0
+-->
+<html lang="en">
+<head><meta charset="utf-8"><title>Evaluation harness</title></head>
+<body style="font:14px system-ui;margin:24px">
+  <h1>Evaluation harness</h1>
+  <p>Driven by <code>tools/evaluation/run_eval.py</code>. Runs documents through the app's own import and
+     detection code. Nothing is sent anywhere.</p>
+  <button id="prepare">Load on-device model</button> <span id="state">idle</span>
+  <script type="module" src="/src/eval-harness.ts"></script>
+</body>
+</html>

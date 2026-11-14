@@ -1,0 +1,55 @@
+PALLISER PLAINS INSURANCE BROKERS INC.
+4914 50 Street, Ponoka AB  T4J 1S1     ph 403-555-0157   fx 403-555-0158
+
+COMMERCIAL AUTO - RENEWAL SUBMISSION                         prepared 2026-08-19
+Named Insured:  Wolf Creek Aggregates & Hauling Ltd. ("WCAH")
+                RR 2, Site 6, Box 14, Lacombe County AB T4L 2N2
+                GST/BN 84417 2093 RT0001   NSC no. AB417-882
+Insurer:        Athabasca Mutual Insurance Company     Policy AMC-CA-7714062
+Eff.:           Oct 1/26 to Oct 1/27      Broker of record: Leanne Poitras (lpoitras@palliserplains.example)
+Expiring premium C$63,480; renewal quote $71,915.00 (+13.3%), monthly plan 5,992.92 x 12.
+
+VEHICLE SCHEDULE
+Unit  Yr   Make/Model          Plate      VIN                  GVW kg   ACV        Lienholder
+U-01  2022 Kenworth T880       CJL-4471   1NKZXPTX4NJ418827    63,500   $214,000   Battle River Equipment Finance Corp.
+U-02  2019 Peterbilt 567       BVR-9026   1XPCD40X5KD604413    63,500   $141,500   Battle River (contract BR-221-04418)
+U-03  2017 Western Star 4900   E88 417    5KKHAVDV7HPJA2290    63,500   $88,000    none
+U-04  2023 Ford F-350 pickup   CMN-0182   1FT8W3BT1PEC71904    5,200    $79,900    none
+U-05  2015 tri-axle end dump   5RT 6610   2M9D3T339FA041778    -        $31,000    none
+T-11  2021 Midland pup trailer 6LC 4093   2M9P2S228MA118365    -        $46,250    none
+Garaging: the yard at the address above; U-04 goes home with the owner to
+5207 Woodland Road, Lacombe. Radius 160 km, gravel and asphalt haul, central Alberta,
+some runs to Lloydminster. No U.S. exposure, no IRP.
+Coverage: liability 2M all units; collision ded. $5,000 tractors / $1,000 pickup; comp
+$2,500. Underwriter wants liability raised to $5 million for the Hwy 2 work.
+
+DRIVER LIST (Commercial Driver Abstracts pulled Aug. 14, 2026)
+1. LAGACÉ, Dwayne R.   owner   DOB 1968-04-09   Lic. 148392-771  Class 1, 31 yrs
+   Clean abstract. Type 2 diabetes, insulin since 2023 - medical filed with the registry
+   March 2026, next due 2027.
+2. Sidhu-Mann, Harpreet   DOB 22-Jun-1991   Lic. 160027-418  Class 1, 9 yrs
+   1 speeding, Traffic Safety Act s. 115(2)(p), 11 Feb 2025, 3 demerits.
+3. Cardinal, Tyrell J.   DOB 03/12/1999   Lic. 171884-203  Class 3, GDL exit 2019
+   At-fault loss Jan 22, 2026, U-03 backed into a loader at the Gull Lake pit,
+   claim AMC-26-0044187, paid $18,640.17 (repair at Ponoka Truck & Trailer Repair,
+   invoice PT-9917). Roadside suspension, 3 days, July 2024 - personal vehicle.
+   Insurer will rate him as Class 3 only, not to drive the B-train.
+4. Hrynkiw, Bogdan   DOB 1957-11-28   Lic. 102256-930  Class 1, 40+ yrs
+   Impaired driving conviction, Criminal Code s. 320.14, 2021 (personal vehicle); licence reinstated
+   14 Sept 2022 with interlock, removed 2023. EXCLUDED DRIVER endorsement signed 2025-09-30
+   - he works the scale house only. Bogdan is the dispatcher's father.
+5. Makokis, Curtis   DOB 07 Jan 1985   Lic. 155610-774  Class 1, 12 yrs
+   Clean. Hired May 4/26. Lives on Samson Cree Nation; mailing address
+   Box 219, Maskwacis AB T0C 1N0.
+Not a driver: Oksana Hrynkiw, dispatcher / office, 403-555-0122, oksana@wolfcreekhauling.example.
+She has the fleet card file: fuel cards are in the company's name, but the shop Visa
+ending 0415 is in Dwayne's own name (limit $15,000).
+
+Notes for underwriter:
+- Carrier Profile R-Factor 0.412, Safety Fitness Certificate SFC-0098142, last CVSA
+  inspection June 9, no out-of-service.
+- Telematics in U-01 and U-02 only (units GT-7C41A9, GT-7C41B2).
+- Mr. Lagacé asked whether excluding Tyrell from the tractors lowers the premium; quote both ways.
+- Pre-authorized debit: transit 08829, inst. 219, acct 1004417 at the credit union
+  in Lacombe. Void cheque on file. Signed application needed back by Sept. 12.
+                                                             - LP

@@ -1,0 +1,86 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "import", "oxc"],
+  "categories": {
+    "correctness": "error"
+  },
+  "rules": {
+    "curly": ["error", "multi-line", "consistent"],
+    "default-case": "error",
+    "eqeqeq": [
+      "error",
+      "always",
+      {
+        "null": "ignore"
+      }
+    ],
+    "guard-for-in": "error",
+    "no-array-constructor": "error",
+    "no-debugger": "error",
+    "no-empty": [
+      "error",
+      {
+        "allowEmptyCatch": false
+      }
+    ],
+    "no-eval": "error",
+    "no-new-wrappers": "error",
+    "no-throw-literal": "error",
+    "no-var": "error",
+    "prefer-const": "error",
+    "import/no-default-export": "error",
+    "import/no-duplicates": "error",
+    "typescript/array-type": [
+      "error",
+      {
+        "default": "array-simple"
+      }
+    ],
+    "typescript/ban-ts-comment": "error",
+    "typescript/consistent-type-assertions": "error",
+    "typescript/consistent-type-definitions": ["error", "interface"],
+    "typescript/consistent-type-imports": "error",
+    "typescript/no-explicit-any": "error",
+    "typescript/no-namespace": "error",
+    "typescript/no-non-null-assertion": "off",
+    "typescript/no-require-imports": "error",
+    "one-var": ["error", "never"],
+    "no-multi-assign": "error"
+  },
+  "overrides": [
+    {
+      "files": ["vite.config.ts", "tools/evaluation/vite.*.config.ts"],
+      "rules": {
+        "import/no-default-export": "off"
+      }
+    },
+    {
+      "files": [
+        "**/*.test.ts",
+        "**/*.test.mjs",
+        "tests/**",
+        "src/speed-bench.ts",
+        "src/paste-benchmark.ts",
+        "src/paste-probe.ts",
+        "src/paste-strategies.ts",
+        "src/eval-harness.ts",
+        "src/desktop-corpus.ts",
+        "tools/**"
+      ],
+      "rules": {
+        "typescript/no-explicit-any": "off"
+      }
+    }
+  ],
+  "ignorePatterns": [
+    "node_modules/",
+    "dist/",
+    "public/",
+    "extension/build/",
+    "tests/e2e/.build/",
+    "/evaluation/",
+    "src/core/given-names-ssa.ts",
+    "taxonomy/places-data.js",
+    "taxonomy/accuracy.js"
+  ]
+}

@@ -1,0 +1,6991 @@
+{
+  "1": {
+    "sourceHash": "1634c2f9d8e22641c5c5054bb9d3e36a2cd07916fb964b082196b58549d3ce57",
+    "baselineDifferences": 0,
+    "variants": {
+      "baseline": {
+        "documents": 100,
+        "core": {
+          "caught": 5770,
+          "partial": 1,
+          "missed": 1,
+          "lost": 0,
+          "total": 5772
+        },
+        "extended": {
+          "caught": 6424,
+          "partial": 1,
+          "missed": 1,
+          "lost": 0,
+          "total": 6426
+        },
+        "legacy_core": {
+          "caught": 5771,
+          "partial": 1,
+          "missed": 0,
+          "lost": 0,
+          "total": 5772
+        },
+        "by_category": {
+          "url": {
+            "caught": 31,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 31
+          },
+          "email": {
+            "caught": 152,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 152
+          },
+          "street_address": {
+            "caught": 150,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 150
+          },
+          "organization_name": {
+            "caught": 757,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 758
+          },
+          "sensitive_attribute": {
+            "caught": 4,
+            "partial": 31,
+            "missed": 112,
+            "lost": 0,
+            "total": 147
+          },
+          "person_name": {
+            "caught": 1570,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1571
+          },
+          "health_info": {
+            "caught": 4,
+            "partial": 15,
+            "missed": 298,
+            "lost": 0,
+            "total": 317
+          },
+          "vehicle_id": {
+            "caught": 60,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 60
+          },
+          "phone": {
+            "caught": 243,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 243
+          },
+          "record_number": {
+            "caught": 384,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 384
+          },
+          "date_of_birth": {
+            "caught": 91,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 91
+          },
+          "date": {
+            "caught": 708,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 708
+          },
+          "place": {
+            "caught": 527,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 527
+          },
+          "indirect_identifier": {
+            "caught": 5,
+            "partial": 26,
+            "missed": 76,
+            "lost": 0,
+            "total": 107
+          },
+          "money_amount": {
+            "caught": 899,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 899
+          },
+          "ssn": {
+            "caught": 62,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 62
+          },
+          "bank_account": {
+            "caught": 119,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 119
+          },
+          "postal_code": {
+            "caught": 136,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 136
+          },
+          "payment_card": {
+            "caught": 70,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 70
+          },
+          "credential": {
+            "caught": 72,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 72
+          },
+          "routing_number": {
+            "caught": 45,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 45
+          },
+          "government_id": {
+            "caught": 99,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 99
+          },
+          "device_id": {
+            "caught": 55,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 55
+          },
+          "age_over_89": {
+            "caught": 20,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 20
+          },
+          "ip_address": {
+            "caught": 33,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 33
+          },
+          "card_expiry": {
+            "caught": 21,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 21
+          },
+          "card_security_code": {
+            "caught": 16,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 16
+          },
+          "tax_id": {
+            "caught": 84,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 84
+          },
+          "iban": {
+            "caught": 20,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 20
+          }
+        },
+        "by_subtype": {
+          "indirect_identifier/confidential one-off transaction": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          }
+        },
+        "whole_core": 98,
+        "whole_extended": 98,
+        "extra": 276,
+        "detections": 6760,
+        "distractor_hits": 65,
+        "excess_chars": 3184,
+        "recovered_core": 0,
+        "regressed_core": 0,
+        "improved_core_documents": 0,
+        "core_delta_95pct_pp": [
+          0.0,
+          0.0
+        ],
+        "core_recall": 99.96534996534997,
+        "extra_rate": 4.0828402366863905
+      },
+      "trust-model": {
+        "documents": 100,
+        "core": {
+          "caught": 5770,
+          "partial": 1,
+          "missed": 1,
+          "lost": 0,
+          "total": 5772
+        },
+        "extended": {
+          "caught": 6424,
+          "partial": 1,
+          "missed": 1,
+          "lost": 0,
+          "total": 6426
+        },
+        "legacy_core": {
+          "caught": 5771,
+          "partial": 1,
+          "missed": 0,
+          "lost": 0,
+          "total": 5772
+        },
+        "by_category": {
+          "url": {
+            "caught": 31,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 31
+          },
+          "email": {
+            "caught": 152,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 152
+          },
+          "street_address": {
+            "caught": 150,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 150
+          },
+          "organization_name": {
+            "caught": 757,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 758
+          },
+          "sensitive_attribute": {
+            "caught": 4,
+            "partial": 31,
+            "missed": 112,
+            "lost": 0,
+            "total": 147
+          },
+          "person_name": {
+            "caught": 1570,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1571
+          },
+          "health_info": {
+            "caught": 4,
+            "partial": 15,
+            "missed": 298,
+            "lost": 0,
+            "total": 317
+          },
+          "vehicle_id": {
+            "caught": 60,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 60
+          },
+          "phone": {
+            "caught": 243,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 243
+          },
+          "record_number": {
+            "caught": 384,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 384
+          },
+          "date_of_birth": {
+            "caught": 91,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 91
+          },
+          "date": {
+            "caught": 708,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 708
+          },
+          "place": {
+            "caught": 527,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 527
+          },
+          "indirect_identifier": {
+            "caught": 5,
+            "partial": 27,
+            "missed": 75,
+            "lost": 0,
+            "total": 107
+          },
+          "money_amount": {
+            "caught": 899,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 899
+          },
+          "ssn": {
+            "caught": 62,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 62
+          },
+          "bank_account": {
+            "caught": 119,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 119
+          },
+          "postal_code": {
+            "caught": 136,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 136
+          },
+          "payment_card": {
+            "caught": 70,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 70
+          },
+          "credential": {
+            "caught": 72,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 72
+          },
+          "routing_number": {
+            "caught": 45,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 45
+          },
+          "government_id": {
+            "caught": 99,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 99
+          },
+          "device_id": {
+            "caught": 55,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 55
+          },
+          "age_over_89": {
+            "caught": 20,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 20
+          },
+          "ip_address": {
+            "caught": 33,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 33
+          },
+          "card_expiry": {
+            "caught": 21,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 21
+          },
+          "card_security_code": {
+            "caught": 16,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 16
+          },
+          "tax_id": {
+            "caught": 84,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 84
+          },
+          "iban": {
+            "caught": 20,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 20
+          }
+        },
+        "by_subtype": {
+          "indirect_identifier/confidential one-off transaction": {
+            "caught": 0,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          }
+        },
+        "whole_core": 98,
+        "whole_extended": 98,
+        "extra": 353,
+        "detections": 6841,
+        "distractor_hits": 78,
+        "excess_chars": 3755,
+        "recovered_core": 0,
+        "regressed_core": 0,
+        "improved_core_documents": 0,
+        "core_delta_95pct_pp": [
+          0.0,
+          0.0
+        ],
+        "core_recall": 99.96534996534997,
+        "extra_rate": 5.160064318082152
+      },
+      "guarded-exact": {
+        "documents": 100,
+        "core": {
+          "caught": 5770,
+          "partial": 1,
+          "missed": 1,
+          "lost": 0,
+          "total": 5772
+        },
+        "extended": {
+          "caught": 6424,
+          "partial": 1,
+          "missed": 1,
+          "lost": 0,
+          "total": 6426
+        },
+        "legacy_core": {
+          "caught": 5771,
+          "partial": 1,
+          "missed": 0,
+          "lost": 0,
+          "total": 5772
+        },
+        "by_category": {
+          "url": {
+            "caught": 31,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 31
+          },
+          "email": {
+            "caught": 152,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 152
+          },
+          "street_address": {
+            "caught": 150,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 150
+          },
+          "organization_name": {
+            "caught": 757,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 758
+          },
+          "sensitive_attribute": {
+            "caught": 4,
+            "partial": 31,
+            "missed": 112,
+            "lost": 0,
+            "total": 147
+          },
+          "person_name": {
+            "caught": 1570,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1571
+          },
+          "health_info": {
+            "caught": 4,
+            "partial": 15,
+            "missed": 298,
+            "lost": 0,
+            "total": 317
+          },
+          "vehicle_id": {
+            "caught": 60,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 60
+          },
+          "phone": {
+            "caught": 243,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 243
+          },
+          "record_number": {
+            "caught": 384,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 384
+          },
+          "date_of_birth": {
+            "caught": 91,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 91
+          },
+          "date": {
+            "caught": 708,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 708
+          },
+          "place": {
+            "caught": 527,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 527
+          },
+          "indirect_identifier": {
+            "caught": 5,
+            "partial": 27,
+            "missed": 75,
+            "lost": 0,
+            "total": 107
+          },
+          "money_amount": {
+            "caught": 899,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 899
+          },
+          "ssn": {
+            "caught": 62,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 62
+          },
+          "bank_account": {
+            "caught": 119,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 119
+          },
+          "postal_code": {
+            "caught": 136,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 136
+          },
+          "payment_card": {
+            "caught": 70,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 70
+          },
+          "credential": {
+            "caught": 72,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 72
+          },
+          "routing_number": {
+            "caught": 45,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 45
+          },
+          "government_id": {
+            "caught": 99,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 99
+          },
+          "device_id": {
+            "caught": 55,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 55
+          },
+          "age_over_89": {
+            "caught": 20,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 20
+          },
+          "ip_address": {
+            "caught": 33,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 33
+          },
+          "card_expiry": {
+            "caught": 21,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 21
+          },
+          "card_security_code": {
+            "caught": 16,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 16
+          },
+          "tax_id": {
+            "caught": 84,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 84
+          },
+          "iban": {
+            "caught": 20,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 20
+          }
+        },
+        "by_subtype": {
+          "indirect_identifier/confidential one-off transaction": {
+            "caught": 0,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          }
+        },
+        "whole_core": 98,
+        "whole_extended": 98,
+        "extra": 280,
+        "detections": 6765,
+        "distractor_hits": 65,
+        "excess_chars": 3249,
+        "recovered_core": 0,
+        "regressed_core": 0,
+        "improved_core_documents": 0,
+        "core_delta_95pct_pp": [
+          0.0,
+          0.0
+        ],
+        "core_recall": 99.96534996534997,
+        "extra_rate": 4.138950480413895
+      },
+      "guarded-normalized": {
+        "documents": 100,
+        "core": {
+          "caught": 5770,
+          "partial": 1,
+          "missed": 1,
+          "lost": 0,
+          "total": 5772
+        },
+        "extended": {
+          "caught": 6424,
+          "partial": 1,
+          "missed": 1,
+          "lost": 0,
+          "total": 6426
+        },
+        "legacy_core": {
+          "caught": 5771,
+          "partial": 1,
+          "missed": 0,
+          "lost": 0,
+          "total": 5772
+        },
+        "by_category": {
+          "url": {
+            "caught": 31,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 31
+          },
+          "email": {
+            "caught": 152,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 152
+          },
+          "street_address": {
+            "caught": 150,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 150
+          },
+          "organization_name": {
+            "caught": 757,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 758
+          },
+          "sensitive_attribute": {
+            "caught": 4,
+            "partial": 31,
+            "missed": 112,
+            "lost": 0,
+            "total": 147
+          },
+          "person_name": {
+            "caught": 1570,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1571
+          },
+          "health_info": {
+            "caught": 4,
+            "partial": 15,
+            "missed": 298,
+            "lost": 0,
+            "total": 317
+          },
+          "vehicle_id": {
+            "caught": 60,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 60
+          },
+          "phone": {
+            "caught": 243,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 243
+          },
+          "record_number": {
+            "caught": 384,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 384
+          },
+          "date_of_birth": {
+            "caught": 91,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 91
+          },
+          "date": {
+            "caught": 708,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 708
+          },
+          "place": {
+            "caught": 527,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 527
+          },
+          "indirect_identifier": {
+            "caught": 5,
+            "partial": 27,
+            "missed": 75,
+            "lost": 0,
+            "total": 107
+          },
+          "money_amount": {
+            "caught": 899,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 899
+          },
+          "ssn": {
+            "caught": 62,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 62
+          },
+          "bank_account": {
+            "caught": 119,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 119
+          },
+          "postal_code": {
+            "caught": 136,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 136
+          },
+          "payment_card": {
+            "caught": 70,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 70
+          },
+          "credential": {
+            "caught": 72,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 72
+          },
+          "routing_number": {
+            "caught": 45,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 45
+          },
+          "government_id": {
+            "caught": 99,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 99
+          },
+          "device_id": {
+            "caught": 55,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 55
+          },
+          "age_over_89": {
+            "caught": 20,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 20
+          },
+          "ip_address": {
+            "caught": 33,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 33
+          },
+          "card_expiry": {
+            "caught": 21,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 21
+          },
+          "card_security_code": {
+            "caught": 16,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 16
+          },
+          "tax_id": {
+            "caught": 84,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 84
+          },
+          "iban": {
+            "caught": 20,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 20
+          }
+        },
+        "by_subtype": {
+          "indirect_identifier/confidential one-off transaction": {
+            "caught": 0,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          }
+        },
+        "whole_core": 98,
+        "whole_extended": 98,
+        "extra": 280,
+        "detections": 6765,
+        "distractor_hits": 65,
+        "excess_chars": 3249,
+        "recovered_core": 0,
+        "regressed_core": 0,
+        "improved_core_documents": 0,
+        "core_delta_95pct_pp": [
+          0.0,
+          0.0
+        ],
+        "core_recall": 99.96534996534997,
+        "extra_rate": 4.138950480413895
+      },
+      "complete-spans": {
+        "documents": 100,
+        "core": {
+          "caught": 5770,
+          "partial": 1,
+          "missed": 1,
+          "lost": 0,
+          "total": 5772
+        },
+        "extended": {
+          "caught": 6424,
+          "partial": 1,
+          "missed": 1,
+          "lost": 0,
+          "total": 6426
+        },
+        "legacy_core": {
+          "caught": 5771,
+          "partial": 1,
+          "missed": 0,
+          "lost": 0,
+          "total": 5772
+        },
+        "by_category": {
+          "url": {
+            "caught": 31,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 31
+          },
+          "email": {
+            "caught": 152,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 152
+          },
+          "street_address": {
+            "caught": 150,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 150
+          },
+          "organization_name": {
+            "caught": 757,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 758
+          },
+          "sensitive_attribute": {
+            "caught": 4,
+            "partial": 31,
+            "missed": 112,
+            "lost": 0,
+            "total": 147
+          },
+          "person_name": {
+            "caught": 1570,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1571
+          },
+          "health_info": {
+            "caught": 4,
+            "partial": 15,
+            "missed": 298,
+            "lost": 0,
+            "total": 317
+          },
+          "vehicle_id": {
+            "caught": 60,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 60
+          },
+          "phone": {
+            "caught": 243,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 243
+          },
+          "record_number": {
+            "caught": 384,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 384
+          },
+          "date_of_birth": {
+            "caught": 91,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 91
+          },
+          "date": {
+            "caught": 708,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 708
+          },
+          "place": {
+            "caught": 527,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 527
+          },
+          "indirect_identifier": {
+            "caught": 5,
+            "partial": 26,
+            "missed": 76,
+            "lost": 0,
+            "total": 107
+          },
+          "money_amount": {
+            "caught": 899,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 899
+          },
+          "ssn": {
+            "caught": 62,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 62
+          },
+          "bank_account": {
+            "caught": 119,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 119
+          },
+          "postal_code": {
+            "caught": 136,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 136
+          },
+          "payment_card": {
+            "caught": 70,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 70
+          },
+          "credential": {
+            "caught": 72,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 72
+          },
+          "routing_number": {
+            "caught": 45,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 45
+          },
+          "government_id": {
+            "caught": 99,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 99
+          },
+          "device_id": {
+            "caught": 55,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 55
+          },
+          "age_over_89": {
+            "caught": 20,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 20
+          },
+          "ip_address": {
+            "caught": 33,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 33
+          },
+          "card_expiry": {
+            "caught": 21,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 21
+          },
+          "card_security_code": {
+            "caught": 16,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 16
+          },
+          "tax_id": {
+            "caught": 84,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 84
+          },
+          "iban": {
+            "caught": 20,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 20
+          }
+        },
+        "by_subtype": {
+          "indirect_identifier/confidential one-off transaction": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          }
+        },
+        "whole_core": 98,
+        "whole_extended": 98,
+        "extra": 276,
+        "detections": 6760,
+        "distractor_hits": 65,
+        "excess_chars": 3191,
+        "recovered_core": 0,
+        "regressed_core": 0,
+        "improved_core_documents": 0,
+        "core_delta_95pct_pp": [
+          0.0,
+          0.0
+        ],
+        "core_recall": 99.96534996534997,
+        "extra_rate": 4.0828402366863905
+      },
+      "combined": {
+        "documents": 100,
+        "core": {
+          "caught": 5770,
+          "partial": 1,
+          "missed": 1,
+          "lost": 0,
+          "total": 5772
+        },
+        "extended": {
+          "caught": 6424,
+          "partial": 1,
+          "missed": 1,
+          "lost": 0,
+          "total": 6426
+        },
+        "legacy_core": {
+          "caught": 5771,
+          "partial": 1,
+          "missed": 0,
+          "lost": 0,
+          "total": 5772
+        },
+        "by_category": {
+          "url": {
+            "caught": 31,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 31
+          },
+          "email": {
+            "caught": 152,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 152
+          },
+          "street_address": {
+            "caught": 150,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 150
+          },
+          "organization_name": {
+            "caught": 757,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 758
+          },
+          "sensitive_attribute": {
+            "caught": 4,
+            "partial": 31,
+            "missed": 112,
+            "lost": 0,
+            "total": 147
+          },
+          "person_name": {
+            "caught": 1570,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1571
+          },
+          "health_info": {
+            "caught": 4,
+            "partial": 15,
+            "missed": 298,
+            "lost": 0,
+            "total": 317
+          },
+          "vehicle_id": {
+            "caught": 60,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 60
+          },
+          "phone": {
+            "caught": 243,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 243
+          },
+          "record_number": {
+            "caught": 384,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 384
+          },
+          "date_of_birth": {
+            "caught": 91,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 91
+          },
+          "date": {
+            "caught": 708,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 708
+          },
+          "place": {
+            "caught": 527,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 527
+          },
+          "indirect_identifier": {
+            "caught": 5,
+            "partial": 27,
+            "missed": 75,
+            "lost": 0,
+            "total": 107
+          },
+          "money_amount": {
+            "caught": 899,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 899
+          },
+          "ssn": {
+            "caught": 62,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 62
+          },
+          "bank_account": {
+            "caught": 119,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 119
+          },
+          "postal_code": {
+            "caught": 136,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 136
+          },
+          "payment_card": {
+            "caught": 70,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 70
+          },
+          "credential": {
+            "caught": 72,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 72
+          },
+          "routing_number": {
+            "caught": 45,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 45
+          },
+          "government_id": {
+            "caught": 99,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 99
+          },
+          "device_id": {
+            "caught": 55,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 55
+          },
+          "age_over_89": {
+            "caught": 20,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 20
+          },
+          "ip_address": {
+            "caught": 33,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 33
+          },
+          "card_expiry": {
+            "caught": 21,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 21
+          },
+          "card_security_code": {
+            "caught": 16,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 16
+          },
+          "tax_id": {
+            "caught": 84,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 84
+          },
+          "iban": {
+            "caught": 20,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 20
+          }
+        },
+        "by_subtype": {
+          "indirect_identifier/confidential one-off transaction": {
+            "caught": 0,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          }
+        },
+        "whole_core": 98,
+        "whole_extended": 98,
+        "extra": 280,
+        "detections": 6764,
+        "distractor_hits": 65,
+        "excess_chars": 3256,
+        "recovered_core": 0,
+        "regressed_core": 0,
+        "improved_core_documents": 0,
+        "core_delta_95pct_pp": [
+          0.0,
+          0.0
+        ],
+        "core_recall": 99.96534996534997,
+        "extra_rate": 4.139562389118865
+      },
+      "identifier-memory": {
+        "documents": 100,
+        "core": {
+          "caught": 5770,
+          "partial": 1,
+          "missed": 1,
+          "lost": 0,
+          "total": 5772
+        },
+        "extended": {
+          "caught": 6424,
+          "partial": 1,
+          "missed": 1,
+          "lost": 0,
+          "total": 6426
+        },
+        "legacy_core": {
+          "caught": 5771,
+          "partial": 1,
+          "missed": 0,
+          "lost": 0,
+          "total": 5772
+        },
+        "by_category": {
+          "url": {
+            "caught": 31,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 31
+          },
+          "email": {
+            "caught": 152,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 152
+          },
+          "street_address": {
+            "caught": 150,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 150
+          },
+          "organization_name": {
+            "caught": 757,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 758
+          },
+          "sensitive_attribute": {
+            "caught": 4,
+            "partial": 31,
+            "missed": 112,
+            "lost": 0,
+            "total": 147
+          },
+          "person_name": {
+            "caught": 1570,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1571
+          },
+          "health_info": {
+            "caught": 4,
+            "partial": 15,
+            "missed": 298,
+            "lost": 0,
+            "total": 317
+          },
+          "vehicle_id": {
+            "caught": 60,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 60
+          },
+          "phone": {
+            "caught": 243,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 243
+          },
+          "record_number": {
+            "caught": 384,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 384
+          },
+          "date_of_birth": {
+            "caught": 91,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 91
+          },
+          "date": {
+            "caught": 708,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 708
+          },
+          "place": {
+            "caught": 527,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 527
+          },
+          "indirect_identifier": {
+            "caught": 5,
+            "partial": 26,
+            "missed": 76,
+            "lost": 0,
+            "total": 107
+          },
+          "money_amount": {
+            "caught": 899,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 899
+          },
+          "ssn": {
+            "caught": 62,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 62
+          },
+          "bank_account": {
+            "caught": 119,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 119
+          },
+          "postal_code": {
+            "caught": 136,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 136
+          },
+          "payment_card": {
+            "caught": 70,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 70
+          },
+          "credential": {
+            "caught": 72,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 72
+          },
+          "routing_number": {
+            "caught": 45,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 45
+          },
+          "government_id": {
+            "caught": 99,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 99
+          },
+          "device_id": {
+            "caught": 55,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 55
+          },
+          "age_over_89": {
+            "caught": 20,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 20
+          },
+          "ip_address": {
+            "caught": 33,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 33
+          },
+          "card_expiry": {
+            "caught": 21,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 21
+          },
+          "card_security_code": {
+            "caught": 16,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 16
+          },
+          "tax_id": {
+            "caught": 84,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 84
+          },
+          "iban": {
+            "caught": 20,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 20
+          }
+        },
+        "by_subtype": {
+          "indirect_identifier/confidential one-off transaction": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          }
+        },
+        "whole_core": 98,
+        "whole_extended": 98,
+        "extra": 276,
+        "detections": 6760,
+        "distractor_hits": 65,
+        "excess_chars": 3184,
+        "recovered_core": 0,
+        "regressed_core": 0,
+        "improved_core_documents": 0,
+        "core_delta_95pct_pp": [
+          0.0,
+          0.0
+        ],
+        "core_recall": 99.96534996534997,
+        "extra_rate": 4.0828402366863905
+      },
+      "combined-memory": {
+        "documents": 100,
+        "core": {
+          "caught": 5770,
+          "partial": 1,
+          "missed": 1,
+          "lost": 0,
+          "total": 5772
+        },
+        "extended": {
+          "caught": 6424,
+          "partial": 1,
+          "missed": 1,
+          "lost": 0,
+          "total": 6426
+        },
+        "legacy_core": {
+          "caught": 5771,
+          "partial": 1,
+          "missed": 0,
+          "lost": 0,
+          "total": 5772
+        },
+        "by_category": {
+          "url": {
+            "caught": 31,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 31
+          },
+          "email": {
+            "caught": 152,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 152
+          },
+          "street_address": {
+            "caught": 150,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 150
+          },
+          "organization_name": {
+            "caught": 757,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 758
+          },
+          "sensitive_attribute": {
+            "caught": 4,
+            "partial": 31,
+            "missed": 112,
+            "lost": 0,
+            "total": 147
+          },
+          "person_name": {
+            "caught": 1570,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1571
+          },
+          "health_info": {
+            "caught": 4,
+            "partial": 15,
+            "missed": 298,
+            "lost": 0,
+            "total": 317
+          },
+          "vehicle_id": {
+            "caught": 60,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 60
+          },
+          "phone": {
+            "caught": 243,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 243
+          },
+          "record_number": {
+            "caught": 384,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 384
+          },
+          "date_of_birth": {
+            "caught": 91,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 91
+          },
+          "date": {
+            "caught": 708,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 708
+          },
+          "place": {
+            "caught": 527,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 527
+          },
+          "indirect_identifier": {
+            "caught": 5,
+            "partial": 27,
+            "missed": 75,
+            "lost": 0,
+            "total": 107
+          },
+          "money_amount": {
+            "caught": 899,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 899
+          },
+          "ssn": {
+            "caught": 62,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 62
+          },
+          "bank_account": {
+            "caught": 119,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 119
+          },
+          "postal_code": {
+            "caught": 136,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 136
+          },
+          "payment_card": {
+            "caught": 70,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 70
+          },
+          "credential": {
+            "caught": 72,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 72
+          },
+          "routing_number": {
+            "caught": 45,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 45
+          },
+          "government_id": {
+            "caught": 99,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 99
+          },
+          "device_id": {
+            "caught": 55,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 55
+          },
+          "age_over_89": {
+            "caught": 20,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 20
+          },
+          "ip_address": {
+            "caught": 33,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 33
+          },
+          "card_expiry": {
+            "caught": 21,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 21
+          },
+          "card_security_code": {
+            "caught": 16,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 16
+          },
+          "tax_id": {
+            "caught": 84,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 84
+          },
+          "iban": {
+            "caught": 20,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 20
+          }
+        },
+        "by_subtype": {
+          "indirect_identifier/confidential one-off transaction": {
+            "caught": 0,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          }
+        },
+        "whole_core": 98,
+        "whole_extended": 98,
+        "extra": 280,
+        "detections": 6764,
+        "distractor_hits": 65,
+        "excess_chars": 3256,
+        "recovered_core": 0,
+        "regressed_core": 0,
+        "improved_core_documents": 0,
+        "core_delta_95pct_pp": [
+          0.0,
+          0.0
+        ],
+        "core_recall": 99.96534996534997,
+        "extra_rate": 4.139562389118865
+      }
+    },
+    "timingMs": {
+      "baseline": 13096.272160999997,
+      "trust-model": 83.26435699999251,
+      "guarded-exact": 24.855393000003232,
+      "guarded-normalized": 1656.5116809999972,
+      "complete-spans": 23.130253000002426,
+      "combined": 161.65876199999127,
+      "identifier-memory": 5.147186999993892,
+      "combined-memory": 147.15836400000126
+    },
+    "chunking": {
+      "max_old": 1416,
+      "max_new": 350,
+      "oversized_old_chunks": 12,
+      "old_chunks": 182,
+      "bounded_chunks": 192
+    },
+    "subtype_reporting": "Only subtypes changed by any variant; all others are reproducible from the saved detections."
+  },
+  "2": {
+    "sourceHash": "1634c2f9d8e22641c5c5054bb9d3e36a2cd07916fb964b082196b58549d3ce57",
+    "baselineDifferences": 0,
+    "variants": {
+      "baseline": {
+        "documents": 60,
+        "core": {
+          "caught": 4390,
+          "partial": 61,
+          "missed": 76,
+          "lost": 0,
+          "total": 4527
+        },
+        "extended": {
+          "caught": 4946,
+          "partial": 66,
+          "missed": 136,
+          "lost": 0,
+          "total": 5148
+        },
+        "legacy_core": {
+          "caught": 4390,
+          "partial": 61,
+          "missed": 76,
+          "lost": 0,
+          "total": 4527
+        },
+        "by_category": {
+          "url": {
+            "caught": 26,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 26
+          },
+          "organization_name": {
+            "caught": 438,
+            "partial": 10,
+            "missed": 5,
+            "lost": 0,
+            "total": 453
+          },
+          "street_address": {
+            "caught": 121,
+            "partial": 12,
+            "missed": 5,
+            "lost": 0,
+            "total": 138
+          },
+          "phone": {
+            "caught": 216,
+            "partial": 2,
+            "missed": 0,
+            "lost": 0,
+            "total": 218
+          },
+          "person_name": {
+            "caught": 1070,
+            "partial": 11,
+            "missed": 14,
+            "lost": 0,
+            "total": 1095
+          },
+          "email": {
+            "caught": 133,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 133
+          },
+          "health_info": {
+            "caught": 9,
+            "partial": 10,
+            "missed": 198,
+            "lost": 0,
+            "total": 217
+          },
+          "payment_card": {
+            "caught": 46,
+            "partial": 0,
+            "missed": 6,
+            "lost": 0,
+            "total": 52
+          },
+          "place": {
+            "caught": 441,
+            "partial": 2,
+            "missed": 32,
+            "lost": 0,
+            "total": 475
+          },
+          "record_number": {
+            "caught": 386,
+            "partial": 9,
+            "missed": 9,
+            "lost": 0,
+            "total": 404
+          },
+          "date": {
+            "caught": 632,
+            "partial": 5,
+            "missed": 14,
+            "lost": 0,
+            "total": 651
+          },
+          "bank_account": {
+            "caught": 95,
+            "partial": 0,
+            "missed": 3,
+            "lost": 0,
+            "total": 98
+          },
+          "money_amount": {
+            "caught": 678,
+            "partial": 9,
+            "missed": 2,
+            "lost": 0,
+            "total": 689
+          },
+          "tax_id": {
+            "caught": 57,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 58
+          },
+          "postal_code": {
+            "caught": 122,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 123
+          },
+          "routing_number": {
+            "caught": 47,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 47
+          },
+          "card_expiry": {
+            "caught": 15,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 15
+          },
+          "indirect_identifier": {
+            "caught": 0,
+            "partial": 21,
+            "missed": 27,
+            "lost": 0,
+            "total": 48
+          },
+          "credential": {
+            "caught": 54,
+            "partial": 1,
+            "missed": 22,
+            "lost": 0,
+            "total": 77
+          },
+          "ssn": {
+            "caught": 46,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 48
+          },
+          "government_id": {
+            "caught": 92,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 94
+          },
+          "device_id": {
+            "caught": 61,
+            "partial": 2,
+            "missed": 6,
+            "lost": 0,
+            "total": 69
+          },
+          "date_of_birth": {
+            "caught": 74,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 74
+          },
+          "age_over_89": {
+            "caught": 6,
+            "partial": 1,
+            "missed": 4,
+            "lost": 0,
+            "total": 11
+          },
+          "sensitive_attribute": {
+            "caught": 3,
+            "partial": 17,
+            "missed": 69,
+            "lost": 0,
+            "total": 89
+          },
+          "ip_address": {
+            "caught": 25,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 25
+          },
+          "card_security_code": {
+            "caught": 6,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 6
+          },
+          "vehicle_id": {
+            "caught": 47,
+            "partial": 1,
+            "missed": 9,
+            "lost": 0,
+            "total": 57
+          },
+          "iban": {
+            "caught": 12,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 12
+          }
+        },
+        "by_subtype": {
+          "place/state abbreviation": {
+            "caught": 90,
+            "partial": 0,
+            "missed": 16,
+            "lost": 0,
+            "total": 106
+          },
+          "place/state abbreviation that is also a word": {
+            "caught": 9,
+            "partial": 0,
+            "missed": 4,
+            "lost": 0,
+            "total": 13
+          },
+          "place/state in a caps court heading": {
+            "caught": 2,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 3
+          }
+        },
+        "whole_core": 12,
+        "whole_extended": 6,
+        "extra": 336,
+        "detections": 5390,
+        "distractor_hits": 100,
+        "excess_chars": 4292,
+        "recovered_core": 0,
+        "regressed_core": 0,
+        "improved_core_documents": 0,
+        "core_delta_95pct_pp": [
+          0.0,
+          0.0
+        ],
+        "core_recall": 96.97371327590015,
+        "extra_rate": 6.233766233766234
+      },
+      "trust-model": {
+        "documents": 60,
+        "core": {
+          "caught": 4390,
+          "partial": 61,
+          "missed": 76,
+          "lost": 0,
+          "total": 4527
+        },
+        "extended": {
+          "caught": 4953,
+          "partial": 66,
+          "missed": 129,
+          "lost": 0,
+          "total": 5148
+        },
+        "legacy_core": {
+          "caught": 4390,
+          "partial": 61,
+          "missed": 76,
+          "lost": 0,
+          "total": 4527
+        },
+        "by_category": {
+          "url": {
+            "caught": 26,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 26
+          },
+          "organization_name": {
+            "caught": 438,
+            "partial": 10,
+            "missed": 5,
+            "lost": 0,
+            "total": 453
+          },
+          "street_address": {
+            "caught": 121,
+            "partial": 12,
+            "missed": 5,
+            "lost": 0,
+            "total": 138
+          },
+          "phone": {
+            "caught": 216,
+            "partial": 2,
+            "missed": 0,
+            "lost": 0,
+            "total": 218
+          },
+          "person_name": {
+            "caught": 1070,
+            "partial": 11,
+            "missed": 14,
+            "lost": 0,
+            "total": 1095
+          },
+          "email": {
+            "caught": 133,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 133
+          },
+          "health_info": {
+            "caught": 9,
+            "partial": 10,
+            "missed": 198,
+            "lost": 0,
+            "total": 217
+          },
+          "payment_card": {
+            "caught": 46,
+            "partial": 0,
+            "missed": 6,
+            "lost": 0,
+            "total": 52
+          },
+          "place": {
+            "caught": 448,
+            "partial": 2,
+            "missed": 25,
+            "lost": 0,
+            "total": 475
+          },
+          "record_number": {
+            "caught": 386,
+            "partial": 9,
+            "missed": 9,
+            "lost": 0,
+            "total": 404
+          },
+          "date": {
+            "caught": 632,
+            "partial": 5,
+            "missed": 14,
+            "lost": 0,
+            "total": 651
+          },
+          "bank_account": {
+            "caught": 95,
+            "partial": 0,
+            "missed": 3,
+            "lost": 0,
+            "total": 98
+          },
+          "money_amount": {
+            "caught": 678,
+            "partial": 9,
+            "missed": 2,
+            "lost": 0,
+            "total": 689
+          },
+          "tax_id": {
+            "caught": 57,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 58
+          },
+          "postal_code": {
+            "caught": 122,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 123
+          },
+          "routing_number": {
+            "caught": 47,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 47
+          },
+          "card_expiry": {
+            "caught": 15,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 15
+          },
+          "indirect_identifier": {
+            "caught": 0,
+            "partial": 21,
+            "missed": 27,
+            "lost": 0,
+            "total": 48
+          },
+          "credential": {
+            "caught": 54,
+            "partial": 1,
+            "missed": 22,
+            "lost": 0,
+            "total": 77
+          },
+          "ssn": {
+            "caught": 46,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 48
+          },
+          "government_id": {
+            "caught": 92,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 94
+          },
+          "device_id": {
+            "caught": 61,
+            "partial": 2,
+            "missed": 6,
+            "lost": 0,
+            "total": 69
+          },
+          "date_of_birth": {
+            "caught": 74,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 74
+          },
+          "age_over_89": {
+            "caught": 6,
+            "partial": 1,
+            "missed": 4,
+            "lost": 0,
+            "total": 11
+          },
+          "sensitive_attribute": {
+            "caught": 3,
+            "partial": 17,
+            "missed": 69,
+            "lost": 0,
+            "total": 89
+          },
+          "ip_address": {
+            "caught": 25,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 25
+          },
+          "card_security_code": {
+            "caught": 6,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 6
+          },
+          "vehicle_id": {
+            "caught": 47,
+            "partial": 1,
+            "missed": 9,
+            "lost": 0,
+            "total": 57
+          },
+          "iban": {
+            "caught": 12,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 12
+          }
+        },
+        "by_subtype": {
+          "place/state abbreviation": {
+            "caught": 95,
+            "partial": 0,
+            "missed": 11,
+            "lost": 0,
+            "total": 106
+          },
+          "place/state abbreviation that is also a word": {
+            "caught": 11,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 13
+          },
+          "place/state in a caps court heading": {
+            "caught": 2,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 3
+          }
+        },
+        "whole_core": 12,
+        "whole_extended": 7,
+        "extra": 397,
+        "detections": 5465,
+        "distractor_hits": 123,
+        "excess_chars": 4781,
+        "recovered_core": 0,
+        "regressed_core": 0,
+        "improved_core_documents": 0,
+        "core_delta_95pct_pp": [
+          0.0,
+          0.0
+        ],
+        "core_recall": 96.97371327590015,
+        "extra_rate": 7.264409881061299
+      },
+      "guarded-exact": {
+        "documents": 60,
+        "core": {
+          "caught": 4390,
+          "partial": 61,
+          "missed": 76,
+          "lost": 0,
+          "total": 4527
+        },
+        "extended": {
+          "caught": 4946,
+          "partial": 66,
+          "missed": 136,
+          "lost": 0,
+          "total": 5148
+        },
+        "legacy_core": {
+          "caught": 4390,
+          "partial": 61,
+          "missed": 76,
+          "lost": 0,
+          "total": 4527
+        },
+        "by_category": {
+          "url": {
+            "caught": 26,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 26
+          },
+          "organization_name": {
+            "caught": 438,
+            "partial": 10,
+            "missed": 5,
+            "lost": 0,
+            "total": 453
+          },
+          "street_address": {
+            "caught": 121,
+            "partial": 12,
+            "missed": 5,
+            "lost": 0,
+            "total": 138
+          },
+          "phone": {
+            "caught": 216,
+            "partial": 2,
+            "missed": 0,
+            "lost": 0,
+            "total": 218
+          },
+          "person_name": {
+            "caught": 1070,
+            "partial": 11,
+            "missed": 14,
+            "lost": 0,
+            "total": 1095
+          },
+          "email": {
+            "caught": 133,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 133
+          },
+          "health_info": {
+            "caught": 9,
+            "partial": 10,
+            "missed": 198,
+            "lost": 0,
+            "total": 217
+          },
+          "payment_card": {
+            "caught": 46,
+            "partial": 0,
+            "missed": 6,
+            "lost": 0,
+            "total": 52
+          },
+          "place": {
+            "caught": 441,
+            "partial": 2,
+            "missed": 32,
+            "lost": 0,
+            "total": 475
+          },
+          "record_number": {
+            "caught": 386,
+            "partial": 9,
+            "missed": 9,
+            "lost": 0,
+            "total": 404
+          },
+          "date": {
+            "caught": 632,
+            "partial": 5,
+            "missed": 14,
+            "lost": 0,
+            "total": 651
+          },
+          "bank_account": {
+            "caught": 95,
+            "partial": 0,
+            "missed": 3,
+            "lost": 0,
+            "total": 98
+          },
+          "money_amount": {
+            "caught": 678,
+            "partial": 9,
+            "missed": 2,
+            "lost": 0,
+            "total": 689
+          },
+          "tax_id": {
+            "caught": 57,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 58
+          },
+          "postal_code": {
+            "caught": 122,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 123
+          },
+          "routing_number": {
+            "caught": 47,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 47
+          },
+          "card_expiry": {
+            "caught": 15,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 15
+          },
+          "indirect_identifier": {
+            "caught": 0,
+            "partial": 21,
+            "missed": 27,
+            "lost": 0,
+            "total": 48
+          },
+          "credential": {
+            "caught": 54,
+            "partial": 1,
+            "missed": 22,
+            "lost": 0,
+            "total": 77
+          },
+          "ssn": {
+            "caught": 46,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 48
+          },
+          "government_id": {
+            "caught": 92,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 94
+          },
+          "device_id": {
+            "caught": 61,
+            "partial": 2,
+            "missed": 6,
+            "lost": 0,
+            "total": 69
+          },
+          "date_of_birth": {
+            "caught": 74,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 74
+          },
+          "age_over_89": {
+            "caught": 6,
+            "partial": 1,
+            "missed": 4,
+            "lost": 0,
+            "total": 11
+          },
+          "sensitive_attribute": {
+            "caught": 3,
+            "partial": 17,
+            "missed": 69,
+            "lost": 0,
+            "total": 89
+          },
+          "ip_address": {
+            "caught": 25,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 25
+          },
+          "card_security_code": {
+            "caught": 6,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 6
+          },
+          "vehicle_id": {
+            "caught": 47,
+            "partial": 1,
+            "missed": 9,
+            "lost": 0,
+            "total": 57
+          },
+          "iban": {
+            "caught": 12,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 12
+          }
+        },
+        "by_subtype": {
+          "place/state abbreviation": {
+            "caught": 90,
+            "partial": 0,
+            "missed": 16,
+            "lost": 0,
+            "total": 106
+          },
+          "place/state abbreviation that is also a word": {
+            "caught": 9,
+            "partial": 0,
+            "missed": 4,
+            "lost": 0,
+            "total": 13
+          },
+          "place/state in a caps court heading": {
+            "caught": 2,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 3
+          }
+        },
+        "whole_core": 12,
+        "whole_extended": 6,
+        "extra": 340,
+        "detections": 5394,
+        "distractor_hits": 101,
+        "excess_chars": 4348,
+        "recovered_core": 0,
+        "regressed_core": 0,
+        "improved_core_documents": 0,
+        "core_delta_95pct_pp": [
+          0.0,
+          0.0
+        ],
+        "core_recall": 96.97371327590015,
+        "extra_rate": 6.3032999629217645
+      },
+      "guarded-normalized": {
+        "documents": 60,
+        "core": {
+          "caught": 4390,
+          "partial": 61,
+          "missed": 76,
+          "lost": 0,
+          "total": 4527
+        },
+        "extended": {
+          "caught": 4947,
+          "partial": 66,
+          "missed": 135,
+          "lost": 0,
+          "total": 5148
+        },
+        "legacy_core": {
+          "caught": 4390,
+          "partial": 61,
+          "missed": 76,
+          "lost": 0,
+          "total": 4527
+        },
+        "by_category": {
+          "url": {
+            "caught": 26,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 26
+          },
+          "organization_name": {
+            "caught": 438,
+            "partial": 10,
+            "missed": 5,
+            "lost": 0,
+            "total": 453
+          },
+          "street_address": {
+            "caught": 121,
+            "partial": 12,
+            "missed": 5,
+            "lost": 0,
+            "total": 138
+          },
+          "phone": {
+            "caught": 216,
+            "partial": 2,
+            "missed": 0,
+            "lost": 0,
+            "total": 218
+          },
+          "person_name": {
+            "caught": 1070,
+            "partial": 11,
+            "missed": 14,
+            "lost": 0,
+            "total": 1095
+          },
+          "email": {
+            "caught": 133,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 133
+          },
+          "health_info": {
+            "caught": 9,
+            "partial": 10,
+            "missed": 198,
+            "lost": 0,
+            "total": 217
+          },
+          "payment_card": {
+            "caught": 46,
+            "partial": 0,
+            "missed": 6,
+            "lost": 0,
+            "total": 52
+          },
+          "place": {
+            "caught": 442,
+            "partial": 2,
+            "missed": 31,
+            "lost": 0,
+            "total": 475
+          },
+          "record_number": {
+            "caught": 386,
+            "partial": 9,
+            "missed": 9,
+            "lost": 0,
+            "total": 404
+          },
+          "date": {
+            "caught": 632,
+            "partial": 5,
+            "missed": 14,
+            "lost": 0,
+            "total": 651
+          },
+          "bank_account": {
+            "caught": 95,
+            "partial": 0,
+            "missed": 3,
+            "lost": 0,
+            "total": 98
+          },
+          "money_amount": {
+            "caught": 678,
+            "partial": 9,
+            "missed": 2,
+            "lost": 0,
+            "total": 689
+          },
+          "tax_id": {
+            "caught": 57,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 58
+          },
+          "postal_code": {
+            "caught": 122,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 123
+          },
+          "routing_number": {
+            "caught": 47,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 47
+          },
+          "card_expiry": {
+            "caught": 15,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 15
+          },
+          "indirect_identifier": {
+            "caught": 0,
+            "partial": 21,
+            "missed": 27,
+            "lost": 0,
+            "total": 48
+          },
+          "credential": {
+            "caught": 54,
+            "partial": 1,
+            "missed": 22,
+            "lost": 0,
+            "total": 77
+          },
+          "ssn": {
+            "caught": 46,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 48
+          },
+          "government_id": {
+            "caught": 92,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 94
+          },
+          "device_id": {
+            "caught": 61,
+            "partial": 2,
+            "missed": 6,
+            "lost": 0,
+            "total": 69
+          },
+          "date_of_birth": {
+            "caught": 74,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 74
+          },
+          "age_over_89": {
+            "caught": 6,
+            "partial": 1,
+            "missed": 4,
+            "lost": 0,
+            "total": 11
+          },
+          "sensitive_attribute": {
+            "caught": 3,
+            "partial": 17,
+            "missed": 69,
+            "lost": 0,
+            "total": 89
+          },
+          "ip_address": {
+            "caught": 25,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 25
+          },
+          "card_security_code": {
+            "caught": 6,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 6
+          },
+          "vehicle_id": {
+            "caught": 47,
+            "partial": 1,
+            "missed": 9,
+            "lost": 0,
+            "total": 57
+          },
+          "iban": {
+            "caught": 12,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 12
+          }
+        },
+        "by_subtype": {
+          "place/state abbreviation": {
+            "caught": 90,
+            "partial": 0,
+            "missed": 16,
+            "lost": 0,
+            "total": 106
+          },
+          "place/state abbreviation that is also a word": {
+            "caught": 9,
+            "partial": 0,
+            "missed": 4,
+            "lost": 0,
+            "total": 13
+          },
+          "place/state in a caps court heading": {
+            "caught": 3,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 3
+          }
+        },
+        "whole_core": 12,
+        "whole_extended": 6,
+        "extra": 341,
+        "detections": 5396,
+        "distractor_hits": 101,
+        "excess_chars": 4355,
+        "recovered_core": 0,
+        "regressed_core": 0,
+        "improved_core_documents": 0,
+        "core_delta_95pct_pp": [
+          0.0,
+          0.0
+        ],
+        "core_recall": 96.97371327590015,
+        "extra_rate": 6.3194959229058565
+      },
+      "complete-spans": {
+        "documents": 60,
+        "core": {
+          "caught": 4390,
+          "partial": 61,
+          "missed": 76,
+          "lost": 0,
+          "total": 4527
+        },
+        "extended": {
+          "caught": 4946,
+          "partial": 66,
+          "missed": 136,
+          "lost": 0,
+          "total": 5148
+        },
+        "legacy_core": {
+          "caught": 4390,
+          "partial": 61,
+          "missed": 76,
+          "lost": 0,
+          "total": 4527
+        },
+        "by_category": {
+          "url": {
+            "caught": 26,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 26
+          },
+          "organization_name": {
+            "caught": 438,
+            "partial": 10,
+            "missed": 5,
+            "lost": 0,
+            "total": 453
+          },
+          "street_address": {
+            "caught": 121,
+            "partial": 12,
+            "missed": 5,
+            "lost": 0,
+            "total": 138
+          },
+          "phone": {
+            "caught": 216,
+            "partial": 2,
+            "missed": 0,
+            "lost": 0,
+            "total": 218
+          },
+          "person_name": {
+            "caught": 1070,
+            "partial": 11,
+            "missed": 14,
+            "lost": 0,
+            "total": 1095
+          },
+          "email": {
+            "caught": 133,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 133
+          },
+          "health_info": {
+            "caught": 9,
+            "partial": 10,
+            "missed": 198,
+            "lost": 0,
+            "total": 217
+          },
+          "payment_card": {
+            "caught": 46,
+            "partial": 0,
+            "missed": 6,
+            "lost": 0,
+            "total": 52
+          },
+          "place": {
+            "caught": 441,
+            "partial": 2,
+            "missed": 32,
+            "lost": 0,
+            "total": 475
+          },
+          "record_number": {
+            "caught": 386,
+            "partial": 9,
+            "missed": 9,
+            "lost": 0,
+            "total": 404
+          },
+          "date": {
+            "caught": 632,
+            "partial": 5,
+            "missed": 14,
+            "lost": 0,
+            "total": 651
+          },
+          "bank_account": {
+            "caught": 95,
+            "partial": 0,
+            "missed": 3,
+            "lost": 0,
+            "total": 98
+          },
+          "money_amount": {
+            "caught": 678,
+            "partial": 9,
+            "missed": 2,
+            "lost": 0,
+            "total": 689
+          },
+          "tax_id": {
+            "caught": 57,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 58
+          },
+          "postal_code": {
+            "caught": 122,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 123
+          },
+          "routing_number": {
+            "caught": 47,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 47
+          },
+          "card_expiry": {
+            "caught": 15,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 15
+          },
+          "indirect_identifier": {
+            "caught": 0,
+            "partial": 21,
+            "missed": 27,
+            "lost": 0,
+            "total": 48
+          },
+          "credential": {
+            "caught": 54,
+            "partial": 1,
+            "missed": 22,
+            "lost": 0,
+            "total": 77
+          },
+          "ssn": {
+            "caught": 46,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 48
+          },
+          "government_id": {
+            "caught": 92,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 94
+          },
+          "device_id": {
+            "caught": 61,
+            "partial": 2,
+            "missed": 6,
+            "lost": 0,
+            "total": 69
+          },
+          "date_of_birth": {
+            "caught": 74,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 74
+          },
+          "age_over_89": {
+            "caught": 6,
+            "partial": 1,
+            "missed": 4,
+            "lost": 0,
+            "total": 11
+          },
+          "sensitive_attribute": {
+            "caught": 3,
+            "partial": 17,
+            "missed": 69,
+            "lost": 0,
+            "total": 89
+          },
+          "ip_address": {
+            "caught": 25,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 25
+          },
+          "card_security_code": {
+            "caught": 6,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 6
+          },
+          "vehicle_id": {
+            "caught": 47,
+            "partial": 1,
+            "missed": 9,
+            "lost": 0,
+            "total": 57
+          },
+          "iban": {
+            "caught": 12,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 12
+          }
+        },
+        "by_subtype": {
+          "place/state abbreviation": {
+            "caught": 90,
+            "partial": 0,
+            "missed": 16,
+            "lost": 0,
+            "total": 106
+          },
+          "place/state abbreviation that is also a word": {
+            "caught": 9,
+            "partial": 0,
+            "missed": 4,
+            "lost": 0,
+            "total": 13
+          },
+          "place/state in a caps court heading": {
+            "caught": 2,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 3
+          }
+        },
+        "whole_core": 12,
+        "whole_extended": 6,
+        "extra": 336,
+        "detections": 5390,
+        "distractor_hits": 100,
+        "excess_chars": 4292,
+        "recovered_core": 0,
+        "regressed_core": 0,
+        "improved_core_documents": 0,
+        "core_delta_95pct_pp": [
+          0.0,
+          0.0
+        ],
+        "core_recall": 96.97371327590015,
+        "extra_rate": 6.233766233766234
+      },
+      "combined": {
+        "documents": 60,
+        "core": {
+          "caught": 4390,
+          "partial": 61,
+          "missed": 76,
+          "lost": 0,
+          "total": 4527
+        },
+        "extended": {
+          "caught": 4947,
+          "partial": 66,
+          "missed": 135,
+          "lost": 0,
+          "total": 5148
+        },
+        "legacy_core": {
+          "caught": 4390,
+          "partial": 61,
+          "missed": 76,
+          "lost": 0,
+          "total": 4527
+        },
+        "by_category": {
+          "url": {
+            "caught": 26,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 26
+          },
+          "organization_name": {
+            "caught": 438,
+            "partial": 10,
+            "missed": 5,
+            "lost": 0,
+            "total": 453
+          },
+          "street_address": {
+            "caught": 121,
+            "partial": 12,
+            "missed": 5,
+            "lost": 0,
+            "total": 138
+          },
+          "phone": {
+            "caught": 216,
+            "partial": 2,
+            "missed": 0,
+            "lost": 0,
+            "total": 218
+          },
+          "person_name": {
+            "caught": 1070,
+            "partial": 11,
+            "missed": 14,
+            "lost": 0,
+            "total": 1095
+          },
+          "email": {
+            "caught": 133,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 133
+          },
+          "health_info": {
+            "caught": 9,
+            "partial": 10,
+            "missed": 198,
+            "lost": 0,
+            "total": 217
+          },
+          "payment_card": {
+            "caught": 46,
+            "partial": 0,
+            "missed": 6,
+            "lost": 0,
+            "total": 52
+          },
+          "place": {
+            "caught": 442,
+            "partial": 2,
+            "missed": 31,
+            "lost": 0,
+            "total": 475
+          },
+          "record_number": {
+            "caught": 386,
+            "partial": 9,
+            "missed": 9,
+            "lost": 0,
+            "total": 404
+          },
+          "date": {
+            "caught": 632,
+            "partial": 5,
+            "missed": 14,
+            "lost": 0,
+            "total": 651
+          },
+          "bank_account": {
+            "caught": 95,
+            "partial": 0,
+            "missed": 3,
+            "lost": 0,
+            "total": 98
+          },
+          "money_amount": {
+            "caught": 678,
+            "partial": 9,
+            "missed": 2,
+            "lost": 0,
+            "total": 689
+          },
+          "tax_id": {
+            "caught": 57,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 58
+          },
+          "postal_code": {
+            "caught": 122,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 123
+          },
+          "routing_number": {
+            "caught": 47,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 47
+          },
+          "card_expiry": {
+            "caught": 15,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 15
+          },
+          "indirect_identifier": {
+            "caught": 0,
+            "partial": 21,
+            "missed": 27,
+            "lost": 0,
+            "total": 48
+          },
+          "credential": {
+            "caught": 54,
+            "partial": 1,
+            "missed": 22,
+            "lost": 0,
+            "total": 77
+          },
+          "ssn": {
+            "caught": 46,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 48
+          },
+          "government_id": {
+            "caught": 92,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 94
+          },
+          "device_id": {
+            "caught": 61,
+            "partial": 2,
+            "missed": 6,
+            "lost": 0,
+            "total": 69
+          },
+          "date_of_birth": {
+            "caught": 74,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 74
+          },
+          "age_over_89": {
+            "caught": 6,
+            "partial": 1,
+            "missed": 4,
+            "lost": 0,
+            "total": 11
+          },
+          "sensitive_attribute": {
+            "caught": 3,
+            "partial": 17,
+            "missed": 69,
+            "lost": 0,
+            "total": 89
+          },
+          "ip_address": {
+            "caught": 25,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 25
+          },
+          "card_security_code": {
+            "caught": 6,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 6
+          },
+          "vehicle_id": {
+            "caught": 47,
+            "partial": 1,
+            "missed": 9,
+            "lost": 0,
+            "total": 57
+          },
+          "iban": {
+            "caught": 12,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 12
+          }
+        },
+        "by_subtype": {
+          "place/state abbreviation": {
+            "caught": 90,
+            "partial": 0,
+            "missed": 16,
+            "lost": 0,
+            "total": 106
+          },
+          "place/state abbreviation that is also a word": {
+            "caught": 9,
+            "partial": 0,
+            "missed": 4,
+            "lost": 0,
+            "total": 13
+          },
+          "place/state in a caps court heading": {
+            "caught": 3,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 3
+          }
+        },
+        "whole_core": 12,
+        "whole_extended": 6,
+        "extra": 341,
+        "detections": 5396,
+        "distractor_hits": 101,
+        "excess_chars": 4355,
+        "recovered_core": 0,
+        "regressed_core": 0,
+        "improved_core_documents": 0,
+        "core_delta_95pct_pp": [
+          0.0,
+          0.0
+        ],
+        "core_recall": 96.97371327590015,
+        "extra_rate": 6.3194959229058565
+      },
+      "identifier-memory": {
+        "documents": 60,
+        "core": {
+          "caught": 4390,
+          "partial": 61,
+          "missed": 76,
+          "lost": 0,
+          "total": 4527
+        },
+        "extended": {
+          "caught": 4946,
+          "partial": 66,
+          "missed": 136,
+          "lost": 0,
+          "total": 5148
+        },
+        "legacy_core": {
+          "caught": 4390,
+          "partial": 61,
+          "missed": 76,
+          "lost": 0,
+          "total": 4527
+        },
+        "by_category": {
+          "url": {
+            "caught": 26,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 26
+          },
+          "organization_name": {
+            "caught": 438,
+            "partial": 10,
+            "missed": 5,
+            "lost": 0,
+            "total": 453
+          },
+          "street_address": {
+            "caught": 121,
+            "partial": 12,
+            "missed": 5,
+            "lost": 0,
+            "total": 138
+          },
+          "phone": {
+            "caught": 216,
+            "partial": 2,
+            "missed": 0,
+            "lost": 0,
+            "total": 218
+          },
+          "person_name": {
+            "caught": 1070,
+            "partial": 11,
+            "missed": 14,
+            "lost": 0,
+            "total": 1095
+          },
+          "email": {
+            "caught": 133,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 133
+          },
+          "health_info": {
+            "caught": 9,
+            "partial": 10,
+            "missed": 198,
+            "lost": 0,
+            "total": 217
+          },
+          "payment_card": {
+            "caught": 46,
+            "partial": 0,
+            "missed": 6,
+            "lost": 0,
+            "total": 52
+          },
+          "place": {
+            "caught": 441,
+            "partial": 2,
+            "missed": 32,
+            "lost": 0,
+            "total": 475
+          },
+          "record_number": {
+            "caught": 386,
+            "partial": 9,
+            "missed": 9,
+            "lost": 0,
+            "total": 404
+          },
+          "date": {
+            "caught": 632,
+            "partial": 5,
+            "missed": 14,
+            "lost": 0,
+            "total": 651
+          },
+          "bank_account": {
+            "caught": 95,
+            "partial": 0,
+            "missed": 3,
+            "lost": 0,
+            "total": 98
+          },
+          "money_amount": {
+            "caught": 678,
+            "partial": 9,
+            "missed": 2,
+            "lost": 0,
+            "total": 689
+          },
+          "tax_id": {
+            "caught": 57,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 58
+          },
+          "postal_code": {
+            "caught": 122,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 123
+          },
+          "routing_number": {
+            "caught": 47,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 47
+          },
+          "card_expiry": {
+            "caught": 15,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 15
+          },
+          "indirect_identifier": {
+            "caught": 0,
+            "partial": 21,
+            "missed": 27,
+            "lost": 0,
+            "total": 48
+          },
+          "credential": {
+            "caught": 54,
+            "partial": 1,
+            "missed": 22,
+            "lost": 0,
+            "total": 77
+          },
+          "ssn": {
+            "caught": 46,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 48
+          },
+          "government_id": {
+            "caught": 92,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 94
+          },
+          "device_id": {
+            "caught": 61,
+            "partial": 2,
+            "missed": 6,
+            "lost": 0,
+            "total": 69
+          },
+          "date_of_birth": {
+            "caught": 74,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 74
+          },
+          "age_over_89": {
+            "caught": 6,
+            "partial": 1,
+            "missed": 4,
+            "lost": 0,
+            "total": 11
+          },
+          "sensitive_attribute": {
+            "caught": 3,
+            "partial": 17,
+            "missed": 69,
+            "lost": 0,
+            "total": 89
+          },
+          "ip_address": {
+            "caught": 25,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 25
+          },
+          "card_security_code": {
+            "caught": 6,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 6
+          },
+          "vehicle_id": {
+            "caught": 47,
+            "partial": 1,
+            "missed": 9,
+            "lost": 0,
+            "total": 57
+          },
+          "iban": {
+            "caught": 12,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 12
+          }
+        },
+        "by_subtype": {
+          "place/state abbreviation": {
+            "caught": 90,
+            "partial": 0,
+            "missed": 16,
+            "lost": 0,
+            "total": 106
+          },
+          "place/state abbreviation that is also a word": {
+            "caught": 9,
+            "partial": 0,
+            "missed": 4,
+            "lost": 0,
+            "total": 13
+          },
+          "place/state in a caps court heading": {
+            "caught": 2,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 3
+          }
+        },
+        "whole_core": 12,
+        "whole_extended": 6,
+        "extra": 336,
+        "detections": 5390,
+        "distractor_hits": 100,
+        "excess_chars": 4292,
+        "recovered_core": 0,
+        "regressed_core": 0,
+        "improved_core_documents": 0,
+        "core_delta_95pct_pp": [
+          0.0,
+          0.0
+        ],
+        "core_recall": 96.97371327590015,
+        "extra_rate": 6.233766233766234
+      },
+      "combined-memory": {
+        "documents": 60,
+        "core": {
+          "caught": 4390,
+          "partial": 61,
+          "missed": 76,
+          "lost": 0,
+          "total": 4527
+        },
+        "extended": {
+          "caught": 4947,
+          "partial": 66,
+          "missed": 135,
+          "lost": 0,
+          "total": 5148
+        },
+        "legacy_core": {
+          "caught": 4390,
+          "partial": 61,
+          "missed": 76,
+          "lost": 0,
+          "total": 4527
+        },
+        "by_category": {
+          "url": {
+            "caught": 26,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 26
+          },
+          "organization_name": {
+            "caught": 438,
+            "partial": 10,
+            "missed": 5,
+            "lost": 0,
+            "total": 453
+          },
+          "street_address": {
+            "caught": 121,
+            "partial": 12,
+            "missed": 5,
+            "lost": 0,
+            "total": 138
+          },
+          "phone": {
+            "caught": 216,
+            "partial": 2,
+            "missed": 0,
+            "lost": 0,
+            "total": 218
+          },
+          "person_name": {
+            "caught": 1070,
+            "partial": 11,
+            "missed": 14,
+            "lost": 0,
+            "total": 1095
+          },
+          "email": {
+            "caught": 133,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 133
+          },
+          "health_info": {
+            "caught": 9,
+            "partial": 10,
+            "missed": 198,
+            "lost": 0,
+            "total": 217
+          },
+          "payment_card": {
+            "caught": 46,
+            "partial": 0,
+            "missed": 6,
+            "lost": 0,
+            "total": 52
+          },
+          "place": {
+            "caught": 442,
+            "partial": 2,
+            "missed": 31,
+            "lost": 0,
+            "total": 475
+          },
+          "record_number": {
+            "caught": 386,
+            "partial": 9,
+            "missed": 9,
+            "lost": 0,
+            "total": 404
+          },
+          "date": {
+            "caught": 632,
+            "partial": 5,
+            "missed": 14,
+            "lost": 0,
+            "total": 651
+          },
+          "bank_account": {
+            "caught": 95,
+            "partial": 0,
+            "missed": 3,
+            "lost": 0,
+            "total": 98
+          },
+          "money_amount": {
+            "caught": 678,
+            "partial": 9,
+            "missed": 2,
+            "lost": 0,
+            "total": 689
+          },
+          "tax_id": {
+            "caught": 57,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 58
+          },
+          "postal_code": {
+            "caught": 122,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 123
+          },
+          "routing_number": {
+            "caught": 47,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 47
+          },
+          "card_expiry": {
+            "caught": 15,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 15
+          },
+          "indirect_identifier": {
+            "caught": 0,
+            "partial": 21,
+            "missed": 27,
+            "lost": 0,
+            "total": 48
+          },
+          "credential": {
+            "caught": 54,
+            "partial": 1,
+            "missed": 22,
+            "lost": 0,
+            "total": 77
+          },
+          "ssn": {
+            "caught": 46,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 48
+          },
+          "government_id": {
+            "caught": 92,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 94
+          },
+          "device_id": {
+            "caught": 61,
+            "partial": 2,
+            "missed": 6,
+            "lost": 0,
+            "total": 69
+          },
+          "date_of_birth": {
+            "caught": 74,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 74
+          },
+          "age_over_89": {
+            "caught": 6,
+            "partial": 1,
+            "missed": 4,
+            "lost": 0,
+            "total": 11
+          },
+          "sensitive_attribute": {
+            "caught": 3,
+            "partial": 17,
+            "missed": 69,
+            "lost": 0,
+            "total": 89
+          },
+          "ip_address": {
+            "caught": 25,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 25
+          },
+          "card_security_code": {
+            "caught": 6,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 6
+          },
+          "vehicle_id": {
+            "caught": 47,
+            "partial": 1,
+            "missed": 9,
+            "lost": 0,
+            "total": 57
+          },
+          "iban": {
+            "caught": 12,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 12
+          }
+        },
+        "by_subtype": {
+          "place/state abbreviation": {
+            "caught": 90,
+            "partial": 0,
+            "missed": 16,
+            "lost": 0,
+            "total": 106
+          },
+          "place/state abbreviation that is also a word": {
+            "caught": 9,
+            "partial": 0,
+            "missed": 4,
+            "lost": 0,
+            "total": 13
+          },
+          "place/state in a caps court heading": {
+            "caught": 3,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 3
+          }
+        },
+        "whole_core": 12,
+        "whole_extended": 6,
+        "extra": 341,
+        "detections": 5396,
+        "distractor_hits": 101,
+        "excess_chars": 4355,
+        "recovered_core": 0,
+        "regressed_core": 0,
+        "improved_core_documents": 0,
+        "core_delta_95pct_pp": [
+          0.0,
+          0.0
+        ],
+        "core_recall": 96.97371327590015,
+        "extra_rate": 6.3194959229058565
+      }
+    },
+    "timingMs": {
+      "baseline": 9253.658642999977,
+      "trust-model": 59.300226999977895,
+      "guarded-exact": 16.901621000000887,
+      "guarded-normalized": 1156.6325549999892,
+      "complete-spans": 18.19815900001413,
+      "combined": 114.72290700001395,
+      "identifier-memory": 7.506209000010131,
+      "combined-memory": 116.46046500001103
+    },
+    "chunking": {
+      "max_old": 798,
+      "max_new": 350,
+      "oversized_old_chunks": 4,
+      "old_chunks": 128,
+      "bounded_chunks": 124
+    },
+    "prespecified_checks": {
+      "recall_gain": false,
+      "no_regression": true,
+      "extra_rate_budget": true
+    },
+    "subtype_reporting": "Only subtypes changed by any variant; all others are reproducible from the saved detections."
+  },
+  "3": {
+    "sourceHash": "1634c2f9d8e22641c5c5054bb9d3e36a2cd07916fb964b082196b58549d3ce57",
+    "baselineDifferences": 0,
+    "variants": {
+      "baseline": {
+        "documents": 60,
+        "core": {
+          "caught": 2981,
+          "partial": 18,
+          "missed": 42,
+          "lost": 6,
+          "total": 3047
+        },
+        "extended": {
+          "caught": 3295,
+          "partial": 22,
+          "missed": 56,
+          "lost": 6,
+          "total": 3379
+        },
+        "legacy_core": {
+          "caught": 2981,
+          "partial": 18,
+          "missed": 42,
+          "lost": 6,
+          "total": 3047
+        },
+        "by_category": {
+          "phone": {
+            "caught": 125,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 125
+          },
+          "sensitive_attribute": {
+            "caught": 5,
+            "partial": 27,
+            "missed": 57,
+            "lost": 0,
+            "total": 89
+          },
+          "street_address": {
+            "caught": 115,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 116
+          },
+          "health_info": {
+            "caught": 0,
+            "partial": 19,
+            "missed": 124,
+            "lost": 0,
+            "total": 143
+          },
+          "indirect_identifier": {
+            "caught": 1,
+            "partial": 20,
+            "missed": 31,
+            "lost": 0,
+            "total": 52
+          },
+          "email": {
+            "caught": 85,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 85
+          },
+          "organization_name": {
+            "caught": 249,
+            "partial": 4,
+            "missed": 5,
+            "lost": 0,
+            "total": 258
+          },
+          "person_name": {
+            "caught": 728,
+            "partial": 5,
+            "missed": 26,
+            "lost": 0,
+            "total": 759
+          },
+          "money_amount": {
+            "caught": 472,
+            "partial": 2,
+            "missed": 2,
+            "lost": 0,
+            "total": 476
+          },
+          "date": {
+            "caught": 420,
+            "partial": 3,
+            "missed": 0,
+            "lost": 6,
+            "total": 429
+          },
+          "date_of_birth": {
+            "caught": 74,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 75
+          },
+          "record_number": {
+            "caught": 266,
+            "partial": 2,
+            "missed": 2,
+            "lost": 0,
+            "total": 270
+          },
+          "place": {
+            "caught": 260,
+            "partial": 4,
+            "missed": 12,
+            "lost": 0,
+            "total": 276
+          },
+          "postal_code": {
+            "caught": 94,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 96
+          },
+          "government_id": {
+            "caught": 57,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 57
+          },
+          "ssn": {
+            "caught": 50,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 52
+          },
+          "url": {
+            "caught": 11,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 11
+          },
+          "iban": {
+            "caught": 9,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 9
+          },
+          "tax_id": {
+            "caught": 47,
+            "partial": 1,
+            "missed": 1,
+            "lost": 0,
+            "total": 49
+          },
+          "routing_number": {
+            "caught": 25,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 25
+          },
+          "bank_account": {
+            "caught": 53,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 53
+          },
+          "card_expiry": {
+            "caught": 10,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 11
+          },
+          "payment_card": {
+            "caught": 31,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 31
+          },
+          "card_security_code": {
+            "caught": 7,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 7
+          },
+          "age_over_89": {
+            "caught": 13,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 13
+          },
+          "credential": {
+            "caught": 32,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 33
+          },
+          "ip_address": {
+            "caught": 16,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 16
+          },
+          "vehicle_id": {
+            "caught": 24,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 24
+          },
+          "device_id": {
+            "caught": 22,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 23
+          }
+        },
+        "by_subtype": {
+          "postal_code/postal code": {
+            "caught": 55,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 57
+          },
+          "place/state abbreviation": {
+            "caught": 59,
+            "partial": 0,
+            "missed": 3,
+            "lost": 0,
+            "total": 62
+          },
+          "person_name/lower case": {
+            "caught": 13,
+            "partial": 3,
+            "missed": 6,
+            "lost": 0,
+            "total": 22
+          },
+          "person_name/lower case, auto-transcribed": {
+            "caught": 0,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "person_name/lower case, title spelled out": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "place/city in lower case": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "organization_name/lower case": {
+            "caught": 1,
+            "partial": 0,
+            "missed": 5,
+            "lost": 0,
+            "total": 6
+          },
+          "person_name/lower case, no punctuation": {
+            "caught": 0,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "place/city abbreviation, lower case": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "place/town in lower case": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "place/city abbreviated, lower case": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "indirect_identifier/supervisor known only by first name with title": {
+            "caught": 0,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "sensitive_attribute/financial distress": {
+            "caught": 0,
+            "partial": 2,
+            "missed": 1,
+            "lost": 0,
+            "total": 3
+          },
+          "indirect_identifier/child's school": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          }
+        },
+        "whole_core": 38,
+        "whole_extended": 33,
+        "extra": 173,
+        "detections": 3538,
+        "distractor_hits": 61,
+        "excess_chars": 2113,
+        "recovered_core": 0,
+        "regressed_core": 0,
+        "improved_core_documents": 0,
+        "core_delta_95pct_pp": [
+          0.0,
+          0.0
+        ],
+        "core_recall": 97.83393501805054,
+        "extra_rate": 4.889768230638779
+      },
+      "trust-model": {
+        "documents": 60,
+        "core": {
+          "caught": 2990,
+          "partial": 20,
+          "missed": 31,
+          "lost": 6,
+          "total": 3047
+        },
+        "extended": {
+          "caught": 3308,
+          "partial": 25,
+          "missed": 40,
+          "lost": 6,
+          "total": 3379
+        },
+        "legacy_core": {
+          "caught": 2990,
+          "partial": 20,
+          "missed": 31,
+          "lost": 6,
+          "total": 3047
+        },
+        "by_category": {
+          "phone": {
+            "caught": 125,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 125
+          },
+          "sensitive_attribute": {
+            "caught": 5,
+            "partial": 28,
+            "missed": 56,
+            "lost": 0,
+            "total": 89
+          },
+          "street_address": {
+            "caught": 115,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 116
+          },
+          "health_info": {
+            "caught": 0,
+            "partial": 19,
+            "missed": 124,
+            "lost": 0,
+            "total": 143
+          },
+          "indirect_identifier": {
+            "caught": 1,
+            "partial": 21,
+            "missed": 30,
+            "lost": 0,
+            "total": 52
+          },
+          "email": {
+            "caught": 85,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 85
+          },
+          "organization_name": {
+            "caught": 254,
+            "partial": 4,
+            "missed": 0,
+            "lost": 0,
+            "total": 258
+          },
+          "person_name": {
+            "caught": 730,
+            "partial": 7,
+            "missed": 22,
+            "lost": 0,
+            "total": 759
+          },
+          "money_amount": {
+            "caught": 472,
+            "partial": 2,
+            "missed": 2,
+            "lost": 0,
+            "total": 476
+          },
+          "date": {
+            "caught": 420,
+            "partial": 3,
+            "missed": 0,
+            "lost": 6,
+            "total": 429
+          },
+          "date_of_birth": {
+            "caught": 74,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 75
+          },
+          "record_number": {
+            "caught": 266,
+            "partial": 2,
+            "missed": 2,
+            "lost": 0,
+            "total": 270
+          },
+          "place": {
+            "caught": 264,
+            "partial": 5,
+            "missed": 7,
+            "lost": 0,
+            "total": 276
+          },
+          "postal_code": {
+            "caught": 96,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 96
+          },
+          "government_id": {
+            "caught": 57,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 57
+          },
+          "ssn": {
+            "caught": 50,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 52
+          },
+          "url": {
+            "caught": 11,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 11
+          },
+          "iban": {
+            "caught": 9,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 9
+          },
+          "tax_id": {
+            "caught": 47,
+            "partial": 1,
+            "missed": 1,
+            "lost": 0,
+            "total": 49
+          },
+          "routing_number": {
+            "caught": 25,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 25
+          },
+          "bank_account": {
+            "caught": 53,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 53
+          },
+          "card_expiry": {
+            "caught": 10,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 11
+          },
+          "payment_card": {
+            "caught": 31,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 31
+          },
+          "card_security_code": {
+            "caught": 7,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 7
+          },
+          "age_over_89": {
+            "caught": 13,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 13
+          },
+          "credential": {
+            "caught": 32,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 33
+          },
+          "ip_address": {
+            "caught": 16,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 16
+          },
+          "vehicle_id": {
+            "caught": 24,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 24
+          },
+          "device_id": {
+            "caught": 22,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 23
+          }
+        },
+        "by_subtype": {
+          "postal_code/postal code": {
+            "caught": 57,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 57
+          },
+          "place/state abbreviation": {
+            "caught": 60,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 62
+          },
+          "person_name/lower case": {
+            "caught": 14,
+            "partial": 5,
+            "missed": 3,
+            "lost": 0,
+            "total": 22
+          },
+          "person_name/lower case, auto-transcribed": {
+            "caught": 0,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "person_name/lower case, title spelled out": {
+            "caught": 1,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "place/city in lower case": {
+            "caught": 1,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "organization_name/lower case": {
+            "caught": 6,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 6
+          },
+          "person_name/lower case, no punctuation": {
+            "caught": 0,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "place/city abbreviation, lower case": {
+            "caught": 1,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "place/town in lower case": {
+            "caught": 1,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "place/city abbreviated, lower case": {
+            "caught": 0,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "indirect_identifier/supervisor known only by first name with title": {
+            "caught": 0,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "sensitive_attribute/financial distress": {
+            "caught": 0,
+            "partial": 3,
+            "missed": 0,
+            "lost": 0,
+            "total": 3
+          },
+          "indirect_identifier/child's school": {
+            "caught": 0,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          }
+        },
+        "whole_core": 38,
+        "whole_extended": 34,
+        "extra": 209,
+        "detections": 3592,
+        "distractor_hits": 68,
+        "excess_chars": 2331,
+        "recovered_core": 9,
+        "regressed_core": 0,
+        "improved_core_documents": 3,
+        "core_delta_95pct_pp": [
+          0.0,
+          0.7545
+        ],
+        "core_recall": 98.1293075155891,
+        "extra_rate": 5.8184855233853
+      },
+      "guarded-exact": {
+        "documents": 60,
+        "core": {
+          "caught": 2986,
+          "partial": 19,
+          "missed": 36,
+          "lost": 6,
+          "total": 3047
+        },
+        "extended": {
+          "caught": 3301,
+          "partial": 23,
+          "missed": 49,
+          "lost": 6,
+          "total": 3379
+        },
+        "legacy_core": {
+          "caught": 2986,
+          "partial": 19,
+          "missed": 36,
+          "lost": 6,
+          "total": 3047
+        },
+        "by_category": {
+          "phone": {
+            "caught": 125,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 125
+          },
+          "sensitive_attribute": {
+            "caught": 5,
+            "partial": 27,
+            "missed": 57,
+            "lost": 0,
+            "total": 89
+          },
+          "street_address": {
+            "caught": 115,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 116
+          },
+          "health_info": {
+            "caught": 0,
+            "partial": 19,
+            "missed": 124,
+            "lost": 0,
+            "total": 143
+          },
+          "indirect_identifier": {
+            "caught": 1,
+            "partial": 20,
+            "missed": 31,
+            "lost": 0,
+            "total": 52
+          },
+          "email": {
+            "caught": 85,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 85
+          },
+          "organization_name": {
+            "caught": 254,
+            "partial": 4,
+            "missed": 0,
+            "lost": 0,
+            "total": 258
+          },
+          "person_name": {
+            "caught": 728,
+            "partial": 6,
+            "missed": 25,
+            "lost": 0,
+            "total": 759
+          },
+          "money_amount": {
+            "caught": 472,
+            "partial": 2,
+            "missed": 2,
+            "lost": 0,
+            "total": 476
+          },
+          "date": {
+            "caught": 420,
+            "partial": 3,
+            "missed": 0,
+            "lost": 6,
+            "total": 429
+          },
+          "date_of_birth": {
+            "caught": 74,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 75
+          },
+          "record_number": {
+            "caught": 266,
+            "partial": 2,
+            "missed": 2,
+            "lost": 0,
+            "total": 270
+          },
+          "place": {
+            "caught": 261,
+            "partial": 4,
+            "missed": 11,
+            "lost": 0,
+            "total": 276
+          },
+          "postal_code": {
+            "caught": 94,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 96
+          },
+          "government_id": {
+            "caught": 57,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 57
+          },
+          "ssn": {
+            "caught": 50,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 52
+          },
+          "url": {
+            "caught": 11,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 11
+          },
+          "iban": {
+            "caught": 9,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 9
+          },
+          "tax_id": {
+            "caught": 47,
+            "partial": 1,
+            "missed": 1,
+            "lost": 0,
+            "total": 49
+          },
+          "routing_number": {
+            "caught": 25,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 25
+          },
+          "bank_account": {
+            "caught": 53,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 53
+          },
+          "card_expiry": {
+            "caught": 10,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 11
+          },
+          "payment_card": {
+            "caught": 31,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 31
+          },
+          "card_security_code": {
+            "caught": 7,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 7
+          },
+          "age_over_89": {
+            "caught": 13,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 13
+          },
+          "credential": {
+            "caught": 32,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 33
+          },
+          "ip_address": {
+            "caught": 16,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 16
+          },
+          "vehicle_id": {
+            "caught": 24,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 24
+          },
+          "device_id": {
+            "caught": 22,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 23
+          }
+        },
+        "by_subtype": {
+          "postal_code/postal code": {
+            "caught": 55,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 57
+          },
+          "place/state abbreviation": {
+            "caught": 59,
+            "partial": 0,
+            "missed": 3,
+            "lost": 0,
+            "total": 62
+          },
+          "person_name/lower case": {
+            "caught": 13,
+            "partial": 4,
+            "missed": 5,
+            "lost": 0,
+            "total": 22
+          },
+          "person_name/lower case, auto-transcribed": {
+            "caught": 0,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "person_name/lower case, title spelled out": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "place/city in lower case": {
+            "caught": 1,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "organization_name/lower case": {
+            "caught": 6,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 6
+          },
+          "person_name/lower case, no punctuation": {
+            "caught": 0,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "place/city abbreviation, lower case": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "place/town in lower case": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "place/city abbreviated, lower case": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "indirect_identifier/supervisor known only by first name with title": {
+            "caught": 0,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "sensitive_attribute/financial distress": {
+            "caught": 0,
+            "partial": 2,
+            "missed": 1,
+            "lost": 0,
+            "total": 3
+          },
+          "indirect_identifier/child's school": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          }
+        },
+        "whole_core": 38,
+        "whole_extended": 33,
+        "extra": 175,
+        "detections": 3548,
+        "distractor_hits": 61,
+        "excess_chars": 2140,
+        "recovered_core": 5,
+        "regressed_core": 0,
+        "improved_core_documents": 1,
+        "core_delta_95pct_pp": [
+          0.0,
+          0.5265
+        ],
+        "core_recall": 97.9980308500164,
+        "extra_rate": 4.932356257046223
+      },
+      "guarded-normalized": {
+        "documents": 60,
+        "core": {
+          "caught": 2989,
+          "partial": 18,
+          "missed": 34,
+          "lost": 6,
+          "total": 3047
+        },
+        "extended": {
+          "caught": 3304,
+          "partial": 22,
+          "missed": 47,
+          "lost": 6,
+          "total": 3379
+        },
+        "legacy_core": {
+          "caught": 2989,
+          "partial": 18,
+          "missed": 34,
+          "lost": 6,
+          "total": 3047
+        },
+        "by_category": {
+          "phone": {
+            "caught": 125,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 125
+          },
+          "sensitive_attribute": {
+            "caught": 5,
+            "partial": 27,
+            "missed": 57,
+            "lost": 0,
+            "total": 89
+          },
+          "street_address": {
+            "caught": 115,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 116
+          },
+          "health_info": {
+            "caught": 0,
+            "partial": 19,
+            "missed": 124,
+            "lost": 0,
+            "total": 143
+          },
+          "indirect_identifier": {
+            "caught": 1,
+            "partial": 20,
+            "missed": 31,
+            "lost": 0,
+            "total": 52
+          },
+          "email": {
+            "caught": 85,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 85
+          },
+          "organization_name": {
+            "caught": 254,
+            "partial": 4,
+            "missed": 0,
+            "lost": 0,
+            "total": 258
+          },
+          "person_name": {
+            "caught": 731,
+            "partial": 5,
+            "missed": 23,
+            "lost": 0,
+            "total": 759
+          },
+          "money_amount": {
+            "caught": 472,
+            "partial": 2,
+            "missed": 2,
+            "lost": 0,
+            "total": 476
+          },
+          "date": {
+            "caught": 420,
+            "partial": 3,
+            "missed": 0,
+            "lost": 6,
+            "total": 429
+          },
+          "date_of_birth": {
+            "caught": 74,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 75
+          },
+          "record_number": {
+            "caught": 266,
+            "partial": 2,
+            "missed": 2,
+            "lost": 0,
+            "total": 270
+          },
+          "place": {
+            "caught": 261,
+            "partial": 4,
+            "missed": 11,
+            "lost": 0,
+            "total": 276
+          },
+          "postal_code": {
+            "caught": 94,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 96
+          },
+          "government_id": {
+            "caught": 57,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 57
+          },
+          "ssn": {
+            "caught": 50,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 52
+          },
+          "url": {
+            "caught": 11,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 11
+          },
+          "iban": {
+            "caught": 9,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 9
+          },
+          "tax_id": {
+            "caught": 47,
+            "partial": 1,
+            "missed": 1,
+            "lost": 0,
+            "total": 49
+          },
+          "routing_number": {
+            "caught": 25,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 25
+          },
+          "bank_account": {
+            "caught": 53,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 53
+          },
+          "card_expiry": {
+            "caught": 10,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 11
+          },
+          "payment_card": {
+            "caught": 31,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 31
+          },
+          "card_security_code": {
+            "caught": 7,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 7
+          },
+          "age_over_89": {
+            "caught": 13,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 13
+          },
+          "credential": {
+            "caught": 32,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 33
+          },
+          "ip_address": {
+            "caught": 16,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 16
+          },
+          "vehicle_id": {
+            "caught": 24,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 24
+          },
+          "device_id": {
+            "caught": 22,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 23
+          }
+        },
+        "by_subtype": {
+          "postal_code/postal code": {
+            "caught": 55,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 57
+          },
+          "place/state abbreviation": {
+            "caught": 59,
+            "partial": 0,
+            "missed": 3,
+            "lost": 0,
+            "total": 62
+          },
+          "person_name/lower case": {
+            "caught": 16,
+            "partial": 3,
+            "missed": 3,
+            "lost": 0,
+            "total": 22
+          },
+          "person_name/lower case, auto-transcribed": {
+            "caught": 0,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "person_name/lower case, title spelled out": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "place/city in lower case": {
+            "caught": 1,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "organization_name/lower case": {
+            "caught": 6,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 6
+          },
+          "person_name/lower case, no punctuation": {
+            "caught": 0,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "place/city abbreviation, lower case": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "place/town in lower case": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "place/city abbreviated, lower case": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "indirect_identifier/supervisor known only by first name with title": {
+            "caught": 0,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "sensitive_attribute/financial distress": {
+            "caught": 0,
+            "partial": 2,
+            "missed": 1,
+            "lost": 0,
+            "total": 3
+          },
+          "indirect_identifier/child's school": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          }
+        },
+        "whole_core": 38,
+        "whole_extended": 33,
+        "extra": 176,
+        "detections": 3550,
+        "distractor_hits": 62,
+        "excess_chars": 2152,
+        "recovered_core": 8,
+        "regressed_core": 0,
+        "improved_core_documents": 2,
+        "core_delta_95pct_pp": [
+          0.0,
+          0.6641
+        ],
+        "core_recall": 98.09648834919594,
+        "extra_rate": 4.957746478873239
+      },
+      "complete-spans": {
+        "documents": 60,
+        "core": {
+          "caught": 2984,
+          "partial": 15,
+          "missed": 42,
+          "lost": 6,
+          "total": 3047
+        },
+        "extended": {
+          "caught": 3298,
+          "partial": 19,
+          "missed": 56,
+          "lost": 6,
+          "total": 3379
+        },
+        "legacy_core": {
+          "caught": 2984,
+          "partial": 15,
+          "missed": 42,
+          "lost": 6,
+          "total": 3047
+        },
+        "by_category": {
+          "phone": {
+            "caught": 125,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 125
+          },
+          "sensitive_attribute": {
+            "caught": 5,
+            "partial": 27,
+            "missed": 57,
+            "lost": 0,
+            "total": 89
+          },
+          "street_address": {
+            "caught": 115,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 116
+          },
+          "health_info": {
+            "caught": 0,
+            "partial": 19,
+            "missed": 124,
+            "lost": 0,
+            "total": 143
+          },
+          "indirect_identifier": {
+            "caught": 2,
+            "partial": 19,
+            "missed": 31,
+            "lost": 0,
+            "total": 52
+          },
+          "email": {
+            "caught": 85,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 85
+          },
+          "organization_name": {
+            "caught": 249,
+            "partial": 4,
+            "missed": 5,
+            "lost": 0,
+            "total": 258
+          },
+          "person_name": {
+            "caught": 731,
+            "partial": 2,
+            "missed": 26,
+            "lost": 0,
+            "total": 759
+          },
+          "money_amount": {
+            "caught": 472,
+            "partial": 2,
+            "missed": 2,
+            "lost": 0,
+            "total": 476
+          },
+          "date": {
+            "caught": 420,
+            "partial": 3,
+            "missed": 0,
+            "lost": 6,
+            "total": 429
+          },
+          "date_of_birth": {
+            "caught": 74,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 75
+          },
+          "record_number": {
+            "caught": 266,
+            "partial": 2,
+            "missed": 2,
+            "lost": 0,
+            "total": 270
+          },
+          "place": {
+            "caught": 260,
+            "partial": 4,
+            "missed": 12,
+            "lost": 0,
+            "total": 276
+          },
+          "postal_code": {
+            "caught": 94,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 96
+          },
+          "government_id": {
+            "caught": 57,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 57
+          },
+          "ssn": {
+            "caught": 50,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 52
+          },
+          "url": {
+            "caught": 11,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 11
+          },
+          "iban": {
+            "caught": 9,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 9
+          },
+          "tax_id": {
+            "caught": 47,
+            "partial": 1,
+            "missed": 1,
+            "lost": 0,
+            "total": 49
+          },
+          "routing_number": {
+            "caught": 25,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 25
+          },
+          "bank_account": {
+            "caught": 53,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 53
+          },
+          "card_expiry": {
+            "caught": 10,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 11
+          },
+          "payment_card": {
+            "caught": 31,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 31
+          },
+          "card_security_code": {
+            "caught": 7,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 7
+          },
+          "age_over_89": {
+            "caught": 13,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 13
+          },
+          "credential": {
+            "caught": 32,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 33
+          },
+          "ip_address": {
+            "caught": 16,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 16
+          },
+          "vehicle_id": {
+            "caught": 24,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 24
+          },
+          "device_id": {
+            "caught": 22,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 23
+          }
+        },
+        "by_subtype": {
+          "postal_code/postal code": {
+            "caught": 55,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 57
+          },
+          "place/state abbreviation": {
+            "caught": 59,
+            "partial": 0,
+            "missed": 3,
+            "lost": 0,
+            "total": 62
+          },
+          "person_name/lower case": {
+            "caught": 15,
+            "partial": 1,
+            "missed": 6,
+            "lost": 0,
+            "total": 22
+          },
+          "person_name/lower case, auto-transcribed": {
+            "caught": 0,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "person_name/lower case, title spelled out": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "place/city in lower case": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "organization_name/lower case": {
+            "caught": 1,
+            "partial": 0,
+            "missed": 5,
+            "lost": 0,
+            "total": 6
+          },
+          "person_name/lower case, no punctuation": {
+            "caught": 1,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "place/city abbreviation, lower case": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "place/town in lower case": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "place/city abbreviated, lower case": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "indirect_identifier/supervisor known only by first name with title": {
+            "caught": 1,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "sensitive_attribute/financial distress": {
+            "caught": 0,
+            "partial": 2,
+            "missed": 1,
+            "lost": 0,
+            "total": 3
+          },
+          "indirect_identifier/child's school": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          }
+        },
+        "whole_core": 38,
+        "whole_extended": 33,
+        "extra": 173,
+        "detections": 3538,
+        "distractor_hits": 61,
+        "excess_chars": 2113,
+        "recovered_core": 3,
+        "regressed_core": 0,
+        "improved_core_documents": 1,
+        "core_delta_95pct_pp": [
+          0.0,
+          0.3159
+        ],
+        "core_recall": 97.93239251723006,
+        "extra_rate": 4.889768230638779
+      },
+      "combined": {
+        "documents": 60,
+        "core": {
+          "caught": 2994,
+          "partial": 13,
+          "missed": 34,
+          "lost": 6,
+          "total": 3047
+        },
+        "extended": {
+          "caught": 3309,
+          "partial": 17,
+          "missed": 47,
+          "lost": 6,
+          "total": 3379
+        },
+        "legacy_core": {
+          "caught": 2994,
+          "partial": 13,
+          "missed": 34,
+          "lost": 6,
+          "total": 3047
+        },
+        "by_category": {
+          "phone": {
+            "caught": 125,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 125
+          },
+          "sensitive_attribute": {
+            "caught": 5,
+            "partial": 27,
+            "missed": 57,
+            "lost": 0,
+            "total": 89
+          },
+          "street_address": {
+            "caught": 115,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 116
+          },
+          "health_info": {
+            "caught": 0,
+            "partial": 19,
+            "missed": 124,
+            "lost": 0,
+            "total": 143
+          },
+          "indirect_identifier": {
+            "caught": 2,
+            "partial": 19,
+            "missed": 31,
+            "lost": 0,
+            "total": 52
+          },
+          "email": {
+            "caught": 85,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 85
+          },
+          "organization_name": {
+            "caught": 254,
+            "partial": 4,
+            "missed": 0,
+            "lost": 0,
+            "total": 258
+          },
+          "person_name": {
+            "caught": 736,
+            "partial": 0,
+            "missed": 23,
+            "lost": 0,
+            "total": 759
+          },
+          "money_amount": {
+            "caught": 472,
+            "partial": 2,
+            "missed": 2,
+            "lost": 0,
+            "total": 476
+          },
+          "date": {
+            "caught": 420,
+            "partial": 3,
+            "missed": 0,
+            "lost": 6,
+            "total": 429
+          },
+          "date_of_birth": {
+            "caught": 74,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 75
+          },
+          "record_number": {
+            "caught": 266,
+            "partial": 2,
+            "missed": 2,
+            "lost": 0,
+            "total": 270
+          },
+          "place": {
+            "caught": 261,
+            "partial": 4,
+            "missed": 11,
+            "lost": 0,
+            "total": 276
+          },
+          "postal_code": {
+            "caught": 94,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 96
+          },
+          "government_id": {
+            "caught": 57,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 57
+          },
+          "ssn": {
+            "caught": 50,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 52
+          },
+          "url": {
+            "caught": 11,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 11
+          },
+          "iban": {
+            "caught": 9,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 9
+          },
+          "tax_id": {
+            "caught": 47,
+            "partial": 1,
+            "missed": 1,
+            "lost": 0,
+            "total": 49
+          },
+          "routing_number": {
+            "caught": 25,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 25
+          },
+          "bank_account": {
+            "caught": 53,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 53
+          },
+          "card_expiry": {
+            "caught": 10,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 11
+          },
+          "payment_card": {
+            "caught": 31,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 31
+          },
+          "card_security_code": {
+            "caught": 7,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 7
+          },
+          "age_over_89": {
+            "caught": 13,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 13
+          },
+          "credential": {
+            "caught": 32,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 33
+          },
+          "ip_address": {
+            "caught": 16,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 16
+          },
+          "vehicle_id": {
+            "caught": 24,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 24
+          },
+          "device_id": {
+            "caught": 22,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 23
+          }
+        },
+        "by_subtype": {
+          "postal_code/postal code": {
+            "caught": 55,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 57
+          },
+          "place/state abbreviation": {
+            "caught": 59,
+            "partial": 0,
+            "missed": 3,
+            "lost": 0,
+            "total": 62
+          },
+          "person_name/lower case": {
+            "caught": 19,
+            "partial": 0,
+            "missed": 3,
+            "lost": 0,
+            "total": 22
+          },
+          "person_name/lower case, auto-transcribed": {
+            "caught": 1,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "person_name/lower case, title spelled out": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "place/city in lower case": {
+            "caught": 1,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "organization_name/lower case": {
+            "caught": 6,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 6
+          },
+          "person_name/lower case, no punctuation": {
+            "caught": 1,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "place/city abbreviation, lower case": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "place/town in lower case": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "place/city abbreviated, lower case": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "indirect_identifier/supervisor known only by first name with title": {
+            "caught": 1,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "sensitive_attribute/financial distress": {
+            "caught": 0,
+            "partial": 2,
+            "missed": 1,
+            "lost": 0,
+            "total": 3
+          },
+          "indirect_identifier/child's school": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          }
+        },
+        "whole_core": 38,
+        "whole_extended": 33,
+        "extra": 176,
+        "detections": 3550,
+        "distractor_hits": 62,
+        "excess_chars": 2152,
+        "recovered_core": 13,
+        "regressed_core": 0,
+        "improved_core_documents": 3,
+        "core_delta_95pct_pp": [
+          0.0,
+          1.0681
+        ],
+        "core_recall": 98.2605841811618,
+        "extra_rate": 4.957746478873239
+      },
+      "identifier-memory": {
+        "documents": 60,
+        "core": {
+          "caught": 2981,
+          "partial": 18,
+          "missed": 42,
+          "lost": 6,
+          "total": 3047
+        },
+        "extended": {
+          "caught": 3295,
+          "partial": 22,
+          "missed": 56,
+          "lost": 6,
+          "total": 3379
+        },
+        "legacy_core": {
+          "caught": 2981,
+          "partial": 18,
+          "missed": 42,
+          "lost": 6,
+          "total": 3047
+        },
+        "by_category": {
+          "phone": {
+            "caught": 125,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 125
+          },
+          "sensitive_attribute": {
+            "caught": 5,
+            "partial": 27,
+            "missed": 57,
+            "lost": 0,
+            "total": 89
+          },
+          "street_address": {
+            "caught": 115,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 116
+          },
+          "health_info": {
+            "caught": 0,
+            "partial": 19,
+            "missed": 124,
+            "lost": 0,
+            "total": 143
+          },
+          "indirect_identifier": {
+            "caught": 1,
+            "partial": 20,
+            "missed": 31,
+            "lost": 0,
+            "total": 52
+          },
+          "email": {
+            "caught": 85,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 85
+          },
+          "organization_name": {
+            "caught": 249,
+            "partial": 4,
+            "missed": 5,
+            "lost": 0,
+            "total": 258
+          },
+          "person_name": {
+            "caught": 728,
+            "partial": 5,
+            "missed": 26,
+            "lost": 0,
+            "total": 759
+          },
+          "money_amount": {
+            "caught": 472,
+            "partial": 2,
+            "missed": 2,
+            "lost": 0,
+            "total": 476
+          },
+          "date": {
+            "caught": 420,
+            "partial": 3,
+            "missed": 0,
+            "lost": 6,
+            "total": 429
+          },
+          "date_of_birth": {
+            "caught": 74,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 75
+          },
+          "record_number": {
+            "caught": 266,
+            "partial": 2,
+            "missed": 2,
+            "lost": 0,
+            "total": 270
+          },
+          "place": {
+            "caught": 260,
+            "partial": 4,
+            "missed": 12,
+            "lost": 0,
+            "total": 276
+          },
+          "postal_code": {
+            "caught": 94,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 96
+          },
+          "government_id": {
+            "caught": 57,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 57
+          },
+          "ssn": {
+            "caught": 50,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 52
+          },
+          "url": {
+            "caught": 11,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 11
+          },
+          "iban": {
+            "caught": 9,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 9
+          },
+          "tax_id": {
+            "caught": 47,
+            "partial": 1,
+            "missed": 1,
+            "lost": 0,
+            "total": 49
+          },
+          "routing_number": {
+            "caught": 25,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 25
+          },
+          "bank_account": {
+            "caught": 53,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 53
+          },
+          "card_expiry": {
+            "caught": 10,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 11
+          },
+          "payment_card": {
+            "caught": 31,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 31
+          },
+          "card_security_code": {
+            "caught": 7,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 7
+          },
+          "age_over_89": {
+            "caught": 13,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 13
+          },
+          "credential": {
+            "caught": 32,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 33
+          },
+          "ip_address": {
+            "caught": 16,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 16
+          },
+          "vehicle_id": {
+            "caught": 24,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 24
+          },
+          "device_id": {
+            "caught": 22,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 23
+          }
+        },
+        "by_subtype": {
+          "postal_code/postal code": {
+            "caught": 55,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 57
+          },
+          "place/state abbreviation": {
+            "caught": 59,
+            "partial": 0,
+            "missed": 3,
+            "lost": 0,
+            "total": 62
+          },
+          "person_name/lower case": {
+            "caught": 13,
+            "partial": 3,
+            "missed": 6,
+            "lost": 0,
+            "total": 22
+          },
+          "person_name/lower case, auto-transcribed": {
+            "caught": 0,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "person_name/lower case, title spelled out": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "place/city in lower case": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "organization_name/lower case": {
+            "caught": 1,
+            "partial": 0,
+            "missed": 5,
+            "lost": 0,
+            "total": 6
+          },
+          "person_name/lower case, no punctuation": {
+            "caught": 0,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "place/city abbreviation, lower case": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "place/town in lower case": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "place/city abbreviated, lower case": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "indirect_identifier/supervisor known only by first name with title": {
+            "caught": 0,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "sensitive_attribute/financial distress": {
+            "caught": 0,
+            "partial": 2,
+            "missed": 1,
+            "lost": 0,
+            "total": 3
+          },
+          "indirect_identifier/child's school": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          }
+        },
+        "whole_core": 38,
+        "whole_extended": 33,
+        "extra": 173,
+        "detections": 3538,
+        "distractor_hits": 61,
+        "excess_chars": 2113,
+        "recovered_core": 0,
+        "regressed_core": 0,
+        "improved_core_documents": 0,
+        "core_delta_95pct_pp": [
+          0.0,
+          0.0
+        ],
+        "core_recall": 97.83393501805054,
+        "extra_rate": 4.889768230638779
+      },
+      "combined-memory": {
+        "documents": 60,
+        "core": {
+          "caught": 2994,
+          "partial": 13,
+          "missed": 34,
+          "lost": 6,
+          "total": 3047
+        },
+        "extended": {
+          "caught": 3309,
+          "partial": 17,
+          "missed": 47,
+          "lost": 6,
+          "total": 3379
+        },
+        "legacy_core": {
+          "caught": 2994,
+          "partial": 13,
+          "missed": 34,
+          "lost": 6,
+          "total": 3047
+        },
+        "by_category": {
+          "phone": {
+            "caught": 125,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 125
+          },
+          "sensitive_attribute": {
+            "caught": 5,
+            "partial": 27,
+            "missed": 57,
+            "lost": 0,
+            "total": 89
+          },
+          "street_address": {
+            "caught": 115,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 116
+          },
+          "health_info": {
+            "caught": 0,
+            "partial": 19,
+            "missed": 124,
+            "lost": 0,
+            "total": 143
+          },
+          "indirect_identifier": {
+            "caught": 2,
+            "partial": 19,
+            "missed": 31,
+            "lost": 0,
+            "total": 52
+          },
+          "email": {
+            "caught": 85,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 85
+          },
+          "organization_name": {
+            "caught": 254,
+            "partial": 4,
+            "missed": 0,
+            "lost": 0,
+            "total": 258
+          },
+          "person_name": {
+            "caught": 736,
+            "partial": 0,
+            "missed": 23,
+            "lost": 0,
+            "total": 759
+          },
+          "money_amount": {
+            "caught": 472,
+            "partial": 2,
+            "missed": 2,
+            "lost": 0,
+            "total": 476
+          },
+          "date": {
+            "caught": 420,
+            "partial": 3,
+            "missed": 0,
+            "lost": 6,
+            "total": 429
+          },
+          "date_of_birth": {
+            "caught": 74,
+            "partial": 1,
+            "missed": 0,
+            "lost": 0,
+            "total": 75
+          },
+          "record_number": {
+            "caught": 266,
+            "partial": 2,
+            "missed": 2,
+            "lost": 0,
+            "total": 270
+          },
+          "place": {
+            "caught": 261,
+            "partial": 4,
+            "missed": 11,
+            "lost": 0,
+            "total": 276
+          },
+          "postal_code": {
+            "caught": 94,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 96
+          },
+          "government_id": {
+            "caught": 57,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 57
+          },
+          "ssn": {
+            "caught": 50,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 52
+          },
+          "url": {
+            "caught": 11,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 11
+          },
+          "iban": {
+            "caught": 9,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 9
+          },
+          "tax_id": {
+            "caught": 47,
+            "partial": 1,
+            "missed": 1,
+            "lost": 0,
+            "total": 49
+          },
+          "routing_number": {
+            "caught": 25,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 25
+          },
+          "bank_account": {
+            "caught": 53,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 53
+          },
+          "card_expiry": {
+            "caught": 10,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 11
+          },
+          "payment_card": {
+            "caught": 31,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 31
+          },
+          "card_security_code": {
+            "caught": 7,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 7
+          },
+          "age_over_89": {
+            "caught": 13,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 13
+          },
+          "credential": {
+            "caught": 32,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 33
+          },
+          "ip_address": {
+            "caught": 16,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 16
+          },
+          "vehicle_id": {
+            "caught": 24,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 24
+          },
+          "device_id": {
+            "caught": 22,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 23
+          }
+        },
+        "by_subtype": {
+          "postal_code/postal code": {
+            "caught": 55,
+            "partial": 0,
+            "missed": 2,
+            "lost": 0,
+            "total": 57
+          },
+          "place/state abbreviation": {
+            "caught": 59,
+            "partial": 0,
+            "missed": 3,
+            "lost": 0,
+            "total": 62
+          },
+          "person_name/lower case": {
+            "caught": 19,
+            "partial": 0,
+            "missed": 3,
+            "lost": 0,
+            "total": 22
+          },
+          "person_name/lower case, auto-transcribed": {
+            "caught": 1,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "person_name/lower case, title spelled out": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "place/city in lower case": {
+            "caught": 1,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "organization_name/lower case": {
+            "caught": 6,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 6
+          },
+          "person_name/lower case, no punctuation": {
+            "caught": 1,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "place/city abbreviation, lower case": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "place/town in lower case": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "place/city abbreviated, lower case": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          },
+          "indirect_identifier/supervisor known only by first name with title": {
+            "caught": 1,
+            "partial": 0,
+            "missed": 0,
+            "lost": 0,
+            "total": 1
+          },
+          "sensitive_attribute/financial distress": {
+            "caught": 0,
+            "partial": 2,
+            "missed": 1,
+            "lost": 0,
+            "total": 3
+          },
+          "indirect_identifier/child's school": {
+            "caught": 0,
+            "partial": 0,
+            "missed": 1,
+            "lost": 0,
+            "total": 1
+          }
+        },
+        "whole_core": 38,
+        "whole_extended": 33,
+        "extra": 176,
+        "detections": 3550,
+        "distractor_hits": 62,
+        "excess_chars": 2152,
+        "recovered_core": 13,
+        "regressed_core": 0,
+        "improved_core_documents": 3,
+        "core_delta_95pct_pp": [
+          0.0,
+          1.0681
+        ],
+        "core_recall": 98.2605841811618,
+        "extra_rate": 4.957746478873239
+      }
+    },
+    "timingMs": {
+      "baseline": 7095.476145999986,
+      "trust-model": 50.31822199996168,
+      "guarded-exact": 10.559653999989678,
+      "guarded-normalized": 856.9202149999946,
+      "complete-spans": 10.825916000001598,
+      "combined": 74.14527100000123,
+      "identifier-memory": 2.3717539999852306,
+      "combined-memory": 73.137524999991
+    },
+    "chunking": {
+      "max_old": 437,
+      "max_new": 350,
+      "oversized_old_chunks": 5,
+      "old_chunks": 107,
+      "bounded_chunks": 105
+    },
+    "subtype_reporting": "Only subtypes changed by any variant; all others are reproducible from the saved detections."
+  }
+}

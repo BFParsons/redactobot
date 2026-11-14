@@ -1,0 +1,56 @@
+Ferncliff & Oyama CPAs                                         FBAR / FATCA WORKSHEET - Tax Year 2025
+60 Park Place, 11th Floor, Newark, NJ 07102          Client no. Q-1182     Preparer: H. Oyama
+
+Part I - Filer
+  Name:            Beatriz S. Quaresma (passport shows QUARESMA, BEATRIZ SOFIA)
+  SSN:             341-20-3668            DOB: 23.08.1984
+  Status:          Portuguese citizen; U.S. lawful permanent resident since 2017. Green card renewal pending.
+  Portuguese passport no. CB482219, expires 11 Mar 2029.   Portuguese NIF 248117903
+  Home:            74 Ferry Street, Apt 3R, Newark, NJ 07105 (the Ironbound)
+  Employer:        Ironbound Biologics, Inc., senior QC chemist
+  Phone / email:   973-555-0148   bquaresma@fastmail.example
+  Spouse:          Declan Rafferty, Irish citizen on an H-1B, SSN 118-65-2246, Irish PPS no. 4471902TA.
+                   Filing jointly. He files his own FinCEN Form 114 for account 3 (joint, both report).
+
+Part II - Accounts (maximum value during 2025, in account currency, then USD at the Treasury Reporting Rates of
+Exchange for Dec 31, 2025: EUR 0.923, CHF 0.851 per dollar)
+
+ 1. Banco Minhoto de Aforro, S.A., Rua do Souto 114, 4700-328 Braga, Portugal
+    Current account, Owner: Beatriz only. Opened 2003.
+    IBAN PT81 2183 7855 3254 1891 7151 4     BIC BMAFPTPL
+    Max EUR 18.412,60  =  $19,948.65           Year-end €6.930,11
+ 2. Same bank, Time deposit (Fixed-term), account 0033.0000.45518220.77
+    Max €40.000,00  =  $43,336.94.  Matured 14/10/2025, rolled into account 1 then wired to NJ.
+ 3. Shannonside Savings Bank plc, 12 O'Connell Street, Limerick, V94 T2X8, Ireland
+    Joint with spouse. Savings.
+    IBAN IE64BOFI86831682855568       BIC SHSBIE2L
+    Max 31 205.44 EUR  =  $33,808.71
+ 4. Volksbank Altmuehltal eG, Marktplatz 9, 91781 Weissenburg, Germany
+    Signature Authority Only - account of her late father's estate; she is co-executor with her sister.
+    No Financial Interest. IBAN DE70 1151 0087 1059 8963 84
+    Max 112.870,00 €  (report value; no income to her)
+ 5. Banque Privee Leman-Rive SA, Quai du Mont-Blanc 21, 1201 Geneve, Switzerland
+    Securities Custody account, Inherited from her mother May 2024. Portfolio no. 5.218.447-01
+    IBAN CH43 3948 2743 2366 2351 9
+    Max CHF 204'650.00  =  $240,481.79       Dividends 2025: CHF 3'118.25
+
+    Aggregate maximum: well over the 10,000 Threshold, so FinCEN Form 114 required (31 U.S.C. § 5314).
+    Form 8938: joint filers living in the US, 50,000 year-end / Threshold met because of account 5.
+
+Part III - Questions for client (call 2/26/2026)
+  - Was the 2024 FBAR filed? She says no: her mother Leonor Quaresma died 12 May 2024 in Geneve and nobody told
+    her the custody account had been retitled until the bank wrote in January. Late 2024 FBAR needed with
+    reasonable-cause statement; discuss Streamlined procedures only if the dividends were left off the 2024
+    return (they were: about $2,900). Amend.
+  - Sister Amelia Quaresma lives in Porto and holds the other half of the estate account (no. 4). Amelia is
+    not a U.S. person, no filing for her.
+  - Did the inheritance exceed the Form 3520 amount? Yes - the Swiss securities alone were about $231k
+    at date of death. Form 3520 for 2024 was NOT filed. Penalty exposure; raise with Hideo before calling her back.
+  - Declan asks whether leaving the US in 2027 triggers anything (Form 8854 - no, he is not a long-term resident).
+  - Schedule B, Part III, Line 7a Yes; 7b: Portugal, Ireland, Germany, Switzerland.
+
+Part IV - Filing
+  FBAR due April 15, Automatic Extension to Oct 15. File through BSA E-Filing; her FinCEN account login is
+  bquaresma84 (she will type the password herself in the office). Foreign tax paid on Swiss dividends
+  CHF 1'091.39 - Form 1116.
+  Fee quote: $1,450 for both FBARs and Form 8938; $900 more for the late 3520.    HO 3/2/26

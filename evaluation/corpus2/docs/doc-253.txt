@@ -1,0 +1,46 @@
+BALOGUN & THACKERAY CPAs -- workpaper note
+Client: Mistry / Falk household        Client no. HH-2291
+Prepared: IB, 11/18/2025        Reviewed: WT 11/20
+
+RE: Household employer setup -- nanny starting December 1, 2025
+
+Employer of record will be Rohan Mistry (SSN 528-18-2569); his wife Katrin Falk signs the checks.
+Home: 2214 Asbury Avenue, Evanston, IL 60201. Rohan's cell 847-555-0119, Katrin
+(847) 555-0162, katrin.falk@mailbox.example.
+
+Kids: Juno (6, born 4/9/2019) and Emil (3, born 2022-08-30). Juno Mistry-Falk has
+type 1 diabetes so the nanny does glucose checks -- Katrin wants that written into the work agreement.
+Emil Mistry-Falk is in half-day preschool; dependent care FSA election for 2026 is $5,000 (Form 2441).
+
+Employee: Marisela Quispe, SSN 516-97-2499, DOB March 3, 1998.
+  1630 W. Lunt Ave., #3B, Chicago, IL 60626     cell 773 555 0144
+  Form I-9 completed 11/17/2025. List A document: EAD card no. SRC2190451177, expires 09/14/2027.
+  She is a DACA recipient, EAD category C33 -- calendar the reverification. Illinois TVDL
+  Q212-5549-8071 seen for the car-insurance rider only, not for the I-9.
+  Form W-4: single, no adjustments. IL-W-4: 1 allowance.
+  Marisela told Katrin she is expecting, due in late March. Not our business for payroll but Katrin
+  asked about leave; told her to talk to an employment lawyer, not us.
+
+Wage: $24.00/hr, 45 hrs/wk guaranteed, OT at 1.5 over 40 = $36.00. Gross per week
+$1,140.00. Paid biweekly on Fridays, first check 12/12/25. Year-end bonus of five hundred dollars
+promised in the offer email -- taxable, run through payroll.
+
+Registrations
+  - Household EIN applied online (Form SS-4) 11/18/2025: 39-4417205
+  - IDES household account (Form UI-HA) 5512889-0, rate letter pending
+  - Illinois withholding: registered under the EIN, seq. 39-4417205-001
+  - Workers' comp rider on the homeowner's policy HO-7720418-03 -- Rohan to confirm with agent
+
+Payroll service: Quince Household Payroll LLC (Quince), plan $49/mo. Login created for Katrin:
+kfalk.household. They file Schedule H figures to us in January and issue the Form W-2.
+
+Direct deposit (voided check on file): Juneberry Community Bank, routing 073809607, checking
+004418207755. Employer debit account is the joint checking ending -6021 at the same bank.
+
+To-do
+  1. Q4 Form 1040-ES voucher for Rohan needs to go up by about $1,900 to cover employer FICA and FUTA.
+  2. Send Ms. Quispe Publication 926 excerpt and the pay schedule.
+  3. E-Verify not required for household employers -- told Mr. Mistry to stop asking her for more documents.
+
+Ifeoma Balogun, CPA  |  ifeoma@balogunthackeray.example  |  312-555-0170 x12
+cc: Wendell Thackeray

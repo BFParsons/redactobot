@@ -1,0 +1,46 @@
+Oyelaran & Finch Tax Services -- PREPARER NOTES (TY2025, MFJ)
+Client #20417     Preparer: M. Oyelaran     Interview 2/26/2026
+
+TAXPAYER   Petrosyan, Nikolai ("Niko")   SSN 542177388   DOB 05/09/1979
+SPOUSE     Petrosyan, Anush             SSN 396-41-9690  DOB 12/01/1982
+DEPENDENTS Davit (son, DOB 3/3/2011, SSN 710 34 3802)
+           Lilit (daughter, DOB 8/19/2015, SSN ends 6134)
+           + Niko's mother Gayane Sargsyan, lives w/ them, no SSN -- ITIN applied for,
+             green card pending. Check qualifying relative test (her income = $0).
+Address    1630 Glenoaks Blvd #207, Glendale, CA 91201-2214
+Phone      818-555-0156 (Niko)  818-555-0184 (Anush, prefers text)
+Email      npetrosyan.driver@mail.example
+IP PIN (taxpayer): 402918     Prior-yr AGI: $71,266
+
+INCOME
+- Anush W-2, Verdugo Hills Unified School District (classified staff; CSEA member, dues in box 14):
+  wages $48,902.11, fed w/h $3,871.00.
+- Niko Sched C, rideshare. Form 1099-K from RydeLoop Technologies, Inc. (payer EIN
+  84-2917730): gross $63,418.57. RydeLoop annual summary shows fees/commissions
+  $15,220.04 and 31,870 "online miles." Cash tips per Niko's own log: about 2,900.
+- Interest, Foothill Pacific Bank: $38.12.
+
+VEHICLE (100% business use claimed LAST year by prior preparer -- not right)
+2021 Toyota Camry Hybrid, VIN 4T1C31AK5MU558201, plate 8XKR274. Placed in
+service 06/15/2021. Mileage log (app export): 38,405 total, 31,870 business =
+83%. Std mileage 67 cents? CONFIRM 2025 RATE before computing. Car loan interest
+$1,104 x 83%. TNC permit + airport placard $312. Phone $85/mo x 80%.
+
+HEALTH COVERAGE
+Niko + kids on a marketplace plan via Covered California Jan-Aug (Form 1095-A, policy
+CC-0094417726); APTC $4,216 -> Form 8962, likely repayment. All on Anush's
+district plan from Sept. Niko mentioned out-of-pocket costs for Lilit's insulin pump
+($2,480) -- won't clear the floor, noted only.
+
+OTHER
+- Charity: $1,200 to St. Sarkis Armenian Apostolic Church (letter on file). Also gave
+  $250 to a city council campaign -- told him not deductible.
+- Est. tax payments: NONE made. Expect SE tax + penalty. Set up 2026 vouchers.
+- Balance due est. $3,950 fed. Refund not expected; if state refund, direct
+  deposit to Foothill Pacific, RTN 123436959, acct 000447190233.
+- Our fee $485.00. Niko paid by card over the phone: Visa
+  4248 6362 7945 8223, exp 09/28, CVV 417. DO NOT KEEP THIS IN THE FILE AFTER
+  POSTING -- shred. (MO)
+- Portal invite sent: https://clients.oyelaranfinch.example/u/npetrosyan; temp password
+  Glendale-7731.
+- Form 8879 to both for e-signature once Marcy finishes review. Target 3/20/2026.

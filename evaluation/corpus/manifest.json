@@ -1,0 +1,1002 @@
+[
+ {
+  "id": "doc-001",
+  "file": "docs/doc-001.txt",
+  "format": "txt",
+  "doc_type": "client meeting notes",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 532,
+  "item_count": 78
+ },
+ {
+  "id": "doc-002",
+  "file": "docs/doc-002.docx",
+  "format": "docx",
+  "doc_type": "engagement letter",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 545,
+  "item_count": 50
+ },
+ {
+  "id": "doc-003",
+  "file": "docs/doc-003.pdf",
+  "format": "pdf",
+  "doc_type": "court filing draft - complaint",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 1523,
+  "item_count": 110
+ },
+ {
+  "id": "doc-004",
+  "file": "docs/doc-004.txt",
+  "format": "txt",
+  "doc_type": "deposition summary",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 1210,
+  "item_count": 118
+ },
+ {
+  "id": "doc-005",
+  "file": "docs/doc-005.eml",
+  "format": "eml",
+  "doc_type": "email thread",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 552,
+  "item_count": 54
+ },
+ {
+  "id": "doc-006",
+  "file": "docs/doc-006.txt",
+  "format": "txt",
+  "doc_type": "demand letter",
+  "audience": "legal",
+  "jurisdiction": "CA",
+  "word_count": 452,
+  "item_count": 58
+ },
+ {
+  "id": "doc-007",
+  "file": "docs/doc-007.html",
+  "format": "html",
+  "doc_type": "solicitor attendance note",
+  "audience": "legal",
+  "jurisdiction": "UK",
+  "word_count": 492,
+  "item_count": 53
+ },
+ {
+  "id": "doc-008",
+  "file": "docs/doc-008.txt",
+  "format": "txt",
+  "doc_type": "tax organizer worksheet",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 480,
+  "item_count": 82
+ },
+ {
+  "id": "doc-009",
+  "file": "docs/doc-009.xlsx",
+  "format": "xlsx",
+  "doc_type": "bookkeeping ledger",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 438,
+  "item_count": 114
+ },
+ {
+  "id": "doc-010",
+  "file": "docs/doc-010.docx",
+  "format": "docx",
+  "doc_type": "IRS correspondence summary",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 376,
+  "item_count": 49
+ },
+ {
+  "id": "doc-011",
+  "file": "docs/doc-011.txt",
+  "format": "txt",
+  "doc_type": "bank reconciliation notes",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 310,
+  "item_count": 48
+ },
+ {
+  "id": "doc-012",
+  "file": "docs/doc-012.pdf",
+  "format": "pdf",
+  "doc_type": "invoice",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 212,
+  "item_count": 42
+ },
+ {
+  "id": "doc-013",
+  "file": "docs/doc-013.eml",
+  "format": "eml",
+  "doc_type": "internal email",
+  "audience": "accounting",
+  "jurisdiction": "CA",
+  "word_count": 374,
+  "item_count": 39
+ },
+ {
+  "id": "doc-014",
+  "file": "docs/doc-014.txt",
+  "format": "txt",
+  "doc_type": "payroll summary",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 292,
+  "item_count": 81
+ },
+ {
+  "id": "doc-015",
+  "file": "docs/doc-015.md",
+  "format": "md",
+  "doc_type": "board minutes",
+  "audience": "general",
+  "jurisdiction": "US",
+  "word_count": 496,
+  "item_count": 52
+ },
+ {
+  "id": "doc-016",
+  "file": "docs/doc-016.txt",
+  "format": "txt",
+  "doc_type": "clinical visit note",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 325,
+  "item_count": 41
+ },
+ {
+  "id": "doc-017",
+  "file": "docs/doc-017.html",
+  "format": "html",
+  "doc_type": "patient intake form",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 287,
+  "item_count": 43
+ },
+ {
+  "id": "doc-018",
+  "file": "docs/doc-018.rtf",
+  "format": "rtf",
+  "doc_type": "referral letter",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 302,
+  "item_count": 40
+ },
+ {
+  "id": "doc-019",
+  "file": "docs/doc-019.txt",
+  "format": "txt",
+  "doc_type": "phone message",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 56,
+  "item_count": 13
+ },
+ {
+  "id": "doc-020",
+  "file": "docs/doc-020.docx",
+  "format": "docx",
+  "doc_type": "HR incident report",
+  "audience": "general",
+  "jurisdiction": "US",
+  "word_count": 441,
+  "item_count": 46
+ },
+ {
+  "id": "doc-021",
+  "file": "docs/doc-021.txt",
+  "format": "txt",
+  "doc_type": "settlement term sheet",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 391,
+  "item_count": 59
+ },
+ {
+  "id": "doc-022",
+  "file": "docs/doc-022.pdf",
+  "format": "pdf",
+  "doc_type": "court filing draft - declaration",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 544,
+  "item_count": 58
+ },
+ {
+  "id": "doc-023",
+  "file": "docs/doc-023.txt",
+  "format": "txt",
+  "doc_type": "estate planning notes",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 1258,
+  "item_count": 137
+ },
+ {
+  "id": "doc-024",
+  "file": "docs/doc-024.docx",
+  "format": "docx",
+  "doc_type": "court filing draft - motion",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 601,
+  "item_count": 56
+ },
+ {
+  "id": "doc-025",
+  "file": "docs/doc-025.eml",
+  "format": "eml",
+  "doc_type": "internal email",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 432,
+  "item_count": 56
+ },
+ {
+  "id": "doc-026",
+  "file": "docs/doc-026.txt",
+  "format": "txt",
+  "doc_type": "client intake notes",
+  "audience": "legal",
+  "jurisdiction": "CA",
+  "word_count": 478,
+  "item_count": 60
+ },
+ {
+  "id": "doc-027",
+  "file": "docs/doc-027.docx",
+  "format": "docx",
+  "doc_type": "criminal defense intake memo",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 504,
+  "item_count": 61
+ },
+ {
+  "id": "doc-028",
+  "file": "docs/doc-028.txt",
+  "format": "txt",
+  "doc_type": "loan application",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 394,
+  "item_count": 62
+ },
+ {
+  "id": "doc-029",
+  "file": "docs/doc-029.xlsx",
+  "format": "xlsx",
+  "doc_type": "payroll register",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 258,
+  "item_count": 105
+ },
+ {
+  "id": "doc-030",
+  "file": "docs/doc-030.pdf",
+  "format": "pdf",
+  "doc_type": "audit workpaper",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 1229,
+  "item_count": 129
+ },
+ {
+  "id": "doc-031",
+  "file": "docs/doc-031.txt",
+  "format": "txt",
+  "doc_type": "expense report",
+  "audience": "general",
+  "jurisdiction": "US",
+  "word_count": 272,
+  "item_count": 48
+ },
+ {
+  "id": "doc-032",
+  "file": "docs/doc-032.html",
+  "format": "html",
+  "doc_type": "client statement",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 259,
+  "item_count": 50
+ },
+ {
+  "id": "doc-033",
+  "file": "docs/doc-033.eml",
+  "format": "eml",
+  "doc_type": "email thread",
+  "audience": "accounting",
+  "jurisdiction": "EU",
+  "word_count": 461,
+  "item_count": 44
+ },
+ {
+  "id": "doc-034",
+  "file": "docs/doc-034.txt",
+  "format": "txt",
+  "doc_type": "bookkeeper note",
+  "audience": "accounting",
+  "jurisdiction": "CA",
+  "word_count": 71,
+  "item_count": 14
+ },
+ {
+  "id": "doc-035",
+  "file": "docs/doc-035.rtf",
+  "format": "rtf",
+  "doc_type": "engagement letter",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 503,
+  "item_count": 46
+ },
+ {
+  "id": "doc-036",
+  "file": "docs/doc-036.txt",
+  "format": "txt",
+  "doc_type": "discharge summary",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 296,
+  "item_count": 53
+ },
+ {
+  "id": "doc-037",
+  "file": "docs/doc-037.pdf",
+  "format": "pdf",
+  "doc_type": "insurance claim form",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 329,
+  "item_count": 50
+ },
+ {
+  "id": "doc-038",
+  "file": "docs/doc-038.txt",
+  "format": "txt",
+  "doc_type": "psychotherapy progress note",
+  "audience": "health",
+  "jurisdiction": "CA",
+  "word_count": 338,
+  "item_count": 36
+ },
+ {
+  "id": "doc-039",
+  "file": "docs/doc-039.html",
+  "format": "html",
+  "doc_type": "lab results report",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 212,
+  "item_count": 38
+ },
+ {
+  "id": "doc-040",
+  "file": "docs/doc-040.pptx",
+  "format": "pptx",
+  "doc_type": "board presentation",
+  "audience": "general",
+  "jurisdiction": "US",
+  "word_count": 241,
+  "item_count": 43
+ },
+ {
+  "id": "doc-041",
+  "file": "docs/doc-041.txt",
+  "format": "txt",
+  "doc_type": "client intake notes",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 394,
+  "item_count": 59
+ },
+ {
+  "id": "doc-042",
+  "file": "docs/doc-042.pdf",
+  "format": "pdf",
+  "doc_type": "demand letter",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 471,
+  "item_count": 45
+ },
+ {
+  "id": "doc-043",
+  "file": "docs/doc-043.docx",
+  "format": "docx",
+  "doc_type": "court filing draft - complaint",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 1416,
+  "item_count": 91
+ },
+ {
+  "id": "doc-044",
+  "file": "docs/doc-044.txt",
+  "format": "txt",
+  "doc_type": "probate inventory notes",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 397,
+  "item_count": 72
+ },
+ {
+  "id": "doc-045",
+  "file": "docs/doc-045.eml",
+  "format": "eml",
+  "doc_type": "email thread",
+  "audience": "legal",
+  "jurisdiction": "UK",
+  "word_count": 455,
+  "item_count": 57
+ },
+ {
+  "id": "doc-046",
+  "file": "docs/doc-046.txt",
+  "format": "txt",
+  "doc_type": "immigration case notes",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 451,
+  "item_count": 77
+ },
+ {
+  "id": "doc-047",
+  "file": "docs/doc-047.pptx",
+  "format": "pptx",
+  "doc_type": "case status presentation",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 310,
+  "item_count": 49
+ },
+ {
+  "id": "doc-048",
+  "file": "docs/doc-048.txt",
+  "format": "txt",
+  "doc_type": "tax return preparation notes",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 381,
+  "item_count": 71
+ },
+ {
+  "id": "doc-049",
+  "file": "docs/doc-049.xlsx",
+  "format": "xlsx",
+  "doc_type": "client list",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 352,
+  "item_count": 123
+ },
+ {
+  "id": "doc-050",
+  "file": "docs/doc-050.xlsx",
+  "format": "xlsx",
+  "doc_type": "accounts receivable ledger",
+  "audience": "accounting",
+  "jurisdiction": "CA",
+  "word_count": 316,
+  "item_count": 92
+ },
+ {
+  "id": "doc-051",
+  "file": "docs/doc-051.pdf",
+  "format": "pdf",
+  "doc_type": "penalty abatement request letter",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 447,
+  "item_count": 39
+ },
+ {
+  "id": "doc-052",
+  "file": "docs/doc-052.txt",
+  "format": "txt",
+  "doc_type": "year-end close memo",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 1313,
+  "item_count": 137
+ },
+ {
+  "id": "doc-053",
+  "file": "docs/doc-053.eml",
+  "format": "eml",
+  "doc_type": "email thread",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 389,
+  "item_count": 46
+ },
+ {
+  "id": "doc-054",
+  "file": "docs/doc-054.md",
+  "format": "md",
+  "doc_type": "IT onboarding notes",
+  "audience": "general",
+  "jurisdiction": "US",
+  "word_count": 406,
+  "item_count": 45
+ },
+ {
+  "id": "doc-055",
+  "file": "docs/doc-055.txt",
+  "format": "txt",
+  "doc_type": "estate tax return notes",
+  "audience": "accounting",
+  "jurisdiction": "CA",
+  "word_count": 403,
+  "item_count": 71
+ },
+ {
+  "id": "doc-056",
+  "file": "docs/doc-056.txt",
+  "format": "txt",
+  "doc_type": "care plan note",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 315,
+  "item_count": 44
+ },
+ {
+  "id": "doc-057",
+  "file": "docs/doc-057.pdf",
+  "format": "pdf",
+  "doc_type": "discharge summary",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 366,
+  "item_count": 44
+ },
+ {
+  "id": "doc-058",
+  "file": "docs/doc-058.txt",
+  "format": "txt",
+  "doc_type": "patient portal message",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 61,
+  "item_count": 13
+ },
+ {
+  "id": "doc-059",
+  "file": "docs/doc-059.docx",
+  "format": "docx",
+  "doc_type": "accommodation letter",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 452,
+  "item_count": 39
+ },
+ {
+  "id": "doc-060",
+  "file": "docs/doc-060.html",
+  "format": "html",
+  "doc_type": "vendor contract summary",
+  "audience": "general",
+  "jurisdiction": "US",
+  "word_count": 416,
+  "item_count": 61
+ },
+ {
+  "id": "doc-061",
+  "file": "docs/doc-061.txt",
+  "format": "txt",
+  "doc_type": "trust administration notes",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 541,
+  "item_count": 74
+ },
+ {
+  "id": "doc-062",
+  "file": "docs/doc-062.docx",
+  "format": "docx",
+  "doc_type": "separation agreement draft",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 615,
+  "item_count": 56
+ },
+ {
+  "id": "doc-063",
+  "file": "docs/doc-063.pdf",
+  "format": "pdf",
+  "doc_type": "bankruptcy intake summary",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 444,
+  "item_count": 73
+ },
+ {
+  "id": "doc-064",
+  "file": "docs/doc-064.txt",
+  "format": "txt",
+  "doc_type": "criminal defense case notes",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 555,
+  "item_count": 61
+ },
+ {
+  "id": "doc-065",
+  "file": "docs/doc-065.eml",
+  "format": "eml",
+  "doc_type": "email thread",
+  "audience": "legal",
+  "jurisdiction": "CA",
+  "word_count": 515,
+  "item_count": 61
+ },
+ {
+  "id": "doc-066",
+  "file": "docs/doc-066.txt",
+  "format": "txt",
+  "doc_type": "deposition summary",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 1387,
+  "item_count": 112
+ },
+ {
+  "id": "doc-067",
+  "file": "docs/doc-067.rtf",
+  "format": "rtf",
+  "doc_type": "court filing draft - declaration",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 679,
+  "item_count": 60
+ },
+ {
+  "id": "doc-068",
+  "file": "docs/doc-068.html",
+  "format": "html",
+  "doc_type": "IRS correspondence summary",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 503,
+  "item_count": 67
+ },
+ {
+  "id": "doc-069",
+  "file": "docs/doc-069.xlsx",
+  "format": "xlsx",
+  "doc_type": "expense ledger",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 533,
+  "item_count": 134
+ },
+ {
+  "id": "doc-070",
+  "file": "docs/doc-070.docx",
+  "format": "docx",
+  "doc_type": "loan application",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 453,
+  "item_count": 71
+ },
+ {
+  "id": "doc-071",
+  "file": "docs/doc-071.txt",
+  "format": "txt",
+  "doc_type": "donor contribution notes",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 565,
+  "item_count": 74
+ },
+ {
+  "id": "doc-072",
+  "file": "docs/doc-072.pdf",
+  "format": "pdf",
+  "doc_type": "invoice",
+  "audience": "accounting",
+  "jurisdiction": "EU",
+  "word_count": 295,
+  "item_count": 43
+ },
+ {
+  "id": "doc-073",
+  "file": "docs/doc-073.txt",
+  "format": "txt",
+  "doc_type": "payroll summary",
+  "audience": "accounting",
+  "jurisdiction": "CA",
+  "word_count": 415,
+  "item_count": 111
+ },
+ {
+  "id": "doc-074",
+  "file": "docs/doc-074.eml",
+  "format": "eml",
+  "doc_type": "internal email",
+  "audience": "general",
+  "jurisdiction": "US",
+  "word_count": 469,
+  "item_count": 57
+ },
+ {
+  "id": "doc-075",
+  "file": "docs/doc-075.txt",
+  "format": "txt",
+  "doc_type": "phone message",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 68,
+  "item_count": 9
+ },
+ {
+  "id": "doc-076",
+  "file": "docs/doc-076.txt",
+  "format": "txt",
+  "doc_type": "clinical visit note",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 366,
+  "item_count": 52
+ },
+ {
+  "id": "doc-077",
+  "file": "docs/doc-077.docx",
+  "format": "docx",
+  "doc_type": "referral letter",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 415,
+  "item_count": 47
+ },
+ {
+  "id": "doc-078",
+  "file": "docs/doc-078.md",
+  "format": "md",
+  "doc_type": "case management notes",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 510,
+  "item_count": 72
+ },
+ {
+  "id": "doc-079",
+  "file": "docs/doc-079.txt",
+  "format": "txt",
+  "doc_type": "patient intake form",
+  "audience": "health",
+  "jurisdiction": "CA",
+  "word_count": 341,
+  "item_count": 57
+ },
+ {
+  "id": "doc-080",
+  "file": "docs/doc-080.pptx",
+  "format": "pptx",
+  "doc_type": "sales pipeline presentation",
+  "audience": "general",
+  "jurisdiction": "US",
+  "word_count": 295,
+  "item_count": 54
+ },
+ {
+  "id": "doc-081",
+  "file": "docs/doc-081.txt",
+  "format": "txt",
+  "doc_type": "client meeting notes",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 494,
+  "item_count": 69
+ },
+ {
+  "id": "doc-082",
+  "file": "docs/doc-082.pdf",
+  "format": "pdf",
+  "doc_type": "court filing draft - motion",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 1550,
+  "item_count": 99
+ },
+ {
+  "id": "doc-083",
+  "file": "docs/doc-083.txt",
+  "format": "txt",
+  "doc_type": "conflict check note",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 48,
+  "item_count": 12
+ },
+ {
+  "id": "doc-084",
+  "file": "docs/doc-084.docx",
+  "format": "docx",
+  "doc_type": "will draft",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 431,
+  "item_count": 55
+ },
+ {
+  "id": "doc-085",
+  "file": "docs/doc-085.eml",
+  "format": "eml",
+  "doc_type": "email to opposing counsel",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 476,
+  "item_count": 51
+ },
+ {
+  "id": "doc-086",
+  "file": "docs/doc-086.txt",
+  "format": "txt",
+  "doc_type": "immigration consultation notes",
+  "audience": "legal",
+  "jurisdiction": "CA",
+  "word_count": 319,
+  "item_count": 40
+ },
+ {
+  "id": "doc-087",
+  "file": "docs/doc-087.html",
+  "format": "html",
+  "doc_type": "case status report",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 373,
+  "item_count": 63
+ },
+ {
+  "id": "doc-088",
+  "file": "docs/doc-088.txt",
+  "format": "txt",
+  "doc_type": "tax organizer worksheet",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 359,
+  "item_count": 67
+ },
+ {
+  "id": "doc-089",
+  "file": "docs/doc-089.xlsx",
+  "format": "xlsx",
+  "doc_type": "fixed asset ledger",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 423,
+  "item_count": 138
+ },
+ {
+  "id": "doc-090",
+  "file": "docs/doc-090.txt",
+  "format": "txt",
+  "doc_type": "audit workpaper",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 460,
+  "item_count": 53
+ },
+ {
+  "id": "doc-091",
+  "file": "docs/doc-091.rtf",
+  "format": "rtf",
+  "doc_type": "bank reconciliation notes",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 358,
+  "item_count": 52
+ },
+ {
+  "id": "doc-092",
+  "file": "docs/doc-092.txt",
+  "format": "txt",
+  "doc_type": "tax authority correspondence summary",
+  "audience": "accounting",
+  "jurisdiction": "CA",
+  "word_count": 369,
+  "item_count": 51
+ },
+ {
+  "id": "doc-093",
+  "file": "docs/doc-093.pdf",
+  "format": "pdf",
+  "doc_type": "payroll summary",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 298,
+  "item_count": 60
+ },
+ {
+  "id": "doc-094",
+  "file": "docs/doc-094.eml",
+  "format": "eml",
+  "doc_type": "internal email",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 363,
+  "item_count": 40
+ },
+ {
+  "id": "doc-095",
+  "file": "docs/doc-095.txt",
+  "format": "txt",
+  "doc_type": "insurance claim appeal letter",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 458,
+  "item_count": 53
+ },
+ {
+  "id": "doc-096",
+  "file": "docs/doc-096.html",
+  "format": "html",
+  "doc_type": "clinical visit note",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 363,
+  "item_count": 43
+ },
+ {
+  "id": "doc-097",
+  "file": "docs/doc-097.txt",
+  "format": "txt",
+  "doc_type": "pharmacy note",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 47,
+  "item_count": 13
+ },
+ {
+  "id": "doc-098",
+  "file": "docs/doc-098.docx",
+  "format": "docx",
+  "doc_type": "psychiatric evaluation",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 513,
+  "item_count": 47
+ },
+ {
+  "id": "doc-099",
+  "file": "docs/doc-099.md",
+  "format": "md",
+  "doc_type": "security incident report",
+  "audience": "general",
+  "jurisdiction": "US",
+  "word_count": 458,
+  "item_count": 45
+ },
+ {
+  "id": "doc-100",
+  "file": "docs/doc-100.pptx",
+  "format": "pptx",
+  "doc_type": "client onboarding presentation",
+  "audience": "general",
+  "jurisdiction": "US",
+  "word_count": 196,
+  "item_count": 33
+ }
+]

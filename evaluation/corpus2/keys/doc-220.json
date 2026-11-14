@@ -1,0 +1,197 @@
+{
+ "id": "doc-220",
+ "file": "docs/doc-220.txt",
+ "format": "txt",
+ "title": "Plea offer note to file",
+ "doc_type": "plea negotiation note",
+ "audience": "legal",
+ "jurisdiction": "US",
+ "word_count": 67,
+ "items": [
+  {
+   "value": "Zubiri, Brandon T.",
+   "category": "person_name",
+   "subtype": "Last, First order",
+   "occurrences": 1,
+   "entity": "p1",
+   "canonical": "Brandon T. Zubiri",
+   "variant": "last-first",
+   "difficulty": "hard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "CR-2026-001184",
+   "category": "record_number",
+   "subtype": "criminal case number",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "record identifier that links to a person or matter"
+  },
+  {
+   "value": "Pima",
+   "category": "place",
+   "subtype": "county",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "locates the person or matter"
+  },
+  {
+   "value": "3/9",
+   "category": "date",
+   "subtype": "month/day only",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "date tied to a person or matter"
+  },
+  {
+   "value": "ADA Giroux",
+   "category": "person_name",
+   "subtype": "title + surname",
+   "occurrences": 1,
+   "entity": "p2",
+   "canonical": "Monique Giroux",
+   "variant": "title-surname",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "BAC .164",
+   "category": "health_info",
+   "subtype": "breath alcohol result",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "health information about a person"
+  },
+  {
+   "value": "$1,582.50",
+   "category": "money_amount",
+   "subtype": "money amount",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "confidential financial detail"
+  },
+  {
+   "value": "AZ CKV7732",
+   "category": "vehicle_id",
+   "subtype": "license plate with state prefix",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "identifies a vehicle and its owner"
+  },
+  {
+   "value": "D08841207",
+   "category": "government_id",
+   "subtype": "driver's license number",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "official identifier unique to a person"
+  },
+  {
+   "value": "2019 reckless driving",
+   "category": "sensitive_attribute",
+   "subtype": "prior conviction",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "special-category personal attribute"
+  },
+  {
+   "value": "3/27",
+   "category": "date",
+   "subtype": "month/day only",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "date tied to a person or matter"
+  },
+  {
+   "value": "April 2",
+   "category": "date",
+   "subtype": "month and day only",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "date tied to a person or matter"
+  },
+  {
+   "value": "Judge Jankowski",
+   "category": "person_name",
+   "subtype": "title + surname",
+   "occurrences": 1,
+   "entity": "p3",
+   "canonical": "P. Jankowski",
+   "variant": "title-surname",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "Brandon",
+   "category": "person_name",
+   "subtype": "first name only",
+   "occurrences": 1,
+   "entity": "p1",
+   "canonical": "Brandon T. Zubiri",
+   "variant": "first-name",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "520-555-0131",
+   "category": "phone",
+   "subtype": "phone",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "direct contact detail"
+  }
+ ],
+ "distractors": [
+  "§28-1381(A)(1)",
+  "F-150"
+ ],
+ "reviewed_not_sensitive": [
+  "1",
+  "12",
+  "90",
+  "Ct",
+  "Cty",
+  "DL",
+  "DUI",
+  "Fine",
+  "Justice",
+  "NOTE",
+  "Offer",
+  "PLEA",
+  "PTC",
+  "Prior"
+ ]
+}

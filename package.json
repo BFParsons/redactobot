@@ -1,0 +1,43 @@
+{
+  "name": "redactobot",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "build:extension": "tsc --noEmit && node tools/build_extension.mjs",
+    "preview": "vite preview",
+    "test": "node --test taxonomy/taxonomy.test.mjs && vitest run",
+    "theme": "node tools/gen-theme.mjs",
+    "bench": "npx serve .",
+    "test:e2e": "node --test --test-concurrency=1 tests/e2e/extension.e2e.mjs",
+    "lint": "oxlint . && prettier --check .",
+    "fix": "oxlint --fix . && prettier --write .",
+    "lint:py": "python -m black --check tools evaluation",
+    "fix:py": "python -m black tools evaluation"
+  },
+  "dependencies": {
+    "@fontsource/roboto": "5.3.0",
+    "@material/web": "2.5.0",
+    "fflate": "^0.8.3",
+    "firebase": "13.3.0",
+    "lit": "3.3.3",
+    "pdfjs-dist": "^6.5.438"
+  },
+  "devDependencies": {
+    "@material-symbols/svg-400": "^0.48.3",
+    "@material/material-color-utilities": "0.3.0",
+    "@types/node": "^26.6.6",
+    "jsdom": "^31.0.0",
+    "oxlint": "1.93.0",
+    "playwright": "^1.65.0",
+    "prettier": "3.10.1",
+    "typescript": "7.0.2",
+    "vite": "8.3.8",
+    "vitest": "5.1.0"
+  },
+  "overrides": {
+    "@grpc/grpc-js": "1.14.7"
+  }
+}

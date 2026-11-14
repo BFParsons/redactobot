@@ -1,0 +1,36 @@
+GREYSTONE FAMILY DENTISTRY
+612 N. Pearl St., Ellensburg, WA 98926   ph 509-555-0141   frontdesk@greystonefamilydental.example
+
+TREATMENT PLAN & FINANCIAL ARRANGEMENT                      printed 01/22/2026
+
+Patient:  Lindahl, Henrik     Chart # GF-11873     DOB 05/17/1957
+Responsible party:  Annika Lindahl (spouse)     40 Thorp Prairie Rd, Thorp, WA 98946
+Home 509-555-0178   her cell 509 555 0123   annika.lindahl@mailhaven.example
+Dentist:  Mi-rae Cheung, DDS (WA lic. DE60417733)     Treatment coordinator: Jocelyn
+
+Medical alerts: type 2 diabetes, last A1c 8.1; on warfarin, INR needed within 72 hrs of any extraction;
+penicillin allergy. Cleared with his physician by phone 1/20.
+Findings: generalized moderate periodontitis, fractured cusp #19, irreversible pulpitis #30,
+night-time grinding. Third molar #1 non-restorable.
+
+ Visit  Tooth  Code    Procedure                      Fee        Plan pays   Patient
+ 1      UR/LR  D4341   Scaling & root planing x2      $548.00    $438.40     $109.60
+ 2      #30    D3330   Root canal, molar            $1,385.00    $692.50     $692.50
+ 3      #30    D2740   Crown, porcelain/ceramic     $1,490.00    $369.10   $1,120.90
+ 3      #19    D2740   Crown, porcelain/ceramic     $1,490.00        $0.00   $1,490.00
+ 4      #1     D7140   Extraction                     $245.00        $0.00     $245.00
+                                             TOTAL  $5,158.00  $1,500.00   $3,658.00
+
+Insurance: Sterling Dental Benefit Plan, subscriber Annika Lindahl through her employer, member ID SDB 300 771 42, group WA-06611.
+Annual maximum $1,500; $0 used so far in 2026. The plan estimate is not a guarantee. Pre-determination sent 1/21/26, ref PD-4471902.
+
+PAYMENT ARRANGEMENT (no interest, so the Truth in Lending Act disclosures do not apply; we do not take CareCredit)
+ - Down payment today: $658.00 on card.
+ - Balance $3,000.00 in six payments of $500.00 on the 5th of each month, March 5 through August 5, 2026.
+ - Card on file (Visa), holder ANNIKA LINDAHL:  4540-0156-7938-9160   exp 11/27   CVV 608
+   Mrs. Lindahl gave the card by phone; Henrik is not an authorized user.
+ - Backup if the card declines: bank draft from Kittitas Farmers Bank, routing 059828822, checking 81 0044 6217.
+ - A missed payment adds $25 and pauses lab work on the crowns.
+
+Patient/responsible party signature: A. Lindahl          Date: 1-22-26
+Staff: J. Ramos   (note: Mr. Lindahl asked that statements NOT go to the Thorp address; the couple are in the middle of a divorce. Email Annika only.)

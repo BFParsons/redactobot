@@ -1,0 +1,90 @@
+23:03:59 run=c3-live model=True to_do=60 of 60
+23:04:04 device model: available
+23:05:21 doc-301 txt 77.2s dets=84 chunks=3 chunkErrors=0  [1/60]
+23:06:26 doc-302 docx 65.4s dets=88 chunks=3 chunkErrors=0  [2/60]
+23:06:41 doc-303 attempt 1 failed: Page.evaluate: Execution context was destroyed, most likely because of a navigation.
+23:06:45 device model: available
+23:07:13 doc-303 attempt 2 failed: Page.evaluate: Execution context was destroyed, most likely because of a navigation.
+23:07:17 device model: available
+23:07:17 doc-303 eml 32.6s dets=0 chunks=None chunkErrors=None evaluate failed twice [3/60]
+23:07:20 doc-304 attempt 1 failed: Page.evaluate: Execution context was destroyed, most likely because of a navigation.
+23:07:24 device model: available
+23:07:43 doc-304 txt 18.4s dets=16 chunks=1 chunkErrors=0  [4/60]
+23:08:30 run=c3-live model=True to_do=56 of 60
+23:08:35 device model: available
+23:09:48 doc-305 pdf 70.7s dets=92 chunks=2 chunkErrors=0  [1/56]
+23:10:52 doc-306 md 63.8s dets=67 chunks=3 chunkErrors=0  [2/56]
+23:11:30 doc-307 xlsx 38.3s dets=82 chunks=1 chunkErrors=0  [3/56]
+23:12:10 doc-308 attempt 1 failed: Page.evaluate: Execution context was destroyed, most likely because of a navigation.
+23:12:14 device model: available
+23:12:42 doc-308 attempt 2 failed: Page.evaluate: Execution context was destroyed, most likely because of a navigation.
+23:12:46 device model: available
+23:12:46 doc-308 txt 31.5s dets=0 chunks=None chunkErrors=None evaluate failed twice [4/56]
+23:12:59 doc-309 attempt 1 failed: Page.evaluate: Execution context was destroyed, most likely because of a navigation.
+23:13:03 device model: available
+23:13:04 doc-309 attempt 2 failed: Page.evaluate: Execution context was destroyed, most likely because of a navigation.
+23:13:08 device model: available
+23:13:08 doc-309 html 4.7s dets=0 chunks=None chunkErrors=None evaluate failed twice [5/56]
+23:13:08 doc-310 attempt 1 failed: Page.evaluate: Execution context was destroyed, most likely because of a navigation.
+23:13:12 device model: available
+23:13:13 doc-310 attempt 2 failed: Page.evaluate: Execution context was destroyed, most likely because of a navigation.
+23:13:17 device model: available
+23:13:17 doc-310 rtf 4.6s dets=0 chunks=None chunkErrors=None evaluate failed twice [6/56]
+23:13:54 doc-311 txt 37.5s dets=46 chunks=1 chunkErrors=0  [7/56]
+23:15:11 doc-312 xlsx 76.7s dets=152 chunks=2 chunkErrors=0  [8/56]
+23:15:56 doc-313 pdf 44.9s dets=55 chunks=2 chunkErrors=0  [9/56]
+23:16:39 doc-314 xlsx 43.2s dets=81 chunks=1 chunkErrors=0  [10/56]
+23:17:26 doc-315 eml 46.8s dets=52 chunks=2 chunkErrors=0  [11/56]
+23:17:58 doc-316 txt 32.4s dets=46 chunks=1 chunkErrors=0  [12/56]
+23:18:36 doc-317 docx 37.7s dets=49 chunks=2 chunkErrors=0  [13/56]
+23:19:27 doc-318 md 50.6s dets=71 chunks=2 chunkErrors=0  [14/56]
+23:20:13 doc-319 txt 46.7s dets=40 chunks=2 chunkErrors=0  [15/56]
+23:21:05 doc-320 pptx 51.5s dets=54 chunks=2 chunkErrors=0  [16/56]
+23:22:34 doc-321 txt 89.2s dets=76 chunks=4 chunkErrors=0  [17/56]
+23:23:16 doc-322 docx 41.8s dets=49 chunks=2 chunkErrors=0  [18/56]
+23:24:00 doc-323 eml 44.2s dets=38 chunks=2 chunkErrors=0  [19/56]
+23:24:51 doc-324 txt 51.1s dets=55 chunks=2 chunkErrors=0  [20/56]
+23:25:38 doc-325 xlsx 46.4s dets=77 chunks=1 chunkErrors=0  [21/56]
+23:26:11 doc-326 html 33.5s dets=48 chunks=1 chunkErrors=0  [22/56]
+23:26:30 doc-327 txt 19.1s dets=16 chunks=1 chunkErrors=0  [23/56]
+23:27:20 doc-328 pdf 50.2s dets=65 chunks=2 chunkErrors=0  [24/56]
+23:28:09 doc-329 md 49.0s dets=57 chunks=2 chunkErrors=0  [25/56]
+23:28:40 doc-330 txt 30.2s dets=43 chunks=1 chunkErrors=0  [26/56]
+23:29:24 doc-331 txt 44.4s dets=60 chunks=2 chunkErrors=0  [27/56]
+23:30:08 doc-332 docx 43.7s dets=66 chunks=2 chunkErrors=0  [28/56]
+23:30:56 doc-333 pdf 48.2s dets=50 chunks=2 chunkErrors=0  [29/56]
+23:31:49 doc-334 eml 52.9s dets=72 chunks=2 chunkErrors=0  [30/56]
+23:32:30 doc-335 txt 41.2s dets=77 chunks=1 chunkErrors=0  [31/56]
+23:33:10 doc-336 html 40.4s dets=39 chunks=2 chunkErrors=0  [32/56]
+23:33:52 doc-337 txt 41.6s dets=55 chunks=2 chunkErrors=0  [33/56]
+23:34:37 doc-338 rtf 45.4s dets=55 chunks=1 chunkErrors=0  [34/56]
+23:35:17 doc-339 xlsx 40.0s dets=104 chunks=1 chunkErrors=0  [35/56]
+23:35:52 doc-340 txt 34.6s dets=19 chunks=1 chunkErrors=0  [36/56]
+23:36:44 doc-341 pdf 52.6s dets=54 chunks=2 chunkErrors=0  [37/56]
+23:38:13 doc-342 txt 88.9s dets=112 chunks=3 chunkErrors=0  [38/56]
+23:39:16 doc-343 docx 62.3s dets=66 chunks=2 chunkErrors=0  [39/56]
+23:39:54 doc-344 eml 38.3s dets=39 chunks=1 chunkErrors=0  [40/56]
+23:40:40 doc-345 html 45.7s dets=43 chunks=1 chunkErrors=0  [41/56]
+23:41:43 doc-346 txt 63.3s dets=53 chunks=2 chunkErrors=0  [42/56]
+23:42:47 doc-347 xlsx 63.8s dets=114 chunks=1 chunkErrors=0  [43/56]
+23:43:59 doc-348 txt 72.4s dets=63 chunks=2 chunkErrors=0  [44/56]
+23:44:57 doc-349 pptx 57.6s dets=49 chunks=2 chunkErrors=0  [45/56]
+23:46:07 doc-350 md 69.9s dets=59 chunks=2 chunkErrors=0  [46/56]
+23:47:04 doc-351 txt 57.0s dets=56 chunks=2 chunkErrors=0  [47/56]
+23:48:10 doc-352 eml 65.9s dets=40 chunks=2 chunkErrors=0  [48/56]
+23:48:43 doc-353 html 33.1s dets=31 chunks=1 chunkErrors=0  [49/56]
+23:49:42 doc-354 txt 59.1s dets=77 chunks=2 chunkErrors=0  [50/56]
+23:50:45 doc-355 docx 63.6s dets=39 chunks=3 chunkErrors=0  [51/56]
+23:51:30 doc-356 xlsx 44.6s dets=73 chunks=1 chunkErrors=0  [52/56]
+23:52:32 doc-357 txt 61.7s dets=66 chunks=2 chunkErrors=0  [53/56]
+23:53:36 doc-358 pdf 64.1s dets=54 chunks=2 chunkErrors=0  [54/56]
+23:54:31 doc-359 txt 54.8s dets=65 chunks=2 chunkErrors=0  [55/56]
+23:55:30 doc-360 eml 59.3s dets=52 chunks=2 chunkErrors=0  [56/56]
+23:55:30 RUN COMPLETE
+23:55:45 run=c3-live model=True to_do=4 of 60
+23:55:50 device model: available
+23:56:46 doc-303 eml 55.9s dets=68 chunks=2 chunkErrors=0  [1/4]
+23:57:33 doc-308 txt 47.9s dets=52 chunks=2 chunkErrors=0  [2/4]
+23:58:03 doc-309 html 29.9s dets=39 chunks=1 chunkErrors=0  [3/4]
+23:58:41 doc-310 rtf 37.6s dets=59 chunks=1 chunkErrors=0  [4/4]
+23:58:41 RUN COMPLETE

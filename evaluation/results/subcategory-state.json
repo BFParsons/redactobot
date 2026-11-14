@@ -1,0 +1,506 @@
+{
+"Person names / Full name": [
+475,
+475
+],
+"Person names / First name only": [
+299,
+299
+],
+"Person names / Title and surname (Ms. Whitfield)": [
+199,
+199
+],
+"Person names / Nickname": [
+139,
+139
+],
+"Person names / Surname only": [
+108,
+108
+],
+"Person names / Name that is also a word or place (Grace, Jordan)": [
+98,
+98
+],
+"Person names / Initials (DKL, R. Tanaka)": [
+83,
+83
+],
+"Person names / \"Last, First\" order": [
+75,
+75
+],
+"Person names / Short name": [
+73,
+73
+],
+"Person names / ALL CAPS": [
+22,
+22
+],
+"Money amounts / Standard ($1,250.00)": [
+659,
+659
+],
+"Money amounts / No currency sign (ledger figures)": [
+113,
+113
+],
+"Money amounts / Abbreviated (75k, $1.9 million)": [
+40,
+40
+],
+"Money amounts / Written in words": [
+25,
+25
+],
+"Money amounts / Other currencies and currency codes": [
+21,
+21
+],
+"Money amounts / Negative in parentheses": [
+16,
+16
+],
+"Money amounts / Rates ($19.75/hr)": [
+11,
+11
+],
+"Money amounts / European number format (\u20ac 18.020,00)": [
+10,
+10
+],
+"Money amounts / Space instead of a decimal point": [
+4,
+4
+],
+"Organization names / Full name": [
+500,
+501
+],
+"Organization names / Short name": [
+181,
+181
+],
+"Organization names / Acronym": [
+47,
+47
+],
+"Organization names / ALL CAPS": [
+29,
+29
+],
+"Dates / Full date": [
+518,
+518
+],
+"Dates / No year (06/26, 30 June)": [
+132,
+132
+],
+"Dates / Two-digit year": [
+28,
+28
+],
+"Dates / Month and year only": [
+16,
+16
+],
+"Dates / Spaces as separators (08 29 2026)": [
+8,
+8
+],
+"Dates / With weekday": [
+6,
+6
+],
+"Places / City or town": [
+253,
+253
+],
+"Places / State or province name": [
+124,
+124
+],
+"Places / State or province code (TX)": [
+83,
+83
+],
+"Places / Neighbourhood, facility or other": [
+35,
+35
+],
+"Places / County": [
+32,
+32
+],
+"Record numbers / Claim, policy, loan and medical record numbers": [
+83,
+83
+],
+"Record numbers / Other reference numbers": [
+77,
+77
+],
+"Record numbers / Invoice, check and order numbers": [
+64,
+64
+],
+"Record numbers / Matter, file and client numbers": [
+57,
+57
+],
+"Record numbers / Case, docket and incident numbers": [
+52,
+52
+],
+"Record numbers / Employee and group IDs": [
+51,
+51
+],
+"Health details (flag only) / Diagnoses and conditions": [
+102,
+104
+],
+"Health details (flag only) / Medication": [
+58,
+58
+],
+"Health details (flag only) / Tests, procedures and treatment": [
+49,
+54
+],
+"Health details (flag only) / Other health details": [
+40,
+45
+],
+"Health details (flag only) / Mental health and substance use": [
+41,
+43
+],
+"Health details (flag only) / Pregnancy": [
+13,
+13
+],
+"Phone numbers / Standard US formats": [
+183,
+183
+],
+"Phone numbers / Fax": [
+26,
+26
+],
+"Phone numbers / With extension": [
+14,
+14
+],
+"Phone numbers / International and UK": [
+14,
+14
+],
+"Phone numbers / Partial or unusual": [
+4,
+4
+],
+"Phone numbers / In words": [
+2,
+2
+],
+"Email addresses / Standard": [
+149,
+149
+],
+"Email addresses / Spelled out in words": [
+3,
+3
+],
+"Street addresses / Standard street address": [
+93,
+93
+],
+"Street addresses / With suite, floor or unit": [
+30,
+30
+],
+"Street addresses / PO box": [
+10,
+10
+],
+"Street addresses / Rural route": [
+8,
+8
+],
+"Street addresses / Non-US style": [
+6,
+6
+],
+"Street addresses / ALL CAPS": [
+3,
+3
+],
+"Other sensitive attributes (flag only) / Immigration, citizenship and nationality": [
+51,
+52
+],
+"Other sensitive attributes (flag only) / Criminal history": [
+18,
+19
+],
+"Other sensitive attributes (flag only) / Religion": [
+18,
+19
+],
+"Other sensitive attributes (flag only) / Race and ethnicity": [
+16,
+16
+],
+"Other sensitive attributes (flag only) / Bankruptcy and court obligations": [
+14,
+14
+],
+"Other sensitive attributes (flag only) / Union membership": [
+11,
+11
+],
+"Other sensitive attributes (flag only) / Political views and donations": [
+6,
+6
+],
+"Other sensitive attributes (flag only) / Sexual orientation and gender identity": [
+5,
+5
+],
+"Other sensitive attributes (flag only) / Genetic information": [
+5,
+5
+],
+"Postal codes / ZIP code": [
+98,
+98
+],
+"Postal codes / Canadian postal code": [
+16,
+16
+],
+"Postal codes / ZIP+4": [
+14,
+14
+],
+"Postal codes / UK, Irish and Dutch": [
+6,
+6
+],
+"Postal codes / State and ZIP together": [
+2,
+2
+],
+"Bank accounts / Bank account number": [
+54,
+54
+],
+"Bank accounts / Masked or last four": [
+30,
+30
+],
+"Bank accounts / Brokerage, plan and trust accounts": [
+16,
+16
+],
+"Bank accounts / Institution and transit numbers": [
+10,
+10
+],
+"Bank accounts / SWIFT/BIC code": [
+9,
+9
+],
+"Indirect identifiers (not detected) / Family relationships": [
+64,
+67
+],
+"Indirect identifiers (not detected) / Distinctive assets, events and whereabouts": [
+22,
+29
+],
+"Indirect identifiers (not detected) / Unique roles": [
+11,
+11
+],
+"Government IDs / Medical IDs (NPI, DEA, Medicare)": [
+26,
+26
+],
+"Government IDs / Bar numbers": [
+22,
+22
+],
+"Government IDs / Other licences and IRS IDs": [
+20,
+20
+],
+"Government IDs / Driver's license": [
+14,
+14
+],
+"Government IDs / Passport": [
+8,
+8
+],
+"Government IDs / Immigration numbers": [
+6,
+6
+],
+"Government IDs / UK National Insurance": [
+3,
+3
+],
+"Dates of birth / Full birth date": [
+86,
+86
+],
+"Dates of birth / Indirect or in words": [
+5,
+5
+],
+"Tax IDs / EIN": [
+44,
+44
+],
+"Tax IDs / Canadian SIN": [
+17,
+17
+],
+"Tax IDs / VAT and other foreign": [
+7,
+7
+],
+"Tax IDs / Canadian business number": [
+6,
+6
+],
+"Tax IDs / ITIN": [
+5,
+5
+],
+"Tax IDs / State and other IDs": [
+5,
+5
+],
+"Passwords and user names / User names": [
+38,
+38
+],
+"Passwords and user names / Passwords": [
+19,
+19
+],
+"Passwords and user names / PINs, passcodes and codes": [
+15,
+15
+],
+"Payment cards / Last four or five digits": [
+51,
+51
+],
+"Payment cards / Full card number": [
+19,
+19
+],
+"Social Security numbers / Standard (123-45-6789)": [
+23,
+23
+],
+"Social Security numbers / Masked (xxx-xx-1234)": [
+18,
+18
+],
+"Social Security numbers / No separators": [
+8,
+8
+],
+"Social Security numbers / With spaces": [
+7,
+7
+],
+"Social Security numbers / Last four only": [
+6,
+6
+],
+"Vehicle IDs / License plate": [
+32,
+32
+],
+"Vehicle IDs / VIN": [
+24,
+24
+],
+"Vehicle IDs / Hull and ship numbers": [
+4,
+4
+],
+"Device IDs / Serial numbers and asset tags": [
+47,
+47
+],
+"Device IDs / IMEI": [
+4,
+4
+],
+"Device IDs / MAC address": [
+4,
+4
+],
+"Routing numbers / US routing number": [
+41,
+41
+],
+"Routing numbers / Canadian transit number": [
+2,
+2
+],
+"Routing numbers / UK sort code": [
+2,
+2
+],
+"IP addresses / IPv4": [
+28,
+28
+],
+"IP addresses / IPv6": [
+5,
+5
+],
+"Web addresses / Web address": [
+20,
+20
+],
+"Web addresses / Link containing an identifier": [
+11,
+11
+],
+"Card expiry dates / Card expiry": [
+21,
+21
+],
+"Ages over 89 / Bare number": [
+10,
+10
+],
+"Ages over 89 / With \"age\" or \"years old\"": [
+8,
+8
+],
+"Ages over 89 / Spelled out": [
+2,
+2
+],
+"IBANs / IBAN": [
+20,
+20
+],
+"Card security codes / Card security code": [
+16,
+16
+]
+}

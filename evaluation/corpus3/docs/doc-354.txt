@@ -1,0 +1,28 @@
+Sprague & Lindskog, CPAs - WORKPAPER MEMO                       Client no. 4418-T
+Re: Ottilie Hargesheimer Revocable Trust u/a/d 6/14/1996 - 2025 Form 1041
+Prepared: ML (Marit Lindskog) 11/10/25      Reviewed: RS ________
+
+1. STATUS OF THE TRUST
+Grantor Ottilie Hargesheimer, born January 9, 1930, is living, age 95, and resides at the memory care unit at Prairie Commons in Council Bluffs. The trust was a grantor trust reported under her SSN (096-76-6330) through 2024. On March 4, 2025 two physicians certified incapacity (advanced Alzheimer's disease) under Article 7. Her son Conrad Hargesheimer and Loess Hills Trust Company became co-trustees. Counsel's view, which we follow: still a grantor trust for income tax while she lives, but the bank wants a separate EIN for its systems. EIN issued May 2025: 42-4418720. So: file a 1041 as an information return with a grantor statement; all income to Ottilie's 1040.
+   -> RS: agree? The bank's tax department prepared a draft treating it as a complex trust with K-1s. I think that is wrong but see section 3.
+
+2. ASSETS AND INCOME (per the bank's statements through 10/31/2025)
+   Platte Meridian Securities acct PM-7720-4418     market value $2,318,440
+        dividends $41,207.18; interest $22,910.44; LT gains $96,300 (sale of the bank stock in April)
+   Farmland, 240 acres, Pottawattamie County, cash rent $74,400 (tenant pays 3/1 and 12/1)
+   Loess Hills checking 0044-18772                    balance $58,206.91
+   Trustee fees paid to the bank: $17,388. Our fee estimate: $2,600.
+
+3. DISTRIBUTIONS MADE IN 2025 - the problem
+   The trust instrument lets the trustees make gifts "consistent with the grantor's pattern of giving." The co-trustees paid:
+   - Brigid Hargesheimer-Abiola (daughter), $19,000 on 6/2/25. SSN 720-32-3072. Address 4411 Underwood Avenue, Omaha, NE 68132.
+   - Felix Nwachi (great-grandson, born 2012), $19,000 into his 529 on 6/2/25, and tuition of $11,450 paid directly to his school. SSN 228-40-1229. Brigid is custodian.
+   - Conrad himself, $60,000 on 8/15/25, described in the trustee minutes as "advance on inheritance." SSN ending 5625.
+   Under our reading these are gifts by Ottilie (grantor trust), not distributions carrying DNI, so no Schedule K-1 to anyone. Conrad's $60,000 exceeds the annual exclusion: a gift tax return is needed for 2025, and frankly a co-trustee paying himself from an incapacitated parent's trust is something the bank's trust officer should have questioned. Brigid phoned us about it on 11/6, upset; she and Conrad are not speaking.
+   If instead the bank is right (complex trust): K-1s to Brigid, Felix and Conrad; the 65-day rule under IRC § 663(b) would be available; and the kiddie tax hits Felix. I have run both ways in the software; difference in total family tax is about $9,800.
+
+4. OPEN ITEMS
+   - Engagement letter is signed by Conrad only. Need the bank's signature.
+   - Ottilie's long-term care costs, $11,900 a month to the facility: medical deduction on her 1040; get the physician's chronic-illness certification.
+   - Conrad's contact: 712-555-0136, conrad.h@loessmail.example. He asked that statements NOT go to Brigid. As a beneficiary she is entitled to them; raise with counsel.
+   - Form 56 for the co-trustees not yet filed.

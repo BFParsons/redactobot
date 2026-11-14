@@ -1,0 +1,1230 @@
+/*
+ * Copyright 2026 The Redactobot Authors
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/* Layout and the few surfaces Material Web has no component for (top app bar, panes,
+   notices, inline highlights). Everything uses Material 3 system tokens: colour roles from
+   tokens.css, the type scale classes, the 4dp spacing grid, shape and state-layer values. */
+
+:root {
+  --md-ref-typeface-brand: 'Roboto', system-ui, sans-serif;
+  --md-ref-typeface-plain: 'Roboto', system-ui, sans-serif;
+
+  /* Material 3 shape scale */
+  --shape-xs: 4px;
+  --shape-sm: 8px;
+  --shape-md: 12px;
+  --shape-xl: 28px;
+
+  /* Window size classes: compact < 600, medium 600–839, expanded 840+ */
+  --margin: 16px;
+  --pane-gap: 24px;
+}
+
+@media (min-width: 600px) {
+  :root {
+    --margin: 24px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-surface);
+  font-family: var(--md-ref-typeface-plain);
+  -webkit-font-smoothing: antialiased;
+}
+
+redactobot-app {
+  display: block;
+  min-height: 100%;
+}
+
+/* ---- Top app bar (small): 64dp tall, title-large, surface → surface-container on scroll ---- */
+.app-bar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 64px;
+  padding: 8px 4px;
+  background: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-surface);
+  transition: background-color 200ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+.app-bar.scrolled {
+  background: var(--md-sys-color-surface-container);
+}
+
+.app-bar .title {
+  flex: 1;
+  margin: 0;
+  padding-left: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.app-bar .title.no-lead {
+  padding-left: calc(var(--margin) - 4px);
+}
+
+.app-bar md-linear-progress {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* ---- Body and panes ---- */
+main {
+  padding: 8px var(--margin) 32px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.panes {
+  display: grid;
+  gap: var(--pane-gap);
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+}
+
+@media (min-width: 840px) {
+  .panes {
+    grid-template-columns: minmax(0, 1fr) 360px;
+  }
+
+  .supporting {
+    position: sticky;
+    top: 80px;
+    max-height: calc(100vh - 96px);
+    overflow: auto;
+  }
+}
+
+.stack {
+  display: grid;
+  gap: 16px;
+}
+
+.single {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+md-outlined-card,
+md-filled-card {
+  display: block;
+}
+
+.card-body {
+  padding: 16px;
+  display: grid;
+  gap: 16px;
+}
+
+.card-body.flush {
+  padding: 8px 0;
+  gap: 0;
+}
+
+.card-head {
+  padding: 16px 16px 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.muted {
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.actions.start {
+  justify-content: flex-start;
+}
+
+md-outlined-text-field {
+  width: 100%;
+}
+
+md-list {
+  background: transparent;
+  --md-list-container-color: transparent;
+}
+
+md-chip-set {
+  padding: 0 16px;
+}
+
+.section-label {
+  padding: 16px 16px 4px;
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+/* The "what to replace" card: tabs under the heading, then one picker or the other. */
+.card-head + md-tabs {
+  margin-top: 12px;
+}
+
+.card-body.tight {
+  padding-bottom: 0;
+}
+
+/* A tier of data types ("Highly accurate"), with one line saying what the tier means. */
+.tier-head {
+  padding: 20px 16px 0;
+  display: grid;
+  gap: 2px;
+}
+
+.tier-head h3 {
+  color: var(--md-sys-color-on-surface);
+}
+
+/* The measured rate at the end of a row: figures line up down the list. */
+.rate {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+a {
+  color: var(--md-sys-color-primary);
+}
+
+/* ---- Notice: an inline message with an icon. Colour roles carry tone; the icon and text
+        carry the meaning, so it never depends on colour alone. ---- */
+.notice {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 12px;
+  align-items: start;
+  padding: 12px 16px;
+  border-radius: var(--shape-md);
+  background: var(--md-sys-color-secondary-container);
+  color: var(--md-sys-color-on-secondary-container);
+}
+
+.notice.warn {
+  background: var(--md-sys-color-error-container);
+  color: var(--md-sys-color-on-error-container);
+}
+
+.notice.plain {
+  background: var(--md-sys-color-surface-container-high);
+  color: var(--md-sys-color-on-surface);
+}
+
+/* ---- Document text ---- */
+.doc {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  padding: 16px;
+  min-height: 160px;
+  user-select: text;
+}
+
+/* Inline highlight: a toggle. Filled container = will be replaced. Outline only = kept. */
+.hl {
+  cursor: pointer;
+  padding: 1px 2px;
+  border-radius: var(--shape-xs);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  background: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-on-primary-container);
+}
+
+.hl.person {
+  background: var(--md-sys-color-tertiary-container);
+  color: var(--md-sys-color-on-tertiary-container);
+}
+
+.hl.company {
+  background: var(--md-sys-color-secondary-container);
+  color: var(--md-sys-color-on-secondary-container);
+}
+
+.hl[aria-pressed='false'] {
+  background: transparent;
+  color: inherit;
+  outline: 1px dashed var(--md-sys-color-outline);
+  outline-offset: -1px;
+}
+
+/* State layers: hover 8%, pressed 10% of the content colour */
+.hl:hover {
+  background-image: linear-gradient(
+    color-mix(in srgb, currentColor 8%, transparent) 0 0
+  );
+}
+
+.hl:active {
+  background-image: linear-gradient(
+    color-mix(in srgb, currentColor 10%, transparent) 0 0
+  );
+}
+
+/* A flagged sensitive topic: underlined, not filled, until the user chooses to replace it. */
+.hl.flag[aria-pressed='false'] {
+  outline: none;
+  background: transparent;
+  color: inherit;
+  text-decoration: underline wavy var(--md-sys-color-error);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.hl.flag[aria-pressed='true'] {
+  background: var(--md-sys-color-error-container);
+  color: var(--md-sys-color-on-error-container);
+}
+
+.flag-swatch {
+  background: transparent !important;
+  border-bottom: 2px solid var(--md-sys-color-error);
+  border-radius: 0 !important;
+  height: 10px !important;
+}
+
+.hl:focus-visible {
+  outline: 3px solid var(--md-sys-color-secondary);
+  outline-offset: 2px;
+}
+
+.ph {
+  padding: 1px 4px;
+  border-radius: var(--shape-xs);
+  font-weight: 500;
+  /* Replacements stay highlighted: soft yellow in light mode, amber in dark mode. */
+  background: var(--rb-ph-bg);
+  color: var(--rb-ph-fg);
+}
+
+/* A detail as it is found: red, one blink, then replaced by its placeholder. */
+.ph-found {
+  padding: 1px 2px;
+  border-radius: var(--shape-xs);
+  background: var(--rb-flag-bg);
+  color: var(--rb-flag-fg);
+  animation: ph-blink 150ms steps(2, jump-none) 1;
+}
+
+@keyframes ph-blink {
+  50% {
+    opacity: 0.25;
+  }
+}
+
+.doc.typing {
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ph-found {
+    animation: none;
+  }
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  padding: 0 16px 16px;
+}
+
+.legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: var(--shape-xs);
+}
+
+.selection-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 16px;
+  background: var(--md-sys-color-surface-container);
+  border-radius: var(--shape-md);
+}
+
+.answer {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.dialog-list {
+  display: grid;
+  gap: 12px;
+}
+
+.req {
+  display: grid;
+  gap: 4px;
+}
+
+.req .state {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.req md-icon {
+  --md-icon-size: 18px;
+}
+
+md-dialog {
+  max-width: min(560px, calc(100vw - 48px));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app-bar {
+    transition: none;
+  }
+}
+
+/* ---- Drop zone: where a document is added. Dashed outline marks a drop target; the
+        filled primary container shows it is ready to receive. ---- */
+.dropzone {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+  padding: 16px 24px;
+  min-height: 96px;
+  border-radius: var(--shape-md);
+  background: var(--md-sys-color-surface-container-low);
+  outline: 1px dashed var(--md-sys-color-outline);
+  outline-offset: -1px;
+  transition: background-color 200ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+.dropzone.over {
+  background: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-on-primary-container);
+  outline: 2px solid var(--md-sys-color-primary);
+  outline-offset: -2px;
+}
+
+.dropzone.over .muted {
+  color: inherit;
+}
+
+.dropzone-text {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.dropzone md-icon {
+  color: var(--md-sys-color-primary);
+}
+
+@media (max-width: 599px) {
+  .dropzone {
+    grid-template-columns: 24px minmax(0, 1fr);
+    padding: 16px;
+  }
+
+  .dropzone > md-outlined-button,
+  .dropzone > md-text-button {
+    grid-column: 2;
+    justify-self: start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dropzone {
+    transition: none;
+  }
+}
+
+/* Icons are embedded SVGs (src/icons.ts), coloured by the surrounding text colour. */
+md-icon > svg {
+  fill: currentColor;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.card-actions {
+  padding: 0 16px 12px;
+}
+
+/* "What to replace": two collapsible sections with compact, single-line rows. */
+.picker .pick-section > summary {
+  list-style: none;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr auto 24px;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  user-select: none;
+}
+
+.picker .pick-section > summary::-webkit-details-marker {
+  display: none;
+}
+
+.picker .pick-section > summary:focus-visible {
+  outline: 2px solid var(--md-sys-color-primary);
+  outline-offset: -2px;
+}
+
+.picker .pick-section > summary svg {
+  transition: transform 150ms;
+  fill: currentColor;
+}
+
+.picker .pick-section[open] > summary svg {
+  transform: rotate(90deg);
+}
+
+.picker .pick-chips {
+  padding: 0 16px 4px;
+}
+
+.picker .tier-head {
+  padding: 10px 16px 2px;
+  display: grid;
+  gap: 0;
+}
+
+.picker .tier-head h3 {
+  margin: 0;
+}
+
+.picker .pick-list {
+  display: grid;
+  padding: 0 8px;
+}
+
+.picker .pick-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 4px;
+  min-height: 36px;
+  padding: 0 8px 0 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.picker .pick-row:hover {
+  background: color-mix(
+    in srgb,
+    var(--md-sys-color-on-surface) 6%,
+    transparent
+  );
+}
+
+.picker .pick-row md-icon-button {
+  --md-icon-button-icon-size: 20px;
+  width: 32px;
+  height: 32px;
+}
+
+.picker .pick-note {
+  padding: 6px 16px 12px;
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .picker .pick-section > summary svg {
+    transition: none;
+  }
+}
+
+/* The verdict after a scan: large, colour plus icon plus words (never colour alone). */
+.verdict {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 12px;
+  align-items: start;
+  padding: 16px 20px;
+  border-radius: 16px;
+  border: 1px solid;
+}
+
+.verdict svg {
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
+}
+
+.verdict p + p {
+  margin-top: 4px;
+}
+
+.verdict.clean {
+  background: var(--rb-ok-bg);
+  color: var(--rb-ok-fg);
+  border-color: var(--rb-ok-border);
+}
+
+.verdict.review {
+  background: var(--rb-warn-bg);
+  color: var(--rb-warn-fg);
+  border-color: var(--rb-warn-border);
+}
+
+/* Blinking block cursor while the cleaned text types itself out. */
+.type-cursor {
+  display: inline-block;
+  width: 0.55em;
+  height: 1.1em;
+  margin-left: 1px;
+  vertical-align: text-bottom;
+  background: var(--md-sys-color-primary);
+  animation: type-blink 0.9s steps(1) infinite;
+}
+
+@keyframes type-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .type-cursor {
+    animation: none;
+  }
+}
+
+/* Logo in the app bar, left. The image has its own black background, so it sits in a rounded badge. */
+.app-bar .logo {
+  height: 120px;
+  width: auto;
+  border-radius: 10px;
+  display: block;
+  transition: height 200ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+/* Once the page scrolls, the sticky bar shrinks the logo so it does not take a third of the screen. */
+.app-bar.scrolled .logo {
+  height: 48px;
+}
+
+.app-bar .logo.no-lead {
+  margin-left: calc(var(--margin) - 4px);
+}
+
+.app-bar .title.visually-hidden,
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* The robot at work: top of the right-hand column, the column's width. It opens smoothly
+   (grid rows 0fr -> 1fr) and pushes the panel below it down; it closes the same way. */
+.robot-slot {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition:
+    grid-template-rows 320ms ease,
+    opacity 320ms ease,
+    margin 320ms ease;
+}
+
+.robot-slot.on {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  margin-bottom: 12px;
+}
+
+.robot-inner {
+  overflow: hidden;
+  min-height: 0;
+}
+
+.robot-slot video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .robot-slot {
+    display: none;
+  }
+}
+
+/* Keep the info button at the right edge even when the title is visually hidden. */
+.app-bar .title + md-icon-button {
+  margin-left: auto;
+}
+
+/* A sensitive detail that is flagged but not removed: red in the cleaned text so it is seen at once. */
+.flagged-detail {
+  padding: 1px 3px;
+  border-radius: var(--shape-xs);
+  cursor: pointer;
+  background: var(--rb-flag-bg);
+  color: var(--rb-flag-fg);
+  outline: 1px solid var(--rb-flag-border);
+  outline-offset: -1px;
+  /* Not colour alone: a dashed underline marks every sensitive detail. */
+  text-decoration: underline dashed 2px;
+  text-underline-offset: 3px;
+}
+
+.flagged-detail:hover {
+  filter: brightness(1.15);
+}
+
+/* ---- Semantic colours. Standard palette, then a colour-blind friendly one (Okabe-Ito hues:
+        blue / orange / reddish purple), chosen in Display. Text on each pair meets WCAG AA. ---- */
+:root {
+  --rb-ok-bg: light-dark(#d9f5df, #10331b);
+  --rb-ok-fg: light-dark(#0b3d1a, #c3f2cf);
+  --rb-ok-border: light-dark(#2e8b4a, #4caf6e);
+  --rb-warn-bg: light-dark(#ffe4c7, #3d2400);
+  --rb-warn-fg: light-dark(#4a2800, #ffd9ad);
+  --rb-warn-border: light-dark(#b86e00, #e69f00);
+  --rb-ph-bg: light-dark(#fff1a8, #4d3d00);
+  --rb-ph-fg: light-dark(#3d3000, #ffe07a);
+  --rb-flag-bg: light-dark(#ffd3d0, #6e1414);
+  --rb-flag-fg: light-dark(#5c0b0b, #ffd2cf);
+  --rb-flag-border: light-dark(#c0392b, #e57373);
+}
+
+:root[data-palette='cb'] {
+  --rb-ok-bg: light-dark(#dbeaf7, #0d2a40);
+  --rb-ok-fg: light-dark(#0b3050, #cfe6f8);
+  --rb-ok-border: light-dark(#0072b2, #56b4e9);
+  --rb-warn-bg: light-dark(#ffe9c9, #3d2600);
+  --rb-warn-fg: light-dark(#4a2c00, #ffdcb0);
+  --rb-warn-border: light-dark(#b86e00, #e69f00);
+  --rb-ph-bg: light-dark(#fdf3b0, #4a4200);
+  --rb-ph-fg: light-dark(#3a3400, #f6ec8a);
+  --rb-flag-bg: light-dark(#f6dcec, #4a1238);
+  --rb-flag-fg: light-dark(#5a1440, #f7d3ea);
+  --rb-flag-border: light-dark(#a3477f, #cc79a7);
+}
+
+/* ---- Motion chosen in Display (the system setting is handled by prefers-reduced-motion). ---- */
+:root[data-motion='reduced'] .robot-slot {
+  display: none;
+}
+
+:root[data-motion='reduced'] .ph-found,
+:root[data-motion='reduced'] .type-cursor {
+  animation: none;
+}
+
+:root[data-motion='reduced'] *,
+:root[data-motion='reduced'] *::before,
+:root[data-motion='reduced'] *::after {
+  transition: none !important;
+}
+
+/* ---- Skip link: hidden until focused with the keyboard. ---- */
+.skip-link {
+  position: absolute;
+  left: 8px;
+  top: -60px;
+  z-index: 100;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 8px;
+}
+
+main:focus {
+  outline: none;
+}
+
+/* ---- Keyboard focus for the clickable sensitive details. ---- */
+.flagged-detail:focus-visible {
+  outline: 3px solid var(--md-sys-color-primary);
+  outline-offset: 2px;
+}
+
+/* ---- Pause control for the robot video (WCAG 2.2.2: moving content can be paused). ---- */
+.robot-inner {
+  position: relative;
+}
+
+.robot-pause {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  --md-icon-button-icon-color: var(--md-sys-color-on-surface);
+  background: color-mix(in srgb, var(--md-sys-color-surface) 75%, transparent);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 150ms;
+}
+
+.robot-inner:hover .robot-pause,
+.robot-pause:focus-within,
+.robot-pause:focus-visible {
+  opacity: 1;
+}
+
+@media (hover: none) {
+  .robot-pause {
+    opacity: 1;
+  }
+}
+
+/* ---- Display dialog. ---- */
+.display-group {
+  border: 0;
+  margin: 0 0 12px;
+  padding: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.display-group legend {
+  margin-bottom: 4px;
+}
+
+.display-option {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  cursor: pointer;
+}
+
+/* ---- Windows high contrast and other forced-colour modes: keep every state visible. ---- */
+@media (forced-colors: active) {
+  .ph {
+    background: Mark;
+    color: MarkText;
+    forced-color-adjust: none;
+    outline: 1px solid CanvasText;
+  }
+
+  .flagged-detail,
+  .ph-found {
+    outline: 2px solid Highlight;
+    text-decoration: underline dashed 2px;
+  }
+
+  .verdict {
+    border: 2px solid CanvasText;
+  }
+
+  .type-cursor {
+    background: CanvasText;
+  }
+}
+
+/* ---- Phones. The logo shrinks, the robot floats bottom-right (the side column is below the
+        text there), touch targets stay at least 44 px. ---- */
+@media (max-width: 839px) {
+  /* No robot on narrow screens: it would cover the text. The progress bar shows work instead. */
+  .robot-slot {
+    display: none !important;
+  }
+}
+
+@media (max-width: 599px) {
+  .app-bar .logo {
+    height: 56px;
+  }
+
+  .app-bar.scrolled .logo {
+    height: 40px;
+  }
+
+  .app-bar .title {
+    font-size: 18px;
+  }
+
+  .verdict {
+    grid-template-columns: 24px 1fr;
+    padding: 12px 14px;
+  }
+
+  .verdict svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .verdict .md-typescale-title-large {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .picker .pick-row {
+    min-height: 44px;
+  }
+
+  .actions {
+    justify-content: stretch;
+  }
+
+  .actions > md-filled-button,
+  .actions > md-outlined-button {
+    flex: 1 1 auto;
+  }
+}
+
+/* ---- Logo: a separate light-mode artwork (all black removed, outlined wordmark). ---- */
+.app-bar .logo.for-light {
+  display: none;
+}
+
+:root[data-theme='light'] .app-bar .logo.for-dark {
+  display: none;
+}
+
+:root[data-theme='light'] .app-bar .logo.for-light {
+  display: block;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme='dark']) .app-bar .logo.for-dark {
+    display: none;
+  }
+
+  :root:not([data-theme='dark']) .app-bar .logo.for-light {
+    display: block;
+  }
+}
+
+/* ---- Cold-start card: estimated progress with a moving sheen. ---- */
+.warm-card strong {
+  display: block;
+}
+
+.warm-bar {
+  position: relative;
+  height: 10px;
+  margin: 10px 0 6px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--md-sys-color-primary) 18%, transparent);
+}
+
+.warm-fill {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  border-radius: inherit;
+  background-color: var(--md-sys-color-primary);
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent 0 10px,
+    color-mix(in srgb, var(--md-sys-color-on-primary) 22%, transparent) 10px
+      20px
+  );
+  background-size: 28px 28px;
+  animation: warm-stripes 700ms linear infinite;
+  transition: width 400ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+.warm-fill::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  width: 40%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, white 35%, transparent),
+    transparent
+  );
+  animation: warm-sheen 1.6s ease-in-out infinite;
+}
+
+.warm-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-variant-numeric: tabular-nums;
+}
+
+.warm-card.done .warm-fill {
+  background-image: none;
+  animation: none;
+}
+
+.warm-card.done .warm-fill::after {
+  display: none;
+}
+
+@keyframes warm-stripes {
+  to {
+    background-position: 28px 0;
+  }
+}
+
+@keyframes warm-sheen {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(260%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .warm-fill,
+  .warm-fill::after {
+    animation: none;
+  }
+
+  .warm-fill::after {
+    display: none;
+  }
+}
+
+:root[data-motion='reduced'] .warm-fill,
+:root[data-motion='reduced'] .warm-fill::after {
+  animation: none;
+}
+
+:root[data-motion='reduced'] .warm-fill::after {
+  display: none;
+}
+
+@media (forced-colors: active) {
+  .warm-bar {
+    border: 1px solid CanvasText;
+  }
+
+  .warm-fill {
+    background: Highlight;
+  }
+}
+
+/* ---- Output switch. ---- */
+.output-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ---- FOIA release: a paper record with boxed, exemption-marked withholdings. Always light, like
+        the printed release it previews. ---- */
+.doc.foia-paper {
+  color-scheme: light;
+  background: #fff;
+  color: #1a1a1a;
+  margin: 12px;
+  border-radius: 4px;
+  box-shadow:
+    0 1px 3px rgb(0 0 0 / 0.25),
+    0 0 0 1px rgb(0 0 0 / 0.06);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  line-height: 1.75;
+  padding: 28px 32px;
+}
+
+/* One block character per withheld character, in the paper's fixed-width font,
+   so the box is as long as the text it hides and wraps where that text did.
+   Black glyphs on black: the box stays solid even if backgrounds do not print. */
+.foia-box {
+  background: #000;
+  color: #000;
+  padding: 0.14em 0;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+.foia-box .foia-code {
+  color: #fff;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.foia-stamp {
+  float: right;
+  margin: -8px -8px 12px 16px;
+  padding: 6px 12px;
+  border: 3px double #8b1a1a;
+  color: #8b1a1a;
+  font-family: Roboto, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  transform: rotate(-3deg);
+  line-height: 1.3;
+  display: grid;
+}
+
+.foia-stamp-title {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+}
+
+.foia-stamp-codes {
+  font-size: 12px;
+  text-transform: none;
+  white-space: pre;
+}
+
+.foia-legend {
+  clear: both;
+  margin-top: 24px;
+  padding-top: 12px;
+  border-top: 1px solid #999;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  white-space: normal;
+}
+
+.foia-legend-code {
+  display: inline-block;
+  min-width: 76px;
+  font-weight: 700;
+}
+
+.foia-le {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
+  align-items: center;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.foia-rows {
+  display: grid;
+  gap: 10px;
+}
+
+.foia-row {
+  display: grid;
+  gap: 4px;
+}
+
+.foia-row select {
+  min-height: 44px;
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font: inherit;
+  font-size: 14px;
+  border: 1px solid var(--md-sys-color-outline);
+  background: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-surface);
+}
+
+.foia-row select:focus-visible {
+  outline: 3px solid var(--md-sys-color-primary);
+  outline-offset: 1px;
+}
+
+@media (max-width: 599px) {
+  .doc.foia-paper {
+    margin: 8px;
+    padding: 18px 16px;
+    font-size: 14px;
+  }
+
+  .foia-stamp {
+    float: none;
+    display: grid;
+    width: fit-content;
+    margin: 0 0 16px;
+  }
+}
+
+@media (forced-colors: active) {
+  .foia-box {
+    forced-color-adjust: none;
+    background: CanvasText;
+    color: CanvasText;
+  }
+
+  .foia-box .foia-code {
+    color: Canvas;
+  }
+
+  .foia-stamp {
+    border-color: CanvasText;
+    color: CanvasText;
+  }
+}
+
+/* ---- Printing a FOIA release: only the copy in #print-root, boxes kept black. ---- */
+#print-root {
+  display: none;
+}
+
+@media print {
+  body > *:not(#print-root) {
+    display: none !important;
+  }
+
+  #print-root {
+    display: block;
+  }
+
+  #print-root .doc.foia-paper {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    max-height: none;
+    overflow: visible;
+    border: 0;
+  }
+
+  /* Flagged details that were not withheld print as ordinary text. */
+  #print-root .flagged-detail {
+    background: none;
+    color: inherit;
+    outline: 0;
+    text-decoration: none;
+  }
+}

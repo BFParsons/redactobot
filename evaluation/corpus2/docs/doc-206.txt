@@ -1,0 +1,8 @@
+CARD AUTHORIZATION - Pruneda & Lamb Tax Service
+Client: Hyacinth Obuya (file T-5582)
+Name on card: CORNELIUS J OBUYA
+Card: Mastercard 5544 8942 4810 9413   Exp 11/27   CVC 306
+Billing: 618 Tamarind Ct, Yuma, AZ 85364
+Charge $385.00 for 2025 Form 1040 prep on 4/2/26; balance of $140 at pickup.
+Signed: C. Obuya    Ph 928-555-0173
+Do not store CVC after processing (PCI DSS 3.2).

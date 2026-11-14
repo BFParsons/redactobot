@@ -1,0 +1,602 @@
+[
+ {
+  "id": "doc-301",
+  "file": "docs/doc-301.txt",
+  "format": "txt",
+  "doc_type": "deposition transcript excerpt",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 1011,
+  "item_count": 61
+ },
+ {
+  "id": "doc-302",
+  "file": "docs/doc-302.docx",
+  "format": "docx",
+  "doc_type": "demand letter",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 462,
+  "item_count": 67
+ },
+ {
+  "id": "doc-303",
+  "file": "docs/doc-303.eml",
+  "format": "eml",
+  "doc_type": "client care and engagement email",
+  "audience": "legal",
+  "jurisdiction": "UK",
+  "word_count": 417,
+  "item_count": 58
+ },
+ {
+  "id": "doc-304",
+  "file": "docs/doc-304.txt",
+  "format": "txt",
+  "doc_type": "voicemail transcription log",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 99,
+  "item_count": 17
+ },
+ {
+  "id": "doc-305",
+  "file": "docs/doc-305.pdf",
+  "format": "pdf",
+  "doc_type": "last will and testament with client data sheet",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 458,
+  "item_count": 73
+ },
+ {
+  "id": "doc-306",
+  "file": "docs/doc-306.md",
+  "format": "md",
+  "doc_type": "undertakings and refusals chart",
+  "audience": "legal",
+  "jurisdiction": "CA",
+  "word_count": 467,
+  "item_count": 57
+ },
+ {
+  "id": "doc-307",
+  "file": "docs/doc-307.xlsx",
+  "format": "xlsx",
+  "doc_type": "settlement distribution statement",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 268,
+  "item_count": 67
+ },
+ {
+  "id": "doc-308",
+  "file": "docs/doc-308.txt",
+  "format": "txt",
+  "doc_type": "administrative hearing transcript excerpt",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 486,
+  "item_count": 32
+ },
+ {
+  "id": "doc-309",
+  "file": "docs/doc-309.html",
+  "format": "html",
+  "doc_type": "web intake form submission",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 299,
+  "item_count": 45
+ },
+ {
+  "id": "doc-310",
+  "file": "docs/doc-310.rtf",
+  "format": "rtf",
+  "doc_type": "residential tenancy abstract",
+  "audience": "legal",
+  "jurisdiction": "EU",
+  "word_count": 305,
+  "item_count": 47
+ },
+ {
+  "id": "doc-311",
+  "file": "docs/doc-311.txt",
+  "format": "txt",
+  "doc_type": "tax organizer call notes",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 301,
+  "item_count": 57
+ },
+ {
+  "id": "doc-312",
+  "file": "docs/doc-312.xlsx",
+  "format": "xlsx",
+  "doc_type": "payroll register",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 377,
+  "item_count": 145
+ },
+ {
+  "id": "doc-313",
+  "file": "docs/doc-313.pdf",
+  "format": "pdf",
+  "doc_type": "bank reconciliation memo",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 419,
+  "item_count": 55
+ },
+ {
+  "id": "doc-314",
+  "file": "docs/doc-314.xlsx",
+  "format": "xlsx",
+  "doc_type": "accounts receivable ageing sheet",
+  "audience": "accounting",
+  "jurisdiction": "CA",
+  "word_count": 276,
+  "item_count": 82
+ },
+ {
+  "id": "doc-315",
+  "file": "docs/doc-315.eml",
+  "format": "eml",
+  "doc_type": "expense claim query thread",
+  "audience": "accounting",
+  "jurisdiction": "UK",
+  "word_count": 378,
+  "item_count": 44
+ },
+ {
+  "id": "doc-316",
+  "file": "docs/doc-316.txt",
+  "format": "txt",
+  "doc_type": "sole trader bookkeeping notes",
+  "audience": "accounting",
+  "jurisdiction": "AU",
+  "word_count": 307,
+  "item_count": 51
+ },
+ {
+  "id": "doc-317",
+  "file": "docs/doc-317.docx",
+  "format": "docx",
+  "doc_type": "tax engagement letter with card authorization",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 353,
+  "item_count": 40
+ },
+ {
+  "id": "doc-318",
+  "file": "docs/doc-318.md",
+  "format": "md",
+  "doc_type": "vendor master change log",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 439,
+  "item_count": 61
+ },
+ {
+  "id": "doc-319",
+  "file": "docs/doc-319.txt",
+  "format": "txt",
+  "doc_type": "bilingual accountant's client note",
+  "audience": "accounting",
+  "jurisdiction": "EU",
+  "word_count": 405,
+  "item_count": 54
+ },
+ {
+  "id": "doc-320",
+  "file": "docs/doc-320.pptx",
+  "format": "pptx",
+  "doc_type": "board finance and cap table deck",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 370,
+  "item_count": 43
+ },
+ {
+  "id": "doc-321",
+  "file": "docs/doc-321.txt",
+  "format": "txt",
+  "doc_type": "workplace investigation interview notes",
+  "audience": "general",
+  "jurisdiction": "US",
+  "word_count": 825,
+  "item_count": 51
+ },
+ {
+  "id": "doc-322",
+  "file": "docs/doc-322.docx",
+  "format": "docx",
+  "doc_type": "termination letter",
+  "audience": "general",
+  "jurisdiction": "US",
+  "word_count": 367,
+  "item_count": 44
+ },
+ {
+  "id": "doc-323",
+  "file": "docs/doc-323.eml",
+  "format": "eml",
+  "doc_type": "accommodation request email thread",
+  "audience": "general",
+  "jurisdiction": "CA",
+  "word_count": 352,
+  "item_count": 38
+ },
+ {
+  "id": "doc-324",
+  "file": "docs/doc-324.txt",
+  "format": "txt",
+  "doc_type": "disciplinary hearing minutes",
+  "audience": "general",
+  "jurisdiction": "UK",
+  "word_count": 451,
+  "item_count": 38
+ },
+ {
+  "id": "doc-325",
+  "file": "docs/doc-325.xlsx",
+  "format": "xlsx",
+  "doc_type": "benefits enrollment census",
+  "audience": "general",
+  "jurisdiction": "US",
+  "word_count": 256,
+  "item_count": 80
+ },
+ {
+  "id": "doc-326",
+  "file": "docs/doc-326.html",
+  "format": "html",
+  "doc_type": "employment background check report",
+  "audience": "general",
+  "jurisdiction": "US",
+  "word_count": 282,
+  "item_count": 49
+ },
+ {
+  "id": "doc-327",
+  "file": "docs/doc-327.txt",
+  "format": "txt",
+  "doc_type": "text message transcript",
+  "audience": "general",
+  "jurisdiction": "US",
+  "word_count": 119,
+  "item_count": 16
+ },
+ {
+  "id": "doc-328",
+  "file": "docs/doc-328.pdf",
+  "format": "pdf",
+  "doc_type": "workers' compensation first report and adjuster notes",
+  "audience": "general",
+  "jurisdiction": "US",
+  "word_count": 371,
+  "item_count": 55
+ },
+ {
+  "id": "doc-329",
+  "file": "docs/doc-329.md",
+  "format": "md",
+  "doc_type": "international relocation checklist",
+  "audience": "general",
+  "jurisdiction": "EU",
+  "word_count": 398,
+  "item_count": 54
+ },
+ {
+  "id": "doc-330",
+  "file": "docs/doc-330.txt",
+  "format": "txt",
+  "doc_type": "family leave administration log",
+  "audience": "general",
+  "jurisdiction": "US",
+  "word_count": 346,
+  "item_count": 39
+ },
+ {
+  "id": "doc-331",
+  "file": "docs/doc-331.txt",
+  "format": "txt",
+  "doc_type": "bilingual immigration document checklist",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 365,
+  "item_count": 59
+ },
+ {
+  "id": "doc-332",
+  "file": "docs/doc-332.docx",
+  "format": "docx",
+  "doc_type": "immigration consultant client file summary",
+  "audience": "legal",
+  "jurisdiction": "CA",
+  "word_count": 352,
+  "item_count": 61
+ },
+ {
+  "id": "doc-333",
+  "file": "docs/doc-333.pdf",
+  "format": "pdf",
+  "doc_type": "lasting power of attorney attendance note",
+  "audience": "legal",
+  "jurisdiction": "UK",
+  "word_count": 435,
+  "item_count": 50
+ },
+ {
+  "id": "doc-334",
+  "file": "docs/doc-334.eml",
+  "format": "eml",
+  "doc_type": "estate planning email thread",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 399,
+  "item_count": 51
+ },
+ {
+  "id": "doc-335",
+  "file": "docs/doc-335.txt",
+  "format": "txt",
+  "doc_type": "prenuptial financial disclosure schedule",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 329,
+  "item_count": 68
+ },
+ {
+  "id": "doc-336",
+  "file": "docs/doc-336.html",
+  "format": "html",
+  "doc_type": "petition for change of name and sex designation",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 373,
+  "item_count": 34
+ },
+ {
+  "id": "doc-337",
+  "file": "docs/doc-337.txt",
+  "format": "txt",
+  "doc_type": "partner visa file note",
+  "audience": "legal",
+  "jurisdiction": "AU",
+  "word_count": 407,
+  "item_count": 57
+ },
+ {
+  "id": "doc-338",
+  "file": "docs/doc-338.rtf",
+  "format": "rtf",
+  "doc_type": "nonprofit board minutes",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 432,
+  "item_count": 49
+ },
+ {
+  "id": "doc-339",
+  "file": "docs/doc-339.xlsx",
+  "format": "xlsx",
+  "doc_type": "estate accounting ledger",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 340,
+  "item_count": 87
+ },
+ {
+  "id": "doc-340",
+  "file": "docs/doc-340.txt",
+  "format": "txt",
+  "doc_type": "jail visit notes",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 338,
+  "item_count": 41
+ },
+ {
+  "id": "doc-341",
+  "file": "docs/doc-341.pdf",
+  "format": "pdf",
+  "doc_type": "independent medical examination report",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 543,
+  "item_count": 45
+ },
+ {
+  "id": "doc-342",
+  "file": "docs/doc-342.txt",
+  "format": "txt",
+  "doc_type": "medical chronology",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 711,
+  "item_count": 85
+ },
+ {
+  "id": "doc-343",
+  "file": "docs/doc-343.docx",
+  "format": "docx",
+  "doc_type": "property insurance claim file notes",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 467,
+  "item_count": 66
+ },
+ {
+  "id": "doc-344",
+  "file": "docs/doc-344.eml",
+  "format": "eml",
+  "doc_type": "medical records request email",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 294,
+  "item_count": 36
+ },
+ {
+  "id": "doc-345",
+  "file": "docs/doc-345.html",
+  "format": "html",
+  "doc_type": "walk-in clinic patient registration",
+  "audience": "health",
+  "jurisdiction": "CA",
+  "word_count": 246,
+  "item_count": 42
+ },
+ {
+  "id": "doc-346",
+  "file": "docs/doc-346.txt",
+  "format": "txt",
+  "doc_type": "recorded statement summary",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 446,
+  "item_count": 50
+ },
+ {
+  "id": "doc-347",
+  "file": "docs/doc-347.xlsx",
+  "format": "xlsx",
+  "doc_type": "medical billing ledger and lien sheet",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 275,
+  "item_count": 79
+ },
+ {
+  "id": "doc-348",
+  "file": "docs/doc-348.txt",
+  "format": "txt",
+  "doc_type": "medico-legal report letter",
+  "audience": "health",
+  "jurisdiction": "UK",
+  "word_count": 531,
+  "item_count": 40
+ },
+ {
+  "id": "doc-349",
+  "file": "docs/doc-349.pptx",
+  "format": "pptx",
+  "doc_type": "mediation brief deck",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 435,
+  "item_count": 55
+ },
+ {
+  "id": "doc-350",
+  "file": "docs/doc-350.md",
+  "format": "md",
+  "doc_type": "long-term disability appeal notes",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 491,
+  "item_count": 55
+ },
+ {
+  "id": "doc-351",
+  "file": "docs/doc-351.txt",
+  "format": "txt",
+  "doc_type": "bookkeeper handoff note",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 414,
+  "item_count": 58
+ },
+ {
+  "id": "doc-352",
+  "file": "docs/doc-352.eml",
+  "format": "eml",
+  "doc_type": "IT support ticket thread",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 446,
+  "item_count": 36
+ },
+ {
+  "id": "doc-353",
+  "file": "docs/doc-353.html",
+  "format": "html",
+  "doc_type": "online order receipt",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 174,
+  "item_count": 30
+ },
+ {
+  "id": "doc-354",
+  "file": "docs/doc-354.txt",
+  "format": "txt",
+  "doc_type": "fiduciary return workpaper memo",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 501,
+  "item_count": 62
+ },
+ {
+  "id": "doc-355",
+  "file": "docs/doc-355.docx",
+  "format": "docx",
+  "doc_type": "bilingual notice of objection cover letter",
+  "audience": "accounting",
+  "jurisdiction": "CA",
+  "word_count": 445,
+  "item_count": 48
+ },
+ {
+  "id": "doc-356",
+  "file": "docs/doc-356.xlsx",
+  "format": "xlsx",
+  "doc_type": "employee expense report",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 280,
+  "item_count": 64
+ },
+ {
+  "id": "doc-357",
+  "file": "docs/doc-357.txt",
+  "format": "txt",
+  "doc_type": "inheritance tax worksheet notes",
+  "audience": "accounting",
+  "jurisdiction": "UK",
+  "word_count": 446,
+  "item_count": 66
+ },
+ {
+  "id": "doc-358",
+  "file": "docs/doc-358.pdf",
+  "format": "pdf",
+  "doc_type": "tax adviser client master data sheet",
+  "audience": "accounting",
+  "jurisdiction": "EU",
+  "word_count": 354,
+  "item_count": 60
+ },
+ {
+  "id": "doc-359",
+  "file": "docs/doc-359.txt",
+  "format": "txt",
+  "doc_type": "bilingual eviction notice and tenant ledger",
+  "audience": "general",
+  "jurisdiction": "US",
+  "word_count": 447,
+  "item_count": 64
+ },
+ {
+  "id": "doc-360",
+  "file": "docs/doc-360.eml",
+  "format": "eml",
+  "doc_type": "forwarded stolen laptop report",
+  "audience": "general",
+  "jurisdiction": "US",
+  "word_count": 464,
+  "item_count": 48
+ }
+]

@@ -1,0 +1,34 @@
+SAGEBRUSH FAMILY MEDICINE                                        OFFICE VISIT
+Patient: BEGAYE, LORETTA M.      MRN: SFM-0088213      DOB: 11/08/1967 (58 y/o F)
+DOS: 02/12/2026    Provider: Dr. Okwuosa    Visit type: established, 30 min
+Insurance: Four Corners Health Alliance, ID FCH-771-204-881
+
+S:  Mrs. Begaye returns for follow-up of type 2 diabetes, on insulin pump since 2022
+    (pump serial NG2308841PX). Says she has been "forgetting" meal boluses most days since
+    her husband Leonard died in October. Sleeping 4-5 hrs. Appetite poor, then snacks late.
+    Admits to 3-4 beers most nights, up from "almost never." Denies thoughts of
+    self-harm. PHQ-9 today: 14. No chest pain, no vision change, feet OK.
+    She is Diné and drives in from Shiprock, about 40 minutes each way; missed
+    the December visit because of the roads. Reminded me again that she is one of Jehovah's Witnesses
+    and will not accept blood products; advance directive is on file.
+
+O:  BP 148/92, HR 84, Wt 187 lb, BMI 32.1. Alert, tearful when discussing husband.
+    HEENT unremarkable. Lungs clear. Feet: monofilament intact bilaterally.
+    Labs 2/5/2026: A1c 8.9% (was 7.6% in August), eGFR 61, LDL 118,
+    urine microalbumin mildly elevated. CGM download: time in range 41%.
+
+A:  1. Type 2 diabetes, uncontrolled, with missed boluses (ICD-10 code in chart)
+    2. Moderate depression, likely bereavement-related
+    3. Hypertension, above goal
+    4. Risky alcohol use, new
+
+P:  - Pump: bolus reminders turned on at 7, 12 and 6. Continue metformin 1000 mg BID.
+    - Increase lisinopril to 40 mg daily. Recheck BP in 4 wks per ADA guidelines.
+    - Start sertraline 50 mg daily. Rx 6620417 sent to Chaco Trail Pharmacy, 505-555-0127.
+    - Brief alcohol counseling done. She agrees to cut back; declines medication for it.
+    - Referral to Yvonne Tsosie, LCSW, at Red Mesa Behavioral Health for grief counseling.
+      Loretta prefers a counselor who speaks Navajo; Ms. Tsosie does.
+    - OK to call her at (505) 555-0191; do not leave details with her son.
+    - RTC 3/12/2026.
+
+Electronically signed: Chidi Okwuosa, MD   NPI 1730284416   02/12/2026 17:41

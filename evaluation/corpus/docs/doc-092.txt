@@ -1,0 +1,42 @@
+Boreal Ledger Chartered Professional Accountants
+CORRESPONDENCE SUMMARY -- for file and for the partner
+
+Client:   Gagnon-Tremblay Forestry Services Inc. ("GTFS")
+          BN 74418 2093 RT0001
+          1184 chemin Kamiskotia Road, Timmins ON  P4N 7C3
+Owner:    Jean-Luc Gagnon-Tremblay (SIN 517-596-169), cell 705-555-0183
+Our file: BL-2210-GST          Summary by: M. MacGillivray, 2026-10-09
+
+WHAT CAME IN
+1. CRA letter dated September 3, 2026, received here Sept. 11. GST/HST audit, reporting periods
+   2024-01-01 to 2025-12-31. Auditor: S. Bhattacharya, Audit Division,
+   Sudbury Tax Services Office. Tel 705-555-0127, ext. 4418. Fax 705-555-0101.
+   Case ref. GH-2026-118-4471.
+2. Proposal letter dated October 1, 2026: proposed adjustments of $41,280.16 plus
+   interest. French copy shows it as 41 280,16 $. Thirty days to respond.
+
+WHAT THEY ARE PROPOSING
+(a) Deny ITCs of $27,930.00 on invoices from Abitibi Trail Equipment Rentals Ltd. -- auditor says
+    supplier's registration number on the invoices is invalid (ETA s. 169(4) documentary
+    requirements). Abitibi Trail is real and we rented from them all of 2024; their BN was
+    printed with two digits transposed. Fixable with corrected invoices.
+(b) Assess GST/HST of $9,412.50 on the sale of the old skidder to Jean-Luc's sister-in-law,
+    Sylvie Gagnon-Tremblay, for CAD 72,500 in March 2025. No tax was charged. She is not
+    a registrant. He treated it as a "family thing." Assessment is probably right.
+(c) Deny $3,937.66 ITCs on meals/fuel -- no receipts. Partly right.
+
+WHAT I DID
+- Called Ms. Bhattacharya Oct 6. Reasonable. She will accept corrected supplier invoices on
+  (a) if received by October 30, 2026. Extension to Nov 13 available on written request.
+- Confirmed our authorization (Form RC59) is on file; rep ID RM7K2Q4.
+- Emailed Jean-Luc at jlgt@gtforestry.example asking for the Abitibi Trail contact and the
+  skidder bill of sale. No answer yet. His wife says he is in camp until the 20th with no signal.
+
+EXPOSURE
+Best case about $11,000 incl. interest; worst case the full proposal, roughly $46k
+with interest. The operating account at Caisse populaire de Timmins (transit 00417, acct
+0884-217) had $18,204.11 at month end, so worst case needs a payment arrangement.
+
+NOTE FOR PARTNER
+Mr. Gagnon-Tremblay also asked whether the audit "has anything to do with"
+his 2019 consumer proposal. I said no, but T2 arrears from that period still show.

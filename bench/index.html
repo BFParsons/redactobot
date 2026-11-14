@@ -1,0 +1,520 @@
+<!doctype html>
+<!--
+  Copyright 2026 The Redactobot Authors
+  SPDX-License-Identifier: Apache-2.0
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>On-device Benchmark</title>
+<style>
+  :root {
+    --bg: #f7f7f5; --panel: #ffffff; --text: #1d1d1b; --muted: #6b6b66;
+    --border: #e2e2dc; --ok: #1d7a46; --bad: #b3261e; --warn: #9a6200;
+    --accent: #2d5bd7; --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #151514; --panel: #1f1f1d; --text: #ececea; --muted: #9b9b95;
+      --border: #33332f; --ok: #5cc98a; --bad: #f08a80; --warn: #e3b25a; --accent: #8aa8ff; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 960px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  h2 { font-size: 16px; margin: 0 0 12px; }
+  p.lede { color: var(--muted); margin: 0 0 24px; }
+  section { background: var(--panel); border: 1px solid var(--border); border-radius: 8px;
+    padding: 16px; margin-bottom: 16px; }
+  textarea { width: 100%; min-height: 220px; font: 13px/1.45 var(--mono); padding: 10px;
+    background: var(--bg); color: var(--text); border: 1px solid var(--border); border-radius: 6px; }
+  button { font: inherit; padding: 8px 14px; border-radius: 6px; border: 1px solid var(--accent);
+    background: var(--accent); color: #fff; cursor: pointer; }
+  button:disabled { opacity: .5; cursor: default; }
+  button.secondary { background: transparent; color: var(--accent); }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .status { padding: 10px 12px; border-radius: 6px; border: 1px solid var(--border); margin: 12px 0 0; }
+  .status.ok { border-color: var(--ok); color: var(--ok); }
+  .status.bad { border-color: var(--bad); color: var(--bad); }
+  .status.warn { border-color: var(--warn); color: var(--warn); }
+  progress { width: 100%; height: 10px; margin-top: 8px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  td.num { font-family: var(--mono); white-space: nowrap; }
+  .chip { display: inline-block; font: 12px/1.6 var(--mono); padding: 0 6px; margin: 2px 4px 2px 0;
+    border: 1px solid var(--border); border-radius: 4px; }
+  .chip.miss { border-color: var(--bad); color: var(--bad); }
+  .chip.extra { border-color: var(--warn); color: var(--warn); }
+  .muted { color: var(--muted); }
+  .small { font-size: 13px; }
+  pre { font: 12px/1.45 var(--mono); white-space: pre-wrap; word-break: break-word; margin: 6px 0 0;
+    background: var(--bg); border: 1px solid var(--border); border-radius: 6px; padding: 8px; }
+  .scroll { overflow-x: auto; }
+  details summary { cursor: pointer; color: var(--muted); }
+  .rules { display: grid; gap: 8px; margin-top: 12px; }
+  .rule { border: 1px solid var(--border); border-radius: 6px; padding: 10px 12px; }
+  .rule.on { border-color: var(--accent); }
+  .rule-head { display: flex; gap: 10px; align-items: flex-start; }
+  .rule-head input { margin-top: 4px; }
+  .rule-head label { flex: 1; cursor: pointer; }
+  .rule-title { font-weight: 600; }
+  .rule details { margin: 8px 0 0 26px; }
+  .req { display: grid; grid-template-columns: 9.5em 1fr; gap: 2px 10px; padding: 6px 0;
+    border-top: 1px solid var(--border); font-size: 13px; }
+  .badge { display: inline-block; font-size: 11px; line-height: 1.7; padding: 0 7px; border-radius: 10px;
+    border: 1px solid var(--border); white-space: nowrap; height: fit-content; width: fit-content; }
+  .badge.covered { border-color: var(--ok); color: var(--ok); }
+  .badge.partial, .badge.planned { border-color: var(--warn); color: var(--warn); }
+  .badge.none { border-color: var(--bad); color: var(--bad); }
+  .badge.na { color: var(--muted); }
+  .checks { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 2px 16px;
+    font-size: 13px; margin-top: 8px; }
+  .checks label { display: flex; gap: 6px; align-items: baseline; }
+  .checks .grp { grid-column: 1 / -1; font-weight: 600; margin-top: 8px; color: var(--muted); }
+  .duty { font-size: 13px; color: var(--muted); margin: 4px 0; }
+  a { color: var(--accent); }
+  @media (max-width: 560px) { .req { grid-template-columns: 1fr; } .rule details { margin-left: 0; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>On-device detection benchmark</h1>
+  <p class="lede">Measures pattern matching and Gemini Nano (Chrome Prompt API) name extraction on a
+    fictional client note. Nothing on this page sends document text over the network.</p>
+
+  <section>
+    <h2>Sample document</h2>
+    <textarea id="doc" spellcheck="false"></textarea>
+    <p class="small muted" id="wordcount"></p>
+    <div class="row">
+      <button class="secondary" id="reset">Reset to sample</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>Which rules apply to this document?</h2>
+    <p class="small muted" style="margin:0 0 10px">Pick the rules you work under. Only the checks those
+      rules call for are run. Open a rule to see its list and how much of it is caught automatically.</p>
+    <div class="row" id="audiences"></div>
+    <div class="rules" id="rules"></div>
+    <details style="margin-top:12px">
+      <summary>Fine-tune individual checks</summary>
+      <div class="checks" id="checks"></div>
+    </details>
+    <p class="small" id="planSummary" style="margin:12px 0 0"></p>
+    <div id="duties" style="margin-top:8px"></div>
+  </section>
+
+  <section>
+    <h2>1. Pattern matching</h2>
+    <div class="row"><button id="runPatterns">Run pattern matching</button></div>
+    <div id="patternOut"></div>
+  </section>
+
+  <section>
+    <h2>2. On-device model</h2>
+    <div id="envStatus" class="status">Checking Prompt API…</div>
+    <progress id="dl" max="1" value="0" hidden></progress>
+    <p class="small muted" id="dlText"></p>
+    <div class="row" style="margin-top:12px">
+      <button id="runModel" disabled>Run model benchmark (3 runs)</button>
+      <label class="small"><input type="checkbox" id="omitSchema"> omit schema from context</label>
+    </div>
+    <p class="small muted" id="modelSkip" style="margin:8px 0 0"></p>
+    <div id="sessionInfo" class="small muted" style="margin-top:12px"></div>
+    <div id="modelOut"></div>
+  </section>
+
+  <section class="small muted">
+    Needs Chrome 148+ on desktop, 22 GB free disk, and either 16 GB RAM with 4+ cores or a GPU with more
+    than 4 GB VRAM. Chrome 157 needs no flags.
+  </section>
+</main>
+
+<script type="module">
+import { DETECTORS, FRAMEWORKS, AUDIENCES, DEFAULT_FRAMEWORKS, PROFESSIONAL_DUTIES, KEEP,
+         coverage, planFor, detectPatterns, detectorById, frameworkById } from '../taxonomy/taxonomy.js';
+
+const SAMPLE = `CLIENT MEETING NOTES - CONFIDENTIAL
+Date: March 14, 2026. Prepared by Priya Raman, CPA.
+
+Met with Margaret Whitfield this morning regarding the year-end filing for
+Whitfield & Daughters Holdings Ltd. Her son Tom Whitfield joined by phone
+from Victoria. Margaret confirmed the company sold its marine parts division
+to Harbourline Marine Supply in May for $1,250,000, with $400,000 held back
+until the inventory count is settled.
+
+The proceeds were deposited to the operating account at Cascadia Credit
+Union, account 4471-889-2203. Margaret then moved $310,500.75 to her
+personal account 5520-114-9087 to pay down the mortgage on the Tofino
+property. We need to treat this as a shareholder loan unless a dividend
+is declared before year end.
+
+Previous bookkeeping was done by Northgate Bookkeeping. Their contact,
+Daniel Okafor, has not yet sent the general ledger. D. Okafor told Tom the
+files were delayed because of a staffing change. Margaret is unhappy and
+may end that engagement. Outstanding invoice to Northgate is $8,400.
+
+Margaret also mentioned a dispute with Harbourline over a $62,000 warranty
+claim. She has not retained a lawyer yet. I suggested she speak with one
+before signing the holdback release.
+
+Follow up: margaret@whitfieldholdings.example or 604-555-0142.
+Business number on file: 81234 5678 RT0001.`;
+
+// Ground truth for the fixed sample only.
+const EXPECTED = {
+  people: ['Priya Raman', 'Margaret Whitfield', 'Tom Whitfield', 'Daniel Okafor'],
+  companies: ['Whitfield & Daughters Holdings', 'Harbourline Marine Supply',
+              'Cascadia Credit Union', 'Northgate Bookkeeping'],
+};
+// Short forms we want caught (a good result), and words that must not be returned.
+const WANTED_SHORT_FORMS = ['D. Okafor', 'Harbourline', 'Northgate'];
+const TRAPS = ['Victoria', 'Tofino', 'May', 'CPA', 'March'];
+
+const SYSTEM_PROMPT = `You extract names from confidential documents so they can be redacted.
+Return every person name and every company or organization name that appears in the text.
+Copy each name exactly as it is written in the text, character for character.
+Include every distinct written form, including abbreviated forms (such as an initial plus surname)
+and shortened company names used on their own.
+Do not include cities, provinces, countries, places, dates, months, job titles, professional
+designations, or generic words like "the company".
+Respond only with JSON of the form {"people": [...], "companies": [...]}.`;
+
+const SCHEMA = {
+  type: 'object',
+  properties: {
+    people: { type: 'array', items: { type: 'string' } },
+    companies: { type: 'array', items: { type: 'string' } },
+  },
+  required: ['people', 'companies'],
+  additionalProperties: false,
+};
+
+const LM_OPTIONS = {
+  expectedInputs: [{ type: 'text', languages: ['en'] }],
+  expectedOutputs: [{ type: 'text', languages: ['en'] }],
+};
+
+const $ = (id) => document.getElementById(id);
+const docEl = $('doc');
+
+// --- small DOM helpers (all text goes through textContent / text nodes, never innerHTML) ---
+function el(tag, attrs = {}, ...children) {
+  const node = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === 'class') node.className = v; else node.setAttribute(k, v);
+  }
+  for (const c of children) {
+    if (c == null) continue;
+    node.append(c instanceof Node ? c : document.createTextNode(String(c)));
+  }
+  return node;
+}
+function chips(list, cls = '') {
+  const span = el('span');
+  if (!list.length) span.append(el('span', { class: 'muted' }, '—'));
+  for (const item of list) span.append(el('span', { class: 'chip ' + cls }, item));
+  return span;
+}
+function setStatus(text, kind = '') {
+  const s = $('envStatus');
+  s.className = 'status ' + kind;
+  s.textContent = text;
+}
+const wordCount = (t) => (t.trim().match(/\S+/g) || []).length;
+const fmt = (n, d = 2) => n.toFixed(d);
+
+function updateWordCount() {
+  $('wordcount').textContent = `${wordCount(docEl.value)} words, ${docEl.value.length} characters`;
+}
+docEl.value = SAMPLE;
+updateWordCount();
+docEl.addEventListener('input', updateWordCount);
+$('reset').addEventListener('click', () => { docEl.value = SAMPLE; updateWordCount(); });
+
+// --- Rule selection ---
+// Settings only (which rules are ticked). Never document text.
+const STORE = 'redactobot.rules.v1';
+let chosen = new Set(DEFAULT_FRAMEWORKS);
+let overrides = {};
+try {
+  const saved = JSON.parse(localStorage.getItem(STORE) || 'null');
+  if (saved) { chosen = new Set(saved.chosen.filter(frameworkById)); overrides = saved.overrides || {}; }
+} catch { /* storage unavailable: defaults are fine */ }
+const save = () => { try { localStorage.setItem(STORE, JSON.stringify({ chosen: [...chosen], overrides })); } catch {} };
+const plan = () => planFor([...chosen], overrides);
+
+const COVER_TEXT = { covered: 'Caught', partial: 'Partly caught', planned: 'Not built yet',
+                     none: 'Check yourself', na: 'Not in text' };
+
+function renderRules() {
+  $('audiences').replaceChildren(el('span', { class: 'small muted' }, 'Quick pick:'),
+    ...AUDIENCES.map((a) => {
+      const b = el('button', { class: 'secondary', type: 'button' }, a.label);
+      b.addEventListener('click', () => { chosen = new Set(a.frameworks); overrides = {}; save(); renderRules(); });
+      return b;
+    }));
+
+  $('rules').replaceChildren(...FRAMEWORKS.map((f) => {
+    const on = chosen.has(f.id);
+    const box = el('input', { type: 'checkbox', id: 'rule-' + f.id });
+    box.checked = on;
+    box.addEventListener('change', () => { box.checked ? chosen.add(f.id) : chosen.delete(f.id); save(); renderRules(); });
+    const counts = {};
+    for (const r of f.requirements) counts[coverage(r)] = (counts[coverage(r)] || 0) + 1;
+    const tally = ['covered', 'partial', 'planned', 'none', 'na'].filter((k) => counts[k])
+      .map((k) => `${counts[k]} ${COVER_TEXT[k].toLowerCase()}`).join(', ');
+    const link = el('a', { href: f.url, target: '_blank', rel: 'noopener noreferrer' }, f.cite);
+    const reqs = f.requirements.map((r) => {
+      const c = coverage(r);
+      const body = el('div', {}, el('span', { class: 'muted' }, r.ref + ' '), r.text);
+      if (r.keep) body.append(el('div', { class: 'muted' }, `The rule lets you keep ${KEEP[r.keep].label}.`));
+      if (r.gap) body.append(el('div', { class: 'muted' }, r.gap));
+      return el('div', { class: 'req' }, el('span', { class: 'badge ' + c }, COVER_TEXT[c]), body);
+    });
+    return el('div', { class: 'rule' + (on ? ' on' : '') },
+      el('div', { class: 'rule-head' }, box,
+        el('label', { for: 'rule-' + f.id },
+          el('div', { class: 'rule-title' }, `${f.short} `, el('span', { class: 'muted small' }, `· ${f.jurisdiction}`)),
+          el('div', { class: 'small muted' }, f.summary))),
+      el('details', {}, el('summary', { class: 'small' }, `${f.requirements.length} items: ${tally}`),
+        el('div', { class: 'small', style: 'margin:6px 0' }, f.name + ', ', link), ...reqs));
+  }));
+
+  const p = plan();
+  const active = new Set([...p.detectorIds, ...p.planned]);
+  const checks = [];
+  let group = null;
+  for (const d of [...DETECTORS].sort((x, y) => x.group.localeCompare(y.group))) {
+    if (d.group !== group) { group = d.group; checks.push(el('div', { class: 'grp' }, group)); }
+    const box = el('input', { type: 'checkbox' });
+    box.checked = active.has(d.id);
+    box.disabled = d.status !== 'ready';
+    box.addEventListener('change', () => { overrides[d.id] = box.checked; save(); renderRules(); });
+    const tag = d.status !== 'ready' ? ' (not built yet)' : d.kind === 'model' ? ' (on-device model)' : '';
+    checks.push(el('label', {}, box, el('span', {}, d.label, el('span', { class: 'muted' }, tag))));
+  }
+  $('checks').replaceChildren(...checks);
+
+  const nPattern = p.detectorIds.filter((id) => detectorById(id).kind === 'pattern').length;
+  const allPattern = DETECTORS.filter((d) => d.kind === 'pattern').length;
+  $('planSummary').textContent = chosen.size || p.detectorIds.length
+    ? `Running ${nPattern} of ${allPattern} instant checks. On-device model: ${p.usesModel ? 'needed for names' : 'not needed, skipped'}.` +
+      (p.planned.length ? ` ${p.planned.length} check${p.planned.length > 1 ? 's' : ''} these rules call for are not built yet.` : '')
+    : 'No rules selected. Nothing will be checked.';
+
+  $('duties').replaceChildren(...PROFESSIONAL_DUTIES.map((d) => el('p', { class: 'duty' },
+    `${d.audience}: ${d.summary} `, el('a', { href: d.url, target: '_blank', rel: 'noopener noreferrer' }, d.cite),
+    '. No list covers this, so always review before sending.')));
+  if (typeof syncModelButton === 'function') syncModelButton();
+}
+
+// --- 1. Pattern matching ---
+$('runPatterns').addEventListener('click', () => {
+  const text = docEl.value;
+  const p = plan();
+  const iterations = 1000;
+  let matches;
+  const t0 = performance.now();
+  for (let i = 0; i < iterations; i++) matches = detectPatterns(text, p.detectorIds);
+  const ms = (performance.now() - t0) / iterations;
+
+  const byType = {};
+  for (const m of matches) (byType[m.type] ||= []).push(m.text);
+  const table = el('table', {}, el('thead', {}, el('tr', {},
+    el('th', {}, 'Check'), el('th', {}, 'Count'), el('th', {}, 'Matches'), el('th', {}, 'Called for by'))));
+  const tbody = el('tbody');
+  for (const id of p.detectorIds) {
+    const d = detectorById(id);
+    if (d.kind !== 'pattern') continue;
+    const list = byType[id] || [];
+    const by = (p.requiredBy[id] || []).filter((r) => chosen.has(r.framework));
+    const why = el('td', { class: 'small' });
+    if (!by.length) why.append(el('span', { class: 'muted' }, 'Added by you'));
+    for (const r of by) {
+      const kept = r.keep && list.length ? KEEP[r.keep].apply(list[0]) : null;
+      why.append(el('div', {}, `${frameworkById(r.framework).short} ${r.ref}`,
+        kept ? el('span', { class: 'muted' }, ` (may keep: ${kept})`) : null));
+    }
+    tbody.append(el('tr', {}, el('td', {}, d.label, el('div', { class: 'muted small' }, `[${d.placeholder}_1]`)),
+      el('td', { class: 'num' }, list.length), el('td', {}, chips(list)), why));
+  }
+  table.append(tbody);
+  $('patternOut').replaceChildren(
+    el('p', { class: 'small' }, `Time: ${fmt(ms, 3)} ms per pass (mean of ${iterations} passes), ${matches.length} matches`),
+    el('div', { class: 'scroll' }, table));
+});
+
+// --- 2. On-device model ---
+let baseSession = null;
+
+async function checkEnv() {
+  if (!('LanguageModel' in self)) {
+    setStatus('The Prompt API (LanguageModel) is not available in this browser. Use desktop Chrome 148+, ' +
+      'and check the hardware requirements at the bottom of this page. ' +
+      'The app would fall back to pattern matching plus manual review here.', 'bad');
+    return;
+  }
+  let a;
+  try { a = await LanguageModel.availability(LM_OPTIONS); }
+  catch (err) { setStatus(`availability() failed: ${err.name}: ${err.message}`, 'bad'); return; }
+
+  const msg = {
+    available: ['Gemini Nano is downloaded and ready.', 'ok'],
+    downloadable: ['Gemini Nano is supported but not downloaded. Clicking Run starts the download (several GB).', 'warn'],
+    downloading: ['Gemini Nano is downloading. Click Run to attach and see progress.', 'warn'],
+    unavailable: ['This device does not meet the on-device model requirements. ' +
+      'The app would fall back to pattern matching plus manual review here.', 'bad'],
+  }[a] || [`Unknown availability state: ${a}`, 'warn'];
+  setStatus(`availability(): "${a}". ${msg[0]}`, msg[1]);
+  modelUsable = a !== 'unavailable';
+  syncModelButton();
+}
+
+let modelUsable = false;
+function syncModelButton() {
+  const wanted = plan().usesModel;
+  $('runModel').disabled = !modelUsable || !wanted;
+  $('modelSkip').textContent = wanted ? '' :
+    'Names are not part of the rules you selected, so the on-device model is not needed.';
+}
+
+async function getBaseSession() {
+  if (baseSession) return { session: baseSession, createMs: 0 };
+  const dl = $('dl'), dlText = $('dlText');
+  const t0 = performance.now();
+  const session = await LanguageModel.create({
+    ...LM_OPTIONS,
+    initialPrompts: [{ role: 'system', content: SYSTEM_PROMPT }],
+    monitor(m) {
+      m.addEventListener('downloadprogress', (e) => {
+        dl.hidden = false;
+        dl.value = e.loaded;
+        dlText.textContent = `Model download: ${fmt(e.loaded * 100, 1)}%` +
+          (e.loaded >= 1 ? ' — finishing up (loading model)…' : '');
+      });
+    },
+  });
+  baseSession = session;
+  return { session, createMs: performance.now() - t0 };
+}
+
+// Normalize for comparison only; the app must keep exact strings for replacement.
+const norm = (s) => s.toLowerCase().replace(/[.,]/g, '').replace(/\s+/g, ' ')
+  .replace(/\b(ltd|inc|corp|llc|limited)\b/g, '').trim();
+
+function score(found, docText) {
+  const all = [...found.people, ...found.companies];
+  const allN = all.map(norm);
+  const missedPeople = EXPECTED.people.filter((x) => !allN.some((f) => f.includes(norm(x))));
+  const missedCompanies = EXPECTED.companies.filter((x) => !allN.some((f) => f.includes(norm(x))));
+  const shortFormsCaught = WANTED_SHORT_FORMS.filter((x) => allN.includes(norm(x)));
+  const trapsHit = all.filter((f) => TRAPS.some((t) => norm(f) === norm(t)));
+  const notInText = all.filter((f) => !docText.includes(f));
+  const known = [...EXPECTED.people, ...EXPECTED.companies, ...WANTED_SHORT_FORMS].map(norm);
+  const unexpected = all.filter((f) => !trapsHit.includes(f) &&
+    !known.some((k) => norm(f).includes(k) || k.includes(norm(f))));
+  return { missedPeople, missedCompanies, shortFormsCaught, trapsHit, notInText, unexpected };
+}
+
+$('runModel').addEventListener('click', async () => {
+  const btn = $('runModel');
+  btn.disabled = true;
+  const out = $('modelOut');
+  const docText = docEl.value;
+  const words = wordCount(docText);
+  const omit = $('omitSchema').checked;
+  const prompt = `Document:\n"""\n${docText}\n"""`;
+  const promptOpts = { responseConstraint: SCHEMA, omitResponseConstraintInput: omit };
+
+  out.replaceChildren(el('p', { class: 'small' }, 'Creating base session…'));
+  let base, createMs;
+  try {
+    ({ session: base, createMs } = await getBaseSession());
+  } catch (err) {
+    out.replaceChildren(el('div', { class: 'status bad' }, `create() failed: ${err.name}: ${err.message}`));
+    syncModelButton();
+    return;
+  }
+  $('dl').hidden = true;
+  $('dlText').textContent = '';
+
+  const info = [`Context window: ${base.contextWindow ?? 'n/a'} tokens`,
+                `system prompt uses ${base.contextUsage ?? 'n/a'}`];
+  try {
+    if (typeof base.measureContextUsage === 'function') {
+      const u = await base.measureContextUsage(prompt, promptOpts);
+      info.push(`this document${omit ? '' : ' + schema'} would use ${typeof u === 'object' ? JSON.stringify(u) : u}`);
+    }
+  } catch (err) { info.push(`measureContextUsage failed: ${err.message}`); }
+  if (createMs) info.push(`base session created in ${fmt(createMs / 1000)} s`);
+  $('sessionInfo').textContent = info.join(' · ');
+
+  const tbody = el('tbody');
+  const table = el('table', {}, el('thead', {}, el('tr', {},
+    el('th', {}, 'Run'), el('th', {}, 'Seconds'), el('th', {}, 's / 500-word page'),
+    el('th', {}, 'Found'), el('th', {}, 'Missed / issues'))), tbody);
+  out.replaceChildren(el('div', { class: 'scroll' }, table));
+
+  const times = [];
+  for (let run = 1; run <= 3; run++) {
+    const row = el('tr', {}, el('td', { class: 'num' }, run), el('td', { class: 'num', colspan: 4 }, 'running…'));
+    tbody.append(row);
+    let clone;
+    try {
+      clone = await base.clone();
+      const t0 = performance.now();
+      const raw = await clone.prompt(prompt, promptOpts);
+      const secs = (performance.now() - t0) / 1000;
+      times.push(secs);
+
+      let parsed;
+      try { parsed = JSON.parse(raw); } catch { parsed = null; }
+      const cells = [el('td', { class: 'num' }, run), el('td', { class: 'num' }, fmt(secs)),
+        el('td', { class: 'num' }, fmt(secs * 500 / Math.max(words, 1)))];
+
+      if (!parsed || !Array.isArray(parsed.people) || !Array.isArray(parsed.companies)) {
+        cells.push(el('td', { colspan: 2 }, el('span', { class: 'chip miss' }, 'Invalid JSON'), el('pre', {}, raw)));
+      } else {
+        const s = score(parsed, docText);
+        cells.push(el('td', {},
+          el('div', {}, el('span', { class: 'muted' }, 'People: '), chips(parsed.people)),
+          el('div', {}, el('span', { class: 'muted' }, 'Companies: '), chips(parsed.companies)),
+          el('details', {}, el('summary', { class: 'small' }, 'raw output'), el('pre', {}, raw))));
+        const missed = [...s.missedPeople, ...s.missedCompanies];
+        const missingShort = WANTED_SHORT_FORMS.filter((x) => !s.shortFormsCaught.includes(x));
+        const issues = el('td', {},
+          el('div', {}, el('span', { class: 'muted' }, `Missed (${missed.length}): `), chips(missed, 'miss')),
+          el('div', {}, el('span', { class: 'muted' },
+            `Short forms caught (${s.shortFormsCaught.length}/${WANTED_SHORT_FORMS.length}): `), chips(s.shortFormsCaught)));
+        if (missingShort.length) issues.append(el('div', {}, el('span', { class: 'muted' }, 'Short forms missed: '), chips(missingShort, 'miss')));
+        if (s.trapsHit.length) issues.append(el('div', {}, el('span', { class: 'muted' }, 'Trap words returned: '), chips(s.trapsHit, 'miss')));
+        if (s.notInText.length) issues.append(el('div', {}, el('span', { class: 'muted' }, 'Not verbatim in text: '), chips(s.notInText, 'extra')));
+        if (s.unexpected.length) issues.append(el('div', {}, el('span', { class: 'muted' }, 'Other extras: '), chips(s.unexpected, 'extra')));
+        cells.push(issues);
+      }
+      row.replaceChildren(...cells);
+    } catch (err) {
+      row.replaceChildren(el('td', { class: 'num' }, run),
+        el('td', { colspan: 4 }, el('span', { class: 'chip miss' }, `${err.name}: ${err.message}`)));
+    } finally {
+      clone?.destroy();
+    }
+  }
+  if (times.length) {
+    const mean = times.reduce((a, b) => a + b, 0) / times.length;
+    out.append(el('p', { class: 'small' },
+      `Mean ${fmt(mean)} s per run on ${words} words → ~${fmt(mean * 500 / words)} s per 500-word page. ` +
+      'Click again to measure warm timings; the first run after load is usually slower.'));
+  }
+  syncModelButton();
+});
+
+renderRules();
+checkEnv();
+</script>
+</body>
+</html>

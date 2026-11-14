@@ -1,0 +1,2322 @@
+{
+  "experiment": "Paste sensitivity warning, exploratory fictional suite",
+  "cpu": "Intel Core i7-13700K (16 cores, 24 logical processors)",
+  "memoryBytes": 34104856576,
+  "initialSessionCreateMs": 50253.4,
+  "method": "17 fixtures; 10 local passes each; 3 Nano runs each; all overlapping 500-word chunks checked (50-word overlap); full app comparison on 4 fixtures, twice. No user clipboard text is recorded.",
+  "limits": "Long fixtures repeat neutral editing instructions. Small exploratory set, not a recall estimate. Timings exclude third-party page insertion and extension messaging. The model was already downloaded. No background tab time in this run.",
+  "completed": {
+    "version": 2,
+    "startedAt": "2026-11-12T17:32:16.446Z",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+    "hardwareConcurrency": 24,
+    "availability": "available",
+    "state": "Finished. Try your own paste below.",
+    "hiddenDuringRun": false,
+    "samples": [
+      {
+        "id": "clean-short",
+        "label": "Ordinary request",
+        "expected": false,
+        "words": 12,
+        "local": [
+          {
+            "ms": 1,
+            "structuredMs": 0.2,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.2,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.4,
+            "structuredMs": 0.1,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.1,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.2,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.5,
+            "structuredMs": 0.1,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.1,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.1,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.1,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.1,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          }
+        ],
+        "nano": [
+          {
+            "ms": 280.9,
+            "verdict": "no-match",
+            "requests": 1,
+            "chunks": [
+              "no-match"
+            ]
+          },
+          {
+            "ms": 282,
+            "verdict": "no-match",
+            "requests": 1,
+            "chunks": [
+              "no-match"
+            ]
+          },
+          {
+            "ms": 286.5,
+            "verdict": "no-match",
+            "requests": 1,
+            "chunks": [
+              "no-match"
+            ]
+          }
+        ],
+        "full": []
+      },
+      {
+        "id": "clean-code",
+        "label": "Generic code",
+        "expected": false,
+        "words": 16,
+        "local": [
+          {
+            "ms": 0.4,
+            "structuredMs": 0.2,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.1,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.3,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.1,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.1,
+            "structuredMs": 0.2,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.1,
+            "structuredMs": 0.2,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.2,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.1,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.1,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.1,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          }
+        ],
+        "nano": [
+          {
+            "ms": 288.3,
+            "verdict": "no-match",
+            "requests": 1,
+            "chunks": [
+              "no-match"
+            ]
+          },
+          {
+            "ms": 286.5,
+            "verdict": "no-match",
+            "requests": 1,
+            "chunks": [
+              "no-match"
+            ]
+          },
+          {
+            "ms": 293.5,
+            "verdict": "no-match",
+            "requests": 1,
+            "chunks": [
+              "no-match"
+            ]
+          }
+        ],
+        "full": []
+      },
+      {
+        "id": "clean-placeholder",
+        "label": "Already replaced text",
+        "expected": false,
+        "words": 13,
+        "local": [
+          {
+            "ms": 0.3,
+            "structuredMs": 0.3,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.1,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.2,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.2,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.3,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.4,
+            "structuredMs": 0.1,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.1,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.1,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.1,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.1,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          }
+        ],
+        "nano": [
+          {
+            "ms": 286.9,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 286.8,
+            "chunks": [
+              "warn"
+            ]
+          },
+          {
+            "ms": 289.2,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 289.1,
+            "chunks": [
+              "warn"
+            ]
+          },
+          {
+            "ms": 295.8,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 295.8,
+            "chunks": [
+              "warn"
+            ]
+          }
+        ],
+        "full": []
+      },
+      {
+        "id": "clean-health",
+        "label": "General health question",
+        "expected": false,
+        "words": 18,
+        "local": [
+          {
+            "ms": 0.7,
+            "structuredMs": 0.2,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "health"
+            ]
+          },
+          {
+            "ms": 0.4,
+            "structuredMs": 0.1,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "health"
+            ]
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.3,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "health"
+            ]
+          },
+          {
+            "ms": 0.4,
+            "structuredMs": 0.3,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "health"
+            ]
+          },
+          {
+            "ms": 0.4,
+            "structuredMs": 0.1,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "health"
+            ]
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.2,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "health"
+            ]
+          },
+          {
+            "ms": 0.4,
+            "structuredMs": 0.1,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "health"
+            ]
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.2,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "health"
+            ]
+          },
+          {
+            "ms": 0.4,
+            "structuredMs": 0.2,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "health"
+            ]
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.2,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "health"
+            ]
+          }
+        ],
+        "nano": [
+          {
+            "ms": 279.3,
+            "verdict": "no-match",
+            "requests": 1,
+            "chunks": [
+              "no-match"
+            ]
+          },
+          {
+            "ms": 281.1,
+            "verdict": "no-match",
+            "requests": 1,
+            "chunks": [
+              "no-match"
+            ]
+          },
+          {
+            "ms": 288.7,
+            "verdict": "no-match",
+            "requests": 1,
+            "chunks": [
+              "no-match"
+            ]
+          }
+        ],
+        "full": []
+      },
+      {
+        "id": "email",
+        "label": "Email address",
+        "expected": true,
+        "words": 9,
+        "local": [
+          {
+            "ms": 0.3,
+            "structuredMs": 0.2,
+            "matches": 1,
+            "structuredMatches": 1,
+            "kinds": [
+              "email"
+            ]
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.1,
+            "matches": 1,
+            "structuredMatches": 1,
+            "kinds": [
+              "email"
+            ]
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.1,
+            "matches": 1,
+            "structuredMatches": 1,
+            "kinds": [
+              "email"
+            ]
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0,
+            "matches": 1,
+            "structuredMatches": 1,
+            "kinds": [
+              "email"
+            ]
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.1,
+            "matches": 1,
+            "structuredMatches": 1,
+            "kinds": [
+              "email"
+            ]
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.3,
+            "matches": 1,
+            "structuredMatches": 1,
+            "kinds": [
+              "email"
+            ]
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.2,
+            "matches": 1,
+            "structuredMatches": 1,
+            "kinds": [
+              "email"
+            ]
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0,
+            "matches": 1,
+            "structuredMatches": 1,
+            "kinds": [
+              "email"
+            ]
+          },
+          {
+            "ms": 0.1,
+            "structuredMs": 0.2,
+            "matches": 1,
+            "structuredMatches": 1,
+            "kinds": [
+              "email"
+            ]
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.1,
+            "matches": 1,
+            "structuredMatches": 1,
+            "kinds": [
+              "email"
+            ]
+          }
+        ],
+        "nano": [
+          {
+            "ms": 279.3,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 279.2,
+            "chunks": [
+              "warn"
+            ]
+          },
+          {
+            "ms": 283,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 283,
+            "chunks": [
+              "warn"
+            ]
+          },
+          {
+            "ms": 283.1,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 283.1,
+            "chunks": [
+              "warn"
+            ]
+          }
+        ],
+        "full": []
+      },
+      {
+        "id": "ssn",
+        "label": "Identity number",
+        "expected": true,
+        "words": 10,
+        "local": [
+          {
+            "ms": 0.5,
+            "structuredMs": 0.3,
+            "matches": 1,
+            "structuredMatches": 1,
+            "kinds": [
+              "ssn"
+            ]
+          },
+          {
+            "ms": 0.4,
+            "structuredMs": 0.2,
+            "matches": 1,
+            "structuredMatches": 1,
+            "kinds": [
+              "ssn"
+            ]
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.2,
+            "matches": 1,
+            "structuredMatches": 1,
+            "kinds": [
+              "ssn"
+            ]
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.2,
+            "matches": 1,
+            "structuredMatches": 1,
+            "kinds": [
+              "ssn"
+            ]
+          },
+          {
+            "ms": 0.4,
+            "structuredMs": 0.2,
+            "matches": 1,
+            "structuredMatches": 1,
+            "kinds": [
+              "ssn"
+            ]
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.1,
+            "matches": 1,
+            "structuredMatches": 1,
+            "kinds": [
+              "ssn"
+            ]
+          },
+          {
+            "ms": 0.4,
+            "structuredMs": 0.2,
+            "matches": 1,
+            "structuredMatches": 1,
+            "kinds": [
+              "ssn"
+            ]
+          },
+          {
+            "ms": 0.4,
+            "structuredMs": 0.1,
+            "matches": 1,
+            "structuredMatches": 1,
+            "kinds": [
+              "ssn"
+            ]
+          },
+          {
+            "ms": 0.4,
+            "structuredMs": 0.3,
+            "matches": 1,
+            "structuredMatches": 1,
+            "kinds": [
+              "ssn"
+            ]
+          },
+          {
+            "ms": 0.4,
+            "structuredMs": 0.2,
+            "matches": 1,
+            "structuredMatches": 1,
+            "kinds": [
+              "ssn"
+            ]
+          }
+        ],
+        "nano": [
+          {
+            "ms": 287.9,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 287.9,
+            "chunks": [
+              "warn"
+            ]
+          },
+          {
+            "ms": 285.5,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 285.5,
+            "chunks": [
+              "warn"
+            ]
+          },
+          {
+            "ms": 295.4,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 295.4,
+            "chunks": [
+              "warn"
+            ]
+          }
+        ],
+        "full": []
+      },
+      {
+        "id": "person",
+        "label": "Person name",
+        "expected": true,
+        "words": 13,
+        "local": [
+          {
+            "ms": 2.3,
+            "structuredMs": 0.1,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "person"
+            ]
+          },
+          {
+            "ms": 0.4,
+            "structuredMs": 0.2,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "person"
+            ]
+          },
+          {
+            "ms": 0.4,
+            "structuredMs": 0.1,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "person"
+            ]
+          },
+          {
+            "ms": 0.5,
+            "structuredMs": 0.2,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "person"
+            ]
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.1,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "person"
+            ]
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.2,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "person"
+            ]
+          },
+          {
+            "ms": 0.4,
+            "structuredMs": 0.1,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "person"
+            ]
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.1,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "person"
+            ]
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.2,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "person"
+            ]
+          },
+          {
+            "ms": 0.4,
+            "structuredMs": 0.1,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "person"
+            ]
+          }
+        ],
+        "nano": [
+          {
+            "ms": 280.2,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 280.1,
+            "chunks": [
+              "warn"
+            ]
+          },
+          {
+            "ms": 279.2,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 279.1,
+            "chunks": [
+              "warn"
+            ]
+          },
+          {
+            "ms": 287.6,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 287.6,
+            "chunks": [
+              "warn"
+            ]
+          }
+        ],
+        "full": []
+      },
+      {
+        "id": "company",
+        "label": "Client organization",
+        "expected": true,
+        "words": 11,
+        "local": [
+          {
+            "ms": 1.6,
+            "structuredMs": 0.2,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "company"
+            ]
+          },
+          {
+            "ms": 0.4,
+            "structuredMs": 0.1,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "company"
+            ]
+          },
+          {
+            "ms": 0.4,
+            "structuredMs": 0.1,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "company"
+            ]
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.2,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "company"
+            ]
+          },
+          {
+            "ms": 0.4,
+            "structuredMs": 0.2,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "company"
+            ]
+          },
+          {
+            "ms": 0.4,
+            "structuredMs": 0.2,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "company"
+            ]
+          },
+          {
+            "ms": 0.5,
+            "structuredMs": 0.1,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "company"
+            ]
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.2,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "company"
+            ]
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.2,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "company"
+            ]
+          },
+          {
+            "ms": 0.7,
+            "structuredMs": 0.2,
+            "matches": 1,
+            "structuredMatches": 0,
+            "kinds": [
+              "company"
+            ]
+          }
+        ],
+        "nano": [
+          {
+            "ms": 279.6,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 279.6,
+            "chunks": [
+              "warn"
+            ]
+          },
+          {
+            "ms": 281.1,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 281.1,
+            "chunks": [
+              "warn"
+            ]
+          },
+          {
+            "ms": 291.2,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 291.2,
+            "chunks": [
+              "warn"
+            ]
+          }
+        ],
+        "full": []
+      },
+      {
+        "id": "health",
+        "label": "Personal health detail",
+        "expected": true,
+        "words": 12,
+        "local": [
+          {
+            "ms": 0.3,
+            "structuredMs": 0.2,
+            "matches": 2,
+            "structuredMatches": 0,
+            "kinds": [
+              "sensitive",
+              "health"
+            ]
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0,
+            "matches": 2,
+            "structuredMatches": 0,
+            "kinds": [
+              "sensitive",
+              "health"
+            ]
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.1,
+            "matches": 2,
+            "structuredMatches": 0,
+            "kinds": [
+              "sensitive",
+              "health"
+            ]
+          },
+          {
+            "ms": 0.1,
+            "structuredMs": 0,
+            "matches": 2,
+            "structuredMatches": 0,
+            "kinds": [
+              "sensitive",
+              "health"
+            ]
+          },
+          {
+            "ms": 0.1,
+            "structuredMs": 0.2,
+            "matches": 2,
+            "structuredMatches": 0,
+            "kinds": [
+              "sensitive",
+              "health"
+            ]
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.1,
+            "matches": 2,
+            "structuredMatches": 0,
+            "kinds": [
+              "sensitive",
+              "health"
+            ]
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.1,
+            "matches": 2,
+            "structuredMatches": 0,
+            "kinds": [
+              "sensitive",
+              "health"
+            ]
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.2,
+            "matches": 2,
+            "structuredMatches": 0,
+            "kinds": [
+              "sensitive",
+              "health"
+            ]
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.1,
+            "matches": 2,
+            "structuredMatches": 0,
+            "kinds": [
+              "sensitive",
+              "health"
+            ]
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0,
+            "matches": 2,
+            "structuredMatches": 0,
+            "kinds": [
+              "sensitive",
+              "health"
+            ]
+          }
+        ],
+        "nano": [
+          {
+            "ms": 281.1,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 281.1,
+            "chunks": [
+              "warn"
+            ]
+          },
+          {
+            "ms": 279.8,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 279.7,
+            "chunks": [
+              "warn"
+            ]
+          },
+          {
+            "ms": 288,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 287.8,
+            "chunks": [
+              "warn"
+            ]
+          }
+        ],
+        "full": []
+      },
+      {
+        "id": "indirect",
+        "label": "Sensitive detail without a name",
+        "expected": true,
+        "words": 16,
+        "local": [
+          {
+            "ms": 0.3,
+            "structuredMs": 0.2,
+            "matches": 3,
+            "structuredMatches": 0,
+            "kinds": [
+              "sensitive",
+              "health"
+            ]
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.1,
+            "matches": 3,
+            "structuredMatches": 0,
+            "kinds": [
+              "sensitive",
+              "health"
+            ]
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.1,
+            "matches": 3,
+            "structuredMatches": 0,
+            "kinds": [
+              "sensitive",
+              "health"
+            ]
+          },
+          {
+            "ms": 0.5,
+            "structuredMs": 0.1,
+            "matches": 3,
+            "structuredMatches": 0,
+            "kinds": [
+              "sensitive",
+              "health"
+            ]
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.1,
+            "matches": 3,
+            "structuredMatches": 0,
+            "kinds": [
+              "sensitive",
+              "health"
+            ]
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.1,
+            "matches": 3,
+            "structuredMatches": 0,
+            "kinds": [
+              "sensitive",
+              "health"
+            ]
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.2,
+            "matches": 3,
+            "structuredMatches": 0,
+            "kinds": [
+              "sensitive",
+              "health"
+            ]
+          },
+          {
+            "ms": 0.4,
+            "structuredMs": 0.1,
+            "matches": 3,
+            "structuredMatches": 0,
+            "kinds": [
+              "sensitive",
+              "health"
+            ]
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.1,
+            "matches": 3,
+            "structuredMatches": 0,
+            "kinds": [
+              "sensitive",
+              "health"
+            ]
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.2,
+            "matches": 3,
+            "structuredMatches": 0,
+            "kinds": [
+              "sensitive",
+              "health"
+            ]
+          }
+        ],
+        "nano": [
+          {
+            "ms": 286.2,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 286.2,
+            "chunks": [
+              "warn"
+            ]
+          },
+          {
+            "ms": 279.9,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 279.9,
+            "chunks": [
+              "warn"
+            ]
+          },
+          {
+            "ms": 287.9,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 287.9,
+            "chunks": [
+              "warn"
+            ]
+          }
+        ],
+        "full": []
+      },
+      {
+        "id": "first-name",
+        "label": "First name in context",
+        "expected": true,
+        "words": 10,
+        "local": [
+          {
+            "ms": 0.3,
+            "structuredMs": 0.1,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.2,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.1,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.1,
+            "structuredMs": 0.2,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.1,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.1,
+            "structuredMs": 0.1,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.3,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.1,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.1,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 0.2,
+            "structuredMs": 0.1,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          }
+        ],
+        "nano": [
+          {
+            "ms": 284.1,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 284,
+            "chunks": [
+              "warn"
+            ]
+          },
+          {
+            "ms": 281.1,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 281,
+            "chunks": [
+              "warn"
+            ]
+          },
+          {
+            "ms": 288.1,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 288.1,
+            "chunks": [
+              "warn"
+            ]
+          }
+        ],
+        "full": []
+      },
+      {
+        "id": "instruction-trap",
+        "label": "Data includes an instruction",
+        "expected": true,
+        "words": 18,
+        "local": [
+          {
+            "ms": 0.6,
+            "structuredMs": 0.3,
+            "matches": 2,
+            "structuredMatches": 1,
+            "kinds": [
+              "person",
+              "email"
+            ]
+          },
+          {
+            "ms": 0.6,
+            "structuredMs": 0.1,
+            "matches": 2,
+            "structuredMatches": 1,
+            "kinds": [
+              "person",
+              "email"
+            ]
+          },
+          {
+            "ms": 0.4,
+            "structuredMs": 0.3,
+            "matches": 2,
+            "structuredMatches": 1,
+            "kinds": [
+              "person",
+              "email"
+            ]
+          },
+          {
+            "ms": 0.6,
+            "structuredMs": 0.3,
+            "matches": 2,
+            "structuredMatches": 1,
+            "kinds": [
+              "person",
+              "email"
+            ]
+          },
+          {
+            "ms": 0.3,
+            "structuredMs": 0.2,
+            "matches": 2,
+            "structuredMatches": 1,
+            "kinds": [
+              "person",
+              "email"
+            ]
+          },
+          {
+            "ms": 0.5,
+            "structuredMs": 0.3,
+            "matches": 2,
+            "structuredMatches": 1,
+            "kinds": [
+              "person",
+              "email"
+            ]
+          },
+          {
+            "ms": 0.5,
+            "structuredMs": 0.2,
+            "matches": 2,
+            "structuredMatches": 1,
+            "kinds": [
+              "person",
+              "email"
+            ]
+          },
+          {
+            "ms": 0.6,
+            "structuredMs": 0.2,
+            "matches": 2,
+            "structuredMatches": 1,
+            "kinds": [
+              "person",
+              "email"
+            ]
+          },
+          {
+            "ms": 0.5,
+            "structuredMs": 0.2,
+            "matches": 2,
+            "structuredMatches": 1,
+            "kinds": [
+              "person",
+              "email"
+            ]
+          },
+          {
+            "ms": 0.5,
+            "structuredMs": 0.1,
+            "matches": 2,
+            "structuredMatches": 1,
+            "kinds": [
+              "person",
+              "email"
+            ]
+          }
+        ],
+        "nano": [
+          {
+            "ms": 288.9,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 288.9,
+            "chunks": [
+              "warn"
+            ]
+          },
+          {
+            "ms": 287.4,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 287.4,
+            "chunks": [
+              "warn"
+            ]
+          },
+          {
+            "ms": 292,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 291.9,
+            "chunks": [
+              "warn"
+            ]
+          }
+        ],
+        "full": []
+      },
+      {
+        "id": "mixed-200",
+        "label": "200 words, sensitive ending",
+        "expected": true,
+        "words": 200,
+        "local": [
+          {
+            "ms": 2.7,
+            "structuredMs": 1.6,
+            "matches": 8,
+            "structuredMatches": 5,
+            "kinds": [
+              "person",
+              "company",
+              "email",
+              "account",
+              "health",
+              "places",
+              "region",
+              "zip"
+            ]
+          },
+          {
+            "ms": 2.4,
+            "structuredMs": 1.5,
+            "matches": 8,
+            "structuredMatches": 5,
+            "kinds": [
+              "person",
+              "company",
+              "email",
+              "account",
+              "health",
+              "places",
+              "region",
+              "zip"
+            ]
+          },
+          {
+            "ms": 2.3,
+            "structuredMs": 1.4,
+            "matches": 8,
+            "structuredMatches": 5,
+            "kinds": [
+              "person",
+              "company",
+              "email",
+              "account",
+              "health",
+              "places",
+              "region",
+              "zip"
+            ]
+          },
+          {
+            "ms": 2.3,
+            "structuredMs": 1.3,
+            "matches": 8,
+            "structuredMatches": 5,
+            "kinds": [
+              "person",
+              "company",
+              "email",
+              "account",
+              "health",
+              "places",
+              "region",
+              "zip"
+            ]
+          },
+          {
+            "ms": 2.2,
+            "structuredMs": 1.4,
+            "matches": 8,
+            "structuredMatches": 5,
+            "kinds": [
+              "person",
+              "company",
+              "email",
+              "account",
+              "health",
+              "places",
+              "region",
+              "zip"
+            ]
+          },
+          {
+            "ms": 2.3,
+            "structuredMs": 1.4,
+            "matches": 8,
+            "structuredMatches": 5,
+            "kinds": [
+              "person",
+              "company",
+              "email",
+              "account",
+              "health",
+              "places",
+              "region",
+              "zip"
+            ]
+          },
+          {
+            "ms": 2.2,
+            "structuredMs": 1.4,
+            "matches": 8,
+            "structuredMatches": 5,
+            "kinds": [
+              "person",
+              "company",
+              "email",
+              "account",
+              "health",
+              "places",
+              "region",
+              "zip"
+            ]
+          },
+          {
+            "ms": 2.2,
+            "structuredMs": 1.3,
+            "matches": 8,
+            "structuredMatches": 5,
+            "kinds": [
+              "person",
+              "company",
+              "email",
+              "account",
+              "health",
+              "places",
+              "region",
+              "zip"
+            ]
+          },
+          {
+            "ms": 2.2,
+            "structuredMs": 1.4,
+            "matches": 8,
+            "structuredMatches": 5,
+            "kinds": [
+              "person",
+              "company",
+              "email",
+              "account",
+              "health",
+              "places",
+              "region",
+              "zip"
+            ]
+          },
+          {
+            "ms": 2.1,
+            "structuredMs": 1.5,
+            "matches": 8,
+            "structuredMatches": 5,
+            "kinds": [
+              "person",
+              "company",
+              "email",
+              "account",
+              "health",
+              "places",
+              "region",
+              "zip"
+            ]
+          }
+        ],
+        "nano": [
+          {
+            "ms": 557.3,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 557.3,
+            "chunks": [
+              "warn"
+            ]
+          },
+          {
+            "ms": 560,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 560,
+            "chunks": [
+              "warn"
+            ]
+          },
+          {
+            "ms": 571.1,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 571.1,
+            "chunks": [
+              "warn"
+            ]
+          }
+        ],
+        "full": [
+          {
+            "ms": 2112.5,
+            "matches": 8,
+            "requests": 2
+          },
+          {
+            "ms": 2235.3,
+            "matches": 8,
+            "requests": 2
+          }
+        ]
+      },
+      {
+        "id": "mixed-500",
+        "label": "500 words, sensitive ending",
+        "expected": true,
+        "words": 500,
+        "local": [
+          {
+            "ms": 4.4,
+            "structuredMs": 2.9,
+            "matches": 8,
+            "structuredMatches": 5,
+            "kinds": [
+              "person",
+              "company",
+              "email",
+              "account",
+              "health",
+              "places",
+              "region",
+              "zip"
+            ]
+          },
+          {
+            "ms": 4.4,
+            "structuredMs": 2.8,
+            "matches": 8,
+            "structuredMatches": 5,
+            "kinds": [
+              "person",
+              "company",
+              "email",
+              "account",
+              "health",
+              "places",
+              "region",
+              "zip"
+            ]
+          },
+          {
+            "ms": 4.2,
+            "structuredMs": 2.8,
+            "matches": 8,
+            "structuredMatches": 5,
+            "kinds": [
+              "person",
+              "company",
+              "email",
+              "account",
+              "health",
+              "places",
+              "region",
+              "zip"
+            ]
+          },
+          {
+            "ms": 4.8,
+            "structuredMs": 2.7,
+            "matches": 8,
+            "structuredMatches": 5,
+            "kinds": [
+              "person",
+              "company",
+              "email",
+              "account",
+              "health",
+              "places",
+              "region",
+              "zip"
+            ]
+          },
+          {
+            "ms": 4.1,
+            "structuredMs": 2.7,
+            "matches": 8,
+            "structuredMatches": 5,
+            "kinds": [
+              "person",
+              "company",
+              "email",
+              "account",
+              "health",
+              "places",
+              "region",
+              "zip"
+            ]
+          },
+          {
+            "ms": 4.5,
+            "structuredMs": 2.7,
+            "matches": 8,
+            "structuredMatches": 5,
+            "kinds": [
+              "person",
+              "company",
+              "email",
+              "account",
+              "health",
+              "places",
+              "region",
+              "zip"
+            ]
+          },
+          {
+            "ms": 4.1,
+            "structuredMs": 2.8,
+            "matches": 8,
+            "structuredMatches": 5,
+            "kinds": [
+              "person",
+              "company",
+              "email",
+              "account",
+              "health",
+              "places",
+              "region",
+              "zip"
+            ]
+          },
+          {
+            "ms": 4.3,
+            "structuredMs": 2.8,
+            "matches": 8,
+            "structuredMatches": 5,
+            "kinds": [
+              "person",
+              "company",
+              "email",
+              "account",
+              "health",
+              "places",
+              "region",
+              "zip"
+            ]
+          },
+          {
+            "ms": 4.4,
+            "structuredMs": 3.1,
+            "matches": 8,
+            "structuredMatches": 5,
+            "kinds": [
+              "person",
+              "company",
+              "email",
+              "account",
+              "health",
+              "places",
+              "region",
+              "zip"
+            ]
+          },
+          {
+            "ms": 4.2,
+            "structuredMs": 2.9,
+            "matches": 8,
+            "structuredMatches": 5,
+            "kinds": [
+              "person",
+              "company",
+              "email",
+              "account",
+              "health",
+              "places",
+              "region",
+              "zip"
+            ]
+          }
+        ],
+        "nano": [
+          {
+            "ms": 583.9,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 583.8,
+            "chunks": [
+              "warn"
+            ]
+          },
+          {
+            "ms": 571.3,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 571.3,
+            "chunks": [
+              "warn"
+            ]
+          },
+          {
+            "ms": 571,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 571,
+            "chunks": [
+              "warn"
+            ]
+          }
+        ],
+        "full": [
+          {
+            "ms": 2447.3,
+            "matches": 8,
+            "requests": 2
+          },
+          {
+            "ms": 2390.7,
+            "matches": 8,
+            "requests": 2
+          }
+        ]
+      },
+      {
+        "id": "clean-500",
+        "label": "500 words, clean",
+        "expected": false,
+        "words": 500,
+        "local": [
+          {
+            "ms": 3.8,
+            "structuredMs": 2.7,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 3.9,
+            "structuredMs": 2.6,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 3.9,
+            "structuredMs": 2.6,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 3.7,
+            "structuredMs": 2.6,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 3.8,
+            "structuredMs": 2.6,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 3.6,
+            "structuredMs": 2.7,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 3.6,
+            "structuredMs": 2.6,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 3.8,
+            "structuredMs": 2.7,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 3.6,
+            "structuredMs": 2.6,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 3.6,
+            "structuredMs": 2.8,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          }
+        ],
+        "nano": [
+          {
+            "ms": 570.3,
+            "verdict": "no-match",
+            "requests": 1,
+            "chunks": [
+              "no-match"
+            ]
+          },
+          {
+            "ms": 577.3,
+            "verdict": "warn",
+            "requests": 1,
+            "firstWarningMs": 577.3,
+            "chunks": [
+              "warn"
+            ]
+          },
+          {
+            "ms": 574.7,
+            "verdict": "no-match",
+            "requests": 1,
+            "chunks": [
+              "no-match"
+            ]
+          }
+        ],
+        "full": [
+          {
+            "ms": 1974.8,
+            "matches": 0,
+            "requests": 2
+          },
+          {
+            "ms": 1969.8,
+            "matches": 0,
+            "requests": 2
+          }
+        ]
+      },
+      {
+        "id": "late-2000",
+        "label": "2,000 words, sensitive ending",
+        "expected": true,
+        "words": 2000,
+        "local": [
+          {
+            "ms": 13.7,
+            "structuredMs": 9.4,
+            "matches": 2,
+            "structuredMatches": 1,
+            "kinds": [
+              "person",
+              "email"
+            ]
+          },
+          {
+            "ms": 13.4,
+            "structuredMs": 9.5,
+            "matches": 2,
+            "structuredMatches": 1,
+            "kinds": [
+              "person",
+              "email"
+            ]
+          },
+          {
+            "ms": 13.6,
+            "structuredMs": 9.8,
+            "matches": 2,
+            "structuredMatches": 1,
+            "kinds": [
+              "person",
+              "email"
+            ]
+          },
+          {
+            "ms": 13.4,
+            "structuredMs": 9.5,
+            "matches": 2,
+            "structuredMatches": 1,
+            "kinds": [
+              "person",
+              "email"
+            ]
+          },
+          {
+            "ms": 13.6,
+            "structuredMs": 9.6,
+            "matches": 2,
+            "structuredMatches": 1,
+            "kinds": [
+              "person",
+              "email"
+            ]
+          },
+          {
+            "ms": 14.6,
+            "structuredMs": 9.7,
+            "matches": 2,
+            "structuredMatches": 1,
+            "kinds": [
+              "person",
+              "email"
+            ]
+          },
+          {
+            "ms": 13.4,
+            "structuredMs": 9.7,
+            "matches": 2,
+            "structuredMatches": 1,
+            "kinds": [
+              "person",
+              "email"
+            ]
+          },
+          {
+            "ms": 13.5,
+            "structuredMs": 9.5,
+            "matches": 2,
+            "structuredMatches": 1,
+            "kinds": [
+              "person",
+              "email"
+            ]
+          },
+          {
+            "ms": 13.9,
+            "structuredMs": 9.4,
+            "matches": 2,
+            "structuredMatches": 1,
+            "kinds": [
+              "person",
+              "email"
+            ]
+          },
+          {
+            "ms": 13.8,
+            "structuredMs": 9.8,
+            "matches": 2,
+            "structuredMatches": 1,
+            "kinds": [
+              "person",
+              "email"
+            ]
+          }
+        ],
+        "nano": [
+          {
+            "ms": 2750.5,
+            "verdict": "warn",
+            "requests": 5,
+            "firstWarningMs": 2284.5,
+            "chunks": [
+              "no-match",
+              "no-match",
+              "no-match",
+              "warn",
+              "warn"
+            ]
+          },
+          {
+            "ms": 2750.6,
+            "verdict": "warn",
+            "requests": 5,
+            "firstWarningMs": 2285.5,
+            "chunks": [
+              "no-match",
+              "no-match",
+              "no-match",
+              "warn",
+              "warn"
+            ]
+          },
+          {
+            "ms": 2757.7,
+            "verdict": "warn",
+            "requests": 5,
+            "firstWarningMs": 2757.7,
+            "chunks": [
+              "no-match",
+              "no-match",
+              "no-match",
+              "no-match",
+              "warn"
+            ]
+          }
+        ],
+        "full": [
+          {
+            "ms": 4225.9,
+            "matches": 2,
+            "requests": 2
+          },
+          {
+            "ms": 4004.1,
+            "matches": 2,
+            "requests": 2
+          }
+        ]
+      },
+      {
+        "id": "clean-2000",
+        "label": "2,000 words, clean",
+        "expected": false,
+        "words": 2000,
+        "local": [
+          {
+            "ms": 14.6,
+            "structuredMs": 9.7,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 13.3,
+            "structuredMs": 9.7,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 13.2,
+            "structuredMs": 9.4,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 13.2,
+            "structuredMs": 9.6,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 13.3,
+            "structuredMs": 9.5,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 13,
+            "structuredMs": 9.4,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 13,
+            "structuredMs": 9.6,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 13.2,
+            "structuredMs": 9.1,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 13.3,
+            "structuredMs": 9.4,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          },
+          {
+            "ms": 13.2,
+            "structuredMs": 9.2,
+            "matches": 0,
+            "structuredMatches": 0,
+            "kinds": []
+          }
+        ],
+        "nano": [
+          {
+            "ms": 2741.3,
+            "verdict": "warn",
+            "requests": 5,
+            "firstWarningMs": 570,
+            "chunks": [
+              "warn",
+              "warn",
+              "no-match",
+              "no-match",
+              "warn"
+            ]
+          },
+          {
+            "ms": 2740.4,
+            "verdict": "warn",
+            "requests": 5,
+            "firstWarningMs": 2282.9,
+            "chunks": [
+              "no-match",
+              "no-match",
+              "no-match",
+              "warn",
+              "no-match"
+            ]
+          },
+          {
+            "ms": 2739.1,
+            "verdict": "warn",
+            "requests": 5,
+            "firstWarningMs": 2283.9,
+            "chunks": [
+              "no-match",
+              "no-match",
+              "no-match",
+              "warn",
+              "warn"
+            ]
+          }
+        ],
+        "full": []
+      }
+    ],
+    "createMs": 196.9,
+    "firstNano": {
+      "ms": 288.7,
+      "verdict": "no-match",
+      "requests": 1,
+      "chunks": [
+        "no-match"
+      ]
+    },
+    "fullWarmupMs": 1816.4
+  }
+}

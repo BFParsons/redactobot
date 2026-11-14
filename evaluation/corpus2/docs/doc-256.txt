@@ -1,0 +1,48 @@
+Export -- workspace: umberledger   channel: #okeke-detailing   exported 2025-10-09 16:02
+Members: Noelle Drozd (Umber Ledger Co.), Marcus Okeke (Okeke Mobile Detailing LLC)
+-----------------------------------------------------------------------
+
+Oct 6
+[9:12 AM] Noelle: morning Marcus -- starting the Q3 bank rec. Halloway First Bank feed in QuickBooks Online
+           dropped on 8/22. can you reconnect?
+[9:40 AM] Marcus: I dont remember how. just log in as me. user mokeke_detail pw Wax0n!Wax0ff22
+[9:41 AM] Marcus: itll text me a code hang on
+[9:43 AM] Marcus: 448120
+[9:44 AM] Noelle: got in. pls don't paste passwords in here, I'm deleting those two. change it tonight.
+[9:44 AM] Marcus: lol ok
+[10:05 AM] Noelle: feed is back. checking ending 8834 and the savings ...0271. Q3 deposits total $61,480.25,
+           QBO shows 58.9k. the gap is mostly Venmo.
+[10:07 AM] Marcus: yeah Sinclair Auto Group pays the fleet washes by venmo now. Art said its easier. like 2,600 a month
+[10:09 AM] Noelle: that's income, it has to go on the books. it'll show on a Form 1099-K anyway. is that Art Sinclair the
+           owner or the dealership? need a W9 name
+[10:10 AM] Marcus: dealership. EIN is on their PO i think. 74-2918840
+
+[1:30 PM] Noelle: next -- Zephyr Car Care Supply autopay bounced 9/15, they charged a $35 fee. card on file
+           expired?
+[1:52 PM] Marcus: new card came in Aug. here
+[1:52 PM] Marcus: 4598 2375 1965 5177 exp 08/29 cvv 614 name on it is MARCUS T OKEKE
+[1:53 PM] Noelle: Marcus. NEVER the full number in chat!! I updated Zephyr and I'm deleting that message too.
+[1:53 PM] Noelle: for our notes it's the biz Visa ending 5177.
+[1:55 PM] Marcus: sorry. also heads up theres personal stuff on that card. Tasha's chemo copays, like $312.87 and
+           $1,150 in Sept
+[1:57 PM] Noelle: ok. I'll book those to owner draw, not medical -- not a Schedule C expense. hope Tasha Okeke is doing ok.
+
+Oct 7
+[8:15 AM] Noelle: payroll q. Deshawn -- is he W-2 or contractor? I see cash withdrawals every Friday, about eleven hundred a week
+[8:31 AM] Marcus: contractor. Deshawn Vale. hes got his own van
+[8:33 AM] Noelle: then I need a Form W-9 from him before I can do the Form 1099-NEC. anything over 600 for the year.
+[8:34 AM] Marcus: his social is 807-41-4568 he texted it to me. addr 5118 Cullen Blvd Apt 12 Houston 77004
+[8:35 AM] Noelle: ...ok, I still need the signed form. cell for him?
+[8:35 AM] Marcus: 7135550148
+[8:50 AM] Noelle: also the $4.2k to "H. County Child Support" on 9/3 -- that's personal right?
+[8:52 AM] Marcus: yeah my child support comes out of that account, always has. last Tues too
+[8:53 AM] Noelle: owner draw then. please move that to your personal account.
+
+[3:20 PM] Noelle: sales tax. Texas Comptroller taxpayer no. 32071844190, Q3 due 10/20. taxable sales $48,112.00,
+           tax $3,969.24. ok to file and draft from 8834?
+[3:31 PM] Marcus: do it
+[3:32 PM] Noelle: done, confirmation 0482-7719-33. Q3 package is here:
+           https://share.umberledger.example/u/okeke-detail/2025-q3
+           Form 941 is next -- I'll need the EIN letter, I have 87-3340921 but want to confirm.
+[3:40 PM] Marcus: thats right. call me if u need me 832-555-0177, im at the Ford Transit job til 9
+[3:41 PM] Noelle: reminder to change the bank password. -- ND

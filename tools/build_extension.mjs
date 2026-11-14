@@ -1,0 +1,111 @@
+/**
+ * @license
+ * Copyright 2026 The Redactobot Authors
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import {build} from 'vite';
+import {mkdir, copyFile, cp, readFile, writeFile} from 'node:fs/promises';
+import {resolve, dirname} from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+// `--out <dir> --fake-nano` makes the end-to-end TEST build (tests/e2e). It
+// swaps in a deterministic stand-in for Gemini Nano and must never be loaded
+// for real use.
+const arg = key =>
+  process.argv.includes(key)
+    ? process.argv[process.argv.indexOf(key) + 1]
+    : undefined;
+const fakeNano = process.argv.includes('--fake-nano');
+const outDir = resolve(root, arg('--out') || 'extension/build');
+if (fakeNano && outDir === resolve(root, 'extension/build')) {
+  throw new Error('--fake-nano needs a separate --out directory.');
+}
+// The test build must never reach a real Firebase project: blank the settings
+// Vite would read from .env.local (process.env takes precedence over .env
+// files).
+if (fakeNano) {
+  for (const key of [
+    'VITE_FIREBASE_API_KEY',
+    'VITE_FIREBASE_AUTH_DOMAIN',
+    'VITE_FIREBASE_PROJECT_ID',
+    'VITE_FIREBASE_APP_ID',
+    'VITE_APPCHECK_DEBUG_TOKEN',
+    'VITE_RECAPTCHA_ENTERPRISE_SITE_KEY',
+    'VITE_CLOUD_MODEL',
+  ]) {
+    process.env[key] = '';
+  }
+}
+await mkdir(outDir, {recursive: true});
+for (const entry of [
+  'content',
+  'background',
+  'review',
+  'options',
+  'scanner',
+  'detection-worker',
+]) {
+  await build({
+    configFile: false,
+    root,
+    publicDir: false,
+    build: {
+      outDir,
+      emptyOutDir: false,
+      target: 'chrome148',
+      lib: {
+        entry: resolve(root, `src/extension/${entry}.ts`),
+        name: 'Redactobot',
+        formats: ['iife'],
+        fileName: () => `${entry}.js`,
+      },
+    },
+  });
+}
+for (const file of [
+  'manifest.json',
+  'review.html',
+  'options.html',
+  'scanner.html',
+  'ui.css',
+]) {
+  await copyFile(resolve(root, 'extension', file), resolve(outDir, file));
+}
+await copyFile(
+  resolve(root, 'taxonomy/places-data.NOTICE'),
+  resolve(outDir, 'places-data.NOTICE'),
+);
+await cp(resolve(root, 'extension/icons'), resolve(outDir, 'icons'), {
+  recursive: true,
+});
+// The privacy policy is one page shared with the web app. Inside the extension
+// it has no site root: drop the web-only script and icon, and point the back
+// link at the settings page.
+await writeFile(
+  resolve(outDir, 'privacy.html'),
+  (await readFile(resolve(root, 'public/privacy.html'), 'utf8'))
+    .replace(/^\s*<link rel="icon"[^\n]*\n/m, '')
+    .replace(/^\s*<script src="\/display-prefs\.js"><\/script>\n/m, '')
+    .replace(
+      '<a class="back" href="/">&larr; Back to Redactobot</a>',
+      '<a class="back" href="options.html">&larr; Back to settings</a>',
+    ),
+);
+if (fakeNano) {
+  await copyFile(
+    resolve(root, 'tests/e2e/fake-nano.js'),
+    resolve(outDir, 'fake-nano.js'),
+  );
+  const page = resolve(outDir, 'scanner.html');
+  await writeFile(
+    page,
+    (await readFile(page, 'utf8')).replace(
+      '<script src="scanner.js">',
+      '<script src="fake-nano.js"></script><script src="scanner.js">',
+    ),
+  );
+}
+console.log(
+  `Load unpacked extension from: ${outDir}${fakeNano ? ' (TEST BUILD with fake on-device model)' : ''}`,
+);

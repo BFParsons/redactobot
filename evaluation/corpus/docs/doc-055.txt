@@ -1,0 +1,48 @@
+Bhullar Chartered Professional Accountants
+File: EST-25-077 -- FAIRWEATHER ESTATE          notes by G. Bhullar, 14-Apr-2026
+
+Deceased:  Margaret-Anne Fairweather ("Peggy"), SIN 540 570 496
+           b. 17 Nov 1928, d. 2 Aug 2025 (aged 96), widow, resident of
+           Perth, Ontario all year.
+Executor:  her son Alasdair Fairweather, 61 Drummond St. E., Perth ON K7H 1G3
+           tel 613-555-0138, alasdair.fairweather@mail.example
+Lawyer:    Yvette Laframboise, Laframboise Wills & Estates Professional Corporation
+           (probate granted 9 Jan 2026, court file CV-25-00412-ES)
+Estate trust account no. (CRA): T 4418 7702
+
+FINAL T1 (Jan 1 - Aug 2, 2025) -- due April 30, 2026, balance owing likely
+ - OAS/CPP/pension to date of death: $31,406
+ - RRIF at Rideau Lakes Credit Union, plan no. RLF-0028841: FMV at death
+   $188,930.12, no qualifying survivor, so fully included in income. Ouch.
+ - Deemed disposition, subsection 70(5): non-registered portfolio, ACB
+   $96,000 vs FMV $141,750 -> gain $45,750.
+ - House, 9 Mill Lane, Perth: principal residence, exempt. Sold 11 Dec 2025
+   for $612,000 -- gain since death (12k) belongs on the T3, not here.
+ - Medical: $22,480 to the retirement home, incl. the memory care wing
+   surcharge from March. Attendant care certificate on file (Alzheimer's).
+ - Donations by will: $20,000 to Lanark Highlands Hospice Society; $5,000 to
+   the Kirk session of her church. Claim on final T1 or T3 -- model both.
+
+T3 FOR THE ESTATE (GRE, first year-end 1 Aug 2026)
+ - TFSA at RLCU, no. TF-7741093, $74,215 at death; growth after death
+   $1,102 is taxable to the estate.
+ - CPP death benefit $2,500.
+ - 2014 Subaru Forester, plate CKLM 418, VIN JF2SJCDC5EH447120, sold to
+   a neighbour for $6,000. Personal-use property, loss denied.
+ - The 1958 cedar-strip launch "Heather Belle" kept at Otty Lake -- appraised
+   $18,500, going in specie to Alasdair. Listed personal property? Check.
+
+BENEFICIARIES
+ - Alasdair, 50%. SIN 364-364-513.
+ - Catriona Fairweather-Menzies (daughter), 50%. Lives in Inverness,
+   non-resident of Canada since 1998 -> Part XIII withholding 25% on
+   income distributions, NR4 slip. UK NI no. for her adviser: JG 10 37 59 A.
+   Her share to be wired to IBAN GB90 HBUK 1941 5563 0721 37 once clearance arrives.
+
+TO DO
+ - TX19 clearance certificate request after assessments. Hold back $40,000.
+ - Ask Mme Laframboise for the passed accounts.
+ - Fee estimate to Mr. Fairweather: $4,200 plus HST. He wants to pay by
+   e-transfer to payments@bhullarcpa.example.
+ - Peggy's 2024 return was never filed (in hospital Feb-Apr 2025 with a
+   broken hip). File late with the final.

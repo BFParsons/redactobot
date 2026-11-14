@@ -1,0 +1,28 @@
+# Dependencies and build output.
+node_modules/
+dist/
+public/
+extension/build/
+tests/e2e/.build/
+.firebase/
+.claude/
+
+# Generated or vendored data. Regenerate with the tool named in each file;
+# never hand-edit or reformat.
+package-lock.json
+src/core/given-names-ssa.ts
+taxonomy/places-data.js
+taxonomy/accuracy.js
+src/theme/tokens.css
+src/core/import/fixtures/
+
+# Evaluation corpora, recorded results and benchmark recordings are data.
+/evaluation/
+/bench/paste/*.json
+
+# Prose is wrapped by hand (README code blocks have their own 86-column rule).
+*.md
+
+# HTML is formatted by hand: Prettier's whitespace-sensitive HTML printer
+# either changes text nodes or emits split closing tags (`</span\n>`).
+*.html

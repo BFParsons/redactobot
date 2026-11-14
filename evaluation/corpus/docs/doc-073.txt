@@ -1,0 +1,50 @@
+PRAIRIE SKY BOOKKEEPING INC.
+PAYROLL SUMMARY -- client: Qu'Appelle Valley Greenhouses Ltd. ("QVG")
+CRA payroll account 81447 2209 RP0001
+Pay period 11: May 17 to May 30, 2026    Pay date: June 5, 2026
+Prepared by Marguerite Lafrenière, 2026-06-03
+
+EMPLOYEE              SIN            GROSS      CPP     EI     TAX     OTHER     NET
+Pelletier, Dwayne     491 385 274   2,480.00   139.56  40.67  381.20   412.00   1,506.57
+Macaraeg, Rosario     528-301-708   1,920.00   106.23  31.49  214.85    28.50   1,538.93
+Brar, Sukhmani        226021244     1,760.00    96.71  28.86  176.40    28.50   1,429.53
+Thorvaldson, Erik     626 503 841   3,076.92   175.08  50.46  598.11     0.00   2,253.27
+Ahenakew, Kateri      364-493-569   1,584.00    86.24  25.98    0.00    28.50   1,443.28
+                                     ---------
+TOTAL GROSS                          10,820.92
+
+NOTES ON "OTHER"
+- Dwayne: union dues 28.50 plus garnishment 383.50 to the Maintenance Enforcement Office,
+  file MEO-0044718 (child support order). Remit by the 15th. He asked Erik to
+  keep this quiet on the floor.
+- Dues of 28.50 for Rosario, Sukhmani and Kateri go to UFCW Local 1400-G; all four are
+  members of the bargaining unit. Erik is management, no dues.
+- Kateri: no income tax withheld. She filed a TD1 claiming the exemption as a
+  Status Indian working on reserve; QVG's main site is on leased land of
+  Muscowpetung First Nation. Letter on file. Do not "correct" this again.
+
+CHANGES THIS PERIOD
+- Rosario Macaraeg -- closed work permit, employer-specific (TFW program), permit no.
+  U771204418, expires 2027-02-28. SIN begins with 9 on the old record
+  (9XX XXX 118); she now has the one above -- update T4 master. Her husband
+  Jun starts June 8 on the same permit type; need his SIN and void cheque.
+- Sukhmani Brar -- last day May 29, 2026, maternity leave. ROE issued, serial
+  W40447182, code F. Vacation pay of $211.20 included in gross above. Expected
+  return June 2027.
+- Erik Thorvaldson -- salary increase to $80,000 per year effective May 17, 2026
+  (was 76k). Signed letter from the owner on file.
+- Dwayne Pelletier -- off May 21 to May 26, WCB claim no. 26-118447
+  (lower back strain, lifting). Paid day of injury only per s. 2-60.
+
+DIRECT DEPOSIT FILE -- Conexus Plains Credit Union, originator ID 0044718829
+  Pelletier     transit 40418  inst 889  acct 2204471
+  Macaraeg      transit 40418  inst 889  acct 2209983
+  Brar          transit 00378  inst 010  acct 77-41802
+  Thorvaldson   transit 40418  inst 889  acct 1180026
+  Ahenakew      paid by cheque no. 004417 (no account on file)
+
+REMITTANCE (PD7A): CPP 1,207.64, EI 425.90, tax 1,370.56; total $3,004.10 due
+June 15, 2026. Pay from QVG operating acct ending -3317.
+
+Questions: Marguerite, 306-555-0115, marguerite@prairieskybooks.example
+Box 418, Fort Qu'Appelle, SK  S0G 1S0

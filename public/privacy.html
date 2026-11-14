@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy and terms of use | Redactobot</title>
+  <meta name="description" content="How Redactobot handles text, what it stores, what it sends, and the limits of this technology demonstration.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'none'">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <script src="/display-prefs.js"></script>
+  <style>
+    :root { color-scheme: light dark; --bg: light-dark(#f6fafa, #0e1416); --fg: light-dark(#161d1d, #dde4e3);
+      --muted: light-dark(#4a5757, #a9b6b5); --line: light-dark(#c4d0cf, #3a4747); --accent: light-dark(#00696b, #7fd6d8);
+      --warn-bg: light-dark(#ffe4c7, #3d2400); --warn-fg: light-dark(#4a2800, #ffd9ad); --warn-line: light-dark(#b86e00, #e69f00);
+      --card: light-dark(#ffffff, #171f20); }
+    :root[data-theme="light"] { color-scheme: light; }
+    :root[data-theme="dark"] { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.65 Roboto, "Segoe UI", system-ui, Arial, sans-serif; }
+    main { max-width: 780px; margin: 0 auto; padding: 32px 20px 72px; }
+    a { color: var(--accent); }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+    .back { display: inline-block; margin-bottom: 20px; font-weight: 500; }
+    h1 { font-size: 32px; line-height: 1.2; margin: 0 0 4px; font-weight: 500; }
+    h2 { font-size: 21px; line-height: 1.3; margin: 40px 0 8px; font-weight: 500; padding-top: 16px; border-top: 1px solid var(--line); }
+    h3 { font-size: 17px; margin: 22px 0 4px; font-weight: 500; }
+    p, li { max-width: 70ch; }
+    ul { padding-left: 22px; }
+    li { margin: 4px 0; }
+    .meta { color: var(--muted); margin: 0 0 24px; }
+    .warning { background: var(--warn-bg); color: var(--warn-fg); border: 2px solid var(--warn-line); border-radius: 12px; padding: 16px 20px; margin: 20px 0; }
+    .warning p { margin: 6px 0; }
+    .warning strong { font-size: 18px; }
+    .summary { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 8px 20px 12px; margin: 20px 0; }
+    table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 15px; }
+    th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: var(--card); font-weight: 500; }
+    .table-wrap { overflow-x: auto; }
+    nav ol { columns: 2; column-gap: 32px; padding-left: 22px; }
+    @media (max-width: 599px) { h1 { font-size: 26px; } nav ol { columns: 1; } }
+    @media print { .back { display: none; } body { background: #fff; color: #000; } }
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="/">&larr; Back to Redactobot</a>
+  <h1>Privacy policy and terms of use</h1>
+  <p class="meta">Effective 14 November 2026. Applies to the Redactobot web app and the Redactobot Chrome extension, version 0.3.</p>
+
+  <div class="warning" role="note">
+    <p><strong>This is a technology demonstration. Do not enter real sensitive data.</strong></p>
+    <p>Redactobot was built for a hackathon to show an idea. It is not a validated privacy, security or compliance
+      tool, it has not been independently audited, and it will miss things. Please try it with fictional or
+      non-sensitive text only. If you choose to use it with real information, you do so entirely at your own risk.</p>
+  </div>
+
+  <div class="summary">
+    <h3>The short version</h3>
+    <ul>
+      <li>The text you paste or open is checked <strong>in your browser, on your device</strong>. We do not receive it.</li>
+      <li>We have <strong>no accounts, no analytics, no advertising and no tracking cookies</strong>. We do not sell or share data, because we do not collect any.</li>
+      <li>One optional feature, <strong>cloud cleanup</strong>, sends text to Google. It is off unless you start it, it shows you the exact text first, and that text has had the detected identifiers replaced. Anything the detection missed goes with it.</li>
+      <li>Only your <strong>settings</strong> are saved, on your device. Your text and the list of real values behind each placeholder are kept in memory and are gone when you close or reload the page.</li>
+      <li><strong>Removing names does not make text anonymous.</strong> Always read the result yourself. You remain responsible for what you share.</li>
+    </ul>
+  </div>
+
+  <nav aria-label="Contents">
+    <ol>
+      <li><a href="#about">What Redactobot is</a></li>
+      <li><a href="#no-sensitive">Do not enter sensitive data</a></li>
+      <li><a href="#local">What happens to your text</a></li>
+      <li><a href="#cloud">The optional cloud step</a></li>
+      <li><a href="#extension">The Chrome extension</a></li>
+      <li><a href="#stored">What is stored on your device</a></li>
+      <li><a href="#not-collected">What we do not collect</a></li>
+      <li><a href="#third-parties">Other companies involved</a></li>
+      <li><a href="#limits">Limits of redaction</a></li>
+      <li><a href="#responsibilities">Your responsibilities</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#choices">Your choices and deleting data</a></li>
+      <li><a href="#children">Children</a></li>
+      <li><a href="#warranty">No warranty and limits on liability</a></li>
+      <li><a href="#changes">Changes and contact</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="about">1. What Redactobot is</h2>
+  <p>Redactobot is an open-source demonstration project, published under the Apache License 2.0 and built as an
+    entry for the #BuildHybridAI 2026 hackathon. It finds details such as names, contact details, account numbers
+    and dates in text, and replaces them with placeholders before the text is shared with an AI chatbot.</p>
+  <p>It is offered free of charge by the project's author ("we", "us") as a demonstration. It is not a commercial
+    product or a professional service, it comes with no support commitment, and it may change, break or be withdrawn
+    at any time without notice.</p>
+
+  <h2 id="no-sensitive">2. Do not enter sensitive data</h2>
+  <p>Please do not use Redactobot with information that would cause harm if it were exposed. That includes, for
+    example:</p>
+  <ul>
+    <li>real client, patient, customer, employee or student records;</li>
+    <li>information covered by legal privilege, professional secrecy or a confidentiality agreement;</li>
+    <li>health, financial, immigration, criminal-record or other special-category information about real people;</li>
+    <li>government identifiers, passwords, keys or other credentials;</li>
+    <li>classified, export-controlled or otherwise legally restricted information.</li>
+  </ul>
+  <p>The sample documents built into the app are fictional and are the intended way to try it.</p>
+
+  <h2 id="local">3. What happens to your text</h2>
+  <p>When you paste text or open a file in the web app:</p>
+  <ul>
+    <li>The file is read by your browser. It is not uploaded.</li>
+    <li>Detection runs on your device, using pattern rules in the page and, for names, places and sensitive topics,
+      Gemini Nano, the AI model built into Chrome. Redactobot asks for that model to be used on-device only and has no
+      cloud fallback for this step.</li>
+    <li>Your text, the detections and the table linking each placeholder (for example <code>[PERSON_1]</code>) to its
+      real value are held in the page's memory. They are not written to storage and are not sent to us. They are
+      discarded when you close or reload the page.</li>
+  </ul>
+  <p>Chrome itself downloads and runs the on-device model. How Chrome and Google handle the model, its download and
+    any related diagnostics is governed by Google's own terms and privacy policy, not by this one. We cannot verify or
+    control what the browser does internally.</p>
+
+  <h2 id="cloud">4. The optional cloud step</h2>
+  <p>The web app and the extension include an optional second step, <strong>cloud cleanup</strong> (and, in the web
+    app, asking a question about the cleaned text). This step is not required. If you use it:</p>
+  <ul>
+    <li>The text that is sent is the version with detected identifiers already replaced by placeholders, together
+      with any question you typed. The web app shows you the exact text before anything is sent.</li>
+    <li>It is sent to Google's Gemini models through Firebase AI Logic, a Google service, protected by Firebase App
+      Check. Google processes it under its own terms. We do not control how long Google keeps it or how Google uses it.</li>
+    <li>The placeholder table, file names and your original text are not sent.</li>
+    <li><strong>Any identifying detail that detection missed is still in that text and will be sent.</strong> This is
+      the main reason not to use real sensitive data.</li>
+    <li>Other sensitive facts that are not identifiers, such as a medical condition, are deliberately left in the
+      text at this stage, because removing them is what the cloud step is for.</li>
+  </ul>
+  <p>The response comes back to your browser. We do not operate a server that stores your requests or the answers.</p>
+
+  <h2 id="extension">5. The Chrome extension</h2>
+  <p>The extension adds a Redactobot switch under the message box on chatgpt.com, claude.ai and
+    gemini.google.com. The switch starts off each time one of those pages loads.</p>
+  <ul>
+    <li><strong>When the switch is off</strong>, the extension does not read what you paste.</li>
+    <li><strong>When the switch is on</strong>, the extension reads text you paste or drop into the message box, checks
+      it on your device, and inserts the cleaned version. It does not read what you type, the rest of the page, your
+      conversation history, or files you upload. It never presses Send.</li>
+    <li>Text being checked is held in the extension's memory until the paste finishes, is cancelled, or expires
+      (at most ten minutes), and is then discarded.</li>
+    <li>Cloud cleanup in the extension is off by default. If you turn it on in the extension's settings, text that
+      passes the local check is sent to Google as described in section 4, without a preview for each paste.</li>
+    <li>The extension uses Chrome's <em>storage</em> permission to save your settings and its <em>offscreen</em>
+      permission to run the on-device model. It can contact only Google's Firebase services, and only for the
+      optional cloud step.</li>
+  </ul>
+  <p><strong>Whatever ends up in the message box is then handled by that chatbot's provider</strong> (OpenAI,
+    Anthropic or Google) under their terms once you send it. Redactobot has no control over, and takes no
+    responsibility for, what those services do with it.</p>
+
+  <h2 id="stored">6. What is stored on your device</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Where</th><th>What</th><th>Contains your text?</th></tr></thead>
+      <tbody>
+        <tr><td>Web app, browser storage for this site</td><td>Which data types and regulations are ticked; theme, colour and motion choices; output mode and FOIA exemption choices</td><td>No</td></tr>
+        <tr><td>Extension, Chrome's synced settings storage</td><td>Which categories to check; which sites show the switch; whether cloud cleanup and loading at startup are on</td><td>No</td></tr>
+        <tr><td>Chrome</td><td>The on-device AI model files, managed by Chrome</td><td>No</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Extension settings use Chrome's sync storage, so if you are signed in to Chrome with sync turned on, Google may
+    copy those settings to your other devices. They contain preferences only.</p>
+
+  <h2 id="not-collected">7. What we do not collect</h2>
+  <ul>
+    <li>No accounts, sign-in, names or email addresses.</li>
+    <li>No analytics, telemetry, advertising, fingerprinting or tracking cookies added by us.</li>
+    <li>No copies of your documents, pastes, detections, placeholder tables, questions or answers.</li>
+    <li>Nothing is sold, rented or shared for marketing, because we hold nothing to sell.</li>
+  </ul>
+  <p>Because we do not hold personal information about you, there is normally nothing for us to give you access to,
+    correct or delete. See section 12 for how to clear what is on your own device.</p>
+
+  <h2 id="third-parties">8. Other companies involved</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Company</th><th>When</th><th>What it may receive</th></tr></thead>
+      <tbody>
+        <tr><td>Google (Chrome)</td><td>Always, as your browser</td><td>Runs the on-device model; downloads model files</td></tr>
+        <tr><td>Google (Firebase AI Logic, Gemini)</td><td>Only if you use the cloud step</td><td>The placeholder text and your question</td></tr>
+        <tr><td>Google (Firebase App Check, reCAPTCHA Enterprise)</td><td>Only if you use the cloud step on a hosted copy</td><td>Technical signals about your browser and device, used to confirm the request comes from a genuine copy of the app</td></tr>
+        <tr><td>The web host (Firebase Hosting, if you use a hosted copy)</td><td>When the page loads</td><td>Standard request logs such as IP address, time and browser type, as with any website</td></tr>
+        <tr><td>OpenAI, Anthropic, Google</td><td>When you send a message in their chatbot</td><td>Whatever is in the message box when you press Send</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Each of these companies acts under its own terms and privacy policy. If you run Redactobot yourself from the
+    source code, the Firebase project, and therefore the relationship with Google, is your own.</p>
+
+  <h2 id="limits">9. Limits of redaction</h2>
+  <ul>
+    <li><strong>Detection is imperfect.</strong> In our own small tests on fictional documents it caught most, not
+      all, names and identifiers. Your text will differ from our tests. Assume something has been missed.</li>
+    <li><strong>Redacted text can still identify people.</strong> A job title, a rare condition, a small town or the
+      combination of ordinary facts can point to one person even with every name removed.</li>
+    <li><strong>It is not a compliance tool.</strong> The lists named after HIPAA, GDPR, CCPA, GLBA, PCI DSS and other
+      rules show what each rule mentions. Redactobot does not determine, and never claims, that any text complies with
+      any law, regulation, court rule, professional rule or contract.</li>
+    <li><strong>The FOIA release mode is a formatting aid.</strong> The exemption codes it applies are defaults for a
+      trained person to review. They are not a legal determination that an exemption applies.</li>
+    <li><strong>It does not read everything.</strong> Scanned pages, images, typed text in chat boxes and file uploads
+      to chat sites are not checked.</li>
+    <li><strong>Nothing here is legal, compliance, security or other professional advice.</strong></li>
+  </ul>
+
+  <h2 id="responsibilities">10. Your responsibilities</h2>
+  <p>By using Redactobot you accept that:</p>
+  <ul>
+    <li>you will read the result yourself before sharing it with anyone or anything;</li>
+    <li>you are responsible for deciding whether you are allowed to process the text at all, including under your
+      employer's policies, your professional duties and any law that applies to you;</li>
+    <li>you are responsible for anything you paste into, or send through, a chatbot or other service;</li>
+    <li>you will not rely on Redactobot as your only safeguard for information that matters.</li>
+  </ul>
+
+  <h2 id="security">11. Security</h2>
+  <p>The design keeps your text on your device and limits the page and the extension to contacting Google's Firebase
+    services only. The source code is public so that anyone can check this. Even so, no software is free of defects,
+    this project has not had a professional security review, and other software on your device, including other
+    browser extensions, may be able to see what is on the page. We make no promise that Redactobot is secure.</p>
+
+  <h2 id="choices">12. Your choices and deleting data</h2>
+  <ul>
+    <li><strong>Do not use the cloud step</strong> if you do not want any text to leave your device.</li>
+    <li><strong>Web app:</strong> close or reload the page to discard your text. To remove saved settings, clear this
+      site's data in your browser's settings.</li>
+    <li><strong>Extension:</strong> switch it off in a tab, turn off individual sites in its settings, or remove the
+      extension from Chrome, which deletes its saved settings.</li>
+    <li><strong>On-device model:</strong> managed by Chrome; see Chrome's settings and Google's documentation.</li>
+  </ul>
+
+  <h2 id="children">13. Children</h2>
+  <p>Redactobot is intended for adults trying out a technical demonstration. It is not directed at children.</p>
+
+  <h2 id="warranty">14. No warranty and limits on liability</h2>
+  <p>Redactobot is provided "as is" and "as available", without warranties or conditions of any kind, express or
+    implied, including any warranty of accuracy, fitness for a particular purpose, merchantability or non-infringement.
+    We do not warrant that it will detect, remove or protect any particular information.</p>
+  <p>To the fullest extent the law allows, the author and contributors are not liable for any loss or damage arising
+    from the use of, or inability to use, Redactobot. This includes, without limitation, any disclosure of
+    information, breach of confidentiality or privilege, regulatory or professional consequence, loss of data, or
+    indirect or consequential loss, even if we were told such loss was possible. The software is licensed under the
+    <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>; sections 7 and 8 of that licence
+    (disclaimer of warranty and limitation of liability) apply to it.</p>
+  <p>Some places do not allow certain warranties to be excluded or liability to be limited. Where that is so, these
+    limits apply only as far as the law permits, and nothing here removes rights you cannot give up by law.</p>
+
+  <h2 id="changes">15. Changes and contact</h2>
+  <p>We may update this page as the project changes. The date at the top shows the current version, and earlier
+    versions are visible in the project's public history.</p>
+  <p>Questions, concerns or reports of a privacy or security problem can be raised through the project's page on
+    GitHub: <a href="https://github.com/BFParsons/redactobot/issues">github.com/BFParsons/redactobot/issues</a>.
+    Please do not include any real sensitive information in a report.</p>
+</main>
+</body>
+</html>

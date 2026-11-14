@@ -1,0 +1,42 @@
+PRIOR AUTHORIZATION REQUEST -- URGENT (72 hr)                 FAX COVER + FORM, 4 pp
+
+To:    Owyhee Senior Advantage HMO, Pharmacy UM Dept          Fax 208-555-0199
+From:  Boise Bench Heart Clinic, 1420 W Kootenai St Ste 210, Boise ID 83705
+       Ph (208) 555-0112   Fax 208.555.0113
+Sent:  05/06/2026 14:10       Ref/PA case #: PA-26-0558713
+       (resubmission after denial DN-26-0091442 dtd 4/29/26)
+
+MEMBER
+Name: Wojtowicz, Casimir T.        DOB: 11/30/1933  (age 92)     Sex: M
+Member ID: OSA904417288-01      Group: MAPD-ID-007      Medicare #: 7UF2-KD9-YT44
+Address: 2206 N 28th St, Boise, ID 83703         Ph: 208 555 0146 (son answers; pt is hard of hearing)
+
+PRESCRIBER
+Lakshmi Vemulapalli, MD, FACC -- Cardiology       NPI 1568204417     DEA FV4418823     ID lic. M-11872
+Contact: Tessa (PA coordinator) ext 6, tessa.r@boisebenchheart.example
+
+DRUG REQUESTED
+tafamidis 61 mg capsule, 1 cap PO daily, #30/30 days, 12 refills
+Dispensing pharmacy: Ridgecrest Specialty Pharmacy, NCPDP 1344178, ph 800-555-0164
+
+DIAGNOSIS: wild-type transthyretin amyloid cardiomyopathy (ATTR-CM), ICD-10 E85.82; HFpEF, NYHA class II;
+permanent AFib; CKD 3a.
+
+CLINICAL JUSTIFICATION (Dr. Vemulapalli):
+Mr. Wojtowicz is a 92-year-old retired machinist who lives alone with daily help from his son.
+Tc-99m PYP scan 03/12/2026 at Bogus Basin Imaging: grade 3 myocardial uptake, H/CL ratio 1.8. Serum/urine
+immunofixation negative 3/3/26 (no monoclonal protein), which rules out AL. Echo 02/20/26: LVEF 52%, septum 17 mm,
+GLS -11% with apical sparing. NT-proBNP 2,840 pg/mL (2/20) -> 3,310 (4/24). Two HF admissions in 6 months
+(Dec 9-13, 2025 and 3/28-4/1/26). Current: torsemide 40 mg BID, apixaban 2.5 mg BID. 6MWT 212 m.
+
+Denial stated "age > 90 and NYHA class not documented." Plan criteria (Policy RX-CARD-014, rev. 1/2026) contain no age
+limit, and NYHA II was documented 4/24/26. Step therapy not applicable; there is no formulary alternative.
+Request expedited review under 42 CFR § 422.572.
+
+Pt/family: son and POA Stanislaw ("Stan") Wojtowicz, 208-555-0177, will handle the copay, est. $268/mo.
+Manufacturer assistance application pending, ref VC-4417720. Stan asks that the plan NOT call his father directly.
+
+Attestation: I certify the above is accurate and supported by the chart.   /s/ L. Vemulapalli MD   05/06/26
+
+PLAN USE ONLY: Reviewer J. Twofeathers RN   Rcvd 5/6/26 14:22   Decision due 5/9/26
+[ ] Approved  [ ] Denied   Auth # ________

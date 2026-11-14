@@ -1,0 +1,185 @@
+AUTHORING BRIEF - second (held-out) corpus, doc-201 .. doc-260
+================================================================
+Six authors each write one batch file of 10 documents. This file is the shared brief.
+
+FILES AND COMMANDS (run from the repository root; keep commands short; never use the bare word "eval")
+  your file     evaluation/corpus2_src/batch_<x>.py      (x = a..f; the ONLY file you create or edit)
+                starts with:  from corpus2_src.core import D, dt, amt, num
+                              DOCS = []
+                              BATCH_COMMON = []   # optional, see LEFTOVERS
+  build         python3 -P evaluation/generate2.py --batch <x>          -> evaluation/corpus2/.work/<x>/
+  verify        python3 -P evaluation/verify_corpus2.py --corpus evaluation/corpus2/.work/<x>
+  mint numbers  python3 -P evaluation/generate2.py --mint card -n 8 --salt <x>1
+                (kinds: card iban aba sin ssn imei; always use a salt starting with your batch letter)
+  Do NOT edit core.py, common.py, generate2.py, verify_corpus2.py or another batch. Do not read taxonomy/, src/,
+  bench/, tools/, evaluation/RESULTS.md, evaluation/results/. No git. No /tmp. If a tooling bug truly blocks
+  you, stop and report it instead of patching the tooling.
+  DONE = build prints "0 errors" for your batch AND verify prints "0 mismatches, 0 unreviewed leftovers".
+  Markup, D(...) fields and renderer features: read the docstring at the top of core.py (already in context).
+
+SIZE TARGETS
+  normal doc 150-600 words and 50-75 key items; long doc 1,200-2,500 words and 140-200 items; short doc under
+  80 words and 12-20 items. Batch total roughly 620-720 items. xlsx: 2+ sheets where sensible, real date and
+  currency cells via dt()/amt()/num().
+
+WRITE LIKE REAL PEOPLE
+  Real business documents: letterheads, signature blocks, reference lines, abbreviations, shorthand, typos that a
+  busy person would leave, inconsistent formats inside one document (a phone written three ways, a name as
+  "Last, First", initials, ALL CAPS in captions, nicknames, title + surname), amounts as $1,250.00 / 1250 / 1.25k
+  / "twelve hundred" / (450.00) / USD 3,000, dates as 03/04/26, 4 Mar 2026, March 4th, 2026-03-04, "the 4th",
+  "Mar-26", numbers with and without separators, masked and last-four forms, unlabelled IDs, look-alike traps
+  (a surname that is a common word or a place, a city that is a first name, a 4-digit last-four that looks like a
+  year). Go beyond the subtype range of the first corpus (listed earlier in context) rather than repeating it.
+  Include plenty of ordinary non-sensitive content and look-alikes: statute and regulation cites, form numbers,
+  section numbers, CPT/ICD codes used generically, product and software names, generic public bodies. List the
+  look-alikes in distractors=[...] (at least 3 per document, each must appear verbatim in the text).
+
+FICTIONAL DATA RULES
+  Everything invented. No real private individuals; no real companies as parties, banks, insurers, clinics or
+  employers (real software/products, card brands and government bodies may be mentioned and are distractors or
+  ok entries). Real cities/states are fine; street addresses invented. Emails/URLs only on .example or
+  example.com|org|net. US/Canada phones 555-01xx (any area code); UK 01632 960xxx / 020 7946 0xxx / 07700 900xxx;
+  other countries clearly fictional. Cards pass Luhn, IBANs mod-97, ABA routing checksum, Canadian SINs Luhn
+  (subtype must contain "SIN"), SSNs plausible (mint them). IPs only 192.0.2.x, 198.51.100.x, 203.0.113.x,
+  10.x, 172.16-31.x, 192.168.x, 2001:db8::/32, fd00::/8, fe80::. The build enforces all of this.
+  NOVELTY: the build rejects any person whose surname (or hyphen part) appears in the first corpus and any
+  organization whose leading word matches a first-corpus organization. Pick fresh names from many cultures.
+  New storylines only; nothing adapted from the first corpus.
+
+CATEGORIES (exactly these 29; aliases in core.py ALIAS)
+  person_name organization_name email phone street_address postal_code place ssn tax_id government_id
+  bank_account routing_number iban payment_card card_expiry card_security_code money_amount date_of_birth date
+  age_over_89 record_number url ip_address vehicle_id device_id credential health_info sensitive_attribute
+  indirect_identifier
+
+KEYING CONVENTIONS (apply uniformly)
+  person_name       every written form (full, short, title-surname, first-name, surname, initials, caps,
+                    last-first, nickname). Include the honorific in the value when it is written with the name.
+  organization_name parties, employers, firms, banks, insurers, clinics, schools, churches, unions, trusts,
+                    estates. NOT government bodies, courts, software, card brands (distractor / ok).
+  street_address    the street line incl. unit/suite/PO Box. City, state/province and postal code are separate
+                    items (place, place, postal_code). A place inside an organization name or statute name is not
+                    separate.
+  place             city, town, county, state/province (also abbreviations), neighbourhood, named facility,
+                    foreign city. Countries only when they locate a person abroad.
+  date              every specific date tied to the matter (full, partial, month+year, month+day, "the 14th").
+                    NOT keyed: bare years, bare month names, durations ("30 days"), clock times, percentages,
+                    quantities, ages under 90, tax years. Birth dates -> date_of_birth (a bare birth year too, hard).
+  money_amount      every specific amount incl. rates and totals, in whatever notation.
+  record_number     matter/case/docket/invoice/claim/policy/loan/MRN/member/employee/check/Rx/order numbers.
+  government_id     passport, driver's licence, bar/licence/NPI/DEA numbers, A-number, health card, Medicare MBI.
+  tax_id            EIN, ITIN, PTIN, SIN, BN, VAT, UTR, state tax account numbers. SSN always -> ssn.
+  bank_account      account numbers (also brokerage, masked, last four), SWIFT/BIC.
+  routing_number    ABA, Canadian transit/institution, UK sort code.
+  payment_card      full, masked or last-four card numbers; put the holder's entity id in cardholders=[...].
+  credential        usernames, passwords, PINs, security answers, tokens, door/lockbox/alarm codes, Wi-Fi keys.
+  device_id         serial numbers, IMEI, MAC, hostnames, asset tags.      vehicle_id  VIN, plates, hull numbers.
+  health_info       diagnosis, medication, lab value, procedure, allergy, symptom tied to a person (minimal phrase).
+  sensitive_attribute  race/ethnicity, religion, orientation, gender identity, immigration/citizenship status,
+                    criminal history, union membership, political activity, financial distress, benefits status.
+  indirect_identifier  phrases that single a person out without naming them (unique role, relationship to a
+                    named person, distinctive asset, school + grade).
+  age_over_89       ages 90 and above, however written.
+  minors=[...]      entity ids of every person the document shows is under 18 (by birth date, age, grade or
+                    wording). cardholders=[...] entity ids of every named holder of a card in the document.
+  The same string is one item counted everywhere it occurs: mark it once (re-marking is harmless), and make sure
+  the identical string is not also used with another meaning. Values must sit on one line and cannot contain "|".
+  In PDF documents keep table cells short (a wrapped cell breaks the text layer) or avoid tables.
+  In raw_html documents keep sensitive values out of attributes and comments.
+
+DIFFICULTY - one rule
+  hard = masked or partial numbers, numbers without their usual separators, values spelled out in words, ALL CAPS
+  names, initials/acronyms, nicknames, names that are also common words or places, "Last, First" order,
+  unlabelled IDs, and all health_info / sensitive_attribute / indirect_identifier. The build marks the
+  mechanical cases automatically (caps, initials, acronym, last-first, nickname, masks, digit-only ssn/card/
+  phone/tax id, last-four, spelled-out amounts and dates, the three always-hard categories). YOU add "!" for the
+  rest: names that are common words or places, unlabelled IDs, digit-only forms of other categories, partial
+  values the automation cannot see. Do not add "!" for anything else.
+
+LEFTOVERS (completeness review - this matters most)
+  The build lists, per document, every capitalised word, every token containing a digit and every email/URL-
+  looking token that is not inside a key value or a distractor. For each one decide honestly:
+    sensitive            -> mark it in the text;
+    look-alike           -> distractors=[...] (phrases such as "Form 1040-ES", "Schedule K-1", "Cal. Civ. Code § 1950.5");
+    ordinary             -> ok=[...] of that document (exact token as printed, or a phrase containing a space).
+  A generic word you keep needing can go once into BATCH_COMMON (lower case). Never put there: month names, or
+  any word that doubles as a first name, surname, bank or place. Two-letter ALL-CAPS tokens always need ok.
+  Never use ok to hide something that belongs in the key.
+
+FINAL REPORT (short): per document id: words, items, minors y/n, cardholders y/n; batch item total; anything you
+could not do or are unsure about. State the last line printed by build and by verify, verbatim.
+
+================================================================ DOCUMENT SPECS
+id  fmt  audience  jur  doc_type  -- content; MUST-HAVE categories/features in [brackets]
+
+BATCH a
+201 pdf  legal      US  retainer invoice -- law-firm invoice with time entries and IOLTA trust ledger, replenishment by card on file [payment_card, card_expiry, cardholder, routing_number, bank_account]
+202 pdf  accounting US  K-1 cover letter -- partnership K-1 transmittal to a partner: EINs, masked SSN, capital account, state amounts, portal link and login [url, credential, tax_id]
+203 pdf  health     US  lab report -- chemistry/haematology report for a patient aged 90+ [age_over_89, device_id (analyzer serial), government_id (NPI), record_number]
+204 xlsx general    US  HR onboarding checklist -- sheets: new hires (SSN, DOB, direct deposit, emergency contacts), equipment (serials, asset tags, MAC), accounts (usernames, temp passwords), I-9 documents [routing_number, device_id, credential, government_id]
+205 txt  legal      US  immigration intake notes -- family with minor children, passports, A-numbers, I-94, status history [minors, sensitive_attribute, government_id, url]
+206 txt  accounting US  payment authorization form -- SHORT (<80 words): full card, expiry, security code, holder, amount [payment_card, card_expiry, card_security_code, cardholder]
+207 txt  health     US  prior-authorization request -- patient aged 92, member ID, NPI, medication, clinical justification, fax [age_over_89, health_info]
+208 docx legal      US  lease abstract -- commercial lease: parties, premises, rent steps, guarantor, deposit account, parking permits with plates [vehicle_id, bank_account, money_amount]
+209 eml  accounting CA  personal tax intake email -- T1 client: SINs, dependants (minors) with birth dates, CRA sign-in, RRSP, daycare, direct deposit transit/institution [minors, tax_id SIN, credential, routing_number]
+210 txt  legal      US  parenting plan draft -- LONG: two minors, schools, health needs, exchange logistics incl. vehicles/plates, shared-calendar login, expenses [minors, vehicle_id, credential, health_info]
+
+BATCH b
+211 xlsx legal      US  privilege log -- sheets: log entries (control/Bates numbers, dates, authors/recipients in many name forms, descriptions), custodians (devices, IMEI, emails) [device_id, record_number, many name variants]
+212 xlsx accounting US  bank statement summary -- sheets: accounts (routing, numbers, masked), transactions (typed dates/amounts, payees, cheque numbers), cards (last four, holders), one international wire [routing_number, iban, payment_card, cardholder]
+213 html health     US  explanation of benefits -- raw_html; subscriber and dependent child, member/claim numbers, provider NPI, amounts, balance paid by card on file, portal URL [minors, cardholder, url]
+214 docx legal      US  severance agreement -- LONG: employee/employer, payments, dates, benefits, releases, company property return (laptop serial, phone), company car, login revocation, direct deposit [device_id, vehicle_id, credential, routing_number, sensitive_attribute]
+215 txt  accounting US  credit card reconciliation memo -- corporate cards, several named holders, last fours, one full number, expiry, disputed charges [payment_card, card_expiry, cardholder]
+216 rtf  legal      US  collections letter -- debt collection demand on a charged-off card: debtor, masked accounts, amounts, payment URL, validation notice [payment_card, cardholder, url]
+217 txt  health     CA  adolescent telehealth intake -- 15-year-old, parents, provincial health card, school, meds, mental health, session IP/device, portal login [minors, ip_address, device_id, credential, government_id]
+218 eml  accounting UK  self-assessment and payroll starter email -- NI number, UTR, PAYE ref, sort code, account, IBAN, postcodes, UK phones, pounds, day-first dates [iban, routing_number sort code, tax_id]
+219 html general    US  IT offboarding ticket -- raw_html or blocks; IPs (v4 and v6), MACs, hostnames, serials, usernames, passwords/tokens, URLs, badge numbers [ip_address, device_id, credential, url]
+220 txt  legal      US  plea negotiation note -- SHORT (<80 words): DUI defendant, case number, plate, court date, fine [vehicle_id]
+
+BATCH c
+221 pdf  legal      CA  probate inventory -- BC estate: deceased aged 94, SIN, accounts (transit/institution), foreign account IBAN, vehicle, land title PIDs, beneficiaries, values [age_over_89, iban, vehicle_id, tax_id SIN]
+222 xlsx accounting US  vendor W-9 and 1099 tracking sheet -- sheets: vendors (SSN/EIN/ITIN, addresses, ACH details), payments (typed dates/amounts) [ssn, tax_id, routing_number, bank_account]
+223 docx health     US  school medication authorization -- minor student, grade, school, diagnosis, medication, prescriber, pharmacy Rx, parents, plan member ID [minors, health_info, government_id]
+224 txt  accounting US  collection information statement notes -- LONG (Form 433-A interview): couple, SSNs, employers, bank accounts, credit cards with holders, vehicles, real estate, foreign account IBAN, dependant child, IP PIN [cardholder, vehicle_id, iban, minors, credential]
+225 pdf  legal      US  guardianship petition -- minor, proposed guardians, parents (one deceased, one incarcerated), school, health needs, minor's account [minors, sensitive_attribute, bank_account]
+226 eml  general    US  travel booking and expense email -- passport, birth date, traveller numbers, full card with expiry and security code, record locators, hotel refund to an IBAN [payment_card, card_expiry, card_security_code, cardholder, iban, government_id]
+227 txt  health     US  dental treatment plan and payment arrangement -- procedures, plan member/group, card on file with expiry and code, bank draft [card_security_code, card_expiry, cardholder, routing_number, health_info]
+228 txt  legal      US  subpoena duces tecum -- to a phone carrier and a bank: subscribers, numbers, IMEI, IP logs, accounts, caption in caps [device_id, ip_address, bank_account]
+229 md   accounting US  donor acknowledgment notes -- nonprofit gifts: donors (one aged 91), stock gift from a brokerage account, card gifts, cheques, sensitive affiliations [age_over_89, payment_card, cardholder, sensitive_attribute]
+230 txt  accounting US  gift tax return notes -- Form 709: donor aged 90+, donees incl. minor grandchildren (529 plans), SSNs, trust EIN, appraisals [age_over_89, minors, ssn, tax_id]
+
+BATCH d
+231 html legal      US  personal injury intake questionnaire -- crash with an injured minor passenger: vehicles, insurers, claim/policy numbers, injuries, providers, licence, police report [minors, vehicle_id, health_info, government_id]
+232 html accounting US  paid preparer due diligence checklist -- Form 8867: taxpayer, qualifying children, SSNs/birth dates, school and daycare records, refund account, spouse ITIN, IP PIN [minors, ssn, routing_number, credential, sensitive_attribute]
+233 txt  health     US  home health nursing visit note -- patient aged 93, oxygen concentrator/pacemaker/glucometer serials, meds, vitals, caregivers, lockbox code, Medicare number [age_over_89, device_id, credential, government_id]
+234 eml  legal      US  expert witness retention email -- physician expert, rates, retainer wire, caption, plaintiff's medical details, file-share link and password, W-9 [routing_number, url, credential, health_info]
+235 rtf  accounting US  wage garnishment processing memo -- employee, court order, child support for a named child, remittance account, employer EIN [sensitive_attribute, routing_number, minors, ssn]
+236 txt  legal      US  real estate closing statement -- buyer/seller, parcel and loan numbers, many amounts, wire instructions, title company, inspection paid by card, notary [routing_number, bank_account, payment_card, cardholder]
+237 txt  accounting US  foreign account reporting worksheet -- FBAR: several IBANs and SWIFT codes, balances in other currencies, foreign addresses and tax numbers, passport, citizenship [iban, bank_account, sensitive_attribute, government_id]
+238 pptx general    US  fleet incident review deck -- company vehicle crashes: drivers, plates, VINs, telematics unit IDs, claims, repair costs, licences, post-incident test results; speaker notes [vehicle_id, device_id, sensitive or health item]
+239 txt  health     US  pharmacy transfer note -- SHORT (<80 words): patient aged 96, Rx number, drug, birth date, prescriber DEA [age_over_89, government_id]
+240 docx legal      US  stepparent adoption notes -- minor child, absent birth parent, consents, birth certificate number, background check, home study, new name [minors, sensitive_attribute, government_id]
+
+BATCH e
+241 txt  legal      EU  data subject access request response -- EU company answering a DSAR: customer numbers, logged IPs and device IDs, IBAN, EU-format addresses/phones/dates, tax number, username [ip_address, device_id, iban, credential]
+242 pdf  legal      CA  family law financial statement notes -- Ontario: spouses, children, SINs, income, accounts (transit-institution-account), credit cards with holders, vehicles, home, support [minors, cardholder, vehicle_id, tax_id SIN]
+243 pptx accounting US  year-end tax planning deck -- family client: incomes, entities/EINs, estimates, brokerage accounts, children's 529s, card and bank used for estimated payments; speaker notes [minors, cardholder, routing_number]
+244 txt  accounting US  identity theft affidavit notes -- Form 14039: victim, SSN, IP PIN, fraudulent return IP, cards opened in her name with expiry/code, police and FTC report numbers, passwords changed [ip_address, payment_card, card_expiry, card_security_code, cardholder, credential]
+245 html health     US  after-visit summary -- raw_html portal page: patient, MRN, diagnoses, meds, vitals, labs, appointments, portal sign-in history with IPs and devices, username, copay by card [ip_address, device_id, credential, url]
+246 rtf  health     CA  physiotherapy progress report -- injured worker claim: health card number, claim number, employer, injury, treatment, return to work, fees in C$ [government_id, health_info, postal_code]
+247 txt  legal      US  answers to interrogatories -- LONG: employment-discrimination plaintiff: residences, employers, education, providers and conditions, financial accounts and cards, vehicles, devices and online accounts, prior claims/convictions [cardholder, vehicle_id, device_id, sensitive_attribute, health_info]
+248 docx accounting US  sales tax audit response letter -- business, permit numbers, audit period, auditor, invoices, exemption certificates, deposit analysis, owner details [tax_id, record_number, bank_account]
+249 txt  general    CA  fleet insurance schedule and driver list -- vehicles (plates, VINs), drivers (licence numbers, birth dates, convictions), policy, premiums in C$, lienholder [vehicle_id, government_id, sensitive_attribute]
+250 eml  legal      US  settlement wire instructions email -- SHORT (<80 words): payee, bank, routing, account, amount, reference, callback number [routing_number, bank_account]
+
+BATCH f
+251 md   legal      CA  text message exhibit -- transcript of texts in a tenancy or family dispute: numbers, nicknames, names that are common words, e-transfers, a password sent by text, partial dates [credential, nickname forms, phone]
+252 txt  legal      US  declaration for protective order -- stalking/harassment: incidents, addresses, plate, IP of harassing emails, tracker serial, handles, a minor child, police reports [ip_address, device_id, vehicle_id, minors]
+253 txt  accounting US  household employee payroll setup notes -- nanny: SSN, I-9 documents, wages, family EIN, state account, the children, direct deposit [minors, routing_number, ssn, sensitive_attribute]
+254 txt  accounting CA  GST/HST audit notes -- CRA audit of a small company: BN accounts, auditor, invoices, bank (transit/institution), owner SIN, vehicle log, personal charges on the company card [tax_id SIN, cardholder, vehicle_id, routing_number]
+255 docx accounting US  bank confirmation request -- auditor to bank: accounts, loans with collateral (VINs, equipment serials), signers, foreign subsidiary IBAN [iban, vehicle_id, device_id, routing_number]
+256 txt  accounting US  bookkeeping chat export -- messy chat between bookkeeper and client: pasted card with expiry and code, passwords, bank login, shorthand amounts, partial dates, a link [card_security_code, card_expiry, cardholder, credential, url]
+257 pdf  accounting US  wire fraud incident memo -- business email compromise at a CPA firm: look-alike sender, IPs, changed bank details incl. IBAN, timeline, insurer claim, compromised login, hostnames/MAC, phishing URL [ip_address, iban, credential, device_id, url]
+258 eml  health     US  patient billing statement email -- guarantor parent and minor patient, balance, card on file with expiry, payment link, account numbers, insurer [minors, cardholder, card_expiry, url]
+259 docx health     US  long-term care admission packet -- LONG: resident aged 97, family/POA, Medicare and Medicaid numbers, SSN, diagnoses, meds, allergies, religion, veteran status, devices (hearing aids, pacemaker), resident trust account [age_over_89, device_id, government_id, sensitive_attribute, bank_account]
+260 txt  general    US  summer camp registration -- campers (minors), parents, allergies/meds, paediatrician, member ID, pickup list with vehicles/plates, card with expiry and code, portal login [minors, vehicle_id, card_security_code, cardholder, credential]

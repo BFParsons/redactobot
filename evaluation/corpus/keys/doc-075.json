@@ -1,0 +1,115 @@
+{
+ "id": "doc-075",
+ "file": "docs/doc-075.txt",
+ "format": "txt",
+ "title": "While-you-were-out phone message",
+ "doc_type": "phone message",
+ "audience": "accounting",
+ "jurisdiction": "US",
+ "word_count": 68,
+ "items": [
+  {
+   "value": "3/10",
+   "category": "date",
+   "subtype": "month/day only",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "date tied to a person or matter"
+  },
+  {
+   "value": "Kenji",
+   "category": "person_name",
+   "subtype": "first name only",
+   "occurrences": 1,
+   "entity": "p2",
+   "canonical": "Kenji (staff accountant, first name only)",
+   "variant": "first-name",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "Dolores Featherstone",
+   "category": "person_name",
+   "subtype": "full name",
+   "occurrences": 1,
+   "entity": "p1",
+   "canonical": "Dolores Featherstone",
+   "variant": "full",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "Featherstone Orchards",
+   "category": "organization_name",
+   "subtype": "full name",
+   "occurrences": 1,
+   "entity": "o1",
+   "canonical": "Featherstone Orchards",
+   "variant": "full",
+   "difficulty": "standard",
+   "why": "identifies a client, party or organization"
+  },
+  {
+   "value": "509 555-0118",
+   "category": "phone",
+   "subtype": "mixed separators",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "direct contact detail"
+  },
+  {
+   "value": "Feb. 27",
+   "category": "date",
+   "subtype": "abbreviated month, no year",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "date tied to a person or matter"
+  },
+  {
+   "value": "$6,214",
+   "category": "money_amount",
+   "subtype": "money amount",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "confidential financial detail"
+  },
+  {
+   "value": "-7758",
+   "category": "ssn",
+   "subtype": "last four with dash",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "government identifier unique to a person"
+  },
+  {
+   "value": "jm",
+   "category": "person_name",
+   "subtype": "lower-case initials",
+   "occurrences": 1,
+   "entity": "p4",
+   "canonical": "JM (receptionist, initials only)",
+   "variant": "initials",
+   "difficulty": "hard",
+   "why": "identifies a person"
+  }
+ ],
+ "distractors": [
+  "Form 1310",
+  "K-1"
+ ]
+}

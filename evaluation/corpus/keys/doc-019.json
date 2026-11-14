@@ -1,0 +1,158 @@
+{
+ "id": "doc-019",
+ "file": "docs/doc-019.txt",
+ "format": "txt",
+ "title": "Phone message - prescription refill request",
+ "doc_type": "phone message",
+ "audience": "health",
+ "jurisdiction": "US",
+ "word_count": 56,
+ "items": [
+  {
+   "value": "2/18",
+   "category": "date",
+   "subtype": "month/day only",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "date tied to a person or matter"
+  },
+  {
+   "value": "Kay",
+   "category": "person_name",
+   "subtype": "first name only",
+   "occurrences": 1,
+   "entity": "p4",
+   "canonical": "Kay",
+   "variant": "first-name",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "Dolores Ibarra",
+   "category": "person_name",
+   "subtype": "full name",
+   "occurrences": 1,
+   "entity": "p1",
+   "canonical": "Dolores Ibarra",
+   "variant": "full",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "4/30/52",
+   "category": "date_of_birth",
+   "subtype": "two-digit year",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "birth date identifies a person"
+  },
+  {
+   "value": "44-1907",
+   "category": "record_number",
+   "subtype": "chart number that looks like a year",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "record identifier that links to a person or matter"
+  },
+  {
+   "value": "lorazepam 0.5 mg",
+   "category": "health_info",
+   "subtype": "medication and dose",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "health information about a person"
+  },
+  {
+   "value": "7741206",
+   "category": "record_number",
+   "subtype": "prescription number",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "record identifier that links to a person or matter"
+  },
+  {
+   "value": "Corner Drug",
+   "category": "organization_name",
+   "subtype": "full name",
+   "occurrences": 1,
+   "entity": "o1",
+   "canonical": "Corner Drug",
+   "variant": "full",
+   "difficulty": "standard",
+   "why": "identifies a client, party or organization"
+  },
+  {
+   "value": "915-555-0183",
+   "category": "phone",
+   "subtype": "phone",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "direct contact detail"
+  },
+  {
+   "value": "Dr. Mehta",
+   "category": "person_name",
+   "subtype": "title + surname",
+   "occurrences": 1,
+   "entity": "p2",
+   "canonical": "Sunil Mehta",
+   "variant": "title-surname",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "shaky and tearful",
+   "category": "health_info",
+   "subtype": "observed mental state",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "health information about a person"
+  },
+  {
+   "value": "Rudy",
+   "category": "person_name",
+   "subtype": "first name only",
+   "occurrences": 1,
+   "entity": "p3",
+   "canonical": "Rudy Ibarra",
+   "variant": "first-name",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "915 555 0106",
+   "category": "phone",
+   "subtype": "spaces only",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "direct contact detail"
+  }
+ ],
+ "distractors": [
+  "90-day"
+ ]
+}

@@ -1,0 +1,205 @@
+{
+ "id": "doc-327",
+ "file": "docs/doc-327.txt",
+ "format": "txt",
+ "title": "Texts between a store manager and an injured employee",
+ "doc_type": "text message transcript",
+ "audience": "general",
+ "jurisdiction": "US",
+ "word_count": 119,
+ "items": [
+  {
+   "value": "Renee Oxendine",
+   "category": "person_name",
+   "subtype": "full name",
+   "occurrences": 1,
+   "entity": "p1",
+   "canonical": "Renee Oxendine",
+   "variant": "full",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "Makai Surf & Sundry",
+   "category": "organization_name",
+   "subtype": "full name",
+   "occurrences": 1,
+   "entity": "o1",
+   "canonical": "Makai Surf & Sundry",
+   "variant": "full",
+   "difficulty": "standard",
+   "why": "identifies a client, party or organization"
+  },
+  {
+   "value": "Tavita Leiataua",
+   "category": "person_name",
+   "subtype": "full name",
+   "occurrences": 1,
+   "entity": "p2",
+   "canonical": "Tavita Leiataua",
+   "variant": "full",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "Nov 8-9",
+   "category": "date",
+   "subtype": "date range, month and days",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "date tied to a person or matter"
+  },
+  {
+   "value": "Tavi",
+   "category": "person_name",
+   "subtype": "nickname",
+   "occurrences": 4,
+   "entity": "p2",
+   "canonical": "Tavita Leiataua",
+   "variant": "nickname",
+   "difficulty": "hard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "808-555-0143",
+   "category": "phone",
+   "subtype": "phone",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "direct contact detail"
+  },
+  {
+   "value": "renee",
+   "category": "person_name",
+   "subtype": "lower case",
+   "occurrences": 1,
+   "entity": "p1",
+   "canonical": "Renee Oxendine",
+   "variant": "first-name",
+   "difficulty": "hard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "tavi",
+   "category": "person_name",
+   "subtype": "lower case",
+   "occurrences": 1,
+   "entity": "p2",
+   "canonical": "Tavita Leiataua",
+   "variant": "nickname",
+   "difficulty": "hard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "kapolei",
+   "category": "place",
+   "subtype": "town in lower case",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "locates the person or matter"
+  },
+  {
+   "value": "Renee",
+   "category": "person_name",
+   "subtype": "first name only",
+   "occurrences": 3,
+   "entity": "p1",
+   "canonical": "Renee Oxendine",
+   "variant": "first-name",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "uncle junior",
+   "category": "indirect_identifier",
+   "subtype": "coworker known only by a family-style nickname",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "identifies someone by context"
+  },
+  {
+   "value": "hairline fracture, splint 4 wks",
+   "category": "health_info",
+   "subtype": "injury and treatment",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "health information about a person"
+  },
+  {
+   "value": "tmrw the 9th",
+   "category": "date",
+   "subtype": "informal next-day reference",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "date tied to a person or matter"
+  },
+  {
+   "value": "$16.25",
+   "category": "money_amount",
+   "subtype": "hourly rate",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "confidential financial detail"
+  },
+  {
+   "value": "1511",
+   "category": "ssn",
+   "subtype": "last four digits only",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "government identifier unique to a person"
+  },
+  {
+   "value": "$tavi_L",
+   "category": "credential",
+   "subtype": "payment app handle",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "login secret or account handle"
+  }
+ ],
+ "distractors": [
+  "TDI-45"
+ ],
+ "reviewed_not_sensitive": [
+  "4",
+  "6",
+  "6:12",
+  "6:15",
+  "6:16",
+  "9:40",
+  "9:44",
+  "9:45",
+  "9:47",
+  "NOW",
+  "PM",
+  "Screenshots"
+ ]
+}

@@ -1,0 +1,159 @@
+{
+ "id": "doc-097",
+ "file": "docs/doc-097.txt",
+ "format": "txt",
+ "title": "Pharmacy counter note - early refill",
+ "doc_type": "pharmacy note",
+ "audience": "health",
+ "jurisdiction": "US",
+ "word_count": 47,
+ "items": [
+  {
+   "value": "6620417-03",
+   "category": "record_number",
+   "subtype": "prescription number",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "record identifier that links to a person or matter"
+  },
+  {
+   "value": "warfarin 2.5 mg",
+   "category": "health_info",
+   "subtype": "medication and dose",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "health information about a person"
+  },
+  {
+   "value": "E. Kowalczuk",
+   "category": "person_name",
+   "subtype": "initial + surname",
+   "occurrences": 1,
+   "entity": "p1",
+   "canonical": "Edith Kowalczuk",
+   "variant": "short",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "93 y/o",
+   "category": "age_over_89",
+   "subtype": "abbreviated age",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "extreme age is identifying"
+  },
+  {
+   "value": "4/9/33",
+   "category": "date_of_birth",
+   "subtype": "two-digit year",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "birth date identifies a person"
+  },
+  {
+   "value": "Dr. Patel",
+   "category": "person_name",
+   "subtype": "title + surname",
+   "occurrences": 1,
+   "entity": "p3",
+   "canonical": "Vikram Patel",
+   "variant": "title-surname",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "555-0115",
+   "category": "phone",
+   "subtype": "seven digits, no area code",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "direct contact detail"
+  },
+  {
+   "value": "INR 3.4",
+   "category": "health_info",
+   "subtype": "lab result",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "health information about a person"
+  },
+  {
+   "value": "10/28",
+   "category": "date",
+   "subtype": "date without year",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "date tied to a person or matter"
+  },
+  {
+   "value": "Marlene",
+   "category": "person_name",
+   "subtype": "first name only",
+   "occurrences": 1,
+   "entity": "p2",
+   "canonical": "Marlene Kowalczuk",
+   "variant": "first-name",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "$11.40",
+   "category": "money_amount",
+   "subtype": "money amount",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "confidential financial detail"
+  },
+  {
+   "value": "6379",
+   "category": "payment_card",
+   "subtype": "last four only",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "payment card number"
+  },
+  {
+   "value": "pt lives alone",
+   "category": "indirect_identifier",
+   "subtype": "living situation",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "identifies someone by context"
+  }
+ ],
+ "distractors": [
+  "INR",
+  "OK'd"
+ ]
+}

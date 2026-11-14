@@ -1,0 +1,58 @@
+MEETING NOTES -- PRIVILEGED & CONFIDENTIAL / ATTORNEY WORK PRODUCT
+Ibarra Kettleman LLP                      Matter No. 2026-0417-CORP
+Date: 9/22/2026 (Tues.), 10:00-11:35 a.m., our Bozeman office
+Present: Hunter Abernathy-Sloane (client); Georgia Sloane (spouse, by phone,
+first 20 min only); Soledad Ibarra (SI); Billy Tran, paralegal (notes)
+
+1. Background
+Hunter owns 70% of Three Forks Millwork & Cabinet Co. ("Three Forks" or "TFM"), a
+Montana S corp, EIN 81-4472093. The other 30% sits in the Estate of Wade R. Abernathy --
+Hunter's older brother, who died 02/11/2025. Wade's widow, Marisol Abernathy, is
+personal rep (Gallatin County probate, Cause No. DP-25-0193). Hunter says
+Marisol "will sign anything if the check clears." SI wants her separately represented
+and told him so twice.
+
+Reason for selling, per Hunter (NOT to be shared with buyer): he had a stent placed in June
+and his cardiologist wants him off the shop floor. Georgia confirmed; she keeps the
+books and is ready to be done.
+
+2. The offer
+Buyer is Ridgeline Building Products Holdings, Inc. ("Ridgeline"), Boise. LOI dated
+August 28, 2026. Headline price $6.4 million:
+   - $5,150,000 cash at close
+   - $750k seller note, 6%, five years, subordinated to Ridgeline's senior lender
+   - earn-out up to $500,000 on 2027 EBITDA
+   - working capital peg $1.1MM; 10% escrow ($640,000) for 18 months
+Structure: stock sale with a Section 338(h)(10) election. Buyer wants a Form 8594-style
+allocation schedule anyway (IRC § 1060 by analogy). Target close Nov. 30, 2026.
+Code name on all buyer paper is "Project Larch".
+
+Buyer's counsel: Preston Achebe, Esq., Lowell & Achebe PLLC, pachebe@lowellachebe.example,
+208.555.0164. Mr. Achebe has already asked for three years of returns.
+
+3. Real estate
+Shop and yard at 4410 Frontage Road, Belgrade, MT 59714 are NOT in the company. Title
+is in H&G Sloane Properties, L.L.C. (Hunter and Georgia, 50/50). Ridgeline wants a 10-year
+lease at $14,500/mo with an option to buy. Hunter would rather sell the dirt outright.
+
+4. Debt / guaranty
+First Gallatin Bank & Trust line of credit, Loan No. 7700-218845, balance about
+$412,000. Hunter signed a personal guaranty; Wade did too, so the estate is on the hook.
+First Gallatin needs for the release: Hunter DOB 7/4/1963, SSN xxx-xx-5222, MT driver's
+license 0704196341207. Payoff wire goes to ABA 119762284, acct 0048-771-9023.
+
+5. People issues
+Dmitri Vasquez-Koval is the only CNC programmer they have. Ridgeline will want a
+retention agreement. Hunter mentioned, quietly, that Dmitri is on a TPS work permit
+that runs out 3/2027. SI: do not volunteer, do not conceal; goes in the disclosure
+schedule if asked. Hunter wants Dmitri to get $38,000 out of proceeds as a thank-you.
+
+6. Data room
+Ridgeline opened one at https://dataroom.ridgelinebp.example/project-larch. Hunter's login is
+hsloane_tfm, temp password Larch!2026#mw (told him to change it today).
+
+To do
+- SI: engagement letter + conflict waiver re estate; call Mr. Achebe re exclusivity (45 days?)
+- Billy: order UCC and lien searches; calendar LOI expiry
+- Hunter: send 2023-2025 returns and the equipment list. Cell (406) 555-0119,
+  hunter@threeforksmillwork.example

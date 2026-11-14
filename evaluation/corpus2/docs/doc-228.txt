@@ -1,0 +1,52 @@
+DISTRICT COURT, ARAPAHOE COUNTY, COLORADO
+Case Number: 2025CV031447          Division: 204
+
+Plaintiff:   ROSALVA ZUBIRI
+v.
+Defendants:  HARTWELL RIDGE PROPERTY MANAGEMENT, LLC, and DEVON PETROV, individually
+
+Attorney for Plaintiff:
+Thandiwe Dlamini, Atty. Reg. # 48817
+Dlamini Kapoor LLC, 5350 S. Roslyn St., Ste. 310, Greenwood Village, CO 80111
+Phone 720-555-0137   Fax 720-555-0138   tdlamini@dlaminikapoor.example
+
+                    SUBPOENA TO PRODUCE (C.R.C.P. 45)
+
+TO:  (1) Custodian of Records, Sagelark Wireless, Inc., Subpoena Compliance, fax 866-555-0109
+     (2) Custodian of Records, Aspen Gold Bank, Legal Process Unit, PO Box 17730, Denver, CO 80217
+
+YOU ARE ORDERED to produce the records described in Exhibit A (to Sagelark) and Exhibit B (to the Bank) at the
+office of Plaintiff's counsel above on or before December 5, 2025 at 10:00 a.m. Production by
+secure upload with a records affidavit under Colorado Rules of Evidence 902(11) is accepted in place of appearance.
+
+EXHIBIT A -- Sagelark Wireless
+For the period March 1, 2025 through July 31, 2025, for the account of subscriber
+Devon Petrov, account no. SW-9920-417736, and each line on it, including:
+   (303) 555-0172   (believed to be Mr. Petrov's personal line)
+   303-555-0198     (believed to be the on-call maintenance line for Hartwell Ridge)
+1. Subscriber and billing records, including the name, address and payment method on file.
+2. Call and text detail records (date, time, duration, numbers). Content of messages is NOT requested; see the
+   Stored Communications Act, 18 U.S.C. § 2702.
+3. Device history for each line, including the device with IMEI 35 364581 477864 8 and any SIM
+   change (ICCID 8901260882317764051).
+4. IP session logs showing the addresses assigned to those lines on June 14, 2025 between 9 p.m. and
+   midnight, and the subscriber to whom 198.51.100.77 and 2001:db8:4c0:1a2::9f were assigned at 10:42 p.m.
+   that night.
+
+EXHIBIT B -- Aspen Gold Bank
+For the period 01/01/2024 to 09/30/2025:
+1. Statements, signature cards and deposit items for the Hartwell Ridge "Tenant Security Deposits" account
+   no. 4400 7718 2093 (routing 117139563) and operating account ending -5561.
+2. Records of every transfer from either account to any account held by Devon Petrov, including the
+   personal checking account ending in 0339.
+3. The deposit record and both sides of cashier's check no. 7002214 for $2,850.00, which Plaintiff
+   paid as a security deposit for 9841 E. Girard Ave., Unit 12B, Aurora, on 11/02/2023.
+
+Plaintiff alleges that her deposit was diverted and that, after she complained, Mr. Petrov sent her
+threatening messages that referred to her immigration case. A protective order under C.R.C.P. 26(c) covers
+anything produced. Witness fee of $15.00 per C.R.S. § 13-25-126 is tendered with service.
+
+Date: November 12, 2025                 /s/ T. Dlamini
+
+RETURN OF SERVICE: served on Sagelark by fax and on the Bank by hand, 11/13/25, by Gareth Sinclair,
+Mile High Legal Couriers. Fee $95. Questions about scope: Ms. Dlamini's paralegal, ext. 214.

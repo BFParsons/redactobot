@@ -1,0 +1,38 @@
+From: Nikhil Jagannathan <support@greenbriermit.example>
+To: Marguerite Tollefsen <mtollefsen@tollefsenruffin.example>
+Subject: [Ticket #GB-204418] RE: Stan can't get into Lacerte from home
+Date: Tue, 11 Nov 2025 15:37:52 -0500
+Message-ID: <doc-352.20261113@mail.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+Hi Marguerite,
+
+Summary of what we found and did today on ticket #GB-204418. Please keep this email out of the shared mailbox since it has credentials in it.
+
+1) Why Stan was locked out
+His VPN account (sruffin) was locked after 14 failed sign-ins between 02:10 and 02:31 this morning. They were not him. The attempts came from 198.51.100.19 and 198.51.100.23, which are not addresses he has ever used. His normal home address is 203.0.113.77.
+
+2) What I changed
+- Unlocked the account and set a temporary password: Maple-Tax-7741! (he must change it at first sign-in).
+- Turned on the authenticator app requirement for all three partners. Enrollment link: https://vpn.tollefsenruffin.example/enroll
+- Closed RDP on the firewall (FortiGate 60F, serial FGT60FTK2204418). It had been open to the internet on the office address, 203.0.113.30, since the old provider set it up.
+- The tax server, TR-TAX01 (10.20.0.5, Windows Server 2022), now only accepts connections from the VPN range.
+
+3) Things I need from you
+- Stan's laptop is not in our inventory. Ask him for the serial, or the MAC address from the sticker. The one that connected last night from his house showed as A4:5E:60:C1:44:18, host name STANS-MACBOOK. Is that a personal machine? Client returns should not be on it.
+- Your written security plan (WISP) under IRS Publication 4557 still lists Stanley Ruffin as the security coordinator. He told me on the phone he "doesn't do computers." Someone else should be named.
+- Approval for the quote to replace the server backup drive: $1,140.00 plus two hours at $145.
+
+4) Did they get in?
+I do not think so. No successful sign-in from the unknown addresses, and the Lacerte audit log shows no activity overnight. But the password he was using, Ruffin1958, is his surname and what I assume is his birth year, and he confirmed he uses it for his email as well. Treat it as burned everywhere. If client data had been reached you would have reporting duties; right now you do not.
+
+Call me on 304-555-0147 if anything looks odd.
+
+Nikhil
+Greenbrier Managed IT
+
+---- Marguerite Tollefsen wrote on 11/11/2025 8:02 AM ----
+Nikhil - Stan called me at 7 this morning, he can't get into the tax software from home and he has the Hatfield-Combs return due. He says it "just says locked." He's at 304.555.0163. Can you look first thing? Our office is 1018 Kanawha Blvd E, Suite 300, Charleston, WV 25301 if you need to come by. - MT
+Tollefsen Ruffin & Associates, CPAs

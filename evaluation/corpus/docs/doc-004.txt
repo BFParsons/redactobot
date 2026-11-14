@@ -1,0 +1,132 @@
+DEPOSITION SUMMARY (PAGE:LINE)                         PRIVILEGED -- PREPARED FOR TRIAL COUNSEL
+
+Case:        Kowalczyk v. Brightpath Home Care, LLC, et al.
+Court:       Court of Common Pleas, Westmoreland County, Pa., No. 2025-CV-03381
+Deponent:    WALTER J. KOWALCZYK (Plaintiff)
+Taken:       February 24, 2026, 9:42 a.m. - 2:15 p.m., at the offices of O'Brien & Stanek, P.C.,
+             35 West Pittsburgh Street, 2nd Fl., Greensburg, PA 15601
+Noticed by:  Defendants, under Pa.R.C.P. 4007.1
+Appearances: Colleen O'Brien, Esq. (for Plaintiff); Sanjay Venkataraman, Esq., Venkataraman Lowe LLP
+             (for Brightpath Home Care, LLC); no appearance for Defendant Mullins (pro se, served)
+Reporter:    Marlene Fitch, RPR
+Summarized by: jdl, 3/2/26            Our file: OS-25-0447
+
+NOTE FOR CO'B: witness tired noticeably after lunch (see 118:4 onward). He is a
+good witness on the big points. Weak spots flagged with **.
+
+-----------------------------------------------------------------------------------------
+PAGE:LINE     SUMMARY
+-----------------------------------------------------------------------------------------
+5:1-7:20      Background. Deponent is ninety-one years old, born August 3, 1934 in Monessen.
+              Has lived alone at 212 Sycamore St., Latrobe, since his wife Irene died
+              on 11/2/2019. Everyone calls him "Buddy." One child, Barbara Kowalczyk-Greene
+              ("Babs"), who lives in Scottsdale with her husband Dennis Greene.
+
+8:1-10:14     Work history. 38 years as a millwright; receives a union pension through
+              Steel & Tin Workers Local 1408 of $1,412 a month plus Social Security of
+              $2,236. Both are direct-deposited to Monongahela Valley Federal Credit Union
+              ("Mon Valley FCU"), where he has banked "since Eisenhower."
+
+10:15-13:6    Health. Has macular degeneration (cannot read small print without a
+              magnifier), wears hearing aids, takes warfarin and a "water pill." PCP is
+              Dr. Hye-Jin Park at Chestnut Ridge Medical Center. Denies any memory
+              problem. ** Admits Dr. Park gave him "the clock test" last fall and told
+              him he had mild cognitive impairment; he disagrees with that.
+
+13:7-19:22    Hiring Brightpath. After a fall in March 2025 he spent four days at
+              Chestnut Ridge. Babs arranged home care by phone from Arizona. Contract
+              signed April 1, 2025 (Exhibit 3): three visits a week at $34.50 an hour.
+              Brightpath assigned Tiffany-Rae Mullins. He liked her; "she was like a
+              granddaughter." She started driving him to Mass at St. Stanislaus on Sundays
+              in his Buick.
+
+20:1-27:9     Access to finances. By June Ms. Mullins was picking up his mail and
+              "helping with the bills." He gave her his debit card to buy groceries and
+              told her the PIN, 0834 ("my birthday, so I don't forget it").
+              Card number per Exhibit 5: 4989 4186 6411 9402, exp. 09/27. He kept his
+              online banking password on a sticky note on the refrigerator; he recited it
+              as Polka1934! and his user name as buddyk34.
+              ** Concedes he never told her NOT to use the card for herself.
+
+27:10-41:3    The withdrawals. Shown Exhibit 7 (statements for share draft account
+              00-4471-208816). Does not recognize:
+                - 31 ATM withdrawals, May 29 through Sept. 30, 2025, totaling $15,340;
+                - check no. 3318 for $9,800.00 payable to "T. Mullins", memo "loan";
+                - check no. 3321 for $4,250 to Laurel Highlands Coin & Jewelry;
+                - an online transfer of $22,000 on 10/14/25 to an account ending 7706.
+              Signature on 3318 "looks like mine but I never wrote that." Denies ever
+              lending money to Tiffany. ** On cross-check with 34:11, he first said he
+              "might have helped her with her car once," then said that was fifty dollars
+              for gas.
+
+41:4-48:16    The new phone. In August Ms. Mullins bought him a smartphone "so Babs could
+              see me on the video." He does not know how to use it for banking. Exhibit 9
+              (credit union device log) shows the mobile app was enrolled on 8/19/2025 from
+              a phone with IMEI 35 693803 564380 9, and that later logins came from IP
+              addresses 198.51.100.23 and 2001:db8:4c2:91::1f. He has no internet at the house.
+              His own number is 724-555-0142; the app was registered to (724) 555-0190,
+              which he does not recognize.
+
+48:17-55:2    Discovery of the loss. On October 20, 2025, teller Chase Dombrowski at the
+              Latrobe branch asked him about the $22,000 transfer when he came in for
+              cash. "Chase turned the screen around and I about fell over." Balance
+              was $611.08; a year earlier it had been "over sixty thousand."
+              He called Barbara from the branch.
+
+55:3-63:18    Aftermath. Babs flew in on Oct. 22. Police report made to Latrobe PD,
+              Det. Ray Santangelo, incident no. 25-LP-009214. Mon Valley FCU
+              fraud claim no. FRD-2025-11873 denied in part because the PIN was
+              "voluntarily shared." Brightpath terminated Ms. Mullins 10/24/2025.
+              He understands she has been charged (18 Pa.C.S. § 3921) and that she has
+              a prior theft conviction from Fayette County that the agency missed.
+
+63:19-71:5    What Brightpath knew. He complained twice to the scheduler that Tiffany
+              came on days she wasn't scheduled and brought her boyfriend, Kyle. No one
+              called back. ** Cannot give dates. Thinks one call was "around the
+              Fourth of July." Brightpath's office number, which he dialed from memory:
+              724 555 0117.
+
+71:6-80:12    Church and giving. Father Zielinski of St. Stanislaus Kostka Parish visited
+              weekly. Deponent tithes $40 a week by envelope and denies
+              authorizing the $1,500 online gift to the parish roof fund on Exhibit 7
+              ("I'd have done it by check"). Venkataraman pressed on whether deponent
+              gives money away freely; he also gave $200 to the county Democratic committee
+              in 2024 "like every election year."
+
+80:13-96:7    Damages. Total he believes was taken: $52,890 (matches our schedule).
+              Has had trouble sleeping, lost eleven pounds, stopped going to the
+              Tuesdays card game at the union hall because he is "ashamed." Dr. Park
+              started him on mirtazapine 15 mg in November. Babs now pays his
+              bills remotely; he resents it.
+
+96:8-117:20   Cross by Mr. Venkataraman. Established: (a) deponent signed the Brightpath
+              service agreement without reading the "no financial assistance" clause,
+              could not read it without his magnifier; (b) he gave Ms. Mullins a
+              Christmas card with $100 cash in 2024 -- before she was assigned to him,
+              when she cared for a neighbor; (c) he told Babs in July everything was
+              "fine"; (d) he could not name the current month without prompting
+              (objection, O'Brien; he then answered correctly).
+
+118:4-131:2   ** After lunch. Confused Exhibit 5 with Exhibit 7. Said the debit card
+              "ends in 9402 or 4902." Said Irene "handles the checkbook," then corrected
+              himself. Ms. O'Brien requested a break at 124:15.
+
+              Asked about insurance: he has Medicare and a supplemental plan through
+              the Local, member no. STW-1408-00771; neither covered the home care, which
+              Babs paid from her own account ($1,656 for the first month). He also said
+              Ms. Mullins once drove him to Laurel Highlands "to look at Irene's rings" and
+              that he has not seen Irene's engagement ring since. He does not know
+              whether it was sold. (New fact; not in our complaint. Consider amending.)
+
+131:3-140:9   Redirect. Reaffirmed he never authorized any withdrawal over "grocery
+              money," never wrote check 3318, never used the app. Identified his own
+              signature exemplar (Exhibit 12). Read and sign reserved.
+
+-----------------------------------------------------------------------------------------
+FOLLOW-UP
+ 1. Subpoena carrier records for (724) 555-0190 -- likely Kyle Mullins.
+ 2. Get Dr. Park's chart; expect defense IME request on capacity. Retain geriatric psych.
+ 3. Ask Dombrowski for a statement before the credit union lawyers get to him.
+ 4. Form 1099-R for the pension shows the Local 1408 plan ID; redact before producing.
+ 5. Babs's contact for scheduling: babs.kg@desertmail.example, 480.555.0163.
+ 6. Errata sheet due 30 days after transcript; calendar for April 6, 2026.

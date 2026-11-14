@@ -1,0 +1,40 @@
+Kittering Tierney Chartered Professional Accountants
+File note -- HST audit, Saltfleet Marine Canvas & Upholstery Ltd. ("Saltfleet")
+Our file KT-0937        BN 84417 2290 RT0001        CRA case GA-2511-4470-9
+
+Meeting 14 November 2025, 10:00, at the shop, 41 Wharf Road, Bay 3, Dartmouth NS B2Y 3Z8
+Attendees: Lucien Arsenault (owner), Maeve Tierney CPA (MT), CRA auditor Priyanka Venugopal
+(Halifax Tax Centre, 902-555-0148 ext. 4417, priyanka.venugopal@taxcentre.example).
+
+Audit period: 2023-01-01 to 2024-12-31, quarterly filer. Payroll (RP0001) and corporate (RC0001) accounts
+under the same BN are not in scope, although she asked for the T2 schedules.
+
+1. Vehicle. 2021 Ford F-150, plate GXK 418, VIN 1FTFW1E87MKD40193. 100% of fuel and repair ITCs were
+   claimed. No logbook. Lucien estimates 62% business. Auditor will allow 62% if he reconstructs a log from
+   the job calendar; otherwise she proposes 50%. ITCs at risk about $3,180.
+
+2. Personal charges on the company Visa. Two cards on the account: the one ending 3360 is Lucien's and
+   the one ending 2060 is carried by his wife, Odette Arsenault, who is not an employee. Auditor
+   pulled 38 charges on Odette's card (Costco, a Florida condo rental Feb 2024, her physiotherapy)
+   totalling C$11,942.17 on which HST of 1,557.67 was claimed. Denied under subsection 169(1) of
+   the Excise Tax Act. MT conceded. These also need to go through the shareholder loan -- subsection 15(2)
+   of the Income Tax Act exposure if not repaid by Dec. 31, 2025.
+
+3. Imports. Zephyr Sailcloth Imports Inc. invoices ZS-20418 and ZS-20455 (C$8,400.00 and C$6,115.50)
+   show no HST number. Supplier's BN per Lucien is 70219 5548 RT0001; auditor will verify on the registry.
+
+4. Unreported sale. Deposit of $23,000.00 on June 6, 2024 from Eastern Passage Yacht Club (EPYC) for the
+   clubhouse awnings was booked to shareholder loan. Commodore Dougal Fitzroy confirmed by email it was
+   a progress payment. HST collectible $3,000.00 -- included in the price, so it is 15/115. Auditor is
+   considering a section 285 gross negligence penalty; MT argued bookkeeping error, the
+   former bookkeeper was Lucien's sister-in-law and left in Q3.
+
+Bank: Fundy Tidal Credit Union, transit 00417, institution 839, chequing 2204418. Auditor wants
+statements for Dec 2024 and written confirmation that there is no second account.
+
+Owner details she took for the file: Lucien Arsenault, SIN 499 743 706, home 9 Shore Drive,
+Eastern Passage, NS B3G 1M4, cell 902 555 0117.
+
+Proposed assessment (auditor's draft, before interest): $7,737.67 plus penalty to be decided.
+Next: logbook and Form RC59 to Ms. Venugopal by 28 Nov. MT to draft representation letter.
+Mrs. Arsenault to return her card. Fee estimate to client $2,400 plus HST.

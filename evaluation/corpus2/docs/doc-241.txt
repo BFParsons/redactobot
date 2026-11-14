@@ -1,0 +1,82 @@
+Veldhoek Fietsen & Outdoor B.V.
+Privacy Office / Functionaris Gegevensbescherming
+Croeselaan 318, 3521 CG Utrecht, Nederland
+KvK 70418829 - BTW NL861204733B01
+
+BY REGISTERED POST AND E-MAIL                                   Utrecht, 7 April 2026
+Our ref: DSAR-2026-0193            Your ref: your e-mail of 11 March
+
+Frau Annelies Terpstra
+Lindenthalgürtel 48
+50935 Köln
+Deutschland
+a.terpstra84@postfach.example
+
+Subject: Your request for access under Article 15 GDPR
+
+Dear Ms Terpstra,
+
+You asked us on 11 March for a copy of the personal data we hold about you. We
+confirmed your identity by telephone on 18.03.2026 (call taken by Fenna Zuidema of
+customer service, who rang you back on +49 221 5550 187). This letter is our
+response under Regulation (EU) 2016/679. It is sent within the one-month period of
+Art. 12(3); we did not need the extension.
+
+1. Who we are. Veldhoek is the controller. Our Data Protection Officer is
+Joris Hendrickx (fg@veldhoek-fietsen.example, 030 555 0142). Outside counsel,
+Kruisberg Advocaten N.V., reviewed the annexes; mr. Hendrickx signs for us.
+
+2. What we hold (full export in Annex A, 24 pages).
+
+   Identity and contact   customer no. K-4471902; name; date of birth 23-09-1984;
+                          the Köln address above and your previous address,
+                          Oudegracht 211 bis, 3511 NH Utrecht (until August 2023);
+                          mobile 0049 171 5550 163; German tax ID you gave us for the
+                          lease-bike invoice, 48 205 916 374.
+   Online account         username annelies_t84, created 2 June 2019. We store only a
+                          salted hash of your password, not the password itself.
+   Orders                 14 orders between 2019 and 26 February 2026, most recently order
+                          VF-2026-118834 (Trekking E-bike, € 3.249,00) and the return of
+                          RMA-55120, refunded EUR 189,95 on 03.03.2026.
+   Payment                SEPA mandate VFM-000482771 on IBAN DE71 0539 3195 1175 4199 10
+                          (BIC GENODED1SPR, Sparda-Genossenschaftsbank Rheinland eG); a Mastercard stored as
+                          5553 18** **** 0072, expiry 11/27. We never hold the security code.
+   Customer-service notes 6 entries. One, dated 9 January 2026, records that you returned the
+                          saddle because of a knee replacement last autumn. See point 5.
+   Marketing              newsletter consent given 2 June 2019, withdrawn 14-01-2026; loyalty
+                          card 6340 0091 7725 4418 with 1.240 points.
+
+3. Technical data (Annex B). Our web shop and app logged:
+   - sign-ins from 203.0.113.47 (Köln, 31 times), 198.51.100.212 (Utrecht, until 2023)
+     and once from 2001:db8:4c1a:9e::2f on 22 December 2025;
+   - app installation ID 7f3c1a9e-52b0-4d1e-9a6f-0c2e81d4b7a3 on a Google Pixel 8a
+     (Android 15), advertising ID c41d77e0-9b2a-4f6e-8d35-1a60b2f9e4c8, and an older
+     phone with IMEI 35 738055 554584 2 that we recorded for the theft-insurance add-on;
+   - the frame number of your bike, WVF24T0381176, and the serial of its
+     battery, BT-E8036-22K4417;
+   - Wi-Fi MAC 9c:2e:a1:4f:07:d3 seen by the in-store network in our Utrecht shop.
+
+4. Recipients. Delivery data went to Postillon Pakketdienst B.V. (tracking
+3SPOST881204417). Warranty work was passed to our German service partner
+Brückner Zweiradtechnik, Aachener Straße 1120, Köln (Matthias Brückner,
+m.brueckner@brueckner-zweirad.example). Herr Brückner holds only your name, phone and frame number.
+
+5. The health remark. The service note about your knee should not have been
+written down. It was not needed for the return (Art. 6(1)(b)) and we had no
+basis to keep health data. We erased the sentence on 1 April 2026; the
+unredacted note is shown to you once, in Annex C, so you can see what was held.
+No other record mentions your health, and the profile label "lives alone, 40-45, no car"
+has been deleted from our marketing system as well.
+
+6. Your rights. You may ask for rectification (Article 16) or erasure (Article 17),
+and you may complain to the Autoriteit Persoonsgegevens or to the authority in
+Nordrhein-Westfalen.
+
+A secure copy of the annexes is at
+https://privacy.veldhoek-fietsen.example/dsar/DSAR-2026-0193 ; the one-time
+access code VH-7Q2M-K9XD was sent by SMS to the number ending 0163.
+
+Kind regards,
+
+J. Hendrickx
+Data Protection Officer

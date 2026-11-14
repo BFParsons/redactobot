@@ -1,0 +1,170 @@
+{
+ "id": "doc-034",
+ "file": "docs/doc-034.txt",
+ "format": "txt",
+ "title": "Bookkeeper's handover note left for a colleague",
+ "doc_type": "bookkeeper note",
+ "audience": "accounting",
+ "jurisdiction": "CA",
+ "word_count": 71,
+ "items": [
+  {
+   "value": "francine",
+   "category": "person_name",
+   "subtype": "first name in lower case",
+   "occurrences": 1,
+   "entity": "p1",
+   "canonical": "Francine Beaulieu-Roy",
+   "variant": "first-name",
+   "difficulty": "hard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "sokolov auto glass",
+   "category": "organization_name",
+   "subtype": "company name in lower case",
+   "occurrences": 1,
+   "entity": "o1",
+   "canonical": "Sokolov Auto Glass Inc.",
+   "variant": "short",
+   "difficulty": "hard",
+   "why": "identifies a client, party or organization"
+  },
+  {
+   "value": "84417 2290 RT0001",
+   "category": "tax_id",
+   "subtype": "Canadian business number",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "tax identifier unique to a person or business"
+  },
+  {
+   "value": "dsokolov_bn",
+   "category": "credential",
+   "subtype": "username",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "login secret or account handle"
+  },
+  {
+   "value": "Windshield#88",
+   "category": "credential",
+   "subtype": "password",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "login secret or account handle"
+  },
+  {
+   "value": "dmitri",
+   "category": "person_name",
+   "subtype": "first name in lower case",
+   "occurrences": 1,
+   "entity": "p2",
+   "canonical": "Dmitri Sokolov",
+   "variant": "first-name",
+   "difficulty": "hard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "$4,212.60",
+   "category": "money_amount",
+   "subtype": "money amount",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "confidential financial detail"
+  },
+  {
+   "value": "Oct 6",
+   "category": "date",
+   "subtype": "abbreviated date without year",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "date tied to a person or matter"
+  },
+  {
+   "value": "4671 8642 8966 2024",
+   "category": "payment_card",
+   "subtype": "card number with spaces",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "payment card number"
+  },
+  {
+   "value": "03/28",
+   "category": "card_expiry",
+   "subtype": "card expiry",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "payment card detail"
+  },
+  {
+   "value": "517",
+   "category": "card_security_code",
+   "subtype": "card security code",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "payment card detail"
+  },
+  {
+   "value": "214-930-521",
+   "category": "tax_id",
+   "subtype": "SIN with dashes",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "tax identifier unique to a person or business"
+  },
+  {
+   "value": "(204) 555-0158",
+   "category": "phone",
+   "subtype": "phone",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "direct contact detail"
+  },
+  {
+   "value": "Brandon",
+   "category": "place",
+   "subtype": "city name that is also a first name",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "locates the person or matter"
+  }
+ ],
+ "distractors": [
+  "GST34",
+  "Q3"
+ ]
+}

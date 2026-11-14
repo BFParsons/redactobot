@@ -1,0 +1,27 @@
+{
+  "frozen_at_utc": "2026-11-12T15:09:46.573792+00:00",
+  "experiment_source_sha256": "d86d741ba8feb2802d47aacaad5c9f8d1f09f4d1b6a8ebd05368913b062ec521",
+  "development_corpora": [
+    1,
+    3
+  ],
+  "validation_corpus": 2,
+  "selected_variant_before_validation": "combined",
+  "primary_metric": "fully covered annotated core occurrences using enabled replacements only",
+  "success_checks": [
+    "at least one additional fully covered core occurrence",
+    "zero previously covered core occurrences regressed",
+    "extra-replacement rate increases by no more than 0.25 percentage points"
+  ],
+  "limits": [
+    "saved model replay; no fresh inference or import",
+    "no individual corpus 2 miss inspection or tuning",
+    "document-cluster bootstrap is descriptive on reused synthetic data",
+    "all variants retained, including null and adverse results"
+  ],
+  "typecheck_only_revision": {
+    "original_source_sha256": "d86d741ba8feb2802d47aacaad5c9f8d1f09f4d1b6a8ebd05368913b062ec521",
+    "final_source_sha256": "1634c2f9d8e22641c5c5054bb9d3e36a2cd07916fb964b082196b58549d3ce57",
+    "change": "Non-null assertion on words[0] after existing words.length check. TypeScript-only edit; no runtime logic or rule changes after validation."
+  }
+}

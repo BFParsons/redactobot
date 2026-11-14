@@ -1,0 +1,411 @@
+{
+ "run": "baseline",
+ "split": "all",
+ "documents": 100,
+ "not_run": [],
+ "import_failures": [],
+ "chunks": 182,
+ "chunk_errors": 0,
+ "model_seconds": 2839,
+ "caught_all": 4040,
+ "total_all": 7002,
+ "caught_built": 3971,
+ "total_built": 5777,
+ "caught_not_built": 69,
+ "total_not_built": 1225,
+ "caught_built_pattern_only": 2214,
+ "caught_new": 68,
+ "total_new": 654,
+ "caught_none": 1,
+ "total_none": 571,
+ "by_category": {
+  "person_name": {
+   "caught": 1174,
+   "partial": 89,
+   "missed": 308,
+   "lost": 0,
+   "total": 1571
+  },
+  "money_amount": {
+   "caught": 645,
+   "partial": 31,
+   "missed": 163,
+   "lost": 65,
+   "total": 904
+  },
+  "organization_name": {
+   "caught": 583,
+   "partial": 79,
+   "missed": 96,
+   "lost": 0,
+   "total": 758
+  },
+  "date": {
+   "caught": 480,
+   "partial": 48,
+   "missed": 92,
+   "lost": 88,
+   "total": 708
+  },
+  "place (new detector)": {
+   "caught": 62,
+   "partial": 1,
+   "missed": 464,
+   "lost": 0,
+   "total": 527
+  },
+  "record_number": {
+   "caught": 120,
+   "partial": 68,
+   "missed": 196,
+   "lost": 0,
+   "total": 384
+  },
+  "health_info (no detector)": {
+   "caught": 0,
+   "partial": 5,
+   "missed": 312,
+   "lost": 0,
+   "total": 317
+  },
+  "phone": {
+   "caught": 220,
+   "partial": 21,
+   "missed": 2,
+   "lost": 0,
+   "total": 243
+  },
+  "email": {
+   "caught": 149,
+   "partial": 0,
+   "missed": 3,
+   "lost": 0,
+   "total": 152
+  },
+  "street_address": {
+   "caught": 63,
+   "partial": 36,
+   "missed": 51,
+   "lost": 0,
+   "total": 150
+  },
+  "sensitive_attribute (no detector)": {
+   "caught": 1,
+   "partial": 13,
+   "missed": 133,
+   "lost": 0,
+   "total": 147
+  },
+  "postal_code": {
+   "caught": 106,
+   "partial": 4,
+   "missed": 26,
+   "lost": 0,
+   "total": 136
+  },
+  "bank_account": {
+   "caught": 46,
+   "partial": 13,
+   "missed": 60,
+   "lost": 0,
+   "total": 119
+  },
+  "indirect_identifier (no detector)": {
+   "caught": 0,
+   "partial": 19,
+   "missed": 88,
+   "lost": 0,
+   "total": 107
+  },
+  "government_id": {
+   "caught": 17,
+   "partial": 13,
+   "missed": 69,
+   "lost": 0,
+   "total": 99
+  },
+  "date_of_birth": {
+   "caught": 71,
+   "partial": 2,
+   "missed": 5,
+   "lost": 13,
+   "total": 91
+  },
+  "tax_id": {
+   "caught": 69,
+   "partial": 1,
+   "missed": 14,
+   "lost": 0,
+   "total": 84
+  },
+  "credential (new detector)": {
+   "caught": 3,
+   "partial": 6,
+   "missed": 63,
+   "lost": 0,
+   "total": 72
+  },
+  "payment_card": {
+   "caught": 43,
+   "partial": 1,
+   "missed": 26,
+   "lost": 0,
+   "total": 70
+  },
+  "ssn": {
+   "caught": 30,
+   "partial": 2,
+   "missed": 30,
+   "lost": 0,
+   "total": 62
+  },
+  "vehicle_id": {
+   "caught": 19,
+   "partial": 1,
+   "missed": 40,
+   "lost": 0,
+   "total": 60
+  },
+  "device_id (new detector)": {
+   "caught": 3,
+   "partial": 6,
+   "missed": 46,
+   "lost": 0,
+   "total": 55
+  },
+  "routing_number": {
+   "caught": 33,
+   "partial": 0,
+   "missed": 12,
+   "lost": 0,
+   "total": 45
+  },
+  "ip_address": {
+   "caught": 28,
+   "partial": 0,
+   "missed": 5,
+   "lost": 0,
+   "total": 33
+  },
+  "url": {
+   "caught": 30,
+   "partial": 1,
+   "missed": 0,
+   "lost": 0,
+   "total": 31
+  },
+  "card_expiry": {
+   "caught": 17,
+   "partial": 1,
+   "missed": 3,
+   "lost": 0,
+   "total": 21
+  },
+  "age_over_89": {
+   "caught": 0,
+   "partial": 8,
+   "missed": 12,
+   "lost": 0,
+   "total": 20
+  },
+  "iban": {
+   "caught": 20,
+   "partial": 0,
+   "missed": 0,
+   "lost": 0,
+   "total": 20
+  },
+  "card_security_code": {
+   "caught": 8,
+   "partial": 0,
+   "missed": 8,
+   "lost": 0,
+   "total": 16
+  }
+ },
+ "by_difficulty": {
+  "standard": {
+   "caught": 3273,
+   "partial": 267,
+   "missed": 533,
+   "lost": 140,
+   "total": 4213
+  },
+  "hard": {
+   "caught": 698,
+   "partial": 152,
+   "missed": 688,
+   "lost": 26,
+   "total": 1564
+  }
+ },
+ "by_variant": {
+  "full": {
+   "caught": 833,
+   "partial": 72,
+   "missed": 94,
+   "lost": 0,
+   "total": 999
+  },
+  "first-name": {
+   "caught": 327,
+   "partial": 0,
+   "missed": 38,
+   "lost": 0,
+   "total": 365
+  },
+  "short": {
+   "caught": 167,
+   "partial": 36,
+   "missed": 51,
+   "lost": 0,
+   "total": 254
+  },
+  "title-surname": {
+   "caught": 178,
+   "partial": 6,
+   "missed": 21,
+   "lost": 0,
+   "total": 205
+  },
+  "nickname": {
+   "caught": 83,
+   "partial": 2,
+   "missed": 54,
+   "lost": 0,
+   "total": 139
+  },
+  "surname": {
+   "caught": 82,
+   "partial": 0,
+   "missed": 29,
+   "lost": 0,
+   "total": 111
+  },
+  "initials": {
+   "caught": 11,
+   "partial": 0,
+   "missed": 72,
+   "lost": 0,
+   "total": 83
+  },
+  "last-first": {
+   "caught": 17,
+   "partial": 49,
+   "missed": 9,
+   "lost": 0,
+   "total": 75
+  },
+  "caps": {
+   "caught": 25,
+   "partial": 3,
+   "missed": 23,
+   "lost": 0,
+   "total": 51
+  },
+  "acronym": {
+   "caught": 34,
+   "partial": 0,
+   "missed": 13,
+   "lost": 0,
+   "total": 47
+  }
+ },
+ "by_format": {
+  "txt": {
+   "caught": 1572,
+   "partial": 146,
+   "missed": 506,
+   "lost": 0,
+   "total": 2224
+  },
+  "xlsx": {
+   "caught": 436,
+   "partial": 58,
+   "missed": 135,
+   "lost": 166,
+   "total": 795
+  },
+  "pdf": {
+   "caught": 550,
+   "partial": 56,
+   "missed": 183,
+   "lost": 0,
+   "total": 789
+  },
+  "docx": {
+   "caught": 420,
+   "partial": 45,
+   "missed": 125,
+   "lost": 0,
+   "total": 590
+  },
+  "eml": {
+   "caught": 361,
+   "partial": 42,
+   "missed": 99,
+   "lost": 0,
+   "total": 502
+  },
+  "html": {
+   "caught": 256,
+   "partial": 32,
+   "missed": 74,
+   "lost": 0,
+   "total": 362
+  },
+  "rtf": {
+   "caught": 130,
+   "partial": 10,
+   "missed": 37,
+   "lost": 0,
+   "total": 177
+  },
+  "md": {
+   "caught": 126,
+   "partial": 9,
+   "missed": 35,
+   "lost": 0,
+   "total": 170
+  },
+  "pptx": {
+   "caught": 120,
+   "partial": 21,
+   "missed": 27,
+   "lost": 0,
+   "total": 168
+  }
+ },
+ "by_audience": {
+  "accounting": {
+   "caught": 1608,
+   "partial": 185,
+   "missed": 529,
+   "lost": 166,
+   "total": 2488
+  },
+  "legal": {
+   "caught": 1654,
+   "partial": 148,
+   "missed": 468,
+   "lost": 0,
+   "total": 2270
+  },
+  "health": {
+   "caught": 382,
+   "partial": 51,
+   "missed": 140,
+   "lost": 0,
+   "total": 573
+  },
+  "general": {
+   "caught": 327,
+   "partial": 35,
+   "missed": 84,
+   "lost": 0,
+   "total": 446
+  }
+ },
+ "detections": 4727,
+ "extra_detections": 218
+}

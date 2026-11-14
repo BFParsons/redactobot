@@ -1,0 +1,16 @@
+# Formatter settings for the Python build and evaluation scripts (tools/,
+# evaluation/*.py). The Google Python Style Guide recommends Black or Pyink and
+# an 80-column limit. Nothing here is packaged or shipped.
+[tool.black]
+line-length = 80
+target-version = ["py311"]
+extend-exclude = '''
+/(
+    node_modules
+  | dist
+  | public
+  | evaluation/corpus[^/]*
+  | evaluation/results
+  | evaluation/experiments
+)/
+'''

@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "Redactobot",
+  "version": "0.3.0",
+  "minimum_chrome_version": "148",
+  "description": "Technology demo. Checks pastes locally on ChatGPT, Claude and Gemini and removes private details. Privacy policy: see Settings.",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {"default_title": "Redactobot settings"},
+  "background": {"service_worker": "background.js"},
+  "options_page": "options.html",
+  "permissions": ["storage", "offscreen"],
+  "host_permissions": [
+    "https://firebasevertexai.googleapis.com/*",
+    "https://firebaseappcheck.googleapis.com/*",
+    "https://content-firebaseappcheck.googleapis.com/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; worker-src 'self'; connect-src https://firebasevertexai.googleapis.com https://firebaseappcheck.googleapis.com https://content-firebaseappcheck.googleapis.com; img-src 'self' data:; object-src 'none'; base-uri 'none'"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["review.html"],
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*",
+        "https://claude.ai/*",
+        "https://gemini.google.com/*"
+      ]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*",
+        "https://claude.ai/*",
+        "https://gemini.google.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

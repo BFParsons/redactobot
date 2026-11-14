@@ -1,0 +1,104 @@
+<!doctype html>
+<!--
+  Copyright 2026 The Redactobot Authors
+  SPDX-License-Identifier: Apache-2.0
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="connect-src 'none'; form-action 'none'">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Redactobot settings</title>
+  <link rel="stylesheet" href="ui.css">
+</head>
+<body>
+  <main class="settings-page">
+    <span class="brand">Redactobot</span>
+    <h1>A quieter way to protect your pastes</h1>
+    <p>
+      Paste into ChatGPT, Claude or Gemini. Clear matches are removed before
+      the text enters the chat box. Uncertain details come to you for review.
+    </p>
+    <p>
+      The guard follows each site's light or dark appearance. It never sends a
+      message for you.
+    </p>
+
+    <h2 id="categories-heading">What to check</h2>
+    <p>
+      Choose what to remove from pasted text. These choices apply to ChatGPT,
+      Claude and Gemini, starting with your next paste. Unchecked categories
+      are left alone.
+    </p>
+    <fieldset id="paste-categories" disabled aria-labelledby="categories-heading">
+      <div class="category-presets">
+        <button id="categories-common" class="secondary" type="button">Common identifiers</button>
+        <button id="categories-all" class="secondary" type="button">All categories</button>
+      </div>
+      <div id="category-list"></div>
+    </fieldset>
+    <p id="category-status" role="status" aria-live="polite">Loading your choices…</p>
+
+    <h2>On-device scanning</h2>
+    <p id="status" role="status" aria-live="polite">Checking the model…</p>
+    <button id="prepare" class="primary">Prepare on-device AI</button>
+    <button id="test" class="secondary">Test a fictional paste</button>
+    <button id="test-general" class="secondary">Test a general paragraph</button>
+    <button id="test-500" class="secondary">Test a 500-word paste</button>
+    <p>
+      <button id="check-scanner" class="secondary">Check scanner status</button>
+    </p>
+    <p id="scanner-status" role="status"></p>
+    <label class="setting"><input type="checkbox" id="preload-startup">Load on-device AI when Chrome starts</label>
+    <p class="footnote">
+      Off: the model loads only when you switch Redactobot on in a chat tab,
+      which can take a minute or two after a break. On: Chrome loads it in the
+      background at startup, so switching on is quick. No text is read or sent
+      either way.
+    </p>
+
+    <h2>Show the Redactobot switch on</h2>
+    <p>
+      The switch sits under the chat box and starts off each time a page loads.
+      Switch it on to check pastes in that tab.
+    </p>
+    <label class="setting"><input type="checkbox" id="chatgpt" checked>ChatGPT</label>
+    <label class="setting"><input type="checkbox" id="claude" checked>Claude</label>
+    <label class="setting"><input type="checkbox" id="gemini" checked>Gemini</label>
+
+    <h2>Second privacy pass</h2>
+    <label class="setting"><input type="checkbox" id="cloud-cleanup">Use cloud cleanup after the local identity check</label>
+    <p>
+      Cloud cleanup requires <strong>All categories</strong>. Narrower
+      selections stay on this device. When enabled with all checks, a completed
+      local scan sends identity-scrubbed text through Firebase to Gemini to
+      remove remaining sensitive facts. Identifying uncertainty pauses for
+      review. This cannot guarantee anonymity.
+    </p>
+    <p id="cloud-status" role="status"></p>
+    <button id="test-cloud" class="secondary">Test cloud cleanup with fictional text</button>
+    <p class="footnote">
+      The connection test uses all categories and a fixed fictional sample,
+      regardless of your paste settings.
+    </p>
+
+    <h2>What this version covers</h2>
+    <p>
+      Text pasted into recognized message editors. Typing, file uploads and
+      image pastes are not scanned. Review important material yourself;
+      automatic detection can miss details.
+    </p>
+    <p class="footnote">
+      Pending pastes and identity mappings are held in extension memory and
+      cleared when the paste finishes, is canceled, or expires. Only your
+      preferences are saved. Chrome may download the AI model during setup.
+    </p>
+    <p class="footnote">
+      Redactobot is a technology demonstration, not a validated compliance
+      tool. Do not paste real sensitive data.
+      <a href="privacy.html" target="_blank" rel="noopener">Privacy policy and terms of use</a>
+    </p>
+  </main>
+  <script src="options.js"></script>
+</body>
+</html>

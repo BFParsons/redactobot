@@ -1,0 +1,210 @@
+{
+ "id": "doc-206",
+ "file": "docs/doc-206.txt",
+ "format": "txt",
+ "title": "One-time credit card authorization for tax preparation fees",
+ "doc_type": "payment authorization form",
+ "audience": "accounting",
+ "jurisdiction": "US",
+ "word_count": 64,
+ "items": [
+  {
+   "value": "Pruneda & Lamb Tax Service",
+   "category": "organization_name",
+   "subtype": "full name",
+   "occurrences": 1,
+   "entity": "o1",
+   "canonical": "Pruneda & Lamb Tax Service",
+   "variant": "full",
+   "difficulty": "standard",
+   "why": "identifies a client, party or organization"
+  },
+  {
+   "value": "Hyacinth Obuya",
+   "category": "person_name",
+   "subtype": "full name",
+   "occurrences": 1,
+   "entity": "p1",
+   "canonical": "Hyacinth Obuya",
+   "variant": "full",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "T-5582",
+   "category": "record_number",
+   "subtype": "client file number",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "record identifier that links to a person or matter"
+  },
+  {
+   "value": "CORNELIUS J OBUYA",
+   "category": "person_name",
+   "subtype": "name as embossed on card",
+   "occurrences": 1,
+   "entity": "p2",
+   "canonical": "Cornelius J. Obuya",
+   "variant": "caps",
+   "difficulty": "hard",
+   "why": "identifies a person",
+   "cardholder": true
+  },
+  {
+   "value": "5544 8942 4810 9413",
+   "category": "payment_card",
+   "subtype": "card number with spaces",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "payment card number"
+  },
+  {
+   "value": "11/27",
+   "category": "card_expiry",
+   "subtype": "card expiry",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "payment card detail"
+  },
+  {
+   "value": "306",
+   "category": "card_security_code",
+   "subtype": "card security code",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "payment card detail"
+  },
+  {
+   "value": "618 Tamarind Ct",
+   "category": "street_address",
+   "subtype": "street address",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "locates a person or business"
+  },
+  {
+   "value": "Yuma",
+   "category": "place",
+   "subtype": "city",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "locates the person or matter"
+  },
+  {
+   "value": "AZ",
+   "category": "place",
+   "subtype": "state abbreviation",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "locates the person or matter"
+  },
+  {
+   "value": "85364",
+   "category": "postal_code",
+   "subtype": "postal code",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "narrows location to a small area"
+  },
+  {
+   "value": "$385.00",
+   "category": "money_amount",
+   "subtype": "money amount",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "confidential financial detail"
+  },
+  {
+   "value": "4/2/26",
+   "category": "date",
+   "subtype": "numeric date with two-digit year",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "date tied to a person or matter"
+  },
+  {
+   "value": "$140",
+   "category": "money_amount",
+   "subtype": "money amount",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "confidential financial detail"
+  },
+  {
+   "value": "C. Obuya",
+   "category": "person_name",
+   "subtype": "initial + surname",
+   "occurrences": 1,
+   "entity": "p2",
+   "canonical": "Cornelius J. Obuya",
+   "variant": "short",
+   "difficulty": "standard",
+   "why": "identifies a person",
+   "cardholder": true
+  },
+  {
+   "value": "928-555-0173",
+   "category": "phone",
+   "subtype": "phone",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "direct contact detail"
+  }
+ ],
+ "distractors": [
+  "Form 1040",
+  "PCI DSS 3.2",
+  "Mastercard"
+ ],
+ "reviewed_not_sensitive": [
+  "2025",
+  "AUTHORIZATION",
+  "Billing",
+  "CARD",
+  "CVC",
+  "Card",
+  "Charge",
+  "Client",
+  "Do",
+  "Exp",
+  "Name",
+  "Ph",
+  "Signed"
+ ]
+}

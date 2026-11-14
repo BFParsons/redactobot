@@ -1,0 +1,42 @@
+<!doctype html>
+<!--
+  Copyright 2026 The Redactobot Authors
+  SPDX-License-Identifier: Apache-2.0
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="connect-src 'none'; form-action 'none'">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Review paste — Redactobot</title>
+  <link rel="stylesheet" href="ui.css">
+</head>
+<body>
+  <main class="review-page">
+    <header>
+      <span class="brand">Review paste</span>
+      <button id="cancel" class="quiet" aria-label="Cancel paste">Cancel</button>
+    </header>
+    <h1 id="title">Checking your paste</h1>
+    <p id="explanation">Waiting for the local scan…</p>
+    <div id="findings" aria-label="Details to remove"></div>
+    <label class="preview-label" for="preview">Text to paste</label>
+    <textarea id="preview" rows="6" spellcheck="false"></textarea>
+    <button id="reset" class="quiet small">Reset preview to removal choices</button>
+    <details>
+      <summary>View original paste</summary>
+      <pre id="original"></pre>
+    </details>
+    <p id="status" role="status" aria-live="polite"></p>
+    <footer>
+      <button id="settings" class="quiet">Settings</button>
+      <span class="spacer"></span>
+      <button id="ignore" class="quiet" title="Paste the original text exactly as copied, without removing anything">Ignore</button>
+      <button id="use" class="secondary" title="Paste the text in the box above as it is now">Use this text</button>
+      <button id="approve" class="primary">Paste reviewed text</button>
+    </footer>
+    <p class="footnote">The extension never submits a chat message. Cloud cleanup follows your settings.</p>
+  </main>
+  <script src="review.js"></script>
+</body>
+</html>

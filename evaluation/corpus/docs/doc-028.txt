@@ -1,0 +1,56 @@
+SBA 7(a) LOAN APPLICATION -- BORROWER INFORMATION SUMMARY
+Prepared by Whitlock-Tan & Associates, CPAs for submission to First Bitterroot Bank
+Lender contact: Marcus Delgado, VP Commercial Lending, mdelgado@firstbitterroot.example, 406-555-0170
+Date prepared: 08/31/2026                      Lender ref: FBB-SBA-26-00419
+
+A. APPLICANT BUSINESS
+Legal name:      Tamarack Ridge Brewing Co., LLC  (d/b/a "Tamarack Ridge")
+EIN:             81-4092275
+Address:         1180 Railyard Spur, Unit C, Missoula, MT 59802
+Formed:          March 11, 2019 (Montana LLC, taxed as a partnership -- files Form 1065)
+Employees:       14 (9 full-time)
+Web:             www.tamarackridgebrewing.example
+
+B. LOAN REQUEST
+Amount:          $640,000, 10-year term
+Use of proceeds: 10-barrel brewhouse expansion ($410,000); refinance equipment note with
+                 Northern Rockies Equipment Finance, Inc., loan no. NRE-0077-31854, payoff $148,220.16;
+                 working capital ($81,779.84).
+
+C. OWNERS (20% or more) -- from SBA Form 1919 and Form 413
+1. HAUGEN, INGRID SOLVEIG -- 60%, managing member
+   DOB Nov. 8, 1984   SSN 115-14-4666   MT driver's license 0811198441208
+   Home: 742 Cherry Blossom Court, Missoula, MT 59801. Cell (406) 555-0124.
+   U.S. citizen: yes. Criminal history question: YES -- misdemeanor DUI, 2011, disclosed.
+   Personal net worth per Form 413: $386,400.
+2. Babajide Akinwande ("Jide") -- 40%, head brewer
+   DOB 1990-02-17   SSN 168964978
+   Home: PO Box 317, Lolo, MT 59847. Cell 406.555.0186. jide@tamarackridgebrewing.example
+   U.S. citizen: no -- lawful permanent resident, card no. A-208-661-573.
+   Personal net worth per Form 413: $71,950. Student loans of $38K outstanding.
+
+D. BANKING
+Operating account: First Bitterroot Bank, routing 102296990, account 2000417738
+Payroll account:   Clark Fork Federal Credit Union, routing 124493946, account 77-104-5529
+Average collected balance, last 12 months: $58,300
+
+E. COLLATERAL OFFERED
+ - Brewhouse and fermentation tanks (to be purchased); existing glycol chiller, serial GC-2291-0457A
+ - 2021 Ford Transit delivery van, VIN 1FTFW1E53NC506833, MT plate 4-71802B
+ - Second lien on Ms. Haugen's residence (first mortgage balance $214,000)
+
+F. FINANCIAL HIGHLIGHTS (from the reviewed statements)
+                       FY2024        FY2025        YTD (7 mos.)
+ Revenue             1,412,880     1,688,415       1,104,270
+ Net income             61,340        97,125          72,060
+ Owner draws            84,000        96,000          56,000
+Debt service coverage on the proposed loan: 1.41x on 2025 results.
+
+G. PREPARER'S NOTES (not for the lender package)
+Ingrid wants the taproom lease assigned before closing; landlord has not answered.
+Jide's green card expires next June -- lender will ask; he has the renewal receipt.
+The 2025 owner draws include twelve thousand dollars that went to Ingrid's brother and should be
+reclassified as a loan. FWT to discuss before we sign the compilation letter.
+
+Florence Whitlock-Tan, CPA (MT license PAC-CPAP-LIC-004417)
+florence@whitlocktancpa.example   office 406 555 0111

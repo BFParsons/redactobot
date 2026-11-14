@@ -1,0 +1,148 @@
+{
+ "id": "doc-083",
+ "file": "docs/doc-083.txt",
+ "format": "txt",
+ "title": "Conflict check request - prospective elder client",
+ "doc_type": "conflict check note",
+ "audience": "legal",
+ "jurisdiction": "US",
+ "word_count": 48,
+ "items": [
+  {
+   "value": "Yusuf Al-Rashid",
+   "category": "person_name",
+   "subtype": "full name",
+   "occurrences": 1,
+   "entity": "p1",
+   "canonical": "Yusuf Al-Rashid",
+   "variant": "full",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "age 91",
+   "category": "age_over_89",
+   "subtype": "age over 89",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "extreme age is identifying"
+  },
+  {
+   "value": "Dearborn",
+   "category": "place",
+   "subtype": "city",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "locates the person or matter"
+  },
+  {
+   "value": "Lakeshore Senior Living LLC",
+   "category": "organization_name",
+   "subtype": "full name",
+   "occurrences": 1,
+   "entity": "o1",
+   "canonical": "Lakeshore Senior Living LLC",
+   "variant": "full",
+   "difficulty": "standard",
+   "why": "identifies a client, party or organization"
+  },
+  {
+   "value": "Cheryl Dunphy",
+   "category": "person_name",
+   "subtype": "full name",
+   "occurrences": 1,
+   "entity": "p2",
+   "canonical": "Cheryl Dunphy",
+   "variant": "full",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "grandson",
+   "category": "indirect_identifier",
+   "subtype": "family relationship to a named person",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "identifies someone by context"
+  },
+  {
+   "value": "Omar Al-Rashid",
+   "category": "person_name",
+   "subtype": "full name",
+   "occurrences": 1,
+   "entity": "p3",
+   "canonical": "Omar Al-Rashid",
+   "variant": "full",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "Lakeshore",
+   "category": "organization_name",
+   "subtype": "short name without corporate suffix",
+   "occurrences": 1,
+   "entity": "o1",
+   "canonical": "Lakeshore Senior Living LLC",
+   "variant": "short",
+   "difficulty": "hard",
+   "why": "identifies a client, party or organization"
+  },
+  {
+   "value": "19-0332",
+   "category": "record_number",
+   "subtype": "file number",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "record identifier that links to a person or matter"
+  },
+  {
+   "value": "Yusuf",
+   "category": "person_name",
+   "subtype": "first name only",
+   "occurrences": 1,
+   "entity": "p1",
+   "canonical": "Yusuf Al-Rashid",
+   "variant": "first-name",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "313-555-0188",
+   "category": "phone",
+   "subtype": "phone",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "direct contact detail"
+  },
+  {
+   "value": "JMK",
+   "category": "person_name",
+   "subtype": "initials",
+   "occurrences": 1,
+   "entity": "p4",
+   "canonical": "Joanne M. Kessler",
+   "variant": "initials",
+   "difficulty": "hard",
+   "why": "identifies a person"
+  }
+ ],
+ "distractors": [
+  "3pm",
+  "POA"
+ ]
+}

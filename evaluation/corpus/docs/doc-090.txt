@@ -1,0 +1,47 @@
+Kwon Castellano & Associates, P.C.                                       W/P ref. R-2
+Client: Varga Precision Castings, Inc. ("VPC")                 FYE 12/31/2025
+Subject: Related party transactions (AU-C 550 / ASC 850)
+Prepared: I. Castellano 02/18/2026        Reviewed: HJK 02/24/2026
+
+OBJECTIVE
+Identify related parties, test completeness of management's list (PBC item 41), and
+evaluate whether transactions are disclosed and at terms we can describe.
+
+RELATED PARTIES IDENTIFIED
+(a) Anselm Varga -- founder, CEO, 62% shareholder.
+(b) Katalin Varga-Thorne -- his daughter, VP Operations, 19% shareholder.
+(c) Desmond Thorne -- Katalin's husband. Sole member of Thorne Logistics Group, LLC ("TLG").
+    NOT on management's list. Found via vendor master: TLG's remit address is
+    77 Quarry Hollow Road, Lewisburg, PA 17837 -- same as Katalin's home address in HR file.
+(d) VPC Hungary Kft. -- 100% sub, Gyor. Managing director Felix Baumgartner-Ruiz.
+(e) Blue Juniata Lake House LLC -- owned by Mr. Varga personally. See item 4.
+
+TRANSACTIONS TESTED
+1. Freight paid to TLG: $1,284,300 (2024: $402,150). Tripled. No bids obtained. Traced
+   12 invoices; rates run 18-22% above the two carriers VPC used before. Controller says
+   "Des is reliable." Proposed: disclose; discuss with audit committee.
+2. Intercompany: VPC wired EUR 640,000 to the sub on 14 March 2025. Booked as loan, no
+   note on file. Beneficiary account IBAN FR58 5640 7655 8395 8814 5082 902 -- that is a FRENCH
+   IBAN, not Hungarian. Baumgartner-Ruiz says the sub banks in Lyon "for convenience."
+   Requested bank confirmation direct. Form 5472 n/a (VPC is the US parent) but confirm w/ tax.
+3. Shareholder loan to Mr. Varga: opening balance $350,000; advances $125,000 on 6/2/2025 and
+   $90,000 on 10/20/2025; no repayments; closing $565,000. Interest accrued at 4%,
+   not paid. Advances went by wire from the Susquehanna Heritage Bank operating account
+   (xxxxxx4093) to his personal account 7782-0-116459.
+4. Lake house: VPC paid $48,600 of "customer entertainment facility" costs to Blue Juniata
+   Lake House LLC, incl. dock repair and a pontoon (the "Molten Lady"). Usage log shows
+   3 customer events and 41 family days. Personal use >> business. Proposed AJE to
+   reclass to shareholder loan; tax to consider constructive dividend.
+5. Political: $10,000 check #20417 dated 9/30/2025 to Friends of Varga for County Commissioner,
+   coded to "dues & subscriptions." Mr. Varga is the candidate. Corporate contribution; non-
+   deductible; legal exposure -- refer to counsel. Controller unaware it was an issue.
+
+OTHER
+- Ms. Varga-Thorne signed the management rep letter draft for related parties. Given (c),
+  Hye-jin Kwon wants the CEO and the board chair to sign instead.
+- Per HR, Mr. Thorne was a VPC employee until 2022; terminated after a positive drug test.
+  Not relevant to the financial statements; do not carry forward.
+
+CONCLUSION
+Management's list incomplete. Items 1, 3, 4 require disclosure. Item 5 communicated to
+those charged with governance 2/26/2026. Passed adjustment schedule updated.

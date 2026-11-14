@@ -1,0 +1,16 @@
+<!doctype html>
+<!--
+  Copyright 2026 The Redactobot Authors
+  SPDX-License-Identifier: Apache-2.0
+-->
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Redactobot local corpus evaluation</title></head>
+<body style="font:16px system-ui;max-width:780px;margin:40px auto;padding:20px">
+  <h1>Local corpus evaluation</h1>
+  <p>Runs the same local extraction and review policy used by the extension. Documents stay on this machine. Cloud requests are blocked.</p>
+  <button id="run">Run on-device corpus scan</button>
+  <button id="stop" disabled>Stop after current file</button>
+  <pre id="status" role="status">Ready.</pre>
+  <script type="module" src="/src/desktop-corpus.ts"></script>
+</body>
+</html>

@@ -1,0 +1,1115 @@
+{
+  "summary": {
+    "baseline": {
+      "positive_caught": 54,
+      "positive_total": 68,
+      "negative_false_hits": 4,
+      "negative_total": 13
+    },
+    "trust-model": {
+      "positive_caught": 62,
+      "positive_total": 68,
+      "negative_false_hits": 12,
+      "negative_total": 13
+    },
+    "guarded-exact": {
+      "positive_caught": 62,
+      "positive_total": 68,
+      "negative_false_hits": 4,
+      "negative_total": 13
+    },
+    "guarded-normalized": {
+      "positive_caught": 66,
+      "positive_total": 68,
+      "negative_false_hits": 4,
+      "negative_total": 13
+    },
+    "complete-spans": {
+      "positive_caught": 54,
+      "positive_total": 68,
+      "negative_false_hits": 4,
+      "negative_total": 13
+    },
+    "combined": {
+      "positive_caught": 68,
+      "positive_total": 68,
+      "negative_false_hits": 4,
+      "negative_total": 13
+    },
+    "identifier-memory": {
+      "positive_caught": 54,
+      "positive_total": 68,
+      "negative_false_hits": 4,
+      "negative_total": 13
+    },
+    "combined-memory": {
+      "positive_caught": 68,
+      "positive_total": 68,
+      "negative_false_hits": 4,
+      "negative_total": 13
+    }
+  },
+  "positive": [
+    {
+      "label": "Orla M. Fenwick/original/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Orla M. Fenwick/original/normalized",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Orla M. Fenwick/lowercase/verbatim",
+      "results": {
+        "baseline": false,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": false,
+        "combined": true,
+        "identifier-memory": false,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Orla M. Fenwick/lowercase/normalized",
+      "results": {
+        "baseline": false,
+        "trust-model": false,
+        "guarded-exact": false,
+        "guarded-normalized": true,
+        "complete-spans": false,
+        "combined": true,
+        "identifier-memory": false,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Orla M. Fenwick/uppercase/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Orla M. Fenwick/uppercase/normalized",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Orla M. Fenwick/decomposed/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Orla M. Fenwick/decomposed/normalized",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Orla M. Fenwick/apostrophe/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Orla M. Fenwick/apostrophe/normalized",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Orla M. Fenwick/hyphen/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Orla M. Fenwick/hyphen/normalized",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Orla M. Fenwick/linebreak/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Orla M. Fenwick/linebreak/normalized",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Orla M. Fenwick/nonbreaking_space/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Orla M. Fenwick/nonbreaking_space/normalized",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Noé D’Arvieux/original/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Noé D’Arvieux/original/normalized",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Noé D’Arvieux/lowercase/verbatim",
+      "results": {
+        "baseline": false,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": false,
+        "combined": true,
+        "identifier-memory": false,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Noé D’Arvieux/lowercase/normalized",
+      "results": {
+        "baseline": false,
+        "trust-model": false,
+        "guarded-exact": false,
+        "guarded-normalized": true,
+        "complete-spans": false,
+        "combined": true,
+        "identifier-memory": false,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Noé D’Arvieux/uppercase/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Noé D’Arvieux/uppercase/normalized",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Noé D’Arvieux/decomposed/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Noé D’Arvieux/decomposed/normalized",
+      "results": {
+        "baseline": false,
+        "trust-model": false,
+        "guarded-exact": false,
+        "guarded-normalized": false,
+        "complete-spans": false,
+        "combined": true,
+        "identifier-memory": false,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Noé D’Arvieux/apostrophe/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Noé D’Arvieux/apostrophe/normalized",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Noé D’Arvieux/hyphen/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Noé D’Arvieux/hyphen/normalized",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Noé D’Arvieux/linebreak/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Noé D’Arvieux/linebreak/normalized",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Noé D’Arvieux/nonbreaking_space/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Noé D’Arvieux/nonbreaking_space/normalized",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Zélie Hart‐Ellison/original/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Zélie Hart‐Ellison/original/normalized",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Zélie Hart‐Ellison/lowercase/verbatim",
+      "results": {
+        "baseline": false,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": false,
+        "combined": true,
+        "identifier-memory": false,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Zélie Hart‐Ellison/lowercase/normalized",
+      "results": {
+        "baseline": false,
+        "trust-model": false,
+        "guarded-exact": false,
+        "guarded-normalized": true,
+        "complete-spans": false,
+        "combined": true,
+        "identifier-memory": false,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Zélie Hart‐Ellison/uppercase/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Zélie Hart‐Ellison/uppercase/normalized",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Zélie Hart‐Ellison/decomposed/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Zélie Hart‐Ellison/decomposed/normalized",
+      "results": {
+        "baseline": false,
+        "trust-model": false,
+        "guarded-exact": false,
+        "guarded-normalized": false,
+        "complete-spans": false,
+        "combined": true,
+        "identifier-memory": false,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Zélie Hart‐Ellison/apostrophe/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Zélie Hart‐Ellison/apostrophe/normalized",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Zélie Hart‐Ellison/hyphen/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Zélie Hart‐Ellison/hyphen/normalized",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Zélie Hart‐Ellison/linebreak/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Zélie Hart‐Ellison/linebreak/normalized",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Zélie Hart‐Ellison/nonbreaking_space/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Zélie Hart‐Ellison/nonbreaking_space/normalized",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Inez J. Bellamy/original/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Inez J. Bellamy/original/normalized",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Inez J. Bellamy/lowercase/verbatim",
+      "results": {
+        "baseline": false,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": false,
+        "combined": true,
+        "identifier-memory": false,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Inez J. Bellamy/lowercase/normalized",
+      "results": {
+        "baseline": false,
+        "trust-model": false,
+        "guarded-exact": false,
+        "guarded-normalized": true,
+        "complete-spans": false,
+        "combined": true,
+        "identifier-memory": false,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Inez J. Bellamy/uppercase/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Inez J. Bellamy/uppercase/normalized",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Inez J. Bellamy/decomposed/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Inez J. Bellamy/decomposed/normalized",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Inez J. Bellamy/apostrophe/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Inez J. Bellamy/apostrophe/normalized",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Inez J. Bellamy/hyphen/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Inez J. Bellamy/hyphen/normalized",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Inez J. Bellamy/linebreak/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Inez J. Bellamy/linebreak/normalized",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Inez J. Bellamy/nonbreaking_space/verbatim",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "Inez J. Bellamy/nonbreaking_space/normalized",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "elm lantern childcare",
+      "results": {
+        "baseline": false,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": false,
+        "combined": true,
+        "identifier-memory": false,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "hollow fern joinery",
+      "results": {
+        "baseline": false,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": false,
+        "combined": true,
+        "identifier-memory": false,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "brindlewick",
+      "results": {
+        "baseline": false,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": false,
+        "combined": true,
+        "identifier-memory": false,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "new thornhaven",
+      "results": {
+        "baseline": false,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": false,
+        "combined": true,
+        "identifier-memory": false,
+        "combined-memory": true
+      }
+    }
+  ],
+  "negative": [
+    {
+      "label": "family doctor",
+      "results": {
+        "baseline": false,
+        "trust-model": true,
+        "guarded-exact": false,
+        "guarded-normalized": false,
+        "complete-spans": false,
+        "combined": false,
+        "identifier-memory": false,
+        "combined-memory": false
+      }
+    },
+    {
+      "label": "regular meeting",
+      "results": {
+        "baseline": false,
+        "trust-model": true,
+        "guarded-exact": false,
+        "guarded-normalized": false,
+        "complete-spans": false,
+        "combined": false,
+        "identifier-memory": false,
+        "combined-memory": false
+      }
+    },
+    {
+      "label": "May",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "will",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "bill",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "none",
+      "results": {
+        "baseline": true,
+        "trust-model": true,
+        "guarded-exact": true,
+        "guarded-normalized": true,
+        "complete-spans": true,
+        "combined": true,
+        "identifier-memory": true,
+        "combined-memory": true
+      }
+    },
+    {
+      "label": "trust company",
+      "results": {
+        "baseline": false,
+        "trust-model": true,
+        "guarded-exact": false,
+        "guarded-normalized": false,
+        "complete-spans": false,
+        "combined": false,
+        "identifier-memory": false,
+        "combined-memory": false
+      }
+    },
+    {
+      "label": "petty cash",
+      "results": {
+        "baseline": false,
+        "trust-model": true,
+        "guarded-exact": false,
+        "guarded-normalized": false,
+        "complete-spans": false,
+        "combined": false,
+        "identifier-memory": false,
+        "combined-memory": false
+      }
+    },
+    {
+      "label": "university bookstore",
+      "results": {
+        "baseline": false,
+        "trust-model": true,
+        "guarded-exact": false,
+        "guarded-normalized": false,
+        "complete-spans": false,
+        "combined": false,
+        "identifier-memory": false,
+        "combined-memory": false
+      }
+    },
+    {
+      "label": "United States District Court",
+      "results": {
+        "baseline": false,
+        "trust-model": true,
+        "guarded-exact": false,
+        "guarded-normalized": false,
+        "complete-spans": false,
+        "combined": false,
+        "identifier-memory": false,
+        "combined-memory": false
+      }
+    },
+    {
+      "label": "reading",
+      "results": {
+        "baseline": false,
+        "trust-model": true,
+        "guarded-exact": false,
+        "guarded-normalized": false,
+        "complete-spans": false,
+        "combined": false,
+        "identifier-memory": false,
+        "combined-memory": false
+      }
+    },
+    {
+      "label": "union hall",
+      "results": {
+        "baseline": false,
+        "trust-model": true,
+        "guarded-exact": false,
+        "guarded-normalized": false,
+        "complete-spans": false,
+        "combined": false,
+        "identifier-memory": false,
+        "combined-memory": false
+      }
+    },
+    {
+      "label": "Orla M. Fenwick",
+      "results": {
+        "baseline": false,
+        "trust-model": false,
+        "guarded-exact": false,
+        "guarded-normalized": false,
+        "complete-spans": false,
+        "combined": false,
+        "identifier-memory": false,
+        "combined-memory": false
+      }
+    }
+  ],
+  "invariants": "passed",
+  "chunking": {
+    "old_max_words": 2000,
+    "bounded_max_words": 350,
+    "chunks": 7
+  }
+}

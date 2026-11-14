@@ -1,0 +1,40 @@
+BANK REC NOTES -- JANUARY 2026
+Ferreira & Daughters Seafood Wholesale, Inc.  (F&D)
+Operating acct, Buzzards Bay Savings Bank, 0081-447-2209   (GL 1010)
+Done by Luz, 2/6/26. Reviewed: not yet.
+
+Balance per bank stmt 1/31/26              $142,907.36
+Add deposits in transit (1/30, 1/31)           18,440.00
+Less outstanding checks (list below)              (27,315.88)
+Adjusted bank balance                              134,031.48
+Balance per books (QuickBooks)                     152,476.48
+UNRECONCILED DIFFERENCE                            (18,445.00)
+
+Outstanding checks
+  #20418   Acushnet Ice & Cold Storage      $9,600.00
+  #20422   Whaling City Diesel               $4,115.88
+  #20425   Brian Whitlock (truck lease)       $13,600.00
+
+What I think the difference is
+1. Wire out 1/22 for $18,400.00 plus $45.00 fee -- not in the books at all. Bank detail
+   says beneficiary Nordsee Fischhandel GmbH, Bremerhaven, IBAN
+   DE32 3550 3921 3458 5519 11, BIC NOSFDEHHXXX. No invoice in the folder. Manny says it
+   is a deposit on the spring halibut order and "Teresa has the paperwork." She is
+   out until the 16th.
+2. That leaves zero. Good. But see 3.
+
+Other things I noticed
+3. Three debit card charges on the card ending 0483 (Manny's) at a casino in
+   Uncasville: $400, $400, $800 on 1/17. Booked to "Travel." I moved them
+   to shareholder loan pending his OK. This is the third month in a row.
+4. Payroll acct (ending 2217) was short on 1/16; bank auto-swept $6,250 from
+   operating. Transfer not recorded. Fixed.
+5. ACH debit 1/20, $3,871.14, "IRS USATAXPYMT" -- that is the Q4 Form 941 balance.
+   OK, but it was coded to officer salary. Fixed.
+6. Bank still shows Manuel Ferreira as the only signer. Teresa Ferreira-Costa was
+   supposed to be added in November. The branch says the signature card was never returned. Their number is
+   508-555-0131; routing for the new ACH setup is 016117880.
+
+For Teresa when she is back: need the Nordsee invoice and the wire authorization,
+and someone other than Mr. Ferreira should be approving wires over 10k.
+                                                        -- L. Andrade

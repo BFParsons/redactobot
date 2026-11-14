@@ -1,0 +1,29 @@
+HARGROVE TOOL & DIE CO. -- PAYROLL SUMMARY
+Pay period PP 03: 02/01/2026 - 02/14/2026        Check date: 02/20/2026
+Prepared by: R. Delgado, office mgr.      Processor: PayRight Processing, client ID HTD-0932
+
+EMP ID  NAME                    SSN          RATE     HRS    GROSS      DUES    401(k)   GARN     NET       DD ACCT
+1004    HARGROVE, EARL III      ***-**-6631  salary   --     4,807.69   --      480.77   --       3,102.14  x4410
+1017    McALLISTER, BILL        ***-**-6423  $34.10   88.0   3,137.20   41.50   156.86   --       2,207.55  x0927
+1022    NGUYEN, THANH           ***-**-2374  $29.75   24.0   714.00     41.50   --       --       548.31    x7718
+1031    JEFFERSON, DeSHAWN      ***-**-3202  $27.40   80.0   2,192.00   41.50   65.76    412.00   1,201.92  paper ck
+1038    LOPEZ, MARISELA         ***-**-7914  $22.00   80.0   1,760.00   --      --       --       1,428.47  x3355
+1040    WISNIEWSKI, KATARZYNA   ***-**-7802  $24.50   76.5   1,874.25   41.50   93.71    --       1,397.08  x6102
+
+TOTALS: gross $14,485.14; employer FICA $1,108.11; net pay $9,885.47
+ACH file sent 2/18 to Cuyahoga Valley Bank, RTN 098025107, funding acct 5500081729.
+
+NOTES THIS PERIOD
+- Nguyen: out on FMLA since 2/5 (rotator cuff surgery). Three days worked, then
+  short-term disability takes over. Expected back mid-April. Do not discuss on the floor.
+- Jefferson: garnishment is the child support order, Summit County case no.
+  DR-2019-04-1182, $412.00 per period. Separate IRS levy (Form 668-W) received 2/11
+  for $3,940.18; starts next period. He asked that Earl not be told. Earl signs the
+  levy acknowledgment, so that is not possible.
+- Lopez: new Form W-4 and name change. She was Marisela Pruitt until the
+  divorce was final in January. Update the bank record too; DD still shows Pruitt.
+- Dues: $41.50 per period remitted to Machinists Lodge 2211 for the four union members.
+  Wisniewski joined 1/26. Lopez and Hargrove are not in the unit.
+- McAllister: turned 65 on February 9; wants to stop 401(k) deferrals next period.
+
+Questions to Rosa, ext. 12, or rdelgado@hargrovetool.example. Shop line 330-555-0170.

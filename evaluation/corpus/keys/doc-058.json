@@ -1,0 +1,159 @@
+{
+ "id": "doc-058",
+ "file": "docs/doc-058.txt",
+ "format": "txt",
+ "title": "Patient portal message - new insurance and refill request",
+ "doc_type": "patient portal message",
+ "audience": "health",
+ "jurisdiction": "US",
+ "word_count": 61,
+ "items": [
+  {
+   "value": "Dolores Etxeberria",
+   "category": "person_name",
+   "subtype": "full name",
+   "occurrences": 1,
+   "entity": "p1",
+   "canonical": "Dolores Etxeberria",
+   "variant": "full",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "6/3/2026",
+   "category": "date",
+   "subtype": "date",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "date tied to a person or matter"
+  },
+  {
+   "value": "Dr. Mbeki",
+   "category": "person_name",
+   "subtype": "title + surname",
+   "occurrences": 1,
+   "entity": "p2",
+   "canonical": "Nomvula Mbeki",
+   "variant": "title-surname",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "HZK4471902",
+   "category": "record_number",
+   "subtype": "health plan member ID",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "record identifier that links to a person or matter"
+  },
+  {
+   "value": "88213",
+   "category": "record_number",
+   "subtype": "group number",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "record identifier that links to a person or matter"
+  },
+  {
+   "value": "lexapro 20mg",
+   "category": "health_info",
+   "subtype": "medication, lower case and no space",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "health information about a person"
+  },
+  {
+   "value": "#7714402",
+   "category": "record_number",
+   "subtype": "prescription number",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "record identifier that links to a person or matter"
+  },
+  {
+   "value": "Alder St",
+   "category": "place",
+   "subtype": "street used as a location",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "locates the person or matter"
+  },
+  {
+   "value": "the panic attacks at night",
+   "category": "health_info",
+   "subtype": "mental health symptom",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "health information about a person"
+  },
+  {
+   "value": "4/4/1990",
+   "category": "date_of_birth",
+   "subtype": "date of birth",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "birth date identifies a person"
+  },
+  {
+   "value": "lola.etx90",
+   "category": "credential",
+   "subtype": "username",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "login secret or account handle"
+  },
+  {
+   "value": "503-555-0164",
+   "category": "phone",
+   "subtype": "phone",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "direct contact detail"
+  },
+  {
+   "value": "lola",
+   "category": "person_name",
+   "subtype": "lower-case nickname",
+   "occurrences": 1,
+   "entity": "p1",
+   "canonical": "Dolores Etxeberria",
+   "variant": "nickname",
+   "difficulty": "hard",
+   "why": "identifies a person"
+  }
+ ],
+ "distractors": [
+  "Rx",
+  "DOB"
+ ]
+}

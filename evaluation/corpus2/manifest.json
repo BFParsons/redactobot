@@ -1,0 +1,602 @@
+[
+ {
+  "id": "doc-201",
+  "file": "docs/doc-201.pdf",
+  "format": "pdf",
+  "doc_type": "retainer invoice",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 444,
+  "item_count": 103
+ },
+ {
+  "id": "doc-202",
+  "file": "docs/doc-202.pdf",
+  "format": "pdf",
+  "doc_type": "K-1 cover letter",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 449,
+  "item_count": 70
+ },
+ {
+  "id": "doc-203",
+  "file": "docs/doc-203.pdf",
+  "format": "pdf",
+  "doc_type": "lab report",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 268,
+  "item_count": 55
+ },
+ {
+  "id": "doc-204",
+  "file": "docs/doc-204.xlsx",
+  "format": "xlsx",
+  "doc_type": "HR onboarding checklist",
+  "audience": "general",
+  "jurisdiction": "US",
+  "word_count": 411,
+  "item_count": 137
+ },
+ {
+  "id": "doc-205",
+  "file": "docs/doc-205.txt",
+  "format": "txt",
+  "doc_type": "immigration intake notes",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 451,
+  "item_count": 80
+ },
+ {
+  "id": "doc-206",
+  "file": "docs/doc-206.txt",
+  "format": "txt",
+  "doc_type": "payment authorization form",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 64,
+  "item_count": 16
+ },
+ {
+  "id": "doc-207",
+  "file": "docs/doc-207.txt",
+  "format": "txt",
+  "doc_type": "prior-authorization request",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 353,
+  "item_count": 66
+ },
+ {
+  "id": "doc-208",
+  "file": "docs/doc-208.docx",
+  "format": "docx",
+  "doc_type": "lease abstract",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 486,
+  "item_count": 83
+ },
+ {
+  "id": "doc-209",
+  "file": "docs/doc-209.eml",
+  "format": "eml",
+  "doc_type": "personal tax intake email",
+  "audience": "accounting",
+  "jurisdiction": "CA",
+  "word_count": 503,
+  "item_count": 87
+ },
+ {
+  "id": "doc-210",
+  "file": "docs/doc-210.txt",
+  "format": "txt",
+  "doc_type": "parenting plan draft",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 1315,
+  "item_count": 146
+ },
+ {
+  "id": "doc-211",
+  "file": "docs/doc-211.xlsx",
+  "format": "xlsx",
+  "doc_type": "privilege log",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 536,
+  "item_count": 140
+ },
+ {
+  "id": "doc-212",
+  "file": "docs/doc-212.xlsx",
+  "format": "xlsx",
+  "doc_type": "bank statement summary",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 387,
+  "item_count": 114
+ },
+ {
+  "id": "doc-213",
+  "file": "docs/doc-213.html",
+  "format": "html",
+  "doc_type": "explanation of benefits",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 325,
+  "item_count": 70
+ },
+ {
+  "id": "doc-214",
+  "file": "docs/doc-214.docx",
+  "format": "docx",
+  "doc_type": "severance agreement",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 1793,
+  "item_count": 157
+ },
+ {
+  "id": "doc-215",
+  "file": "docs/doc-215.txt",
+  "format": "txt",
+  "doc_type": "credit card reconciliation memo",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 452,
+  "item_count": 94
+ },
+ {
+  "id": "doc-216",
+  "file": "docs/doc-216.rtf",
+  "format": "rtf",
+  "doc_type": "collections letter",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 590,
+  "item_count": 58
+ },
+ {
+  "id": "doc-217",
+  "file": "docs/doc-217.txt",
+  "format": "txt",
+  "doc_type": "adolescent telehealth intake",
+  "audience": "health",
+  "jurisdiction": "CA",
+  "word_count": 387,
+  "item_count": 63
+ },
+ {
+  "id": "doc-218",
+  "file": "docs/doc-218.eml",
+  "format": "eml",
+  "doc_type": "self-assessment and payroll starter email",
+  "audience": "accounting",
+  "jurisdiction": "UK",
+  "word_count": 446,
+  "item_count": 64
+ },
+ {
+  "id": "doc-219",
+  "file": "docs/doc-219.html",
+  "format": "html",
+  "doc_type": "IT offboarding ticket",
+  "audience": "general",
+  "jurisdiction": "US",
+  "word_count": 379,
+  "item_count": 62
+ },
+ {
+  "id": "doc-220",
+  "file": "docs/doc-220.txt",
+  "format": "txt",
+  "doc_type": "plea negotiation note",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 67,
+  "item_count": 15
+ },
+ {
+  "id": "doc-221",
+  "file": "docs/doc-221.pdf",
+  "format": "pdf",
+  "doc_type": "probate inventory",
+  "audience": "legal",
+  "jurisdiction": "CA",
+  "word_count": 570,
+  "item_count": 104
+ },
+ {
+  "id": "doc-222",
+  "file": "docs/doc-222.xlsx",
+  "format": "xlsx",
+  "doc_type": "vendor W-9 and 1099 tracking sheet",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 493,
+  "item_count": 154
+ },
+ {
+  "id": "doc-223",
+  "file": "docs/doc-223.docx",
+  "format": "docx",
+  "doc_type": "school medication authorization",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 444,
+  "item_count": 61
+ },
+ {
+  "id": "doc-224",
+  "file": "docs/doc-224.txt",
+  "format": "txt",
+  "doc_type": "collection information statement notes",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 1230,
+  "item_count": 174
+ },
+ {
+  "id": "doc-225",
+  "file": "docs/doc-225.pdf",
+  "format": "pdf",
+  "doc_type": "guardianship petition",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 534,
+  "item_count": 66
+ },
+ {
+  "id": "doc-226",
+  "file": "docs/doc-226.eml",
+  "format": "eml",
+  "doc_type": "travel booking and expense email",
+  "audience": "general",
+  "jurisdiction": "US",
+  "word_count": 463,
+  "item_count": 61
+ },
+ {
+  "id": "doc-227",
+  "file": "docs/doc-227.txt",
+  "format": "txt",
+  "doc_type": "dental treatment plan and payment arrangement",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 333,
+  "item_count": 70
+ },
+ {
+  "id": "doc-228",
+  "file": "docs/doc-228.txt",
+  "format": "txt",
+  "doc_type": "subpoena duces tecum",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 461,
+  "item_count": 59
+ },
+ {
+  "id": "doc-229",
+  "file": "docs/doc-229.md",
+  "format": "md",
+  "doc_type": "donor acknowledgment notes",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 488,
+  "item_count": 69
+ },
+ {
+  "id": "doc-230",
+  "file": "docs/doc-230.txt",
+  "format": "txt",
+  "doc_type": "gift tax return notes",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 432,
+  "item_count": 79
+ },
+ {
+  "id": "doc-231",
+  "file": "docs/doc-231.html",
+  "format": "html",
+  "doc_type": "personal injury intake questionnaire",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 537,
+  "item_count": 89
+ },
+ {
+  "id": "doc-232",
+  "file": "docs/doc-232.html",
+  "format": "html",
+  "doc_type": "paid preparer due diligence checklist",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 530,
+  "item_count": 66
+ },
+ {
+  "id": "doc-233",
+  "file": "docs/doc-233.txt",
+  "format": "txt",
+  "doc_type": "home health nursing visit note",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 582,
+  "item_count": 74
+ },
+ {
+  "id": "doc-234",
+  "file": "docs/doc-234.eml",
+  "format": "eml",
+  "doc_type": "expert witness retention email",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 543,
+  "item_count": 67
+ },
+ {
+  "id": "doc-235",
+  "file": "docs/doc-235.rtf",
+  "format": "rtf",
+  "doc_type": "wage garnishment processing memo",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 496,
+  "item_count": 62
+ },
+ {
+  "id": "doc-236",
+  "file": "docs/doc-236.txt",
+  "format": "txt",
+  "doc_type": "real estate closing statement",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 537,
+  "item_count": 97
+ },
+ {
+  "id": "doc-237",
+  "file": "docs/doc-237.txt",
+  "format": "txt",
+  "doc_type": "foreign account reporting worksheet",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 579,
+  "item_count": 83
+ },
+ {
+  "id": "doc-238",
+  "file": "docs/doc-238.pptx",
+  "format": "pptx",
+  "doc_type": "fleet incident review deck",
+  "audience": "general",
+  "jurisdiction": "US",
+  "word_count": 497,
+  "item_count": 81
+ },
+ {
+  "id": "doc-239",
+  "file": "docs/doc-239.txt",
+  "format": "txt",
+  "doc_type": "pharmacy transfer note",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 50,
+  "item_count": 14
+ },
+ {
+  "id": "doc-240",
+  "file": "docs/doc-240.docx",
+  "format": "docx",
+  "doc_type": "stepparent adoption notes",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 617,
+  "item_count": 78
+ },
+ {
+  "id": "doc-241",
+  "file": "docs/doc-241.txt",
+  "format": "txt",
+  "doc_type": "data subject access request response",
+  "audience": "legal",
+  "jurisdiction": "EU",
+  "word_count": 614,
+  "item_count": 74
+ },
+ {
+  "id": "doc-242",
+  "file": "docs/doc-242.pdf",
+  "format": "pdf",
+  "doc_type": "family law financial statement notes",
+  "audience": "legal",
+  "jurisdiction": "CA",
+  "word_count": 481,
+  "item_count": 95
+ },
+ {
+  "id": "doc-243",
+  "file": "docs/doc-243.pptx",
+  "format": "pptx",
+  "doc_type": "year-end tax planning deck",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 509,
+  "item_count": 85
+ },
+ {
+  "id": "doc-244",
+  "file": "docs/doc-244.txt",
+  "format": "txt",
+  "doc_type": "identity theft affidavit notes",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 567,
+  "item_count": 70
+ },
+ {
+  "id": "doc-245",
+  "file": "docs/doc-245.html",
+  "format": "html",
+  "doc_type": "after-visit summary",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 415,
+  "item_count": 72
+ },
+ {
+  "id": "doc-246",
+  "file": "docs/doc-246.rtf",
+  "format": "rtf",
+  "doc_type": "physiotherapy progress report",
+  "audience": "health",
+  "jurisdiction": "CA",
+  "word_count": 422,
+  "item_count": 57
+ },
+ {
+  "id": "doc-247",
+  "file": "docs/doc-247.txt",
+  "format": "txt",
+  "doc_type": "answers to interrogatories",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 1215,
+  "item_count": 144
+ },
+ {
+  "id": "doc-248",
+  "file": "docs/doc-248.docx",
+  "format": "docx",
+  "doc_type": "sales tax audit response letter",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 615,
+  "item_count": 92
+ },
+ {
+  "id": "doc-249",
+  "file": "docs/doc-249.txt",
+  "format": "txt",
+  "doc_type": "fleet insurance schedule and driver list",
+  "audience": "general",
+  "jurisdiction": "CA",
+  "word_count": 535,
+  "item_count": 106
+ },
+ {
+  "id": "doc-250",
+  "file": "docs/doc-250.eml",
+  "format": "eml",
+  "doc_type": "settlement wire instructions email",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 68,
+  "item_count": 19
+ },
+ {
+  "id": "doc-251",
+  "file": "docs/doc-251.md",
+  "format": "md",
+  "doc_type": "text message exhibit",
+  "audience": "legal",
+  "jurisdiction": "CA",
+  "word_count": 506,
+  "item_count": 67
+ },
+ {
+  "id": "doc-252",
+  "file": "docs/doc-252.txt",
+  "format": "txt",
+  "doc_type": "declaration for protective order",
+  "audience": "legal",
+  "jurisdiction": "US",
+  "word_count": 482,
+  "item_count": 64
+ },
+ {
+  "id": "doc-253",
+  "file": "docs/doc-253.txt",
+  "format": "txt",
+  "doc_type": "household employee payroll setup notes",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 403,
+  "item_count": 68
+ },
+ {
+  "id": "doc-254",
+  "file": "docs/doc-254.txt",
+  "format": "txt",
+  "doc_type": "GST/HST audit notes",
+  "audience": "accounting",
+  "jurisdiction": "CA",
+  "word_count": 428,
+  "item_count": 61
+ },
+ {
+  "id": "doc-255",
+  "file": "docs/doc-255.docx",
+  "format": "docx",
+  "doc_type": "bank confirmation request",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 424,
+  "item_count": 65
+ },
+ {
+  "id": "doc-256",
+  "file": "docs/doc-256.txt",
+  "format": "txt",
+  "doc_type": "bookkeeping chat export",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 550,
+  "item_count": 60
+ },
+ {
+  "id": "doc-257",
+  "file": "docs/doc-257.pdf",
+  "format": "pdf",
+  "doc_type": "wire fraud incident memo",
+  "audience": "accounting",
+  "jurisdiction": "US",
+  "word_count": 498,
+  "item_count": 69
+ },
+ {
+  "id": "doc-258",
+  "file": "docs/doc-258.eml",
+  "format": "eml",
+  "doc_type": "patient billing statement email",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 260,
+  "item_count": 51
+ },
+ {
+  "id": "doc-259",
+  "file": "docs/doc-259.docx",
+  "format": "docx",
+  "doc_type": "long-term care admission packet",
+  "audience": "health",
+  "jurisdiction": "US",
+  "word_count": 1212,
+  "item_count": 172
+ },
+ {
+  "id": "doc-260",
+  "file": "docs/doc-260.txt",
+  "format": "txt",
+  "doc_type": "summer camp registration",
+  "audience": "general",
+  "jurisdiction": "US",
+  "word_count": 425,
+  "item_count": 78
+ }
+]

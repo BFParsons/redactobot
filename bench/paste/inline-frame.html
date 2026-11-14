@@ -1,0 +1,8 @@
+<!doctype html>
+<!--
+  Copyright 2026 The Redactobot Authors
+  SPDX-License-Identifier: Apache-2.0
+-->
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Inline status example</title><style>
+*{box-sizing:border-box}body{margin:0;padding:24px;background:var(--rb-surface);color:var(--rb-text);font:16px/24px system-ui}#composer{margin:24px 0 16px;border:1px solid var(--rb-border);border-radius:var(--rb-radius);padding:16px 18px;min-height:100px;background:var(--rb-surface)}[contenteditable]{min-height:26px;outline:none;white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;color:inherit}[contenteditable]:empty:before{content:attr(data-placeholder);color:var(--rb-muted);pointer-events:none}nav{display:flex;gap:16px;margin-top:16px}button{font:13px/20px system-ui;color:var(--rb-muted);background:transparent;border:0;padding:0;cursor:pointer}.tools{color:var(--rb-muted);display:flex;justify-content:space-between;margin-top:18px;font-size:14px}
+</style></head><body><div id="composer"><div class="ProseMirror ql-editor" contenteditable="true" role="textbox" aria-label="Ask ChatGPT" data-placeholder="Ask anything"></div><div class="tools"><span>＋</span><span>↑</span></div></div><nav><button id="again">Restart demo</button><button id="finish">Finish demo scan</button></nav><script type="module" src="/src/extension/inline-preview.ts"></script></body></html>

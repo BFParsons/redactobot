@@ -1,0 +1,30 @@
+<!doctype html>
+<!--
+  Copyright 2026 The Redactobot Authors
+  SPDX-License-Identifier: Apache-2.0
+-->
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Redactobot local-only check</title><style>body{font:16px/1.5 system-ui;max-width:800px;padding:32px;margin:auto}button{font:inherit;padding:10px 16px}pre{white-space:pre-wrap}</style></head>
+<body><h1>Local-only scanner check</h1><p>Runs the app's actual scanner with fictional data while blocking its JavaScript network APIs. Chrome's own model download/update traffic is outside this check.</p><button id="run">Run local-only check</button><pre id="result" role="status">Ready.</pre>
+<script type="module">
+// A separate import URL lets this diagnostic exercise the updated source even on the
+// benchmark server, which intentionally disables file watching to preserve long runs.
+import { prepareDevice, detectNames, detectTopics } from '/src/core/ai.ts?local-only-check';
+const button = document.querySelector('#run'), output = document.querySelector('#result');
+button.addEventListener('click', async () => {
+  button.disabled = true;
+  const originals = { fetch: window.fetch, XMLHttpRequest: window.XMLHttpRequest, WebSocket: window.WebSocket, beacon: navigator.sendBeacon };
+  let attempts = 0;
+  const blocked = function() { attempts++; throw new Error('Network request blocked by diagnostic'); };
+  window.fetch = window.XMLHttpRequest = window.WebSocket = blocked; navigator.sendBeacon = blocked;
+  const start = performance.now();
+  try {
+    output.textContent = 'Preparing on-device AI…';
+    await prepareDevice(() => {});
+    output.textContent = 'Scanning fictional text locally…';
+    const text = 'Please contact Avery Bennett at avery@example.com in Seattle.';
+    const names = await detectNames(text), topics = await detectTopics(text);
+    output.textContent = JSON.stringify({ state: 'complete', elapsedMs: Math.round(performance.now() - start), networkAttempts: attempts, names, topics }, null, 2);
+  } catch (error) { output.textContent = JSON.stringify({ state: 'failed', networkAttempts: attempts, error: error.message }, null, 2); }
+  finally { window.fetch = originals.fetch; window.XMLHttpRequest = originals.XMLHttpRequest; window.WebSocket = originals.WebSocket; navigator.sendBeacon = originals.beacon; button.disabled = false; }
+});
+</script></body></html>

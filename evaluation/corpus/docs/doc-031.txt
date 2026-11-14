@@ -1,0 +1,36 @@
+BRIGHTWATER ANALYTICS GROUP -- EXPENSE REPORT                      Report # ER-2026-03318
+
+Employee:    Anneliese Okoro-Baptiste          Emp. ID: BW-00672
+Dept:        Client Services (GL 6420)         Approver: Reginald Fontaine
+Purpose:     On-site kickoff, Halcyon Mutual Insurance Company (Hartford, CT)
+Trip dates:  09/14/2026 - 09/17/2026
+Paid with:   corporate Amex ending 34224 unless marked (P) = personal
+
+DATE     ITEM                                             AMOUNT
+09/14    Airfare ATL-BDL r/t, Economy Plus, conf. QK7M2X       $612.40
+09/14    Rideshare, home to airport (P)                   $38.75
+09/14    Dinner, self                                     $41.20
+09/14    The Wexley Riverside, 3 nights, folio 88104-2       $887.61
+09/15    Client dinner, 6 people -- see note 1            $544.90
+09/15    Peachtree Fleet Rentals, agreement RA 5571 0294, car plate
+         CT AV-90217                                   $203.18
+09/16    Parking, Halcyon garage                          $24.00
+09/17    Fuel (P)                                         $31.07
+                                                TOTAL     $2,383.11
+                                 Less corporate card     ($2,313.29)
+                                 Due to employee            $69.82
+
+Reimburse to checking on file: routing 061980279, acct ending x4419.
+
+NOTES
+1. Dinner attendees from Halcyon: M. Castillo (VP Claims) and three of her staff, plus
+   Reggie and me. Over the Policy T-4 limit of $75 a head by about fifteen dollars each;
+   Reggie approved at the table.
+2. The hotel put the first night on my personal Visa by mistake (4697 7220 0063 3395,
+   exp 11/27) and then re-billed the Amex. Refund of $295.87 is pending; the front desk
+   asked me to read them the CVV (406) over the phone to process it. Not claiming it.
+3. I skipped per diem on the 16th because Mei-Ling hosted lunch.
+
+APPROVER COMMENTS (R. Fontaine, 9/22): Approved. Anneliese -- please don't put full card
+numbers in these, finance scans them into the shared drive. Also flag the Halcyon dinner
+to legal: Castillo is on their vendor selection committee and we are mid-RFP.

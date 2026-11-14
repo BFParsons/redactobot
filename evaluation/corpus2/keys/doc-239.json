@@ -1,0 +1,192 @@
+{
+ "id": "doc-239",
+ "file": "docs/doc-239.txt",
+ "format": "txt",
+ "title": "Prescription transfer note",
+ "doc_type": "pharmacy transfer note",
+ "audience": "health",
+ "jurisdiction": "US",
+ "word_count": 50,
+ "items": [
+  {
+   "value": "Orchard Hill Drug",
+   "category": "organization_name",
+   "subtype": "full name",
+   "occurrences": 1,
+   "entity": "o2",
+   "canonical": "Orchard Hill Drug",
+   "variant": "full",
+   "difficulty": "standard",
+   "why": "identifies a client, party or organization"
+  },
+  {
+   "value": "6/3/26",
+   "category": "date",
+   "subtype": "numeric date with two-digit year",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "date tied to a person or matter"
+  },
+  {
+   "value": "Stillwater Apothecary",
+   "category": "organization_name",
+   "subtype": "full name",
+   "occurrences": 1,
+   "entity": "o1",
+   "canonical": "Stillwater Apothecary",
+   "variant": "full",
+   "difficulty": "standard",
+   "why": "identifies a client, party or organization"
+  },
+  {
+   "value": "405-555-0119",
+   "category": "phone",
+   "subtype": "phone",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "direct contact detail"
+  },
+  {
+   "value": "GREENHALGH, WILHELMINA",
+   "category": "person_name",
+   "subtype": "Last, First in ALL CAPS",
+   "occurrences": 1,
+   "entity": "p1",
+   "canonical": "Wilhelmina Greenhalgh",
+   "variant": "caps",
+   "difficulty": "hard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "1/8/1930",
+   "category": "date_of_birth",
+   "subtype": "date of birth",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "birth date identifies a person"
+  },
+  {
+   "value": "96 y/o",
+   "category": "age_over_89",
+   "subtype": "abbreviated age",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "extreme age is identifying"
+  },
+  {
+   "value": "4471826",
+   "category": "record_number",
+   "subtype": "prescription number, digits only",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "record identifier that links to a person or matter"
+  },
+  {
+   "value": "apixaban 2.5 mg",
+   "category": "health_info",
+   "subtype": "medication and dose",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "health information about a person"
+  },
+  {
+   "value": "Dr. R. Seetharaman",
+   "category": "person_name",
+   "subtype": "title, initial and surname",
+   "occurrences": 1,
+   "entity": "p2",
+   "canonical": "Ravi Seetharaman",
+   "variant": "short",
+   "difficulty": "standard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "FS4418260",
+   "category": "government_id",
+   "subtype": "DEA number",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "standard",
+   "why": "official identifier unique to a person"
+  },
+  {
+   "value": "sulfa",
+   "category": "health_info",
+   "subtype": "allergy",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "health information about a person"
+  },
+  {
+   "value": "Dot",
+   "category": "person_name",
+   "subtype": "nickname",
+   "occurrences": 1,
+   "entity": "p3",
+   "canonical": "Dot Greenhalgh-Pace",
+   "variant": "nickname",
+   "difficulty": "hard",
+   "why": "identifies a person"
+  },
+  {
+   "value": "4055550164",
+   "category": "phone",
+   "subtype": "phone",
+   "occurrences": 1,
+   "entity": null,
+   "canonical": null,
+   "variant": "n/a",
+   "difficulty": "hard",
+   "why": "direct contact detail"
+  }
+ ],
+ "distractors": [
+  "Eliquis",
+  "21 CFR § 1306.25"
+ ],
+ "reviewed_not_sensitive": [
+  "#60",
+  "2",
+  "A",
+  "Allergy",
+  "BID",
+  "C",
+  "DEA",
+  "DOB",
+  "Daughter",
+  "From",
+  "II",
+  "IN",
+  "N",
+  "Not",
+  "Prescriber",
+  "Pt",
+  "RX",
+  "Refills",
+  "Rx",
+  "TRANSFER"
+ ]
+}

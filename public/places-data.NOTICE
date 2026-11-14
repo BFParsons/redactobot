@@ -1,0 +1,14 @@
+Place names derived from GeoNames: https://www.geonames.org/
+Licensed under Creative Commons Attribution 4.0: https://creativecommons.org/licenses/by/4.0/
+Modified by selecting primary/ASCII names, normalizing, lowercasing and deduplicating.
+Data provided without any guarantee of accuracy or completeness.
+
+{
+  "source": "https://download.geonames.org/export/dump/cities15000.zip",
+  "retrieved": "2026-11-12T22:25:23.202Z",
+  "sha256": "93552f9023c8f1adcfac0f1d15d325fe235781eea8f09e60f9aad3b1bf840f3f",
+  "entries": 34215,
+  "spellings": 38783,
+  "license": "CC BY 4.0",
+  "scope": "Primary names and ASCII spellings of cities over 15,000 population or capitals. Not all places or aliases."
+}

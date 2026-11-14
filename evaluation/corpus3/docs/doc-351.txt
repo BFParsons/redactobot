@@ -1,0 +1,39 @@
+HANDOFF NOTES for Keisha - Mossback Outfitters, LLC books
+from Trudy Vandermolen, last day Friday 11/14. Sorry this is a brain dump. Shred or lock up when you've moved everything into the password manager!!
+
+OWNER: Corwin Skaggs, cell 406-555-0119, corwin@mossbackoutfitters.example. He answers texts, not email. Shop is 26 East Callender Street, Livingston MT 59047.
+EIN 81-4420871. MT withholding acct 4418772-001-WTH.
+
+BANK - Paradise Valley State Bank
+  operating  1104418772   routing 092662045
+  payroll    1104418780
+  online banking: https://online.pvsb.example/business  user mossback_books  pw Stonefly!Hatch26
+  the token fob is in the top desk drawer. security question (first rod): Sage XP
+  branch contact is Lupe Arredondo, direct 406-555-0184 - she knows Corwin and will call HIM, not you, to verify wires
+
+COMPANY CARD (in Corwin's name, I keep a copy for online orders)
+  Visa 4304 2404 8340 0526  exp 10/27  cvv 339  billing zip 59047
+  statement closes the 22nd, autopay from operating
+
+PAYROLL - Bitterbrush Payroll Co.  client ID BB-20441
+  login tvandermolen@mossbackoutfitters.example / Elk$Hair#Caddis  -> they need to re-issue under your email
+  4 employees + 3 seasonal guides. Guides are 1099 except the one who is on a J-1 visa (ask Corwin, paperwork in the blue folder)
+  Form 941 filed through Q3. Q4 is yours.
+
+QUICKBOOKS
+  QuickBooks Desktop 2024 lives on the back-office PC, hostname MOSSBACK-BO1, serial on the sticker MXL4418K7Z
+  admin pw Rainbow2Brown. Backups go nightly to the NAS (Synology DS220+, serial 2140QRN441877) at 192.168.10.40
+  remote in through the shop's static IP 203.0.113.212 port 3390 - yes I know. tell him to get a VPN.
+
+VENDORS THAT NEED CARE
+  - Hardy Reel Werkstatt GmbH (the German reel parts). They invoice in euros, usually EUR 3.200,00 or so a quarter. Wire only:
+    IBAN DE19 0289 9499 5185 0830 84   BIC HRWKDEFFXXX. Last one sent 10/06, $3,512.44 incl fee.
+  - rent to the landlord is $2,850 on the 1st by check, he will not take ACH
+
+THINGS ONLY I KNOW (sorry)
+  - Corwin takes $4,000 owner draw twice a month. In August he took $22,000 extra - that was his divorce settlement payment, code it to draws not legal fees
+  - the $600/mo to "R. Skaggs" is his brother, who is in a rehab facility in Billings. Personal. Draws.
+  - sales tax: none (Montana) but the resort tax in West Yellowstone applies to the pop-up, permit WY-RT-0418
+  - my own W-2 will need mailing: 311 South H Street, Livingston. SSN is in the payroll system, ends 8297
+
+call me if stuck, 406.555.0102, until the end of the month. good luck - T.

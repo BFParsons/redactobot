@@ -1,0 +1,65 @@
+<!doctype html>
+<!--
+  Copyright 2026 The Redactobot Authors
+  SPDX-License-Identifier: Apache-2.0
+-->
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Redactobot Firebase connection check</title><style>body{font:16px/1.5 system-ui;max-width:900px;margin:32px auto;padding:20px}button{font:inherit;padding:12px}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style></head>
+<body><h1>Firebase connection check</h1><p>This diagnostic uses only the fixed fictional sample below. It runs Nano with JavaScript network calls blocked, then sends its identity-scrubbed result to cloud Gemini. It never reads clipboard contents, chat history or files.</p>
+<pre id="fixture"></pre><button id="run">Test Nano and cloud cleanup</button><pre id="result" role="status">Ready.</pre>
+<script type="module">
+import { prepareModel, extract } from '/src/extension/model.ts';
+import { makeReport } from '/src/extension/policy.ts';
+import { prepareCloudInput, approveCleanedResult } from '/src/core/cloud-gate.ts';
+import { cleanupCloud, askCloud, cloudSetupProblem } from '/src/core/cloud-client.ts';
+const fixture = 'DOCUMENT:\nContact Avery Bennett at avery@example.com or (202) 555-0147.\n\nDiagnosis: type 2 diabetes. Treatment: metformin.\n\nQUESTION:\nSummarize the available information without guessing removed details.';
+document.querySelector('#fixture').textContent = fixture;
+const run = document.querySelector('#run'), output = document.querySelector('#result');
+run.addEventListener('click', async () => {
+  run.disabled = true;
+  const saved = { fetch: window.fetch, xhr: window.XMLHttpRequest, socket: window.WebSocket, beacon: navigator.sendBeacon };
+  const evidence = { state: 'running', phase: 'local', localNetworkAttempts: 0, requests: [] };
+  const show = () => { output.textContent = JSON.stringify(evidence, null, 2); };
+  const controller = new AbortController(), timer = setTimeout(() => controller.abort(), 180000);
+  const started = performance.now();
+  const blocked = () => { evidence.localNetworkAttempts++; throw new Error('Unexpected network call during local inference.'); };
+  try {
+    const problem = cloudSetupProblem(); if (problem) throw new Error(problem);
+    window.fetch = window.XMLHttpRequest = window.WebSocket = blocked; navigator.sendBeacon = blocked;
+    show();
+    await prepareModel(true, label => { evidence.progress = label; show(); });
+    const found = await extract(fixture, controller.signal, label => { evidence.progress = label; show(); });
+    const report = makeReport(fixture, found.names, found.topics, found.ambiguous, 'SMOKE', true, undefined, found.identifying);
+    evidence.localMs = Math.round(performance.now() - started);
+    evidence.localCategories = report.findings.map(d => ({ kind: d.kind, bucket: d.bucket, review: !!d.reviewReason }));
+    // This fixture is authored and reviewed in this source. No user-provided text can enter.
+    const input = prepareCloudInput(fixture, report, 'SMOKE', true);
+    if (/Avery Bennett|avery@example.com|202\) 555-0147/.test(input.text)) throw new Error('Fictional identifier was not removed. No cloud request sent.');
+    evidence.approvedPreview = input.text; evidence.phase = 'cloud'; show();
+    window.XMLHttpRequest = saved.xhr; window.WebSocket = saved.socket; navigator.sendBeacon = saved.beacon;
+    window.fetch = async (request, options) => {
+      const url = new URL(typeof request === 'string' ? request : request.url);
+      const body = typeof options?.body === 'string' ? options.body : '';
+      if (/Avery Bennett|avery@example.com|202\) 555-0147/.test(body)) throw new Error('Raw fictional identifier blocked at network boundary.');
+      const response = await saved.fetch.call(window, request, options);
+      evidence.requests.push({ host: url.hostname, status: response.status }); show();
+      return response;
+    };
+    const cloudStarted = performance.now();
+    const result = await cleanupCloud(input, controller.signal);
+    evidence.cloudMs = Math.round(performance.now() - cloudStarted);
+    evidence.cleaned = result.report.cleaned; evidence.cloudNeedsReview = result.report.needsReview;
+    evidence.healthRemoved = !/diabetes|metformin/i.test(result.report.cleaned);
+    if (!evidence.healthRemoved) throw new Error('Expected fictional health facts were not fully removed.');
+    if (!result.report.needsReview) evidence.answer = await askCloud(approveCleanedResult(result), controller.signal);
+    evidence.state = 'complete'; evidence.phase = 'done';
+  } catch (error) {
+    evidence.state = 'failed'; evidence.errorCode = error.code;
+    let message = error.message || String(error);
+    for (const secret of [import.meta.env.VITE_FIREBASE_API_KEY, import.meta.env.VITE_APPCHECK_DEBUG_TOKEN]) if (secret) message = message.split(secret).join('[configuration value]');
+    evidence.error = message;
+  } finally {
+    clearTimeout(timer); window.fetch = saved.fetch; window.XMLHttpRequest = saved.xhr; window.WebSocket = saved.socket; navigator.sendBeacon = saved.beacon;
+    evidence.elapsedMs = Math.round(performance.now() - started); delete evidence.progress; show(); run.disabled = false;
+  }
+});
+</script></body></html>

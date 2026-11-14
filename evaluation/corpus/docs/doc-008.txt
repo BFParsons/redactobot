@@ -1,0 +1,58 @@
+2025 INDIVIDUAL TAX ORGANIZER                         Pellegrino & Yoo, CPAs
+Client no. 10-4418                                    Preparer: S. Yoo
+Returned by client 2/21/2026 (handwritten answers typed up by front desk)
+
+PART 1 -- TAXPAYER INFORMATION
+Taxpayer:  OYELARAN, Adebayo T.      SSN 239-62-4388     DOB 05/09/1978
+           Occupation: pharmacist
+Spouse:    Chiamaka Oyelaran ("Amy")    SSN 376 39 1788     DOB 12/30/1980
+           Occupation: school counselor
+Address:   9 Quail Hollow Ct, Naperville, IL 60564-4410     (same as last year: yes)
+Phone:     T - 630-555-0112   S - 630 555 0167
+Email:     bayo.oyelaran@fastmail.example  (send the e-file forms to Amy instead: c.oyelaran+taxes@fastmail.example)
+IL driver's license (T): O460-1257-8132, issued 05/09/2022, exp. 05/09/2026
+Identity Protection PIN (T): 418207       Spouse: none issued
+
+PART 2 -- DEPENDENTS
+Name                    DOB           SSN / ITIN       Relationship    Months in home
+Tobi Oyelaran           03/14/2012    146-36-0891      son             12
+Folake Oyelaran         8/2/2015      453685862        daughter        12
+Abiodun Oyelaran        1/4/1935      947-78-3301      T's mother      12
+  Note from client: "My mother moved in with us in 2024, she is 91 now and has
+  no income. She is not a citizen (visiting on a long-stay basis, we pay everything).
+  Can we claim her? Last year's preparer said no."
+
+PART 3 -- REFUND / PAYMENT
+Direct deposit:  Prairie State Bank & Trust    RTN 071499792    Acct 0029 4471 8830  (checking)
+If balance due:  debit same account on April 15.
+
+PART 4 -- INCOME
+Form W-2 (T)   Lakeview Compounding Pharmacy, Inc.   EIN 36-4471902   Box 1 $148,212.40   Fed w/h $27,904.11
+Form W-2 (S)   Fox Prairie School District 88        EIN 36-6009114   Box 1 $71,338.00    Fed w/h $8,116.52
+Form 1099-INT  Prairie State Bank & Trust                                    $412.77
+1099-B / DIV   Harborstone Securities, acct 5XT-208814   dividends $2,960.15; net short-term loss (1,844.00)
+Other:         Amy sold handmade jewelry online, "about $3k" gross, no 1099 received. Receipts in shoebox.
+
+PART 5 -- DEDUCTIONS (Schedule A items)
+Mortgage interest (Form 1098): Midland Prairie Mortgage Co., loan 7700218834             $14,208.39
+Real estate tax, DuPage County, PIN 07-22-304-019                         $11,940.22
+Charity:  Redeemed Life Assembly (weekly giving statement attached)               $6,240.00
+          Naperville Central Band Boosters                                     $350
+Medical:  Tobi's insulin pump and CGM supplies -- he has type 1 diabetes, dx 2021.
+          Out of pocket after insurance approx. $7,150. Paid from HSA? "Some." (need Form 8889 detail)
+
+PART 6 -- CHILD CARE (Form 2441)
+Provider:  Little Sprouts Montessori, 1550 W. Ogden Ave., Naperville    EIN 84-3317206    Paid $4,875 (Folake, after-school)
+Sitter:    Marguerite Dunleavy, SSN "she won't give it to us" -- paid $2,400 by Zelle to 630.555.0149
+
+PART 7 -- ESTIMATED PAYMENTS
+None federal. Illinois: $600 on 6/16/25, $600 on 9/15/25.
+
+PART 8 -- QUESTIONS FOR YOUR PREPARER
+- "Bayo got an IRS Letter 5071C in January asking him to verify his identity. Do we
+  ignore it? He did not file anything yet."
+- "We paid Mrs. Dunleavy more than last year. Do we need to give her a form?"
+- "Compare 2024 2025 withholding -- why was our refund so much smaller?"
+
+OFFICE USE: organizer complete? N -- missing HSA statement, 1099-B pages 3-6, mother's passport copy.
+Assigned: SY.   Target date: 3/20/2026.

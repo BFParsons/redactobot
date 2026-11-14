@@ -1,0 +1,54 @@
+CASTELLANO & BRIGHT LLP -- TRUST ADMINISTRATION FILE NOTES
+Matter: Halvorsen Family Revocable Trust u/a/d June 3, 2009
+File no. TR-2026-0318      Atty: Renee Castellano   Paralegal: Dmitri Volkov
+
+4/22/2026 (RC) -- Intake call with successor trustee Ingrid Halvorsen-Pike,
+the settlor's eldest daughter. Settlor Arvid T. Halvorsen died
+February 9, 2026 at Mercy Ridge Hospice in Duluth; he was age 94.
+His wife Birgit predeceased him (d. 11/30/2019). Ingrid has the original
+trust and the pour-over will. She does not have a death certificate yet; ordered six.
+Mr. Halvorsen's SSN per the old 1040 is 250-96-2697. Trust has been using his
+SSN; need a new EIN now that it is irrevocable. Explained the Form 1041 filing and
+that a Form 706 is unlikely at this size, but we will confirm once values are in.
+
+Assets she knows about:
+  - Home at 2207 Lakewood Terrace, Two Harbors, MN 55616. County
+    estimated market value $412,300. No mortgage.
+  - Cabin and 40 acres on Stewart Lake, held in the trust since 2011. This is
+    the only parcel with the old Halvorsen sawmill on it; Lars wants it.
+  - North Shore Federal Credit Union checking, acct ending 8841, about
+    $38,000, and a share certificate, $75,000.00, matures 09/15/2026.
+    NSFCU routing 047096417.
+  - Brokerage at Pinecrest Wealth Partners, acct PWP-7730-22914, roughly
+    $1.1 million at date of death. Adviser is Chase Whitlow
+    (cwhitlow@pinecrestwealth.example, 218.555.0116). Chase says step-up
+    statements will take two weeks.
+  - An old account in Cork from when Arvid worked there in the 1980s:
+    Gaelic Mutual Bank, IBAN IE10 AIBK 0892 6394 9967 82, maybe EUR 9,400.
+    Nobody has touched it in years.
+  - 2018 pickup, plate HLV 419, and a 19-ft aluminum boat, the "Birgit II".
+
+Beneficiaries under Article VI: Ingrid and her brother Lars Halvorsen, equal
+shares, after specific gifts: $25,000 to Bethel Lutheran Church and
+ten thousand dollars to his caregiver, Soledad Marín. Ingrid mentioned that
+Lars filed Chapter 13 in 2023 and is in recovery from a gambling addiction;
+she asked whether his share can be held back. Told her the trust has a spendthrift
+clause but no discretionary holdback; see Minn. Stat. § 501C.0813 on her duty to
+inform. She is not to favor either beneficiary. The Crummey language is moot now.
+
+4/24/2026 (DV) -- Called NSFCU, spoke with "Tammi" in member services
+(1-800-555-0177 x4402). They need letters of trusteeship + death cert. to retitle.
+Emailed Ingrid at ingrid.hp@lakemail.example the certification of trust for signature.
+Her cell is (218) 555-0142; she is in Grand Marais Mon-Thu.
+
+4/29/2026 (RC) -- Lars called, upset. Says Ms. Marín "got Dad to change things" in
+the last month at hospice and that Dad had vascular dementia since at least 2024.
+I told him we represent the trustee, not him, and that he may want his own lawyer.
+He gave his number as 218 555 0190 and said to stop emailing his sister
+about "his" cabin. Note to file: the gift to Ms. Marín was added by the Third
+Amendment dated January 12, 2026, four weeks before death. Need the
+hospice chart and the notary's journal. Possible capacity issue; flag for Renee.
+
+TO DO: EIN application; inventory within 60 days; Schedule K-1s at year end;
+ask Whitlow for date-of-death values; retainer $5,000 received 4/23/2026, trust
+acct ref. IOLTA-22-0457.

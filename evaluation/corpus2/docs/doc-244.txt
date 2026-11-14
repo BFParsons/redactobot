@@ -1,0 +1,60 @@
+Udoka & Fenwick Tax Group                                   Workpaper ID-1
+Client: TSIOLKAS, MARGUERITE ("Margo")   Client # 40117    TY2025
+Preparer: Anselm Udoka, EA (CAF 0309-48817-R)   Notes of 4/22/26
+
+WHAT HAPPENED
+E-file of the 2025 Form 1040 rejected April 9, 2026, reject code IND-181-01 /
+duplicate SSN. A return was already filed under 506-17-1817 on Feb. 3.
+Marguerite Tsiolkas did not file it. IRS account transcript (pulled with Form 2848
+on file) shows the bogus return claimed a $9,417 refund on a made-up Schedule C
+and asked for direct deposit to an account ending 5580 - not hers. Hers is
+Copperfield Desert Bank, routing 067140929, acct 30-4471-88602.
+The transcript lists the submitting IP as 198.51.100.77; her home connection
+is 203.0.113.140 per her router page, so it was not sent from the house.
+
+She also got Letter 5071C dated 03/16/2026 and ignored it, thought it was junk.
+
+OTHER DAMAGE SHE FOUND (credit reports from Equifax, Experian, TransUnion)
+1. Discover card opened Jan. 12, 2026 in her name: 6011 9956 6415 0633,
+   exp 09/29. The thief had it mailed to a Phoenix box. She has the card
+   now (bank re-sent it to her) incl. the 3-digit code on the back, 418. Balance
+   $3,866.40. Closed 4/14, fraud claim DFS-26-0091448.
+2. Store card, Saguarita Home Furnishings, acct 7781 2204 9963,
+   $1,249.99 sofa delivered to an address in Marana she has never heard of.
+3. Hard inquiry for an auto loan, declined.
+4. Her real card is fine: Visa debit ending 2557, untouched.
+Not hers either: a 2221 3150 4386 7655 number on the Experian report -
+that turned out to be her late husband Nikos's card, closed when he died
+11/30/2024. Leave it out of the affidavit.
+
+HOW (her best guess)
+Phishing email "from the IRS" in January. She typed her SSN and her Gmail
+password - which was Nikos1948!, same one she used for the bank. Email is
+margo.tsiolkas@mailhaven.example. Both passwords changed 4/10/26; bank user ID is
+now mtsiolkas_tucson with 2FA to her cell 520-555-0127.
+
+IDENTITY DETAILS FOR THE FORM
+Name as on last return: Marguerite Tsiolkas (2024 was joint with Nikos Tsiolkas,
+deceased; his SSN 829 16 5514).
+DOB 08/27/1951. AZ driver license D08841726, exp 2031.
+Address: 2290 E. Calle Sin Nombre, Tucson, AZ 85718. Lived there since 2009.
+Phone: cell above; landline (520) 555-0193 - best after 9, she volunteers mornings
+at Catalina Foothills Hospice where Nikos died (pancreatic cancer).
+
+REPORTS FILED
+- FTC report at IdentityTheft.gov, no. 168204417, April 11, 2026.
+- Pima County Sheriff's report S26-0412877, Detective Rosalba Quintanar, Fraud
+  Unit, 520-555-0108 ext. 3312. Det. Quintanar wants a copy of the 14039.
+- Fraud alert placed with all three bureaus; credit freeze 4/12. Freeze PIN
+  for Equifax 7730914 (she read it to me; I told her not to email it).
+- Social Security Administration: earnings record checked, clean.
+
+STEPS TAKEN / TODO
+[x] Form 14039 completed, box 1 and box 2 checked, signed by MT 4/22.
+[x] Paper-file the real return with the 14039 on top. Refund due $2,318; expect
+    a long wait - tell her 6-9 months.
+[ ] Call IPSU 800-555-0139 if no CP01A by July 31.
+[ ] IP PIN: once issued, record in the vault only. She already has one for the
+    Arizona return from last year's mix-up, 604417.
+[ ] Bill: $375 flat for ID theft work + $95 transcript/POA fee. She asked to
+    pay in two parts because she is living on Nikos's survivor benefit.

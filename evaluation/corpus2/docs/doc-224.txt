@@ -1,0 +1,110 @@
+DOVETAIL TAX RESOLUTION GROUP
+Interview notes for Form 433-A (Collection Information Statement) -- these are NOT the form
+Client file: DTR-2025-0719        Interviewer: K. Novotny, EA (enrolled agent no. 00118274-EA)
+Interview: Tues 10/14/25 at the clients' kitchen table, about 2 hrs. Follow-up call 10/16.
+POA: Form 2848 signed 10/14, CAF no. 0309-55718-R
+
+1. WHO
+Taxpayer:  Wendell T. Mackenzie (goes by "Wen"), SSN 303-67-7048, DOB 4/2/1978, cell 417-555-0133
+Spouse:    Soledad Mercado-Mackenzie, SSN 394-98-2113, DOB 11-19-1981, cell 417.555.0156,
+           soledad.mm@mailhaven.example (she handles all the paperwork; email her, not him)
+Home:      1846 E. Catalpa Street, Springfield, MO 65804 (Greene County). They own it, see 7.
+Household of four. Daughter Itzel, 9, born 7/30/2016, 4th grade at Wilder Elementary.
+Wendell's mother, Dolores Mackenzie, 87, moved in during March 2024 after a stroke. They claim her
+as a dependent; her SSN ends 6494. She gets Social Security of $1,388 a month and puts $400 of it toward groceries.
+
+2. WHAT IS OWED
+Balances per account transcripts I pulled 10/10 (joint 1040s, all filed, none under audit):
+   2021   $18,406.22
+   2022   $27,913.80
+   2023    $9,150.47     total $55,470.49 with penalties and interest to date
+Missouri DOR also wants $4,312 for 2022. Not dealing with that yet; the state has not sent anything
+since a billing notice in the spring and Soledad would rather keep the two apart.
+Notice LT11 is dated Sept. 22, 2025. The hearing request under IRC § 6330 has to be postmarked by Oct 22.
+The case is already with a Revenue Officer: Ms. Buchanan (R. Buchanan on the letter), employee ID 1000482233,
+Springfield field office, 417-555-0181, fax 417-555-0182. She left a card in their door on 9/30.
+Identity protection PIN: Wendell's for this year is 604237. Soledad has never been issued one.
+How it happened, in his words: the business took off in 2021 and he never raised his estimates. Then
+his cousin Darla, who kept his books until last year, "borrowed" about thirty-one thousand out of the business
+account over 14 months. He filed a police report (SPD 24-061187) but will not press it because she is family.
+Darla has paid back $2,000. In early 2023 he was in hospital 9 days with pneumonia and lost most of a quarter.
+
+3. WORK AND INCOME
+Wendell is the sole member of Mackenzie Climate Services LLC (EIN 81-4470926), HVAC install and repair, disregarded,
+reported on Schedule C. Shop: 2750 W. Kearney St, Unit C, Springfield 65803. Two employees, payroll deposits current.
+   2024 gross receipts $412,880; net profit $96,300. Year to date through 9/30: 71.4k net.
+Soledad is a dental hygienist at Osprey Dental Arts, PC (Dr. Brannock-Sayles's office), there since Aug 2017,
+$41.50 an hour, about 30 hours a week. Employee no. ODA-0457. Gross $5,395 a month, net $4,180.66 direct-deposited
+to the joint checking. No other income. No rental, no side work, no crypto.
+
+4. BANK AND INVESTMENT ACCOUNTS
+a) Joint checking, Ozark Heritage Bank, acct ending 7719, average balance $2,140.
+b) Joint savings, same bank, xxxx-3302: $6,025.18. This is the property-tax money.
+c) Business checking, Ozark Heritage, routing 089044443, acct 4410 0287 615: $14,870 on the day, but
+   payroll of $9,200 clears Friday.
+d) FOREIGN ACCOUNT. Soledad inherited an account in Spain from her father, who died in 2022.
+   She did not think of it as hers and said so twice. Statements go to her aunt's address there.
+   Banco Olivar de Jaén, IBAN ES97 4538 4530 5794 0918 9421, SWIFT BOJAESMMXXX.
+   Balance on the last statement: 11.260,00 EUR, call it $12,200. It has NEVER been reported.
+   No FinCEN Form 114 for 2022, 2023 or 2024. Flag for Katarzyna: fix this before anything goes to the RO.
+e) Wen's 401(k) from his old job at Kingfisher Mechanical, plan acct KM-401-228841: $38,700 vested, with
+   a $6,000 loan against it.
+f) Itzel's college account, MOST 529, acct 6120045583: $4,890. Grandma Dolores put in most of it.
+g) Term life on Wendell, Lantern Mutual Life, policy LML-T-20984417. No cash value.
+h) Cash on hand: about $300. No safe deposit box.
+
+5. CREDIT CARDS
+   Visa (Ozark Heritage), in Wendell's name, ending 4082. Limit $12,000, owes $11,612.40, minimum $290.
+   Mastercard in the name SOLEDAD MERCADO (never updated after the wedding). She read me the
+      whole number before I could stop her: 5599 9859 2200 1381, exp 03/27. Limit $8,500,
+      owes $7,944.09, minimum $199.
+   Amex business card, embossed WENDELL T MACKENZIE, last five 32853. Owes $4,310; he pays it in full
+      most months.
+   A home-improvement store card was closed in 2024 with nothing owing.
+
+6. VEHICLES
+   2019 Ford F-250, VIN 1FT7W2BT5KEC41907, MO plate 7HK R42. 90% business. Loan with Show-Me Auto Credit,
+      no. 30-88127-4, balance $21,350, payment $612. Worth maybe $34,000.
+   2016 Honda Odyssey, VIN 5FNRL5H64GB072218, vanity plate ITZLMOM. Paid off. Worth about $9,500.
+   2004 utility trailer, plate 43T-9KD. $1,200 at most.
+
+7. REAL ESTATE
+   The Catalpa house. Bought June 2015 for $189,000. Zillow says $262,000; I would use $250k.
+   County parcel no. 88-12-27-304-019.
+   First mortgage: Lamplight Home Loans, loan 0077418265, balance $141,772.63, payment $1,318.44 with escrow.
+   HELOC with Ozark Heritage opened in 2022 to cover a payroll: $18,000 drawn, interest-only $131 a month.
+
+8. MONTHLY LIVING EXPENSES (actual; compare to the National Standards later)
+   Food, clothing, misc.            $1,950
+   Housing and utilities            $2,285
+   Vehicle operating                  $640
+   Health insurance (marketplace)   $1,104
+   Out-of-pocket health               $870   <- this is the number the RO will push on. Detail:
+      - Itzel has juvenile idiopathic arthritis. Weekly etanercept 25 mg injections, copay $350 a month,
+        plus a rheumatology visit in Kansas City every 8 weeks (gas and a motel, not counted above).
+      - Dolores: post-stroke outpatient rehab and a home aide three mornings a week, $780 a month. Her
+        Social Security does not cover it. They pay the difference.
+      - Wendell: severe obstructive sleep apnea. CPAP (ResMed AirSense 10, serial 23192847715) on a
+        payment plan with Breathe Easy Medical Supply, $46 a month, 11 payments left.
+   Court-ordered child support        $525   Wendell's son Tyler, 16, from a relationship before the marriage.
+        Tyler lives in Joplin with his mother. Case 18GR-DR00412. Paid through the state, never late.
+   Estimated tax payments             $500   ($1,500 a quarter on Form 1040-ES, started with Q3)
+   Not allowable but real: they tithe $400 a month to Iglesia Nueva Esperanza, Soledad's church.
+        Wendell says that one is not up for discussion, with us or with the IRS.
+
+9. OTHER THINGS THE FORM ASKS
+   - Soledad is a Spanish citizen and a lawful permanent resident. Green card renewed 2023, A-number
+     A 208 771 465. She is nervous about anything that goes to the government with her name on it.
+   - Bankruptcy: Wendell filed a Chapter 13 in 2012, discharged in 2017, case no. 12-60884. Before the marriage
+     was two years old. Soledad was not a debtor.
+   - Lawsuits: none. Trusts: none. Transfers in the last ten years: gave his old truck to Darla's boy in 2020.
+   - He owns three hunting rifles, maybe fifteen hundred dollars together. Left off unless asked.
+
+10. PLAN
+   File the hearing request (Form 12153) by fax on 10/17. Propose an installment agreement at $450 a month
+   (Form 9465 with a Form 433-D direct debit from the joint checking). Revisit an offer after the foreign
+   account is cleaned up.
+   Our fee: $2,500 retainer, charged to Soledad's Mastercard at the table, approval code 08812Z.
+   Documents go to https://vault.dovetailtax.example/u/mackenzie-0719. Login wmackenzie78, temporary password
+   Catalpa!1846 -- told him to change it tonight. He will not; ask Soledad.
+   Next call: Mon Oct. 20, 4:30, with Mrs. Mackenzie only. -- KN

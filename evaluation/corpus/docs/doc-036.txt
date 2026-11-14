@@ -1,0 +1,39 @@
+ST. BRENDAN'S REGIONAL MEDICAL CENTER                       DISCHARGE SUMMARY
+1775 Thompson Road, Coos Bay, Oregon 97420
+
+PATIENT:   ABERNATHY-NAKAMURA, HAROLD T.       MRN: 00-447-1182
+DOB:       02/11/1933  (93 y/o M)             ACCT: V0093317745
+ADMITTED:  10/02/2026                        DISCHARGED: 10/07/2026
+ATTENDING: Folasade Adeyinka, MD (NPI 1669704218)
+PCP:       Dr. Leonard Brzezinski
+COVERAGE:  Medicare 4RK8-TN2-MH61; Cornerstone Senior Health Plan, member CSH 88104471 02
+
+PRINCIPAL DIAGNOSIS: Acute on chronic systolic heart failure, NYHA class III
+SECONDARY: permanent atrial fibrillation; CKD stage 3b; type 2 diabetes; mild cognitive impairment
+ALLERGIES: sulfa (rash)
+CODE STATUS: DNR/DNI, confirmed with patient and daughter 10/03
+
+HOSPITAL COURSE
+Mr. Abernathy-Nakamura is a retired tugboat captain who lives with his daughter. He came to the
+ED with three days of worsening shortness of breath and a 9 lb weight gain after running
+out of his diuretic. BNP 1,840, creatinine 1.9 (baseline 1.6). Echo on 10/03/2026 showed
+EF 30%, unchanged. He was diuresed with IV furosemide, net negative 5.2 L, and
+returned to room air by day 4. Device interrogation of his dual-chamber pacemaker
+(serial PJN448213H) by Dr. Villalobos showed normal function, battery 4.1 years.
+One episode of evening confusion on night 2 resolved without medication.
+
+DISCHARGE MEDICATIONS
+  furosemide 40 mg daily (was 20 mg)        metoprolol succinate 50 mg daily
+  apixaban 2.5 mg BID                   insulin glargine 12 units nightly
+  STOP: ibuprofen. No NSAIDs.
+
+DISPOSITION: Home with Harborlight Home Health, Inc. (RN visits 3x/week, daily weights).
+Diet 2 g sodium, fluids 1.5 L. Daughter and health care agent: Karen Nakamura-Ellis,
+541-555-0137, same address: 63310 Shinglehouse Slough Road, Coos Bay 97420-8811.
+Karen manages his pill box; harold "forgets the evening ones" per her.
+
+FOLLOW-UP
+  Cardiology: Ignacio Villalobos, MD, Coos Bay Heart & Vascular Associates, Oct. 15, 2026 9:40 am
+  PCP: Dr. Brzezinski within 7 days; BMP at that visit.
+
+Dictated: F. Adeyinka MD  10/07/2026 14:12      Transcription job #7781205

@@ -1,0 +1,39 @@
+<!doctype html>
+<!--
+  Copyright 2026 The Redactobot Authors
+  SPDX-License-Identifier: Apache-2.0
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paste scan benchmark — Redactobot</title>
+  <style>
+    :root{color-scheme:light dark;font:16px/1.5 system-ui;background:light-dark(#f5faf9,#101919);color:light-dark(#172424,#e3efed)}
+    body{max-width:1120px;margin:32px auto;padding:0 24px}h1{font-size:28px;margin-bottom:8px}p{max-width:850px}
+    button{font:inherit;background:#00696e;color:white;border:0;border-radius:20px;padding:10px 20px;cursor:pointer}button:disabled{opacity:.5;cursor:default}
+    .panel{background:light-dark(white,#192625);border:1px solid #7f969544;border-radius:16px;padding:20px;margin:20px 0}
+    #status{font-weight:600}#summary{white-space:pre-wrap}table{border-collapse:collapse;width:100%;font-size:14px}td,th{padding:10px 8px;text-align:left;border-bottom:1px solid #7f969544}th{font-weight:600}.scroll{overflow:auto}
+    textarea{box-sizing:border-box;width:100%;min-height:140px;padding:12px;font:inherit;border:1px solid #7f9695;border-radius:8px;background:transparent;color:inherit}
+    small{display:block;margin-top:8px}#try-result{white-space:pre-wrap}button:focus-visible,textarea:focus-visible{outline:3px solid #e49a35;outline-offset:3px}
+  </style>
+</head>
+<body>
+  <h1>How quickly can we check a paste?</h1>
+  <p>This experiment compares local detection rules, a short Gemini Nano sensitivity check, and the app’s full name and topic scan. All model processing stays on this device.</p>
+  <p>The suite uses 17 fixed fictional samples, including clean text, ambiguous text, and sensitive information at the end of long passages. A fast result is not proof that no sensitive data remains.</p>
+  <p>The Nano check visits every overlapping 500-word chunk. It records the first warning separately from completion. Long samples use repeated neutral editing instructions to control length; they do not represent every document style.</p>
+  <button id="run">Run paste benchmark</button>
+  <button id="save" disabled>Download results</button>
+  <div class="panel" role="status" aria-live="polite"><div id="status">Ready to start</div><div id="elapsed"></div><pre id="summary"></pre></div>
+  <div class="panel scroll"><table><thead><tr><th>Sample</th><th>Words</th><th>Rules</th><th>Rules warn?</th><th>Nano check</th><th>Nano warns?</th><th>Full scan</th></tr></thead><tbody id="rows"></tbody></table></div>
+  <div class="panel">
+    <h2>Try a paste locally</h2>
+    <p>After the benchmark finishes, paste here to measure your own text. It stays in this tab and is excluded from saved benchmark results. Typing does not trigger a scan.</p>
+    <textarea id="try" aria-label="Try pasted text" placeholder="Paste text here after the benchmark finishes"></textarea>
+    <div id="try-result" role="status" aria-live="polite"></div>
+  </div>
+  <small>Benchmark timings include scan work but exclude page loading and DOM insertion into a third-party chat. The extension does not intercept pastes yet.</small>
+  <script type="module" src="/src/paste-benchmark.ts"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+From: Priya Raman <priya@raman-cpa.example>
+To: =?UTF-8?Q?Margaret_Whitfield?= <margaret@whitfieldholdings.example>
+Subject: =?UTF-8?B?WWVhci1lbmQgZmlsaW5nIOKAkyBuZXh0IHN0ZXBz?=
+Date: Sat, 14 Mar 2026 09:12:00 -0700
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="b1"
+
+--b1
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Margaret,
+
+Please confirm the transfer of $310,500.75 from account 5520-114-9087 =
+before Friday. Caf=C3=A9 meeting works for me.
+
+Priya
+--b1
+Content-Type: text/html; charset="utf-8"
+
+<p>Hi Margaret,</p><p>HTML version</p>
+--b1--

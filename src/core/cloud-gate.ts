@@ -6,7 +6,11 @@
 
 import {applyRedactions, findOccurrences} from './redact';
 import {identityContexts, privacyBucket} from './privacy-buckets';
-import {cleanedText, localFindings} from '../extension/policy';
+import {
+  cleanedText,
+  insidePlaceholder,
+  localFindings,
+} from '../extension/policy';
 import type {Finding, ScanReport} from '../extension/protocol';
 import {allCategoriesSelected} from '../extension/categories';
 
@@ -147,12 +151,25 @@ export function prepareCloudInput(
       .filter(d => privacyBucket(d) === 'cloud-cleanup' && !remove.has(d.id))
       .map(d => d.id),
   );
-  if (
-    identityContexts(redacted).length ||
-    localFindings(redacted).some(d => privacyBucket(d) === 'local-only')
-  ) {
+  // A placeholder is not an identifier, even where the checks re-detect it
+  // ("password: [CREDENTIAL_AB_1]").
+  const leftover = localFindings(redacted).filter(
+    d => privacyBucket(d) === 'local-only' && !insidePlaceholder(redacted, d),
+  );
+  const contexts = identityContexts(redacted);
+  if (contexts.length || leftover.length) {
+    // Say what is still there, so it can be marked and removed.
+    const named = [
+      ...new Set(
+        [...leftover.map(d => d.text), ...contexts.map(c => c.text)]
+          .map(t => t.replace(/\s+/g, ' ').trim())
+          .filter(Boolean),
+      ),
+    ].slice(0, 4);
     throw new Error(
-      'The preview still contains a possible identifier or identifying context. Remove it locally first.',
+      `The preview still contains details that could identify someone${
+        named.length ? `: ${named.map(t => `"${t}"`).join(', ')}` : ''
+      }. Select them in the text to remove them, then prepare the preview again.`,
     );
   }
   return issue(

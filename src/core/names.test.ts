@@ -103,6 +103,15 @@ describe('names read straight off the page, with no model', () => {
     }
   });
 
+  it('does not read the second word of a state name as a first name', () => {
+    for (const text of [
+      'She lives in New York and works in New Jersey.',
+      'They met in North Carolina, West Virginia and South Dakota last May.',
+    ]) {
+      expect(discoverNames(text).people, text).toEqual([]);
+    }
+  });
+
   it('still finds people whose names are also places or everyday words', () => {
     const found = discoverNames(
       'Yesterday his partner Leland Forsythe wrote to Sarah Green about India Wilson and Kenya Moore, then called Jordan Smith and Georgia Brown.',

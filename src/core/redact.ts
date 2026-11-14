@@ -697,10 +697,24 @@ export function buildDetections(
       });
     }
   }
-  const pushPattern = (m: ReturnType<typeof detectPatterns>[number]) => {
+  const pushPattern = (found: ReturnType<typeof detectPatterns>[number]) => {
+    let m = found;
     if (!free(m.start, m.end)) return;
     // A country or continent is not a place smaller than a state.
     if (m.type === 'places' && isLargePlace(m.text)) return;
+    // "York" inside "New York", "Jersey" inside "New Jersey": take the whole
+    // name, so the cleaned text does not read "New [PLACE]".
+    if (m.type === 'places') {
+      const lead = /(\p{Lu}\p{Ll}+)[^\S\n]$/u.exec(
+        text.slice(Math.max(0, m.start - 20), m.start),
+      );
+      if (lead && isRegion(`${lead[1]} ${m.text}`)) {
+        const start = m.start - lead[0].length;
+        if (free(start, m.end)) {
+          m = {...m, start, text: text.slice(start, m.end)};
+        }
+      }
+    }
     push({
       start: m.start,
       end: m.end,

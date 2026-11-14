@@ -126,7 +126,7 @@ describe('the identity boundary', () => {
         },
         'TEST',
       ),
-    ).toThrow('identifying context');
+    ).toThrow('could identify someone');
   });
   it('rejects forged, copied, reused and expired approvals', () => {
     expect(() => takeCloudText({text, kind: 'approved-cloud-input'})).toThrow(
@@ -224,5 +224,44 @@ describe('cloud excerpts that span a placeholder', () => {
         findings: [{text: '[PERSON_TEST_1]', category: 'health'}],
       }),
     ).toThrow();
+  });
+});
+
+describe('what the gate will and will not block', () => {
+  const none = {people: [], companies: []};
+  const prepare = (source: string) =>
+    prepareCloudInput(
+      source,
+      makeReport(source, none, NO_TOPICS, [], 'T'),
+      'T',
+      true,
+    );
+
+  it('does not mistake its own placeholders for identifiers', () => {
+    // After redaction this reads "user name: [CREDENTIAL_T_1], password:
+    // [CREDENTIAL_T_2]" and "file number [RECORD_T_1]", which the credential
+    // and record checks would match again.
+    const input = prepare(
+      'The server login was user name: admin, password: Tr0ub4dor-99. See file number EPA-0042-NY.',
+    );
+    expect(input.text).not.toContain('Tr0ub4dor-99');
+    expect(input.text).toMatch(/\[CREDENTIAL_T_\d\]/);
+  });
+
+  it('removes a fragment the first pass left behind, instead of refusing', () => {
+    const source =
+      'Hill Valley Mutual Insurance paid the claim. Visiting from New York, NY 10001 next week.';
+    const input = prepare(source);
+    expect(input.text).not.toContain('Mutual Insurance');
+    expect(input.text).not.toMatch(/\bNew\b/);
+    expect(input.text).not.toContain('York');
+  });
+
+  it('lets every sample document through', async () => {
+    const {SAMPLES} = await import('./samples');
+    for (const sample of SAMPLES) {
+      const source = `DOCUMENT:\n${sample.text}\n\nQUESTION:\nSummarise this.`;
+      expect(() => prepare(source), sample.title).not.toThrow();
+    }
   });
 });

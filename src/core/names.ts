@@ -23,6 +23,7 @@ import {COMMON_WORDS, GEOGRAPHY, isLargePlace} from './common-words';
 import {AMBIGUOUS_NAMES, GIVEN_NAMES} from './given-names';
 import {SSA_GIVEN_NAMES} from './given-names-ssa';
 import {PLACE_NAMES} from '../../taxonomy/places-data.js';
+import {isRegion} from '../../taxonomy/detectors.js';
 
 /** People and organizations named in a text. */
 export interface Names {
@@ -1700,6 +1701,12 @@ export function discoverNames(text: string): Names {
   )) {
     const word = m[1];
     const k = key(word);
+    // "New Jersey", "West Virginia", "South Dakota": the second word of a
+    // state's name is not someone's first name.
+    const stateStart = /(\p{Lu}\p{Ll}+)[^\S\n]$/u.exec(
+      text.slice(Math.max(0, m.index - 20), m.index),
+    );
+    if (stateStart && isRegion(`${stateStart[1]} ${word}`)) continue;
     if (
       GIVEN_NAMES.has(k) &&
       !ALSO_A_WORD.has(k) &&

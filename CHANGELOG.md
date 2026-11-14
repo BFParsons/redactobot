@@ -2,6 +2,23 @@
 
 ## Unreleased
 
+### Cloud step: no more unexplained "possible identifier" refusals
+
+- **Fix:** preparing the cloud preview could stop with "The preview still contains a possible
+  identifier or identifying context" when nothing identifying was left. Two causes:
+  - the final check re-detected its own placeholders ("password: [CREDENTIAL_1]" still looks like a
+    labelled password; "file number [RECORD_2]" like a record number). Placeholders are now ignored;
+  - the first pass left fragments: removing "Hill Valley" from "Hill Valley Mutual Insurance" left
+    "Mutual Insurance". The report now runs the checks again on the cleaned text and removes what
+    they find, so the text is as clean as it claims.
+- When something identifying really is left, the message now names it ("... could identify someone:
+  "My diagnosis is diabetes."") and says how to remove it.
+- All thirty sample documents now pass the cloud gate; a test keeps it that way.
+- "New York" is taken whole where only "York" was removed, and the second word of a state's name
+  ("New Jersey", "West Virginia") is no longer read as a first name.
+- Measured on both test sets: recall up about 0.1 points in several categories; text removed that was
+  not in the answer key up 0.1 to 0.3 points, from the extra fragments.
+
 ### Without the on-device model, and a cloud answer fix
 
 - **Notice for visitors without the on-device model.** The first screen now says when on-device AI is

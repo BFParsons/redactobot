@@ -243,6 +243,92 @@ export function cleanedText(
   return cleaned + text.slice(at);
 }
 
+/** A placeholder token as written into cleaned text, for example [PERSON_AB_1]. */
+export const PLACEHOLDER_TOKEN = /\[[A-Z][A-Z0-9_]*_\d+\]/g;
+
+/**
+ * Whether a finding in cleaned text is only a placeholder being re-detected.
+ * "password: [CREDENTIAL_AB_1]" still looks like a labelled password to the
+ * credential check, and "file number [RECORD_AB_2]" like a record number, but
+ * nothing private is there any more.
+ */
+export function insidePlaceholder(
+  cleaned: string,
+  finding: {start: number; end: number},
+): boolean {
+  for (const m of cleaned.matchAll(PLACEHOLDER_TOKEN)) {
+    if (finding.start < m.index + m[0].length && finding.end > m.index) {
+      return true;
+    }
+  }
+  return false;
+}
+
+/**
+ * Fragments the first pass left behind. Removing "Hill Valley" from "Hill
+ * Valley Mutual Insurance" leaves "Mutual Insurance", and removing "York" can
+ * leave "New". The checks see these only once the neighbour is gone, so run
+ * them again on the cleaned text and add what they find, mapped back to the
+ * original. Without this the text is not as clean as the first pass claims,
+ * and the cloud step refuses it without saying why.
+ */
+function withResiduals(
+  text: string,
+  findings: Finding[],
+  prefix: string,
+  categories: readonly PasteCategory[],
+): Finding[] {
+  for (let pass = 0; pass < 2; pass++) {
+    const sorted = [...findings].sort((a, b) => a.start - b.start);
+    const tokens = applyRedactions(
+      text,
+      sorted.map(d => ({...d, enabled: true, base: `${d.base}_${prefix}`})),
+    ).placeholders;
+    // Pieces of the cleaned text that are original text, with where each came
+    // from. Details left for cloud cleanup stay as written, as in the preview.
+    const pieces: Array<{clean: number; original: number; length: number}> = [];
+    let cleaned = '';
+    let at = 0;
+    for (const d of sorted) {
+      if (d.start < at || privacyBucket(d) === 'cloud-cleanup') continue;
+      pieces.push({clean: cleaned.length, original: at, length: d.start - at});
+      cleaned += text.slice(at, d.start) + `[${tokens.get(d.id)}]`;
+      at = d.end;
+    }
+    pieces.push({
+      clean: cleaned.length,
+      original: at,
+      length: text.length - at,
+    });
+    cleaned += text.slice(at);
+    const added: Finding[] = [];
+    for (const left of localFindings(cleaned, categories)) {
+      if (privacyBucket(left) !== 'local-only') continue;
+      const piece = pieces.find(
+        x => left.start >= x.clean && left.end <= x.clean + x.length,
+      );
+      if (!piece) continue; // a placeholder, or a span that runs into one
+      const start = piece.original + (left.start - piece.clean);
+      const end = start + (left.end - left.start);
+      if (text.slice(start, end) !== left.text) continue;
+      if ([...findings, ...added].some(d => d.start < end && d.end > start)) {
+        continue;
+      }
+      added.push({
+        ...left,
+        id: `residual-${start}-${end}`,
+        start,
+        end,
+        enabled: true,
+        bucket: privacyBucket(left),
+      });
+    }
+    if (!added.length) break;
+    findings = [...findings, ...added].sort((a, b) => a.start - b.start);
+  }
+  return findings;
+}
+
 /**
  * Builds the scan report for `text`. Merges the model evidence with the rule
  * findings without uncovering any rule match, turns uncertainties into review
@@ -443,6 +529,7 @@ export function makeReport(
         bucket: privacyBucket({...d, reviewReason}),
       };
     });
+  findings = withResiduals(text, findings, prefix, categories);
   if (!complete && !reasons.length) {
     reasons.push(
       'The full scan could not finish. Please review before pasting.',

@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2026 The Redactobot Authors
+ * Copyright 2026 B Parsons
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -70,7 +70,7 @@ const block = (dark, indent) => {
 // The system setting decides unless the user picks a theme (data-theme on
 // <html>).
 const css = `/*
- * Copyright 2026 The Redactobot Authors
+ * Copyright 2026 B Parsons
  * SPDX-License-Identifier: Apache-2.0
  */
 

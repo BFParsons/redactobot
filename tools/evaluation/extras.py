@@ -1,4 +1,4 @@
-# Copyright 2026 The Redactobot Authors
+# Copyright 2026 B Parsons
 # SPDX-License-Identifier: Apache-2.0
 
 """Show what the app replaced (or flagged) that the answer key does not list, in context.

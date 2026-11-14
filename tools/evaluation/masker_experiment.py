@@ -1,4 +1,4 @@
-# Copyright 2026 The Redactobot Authors
+# Copyright 2026 B Parsons
 # SPDX-License-Identifier: Apache-2.0
 
 # Experiment (14 Nov 2026), see evaluation/MASKER-EXPERIMENT.md. Needs onnxruntime, tokenizers, numpy and the

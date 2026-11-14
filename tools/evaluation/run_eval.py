@@ -1,4 +1,4 @@
-# Copyright 2026 The Redactobot Authors
+# Copyright 2026 B Parsons
 # SPDX-License-Identifier: Apache-2.0
 
 """Run the evaluation corpus through the app's real pipeline in Chrome.

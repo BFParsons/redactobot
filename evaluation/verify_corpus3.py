@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright 2026 The Redactobot Authors
+# Copyright 2026 B Parsons
 # SPDX-License-Identifier: Apache-2.0
 
 """Independent self-check for the third test corpus (doc-301 .. doc-360).

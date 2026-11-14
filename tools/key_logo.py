@@ -1,4 +1,4 @@
-# Copyright 2026 The Redactobot Authors
+# Copyright 2026 B Parsons
 # SPDX-License-Identifier: Apache-2.0
 
 """Key the v2 logo. Robot (left): remove only black connected to the border, so the screen and

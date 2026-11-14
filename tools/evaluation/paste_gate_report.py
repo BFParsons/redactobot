@@ -1,4 +1,4 @@
-# Copyright 2026 The Redactobot Authors
+# Copyright 2026 B Parsons
 # SPDX-License-Identifier: Apache-2.0
 
 """Summarize paste-gate runs from paste_gate_compare.ts across both corpora.

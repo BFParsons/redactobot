@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright 2026 The Redactobot Authors
+# Copyright 2026 B Parsons
 # SPDX-License-Identifier: Apache-2.0
 
 """Deterministic generator for the Redactobot independent test corpus.

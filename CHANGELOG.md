@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+### Copyright, privacy law and contact
+
+- Licence headers now read `Copyright 2026 B Parsons`.
+- The privacy policy names the operator, adds a section on Canadian privacy law (PIPEDA: accountability,
+  consent, processing outside Canada, access and correction, complaints to the Privacy Commissioner)
+  and gives a contact email. The address is assembled by a small script so it does not appear in the
+  page source.
+
 ### Hosting
 
 - The web app is hosted at https://redactobot.org (Cloudflare static hosting, `wrangler.jsonc`;

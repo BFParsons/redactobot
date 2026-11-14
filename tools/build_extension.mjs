@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2026 The Redactobot Authors
+ * Copyright 2026 B Parsons
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -79,6 +79,10 @@ await copyFile(
 await cp(resolve(root, 'extension/icons'), resolve(outDir, 'icons'), {
   recursive: true,
 });
+await copyFile(
+  resolve(root, 'public/contact-email.js'),
+  resolve(outDir, 'contact-email.js'),
+);
 // The privacy policy is one page shared with the web app. Inside the extension
 // it has no site root: drop the web-only script and icon, and point the back
 // link at the settings page.
@@ -87,6 +91,7 @@ await writeFile(
   (await readFile(resolve(root, 'public/privacy.html'), 'utf8'))
     .replace(/^\s*<link rel="icon"[^\n]*\n/m, '')
     .replace(/^\s*<script src="\/display-prefs\.js"><\/script>\n/m, '')
+    .replace('src="/contact-email.js"', 'src="contact-email.js"')
     .replace(
       '<a class="back" href="/">&larr; Back to Redactobot</a>',
       '<a class="back" href="options.html">&larr; Back to settings</a>',

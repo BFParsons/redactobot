@@ -1,4 +1,4 @@
-# Copyright 2026 The Redactobot Authors
+# Copyright 2026 B Parsons
 # SPDX-License-Identifier: Apache-2.0
 
 """Time masker-mini (ONNX int4) on paste pieces at 1, 2, 4 and 8 CPU threads.

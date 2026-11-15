@@ -275,7 +275,7 @@ contrast of at least 8.2:1 on status colours · a layout that works on phones.
 Small development measurements on fictional documents, not a guarantee.
 
 ```text
-TESTS        763 unit tests · 20 end-to-end tests on the real extension in Chromium
+TESTS        766 unit tests · 20 end-to-end tests on the real extension in Chromium
 ACCURACY     rules + Gemini Nano, unseen test set, paste-sized text:
                  person names ........ 93.9% caught
                  critical details .... 95.1% caught

@@ -56,7 +56,7 @@ export const collapse = (s: string) => s.replace(/\s+/g, ' ').trim();
 /** Returns the collapsed, lower-case form of `s`, for comparing names. */
 export const key = (s: string) => collapse(s).toLowerCase();
 const unaccent = (s: string) => s.normalize('NFD').replace(/\p{M}/gu, '');
-const upper = (s: string) => s.toLocaleUpperCase('en-US');
+const upper = (s: string | undefined) => (s ?? '').toLocaleUpperCase('en-US');
 
 const TITLE =
   'Mr|Mrs|Ms|Miss|Mx|Dr|Prof|Professor|Hon|Judge|Justice|Magistrate|Reverend|Father|Sister|Senator|Atty|Attorney|Officer|Ofc|Det|Detective|Sgt|Cpl|Tpr|Trooper|Deputy|Insp|Constable|Capt|Lt|Sir|Dame|Doña|Don|Señor|Señora|Sra|Dra|Dre|Lic|Mme|Mlle|Maître|Herr|Frau|Mevr|Dhr|RN|MR|MRS|MS|DR';
@@ -702,9 +702,12 @@ export function isAbbreviation(s: string): boolean {
  * and suffixes.
  */
 function personParts(full: string) {
+  // A hyphen or apostrophe left on the end of a word is punctuation, not part
+  // of the name: "John Smith- the client", or a name split at a line break.
   const tokens = collapse(full)
     .split(' ')
-    .filter(t => !HONORIFIC.test(t));
+    .map(t => t.replace(/[-–—'’]+$/u, ''))
+    .filter(t => t && !HONORIFIC.test(t));
   let suffix = '';
   while (tokens.length > 1 && SUFFIX_WORD.test(tokens[tokens.length - 1])) {
     suffix = tokens.pop()!.replace(/,$/, '');
@@ -1126,7 +1129,7 @@ export function discoverNames(text: string): Names {
   const links: Array<{text: string; person: string}> = [];
   const addPerson = (s: string) => {
     if (/\n/.test(s.trim())) return;
-    const name = collapse(s).replace(/[,.;:]+$/, '');
+    const name = collapse(s).replace(/[-–—'’,.;:\s]+$/u, '');
     const first = name.split(' ')[0];
     if (
       name.length >= 3 &&
@@ -2271,10 +2274,17 @@ export function nameCandidates(
         both(upper(`${p.surname}, ${rest} ${p.suffix}`));
       }
       // Initials, as used in file notes ("DKL", "D.K.L.", "DL")
-      const letters = [fi, ...mi, ...p.last.split(/[-\s]/).map(w => w[0])].map(
-        upper,
-      );
-      const forms = new Set([letters.join(''), upper(fi + p.last[0])]);
+      const letters = [
+        fi,
+        ...mi,
+        ...p.last
+          .split(/[-\s]/)
+          .filter(Boolean)
+          .map(w => w[0]),
+      ]
+        .filter(Boolean)
+        .map(upper);
+      const forms = new Set([letters.join(''), upper(fi + (p.last[0] ?? ''))]);
       for (const f of forms) {
         if (f.length >= 2 && !NOT_INITIALS.has(f)) {
           short(f);

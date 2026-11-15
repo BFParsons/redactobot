@@ -2,6 +2,19 @@
 
 ## Unreleased
 
+### Fix: detection crashed on a name followed by a hyphen
+
+- **Cause:** a name written with a hyphen straight after it ("John Smith- the client", or a name split
+  at a line break) was taken as a name ending in "-". Building its initials then read a letter that
+  was not there and threw, which stopped the whole scan. In the web app the results screen never
+  appeared, so **Find private details** looked as if it did nothing; in the extension the paste was
+  held with "The local check stopped". About 1 in 60 mangled test texts triggered it.
+- **Fix:** a trailing hyphen or apostrophe is no longer part of a name, and the initials code ignores
+  empty parts.
+- New robustness tests feed the detector 150 deliberately mangled texts, with a fixed seed, and
+  require that it never throws. Run against the old code they fail; against the new code a longer
+  run of 4,000 texts found nothing.
+
 ### Fix: "Find private details" could stay disabled for ever
 
 - **Cause:** when the page opens it asks Chrome whether its on-device model is available. Chrome

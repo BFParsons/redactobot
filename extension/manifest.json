@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Redactobot",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "minimum_chrome_version": "148",
   "homepage_url": "https://redactobot.org/privacy",
   "description": "Technology demo. Checks pastes locally on ChatGPT, Claude and Gemini and removes private details. Privacy policy: see Settings.",

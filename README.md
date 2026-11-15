@@ -27,7 +27,7 @@ On your device. In your browser. Before you hit paste.
 
 **Try it: [redactobot.org](https://redactobot.org)** (desktop Chrome)
 
-`v0.3.0` · `Apache-2.0` · `Chrome 148+` · `Firebase AI Logic` · `Gemini Nano + Gemini` · built for **#BuildHybridAI 2026**
+`v0.3.1` · `Apache-2.0` · `Chrome 148+` · `Firebase AI Logic` · `Gemini Nano + Gemini` · built for **#BuildHybridAI 2026**
 
 </div>
 
@@ -149,7 +149,7 @@ Local detection, review and replacement work with no Firebase setup at all.
 
 **The quick way: download it.**
 
-1. Download `redactobot-extension-0.3.0.zip` from the
+1. Download `redactobot-extension-0.3.1.zip` from the
    [latest release](https://github.com/BFParsons/redactobot/releases/latest) and unzip it.
 2. Open `chrome://extensions` and turn on **Developer mode** (top right).
 3. Click **Load unpacked** and choose the unzipped folder.

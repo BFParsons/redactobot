@@ -1,6 +1,9 @@
 # Change history
 
-## Unreleased
+## 0.3.1 — 2026-11-15
+
+The first public release: the hosted web app at https://redactobot.org and the published Chrome
+extension. Everything below was added or fixed since 0.3.0.
 
 ### Fix: detection crashed on a name followed by a hyphen
 

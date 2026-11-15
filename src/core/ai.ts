@@ -42,7 +42,16 @@ const TEXT_EN = [{type: 'text' as const, languages: ['en']}];
  * 'unsupported' when the browser has no such API.
  */
 export type DeviceStatus =
-  'available' | 'downloadable' | 'downloading' | 'unavailable' | 'unsupported';
+  | 'available'
+  | 'downloadable'
+  | 'downloading'
+  | 'unavailable'
+  | 'unsupported'
+  /** Chrome has the API but did not answer in time. */
+  | 'unresponsive';
+
+/** How long to wait for Chrome to say whether its model is available. */
+export const STATUS_TIMEOUT_MS = 8000;
 
 /**
  * Whether this browser can run the on-device model. This is a capability check
@@ -56,13 +65,24 @@ export async function deviceStatus(): Promise<DeviceStatus> {
     }
   ).LanguageModel;
   if (!lm) return 'unsupported';
+  // Chrome sometimes never answers this call. Without a limit the page would
+  // wait for ever with its main button disabled.
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  const gaveUp = new Promise<DeviceStatus>(resolve => {
+    timer = setTimeout(() => resolve('unresponsive'), STATUS_TIMEOUT_MS);
+  });
   try {
-    return (await lm.availability({
-      expectedInputs: TEXT_EN,
-      expectedOutputs: TEXT_EN,
-    })) as DeviceStatus;
+    return await Promise.race([
+      lm.availability({
+        expectedInputs: TEXT_EN,
+        expectedOutputs: TEXT_EN,
+      }) as Promise<DeviceStatus>,
+      gaveUp,
+    ]);
   } catch {
     return 'unavailable';
+  } finally {
+    clearTimeout(timer);
   }
 }
 

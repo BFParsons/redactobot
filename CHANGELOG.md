@@ -2,6 +2,20 @@
 
 ## Unreleased
 
+### Fix: "Find private details" could stay disabled for ever
+
+- **Cause:** when the page opens it asks Chrome whether its on-device model is available. Chrome
+  sometimes never answers (seen after the computer wakes from sleep, or with Chrome open a long
+  time). The web app waited without limit, so the button stayed disabled on "Starting on-device AI…"
+  with no bar and no explanation. The extension already had a limit for this; the web app did not.
+- **Fix:** the check gives up after 8 seconds (10 inside the model start). The page then says Chrome's
+  on-device AI is not responding, explains that restarting Chrome usually fixes it, and enables the
+  button so the pattern checks can run.
+- While the model is loading, the progress card has a **Go ahead without waiting** button. The scan
+  starts at once with the pattern checks; names are checked when the model is ready.
+- If building a screen ever fails, the page now shows an error with a Reload button instead of
+  leaving the previous screen up as though the click did nothing.
+
 ### Cloud step: no more unexplained "possible identifier" refusals
 
 - **Fix:** preparing the cloud preview could stop with "The preview still contains a possible

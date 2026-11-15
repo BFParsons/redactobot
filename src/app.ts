@@ -220,6 +220,8 @@ export class RedactobotApp extends LitElement {
   // for visitors who cannot use it (another browser, a phone, older hardware).
   @state() private modelStatus?: ModelStatus;
   @state() private modelHelpOpen = false;
+  // Set when the user chooses not to wait for the model to finish loading.
+  @state() private warmSkipped = false;
   private warmOrder: number[] = [];
   // Optional music while the model starts: an original loop synthesised in the
   // browser. It starts only from the Play button and stops when the model is
@@ -405,6 +407,7 @@ export class RedactobotApp extends LitElement {
   private get modelBlocking() {
     return (
       this.plan.usesModel &&
+      !this.warmSkipped &&
       (this.modelState === 'checking' || this.modelState === 'warming')
     );
   }
@@ -636,8 +639,16 @@ export class RedactobotApp extends LitElement {
     }
     const status = await deviceStatus();
     if (run !== this.runId) return;
-    if (status === 'unsupported' || status === 'unavailable') {
-      this.scan = {state: 'skipped', reason: status};
+    this.modelStatus = status;
+    if (
+      status === 'unsupported' ||
+      status === 'unavailable' ||
+      status === 'unresponsive'
+    ) {
+      this.scan = {
+        state: 'skipped',
+        reason: status === 'unsupported' ? 'unsupported' : 'unavailable',
+      };
       return;
     }
 
@@ -1005,13 +1016,41 @@ export class RedactobotApp extends LitElement {
         ${this.progressBar()}
       </header>
       <main id="main" tabindex="-1">
-        ${this.view === 'compose' ? this.composeView() : this.view === 'review' ? this.reviewView() : this.answerView()}
+        ${this.safeView()}
       </main>
       ${this.ruleDialogView()}
       ${this.aboutDialogView()}
       ${this.displayDialogView()}
       ${this.modelHelpDialogView()}
 `;
+  }
+
+  /**
+   * The current view. If building it throws, say so on the page instead of
+   * leaving the previous screen up as though the button had done nothing.
+   */
+  private safeView() {
+    try {
+      return this.view === 'compose'
+        ? this.composeView()
+        : this.view === 'review'
+          ? this.reviewView()
+          : this.answerView();
+    } catch (error) {
+      console.error(error);
+      const detail = error instanceof Error ? error.message : String(error);
+      return html`
+        <div class="single stack">
+          <div class="notice warn" role="alert">${icon('error')}
+            <div class="md-typescale-body-medium"><strong>Something went wrong showing this text.</strong>
+              Nothing was sent anywhere. Reload the page and try again. If it keeps happening with the same
+              text, please report it on GitHub, without including the text itself.
+              <div class="muted">Details: ${detail}</div></div></div>
+          <div class="actions">
+            <md-filled-button @click=${() => location.reload()}>Reload the page</md-filled-button>
+          </div>
+        </div>`;
+    }
   }
 
   /**
@@ -1182,6 +1221,8 @@ export class RedactobotApp extends LitElement {
       'switched-off':
         'It is switched off or not installed in this copy of Chrome.',
       hardware: 'This computer does not meet what the model needs.',
+      'not-responding':
+        'Chrome did not answer when asked for it. Restarting Chrome usually fixes this.',
     }[help.gap];
     return html`
       <div class="notice caution" role="status">${icon('warning')}
@@ -1240,6 +1281,16 @@ export class RedactobotApp extends LitElement {
         </ul>
         <p>Freeing up disk space is the most common fix. Type <code>chrome://on-device-internals</code> in the
           address bar to see what Chrome found.</p>`,
+      'not-responding': html`
+        <p>Chrome has on-device AI, but it did not answer when Redactobot asked whether the model is ready. This
+          happens now and then, usually after the computer wakes from sleep or Chrome has been open a long time.</p>
+        <ol>
+          <li>Close every Chrome window, or type <code>chrome://restart</code> in the address bar.</li>
+          <li>Open redactobot.org again.</li>
+          <li>If it still happens, type <code>chrome://on-device-internals</code> in the address bar to see the
+            model's state.</li>
+        </ol>
+        <p class="muted">Until then you can still use Redactobot: the pattern checks do not need the model.</p>`,
       download: html`
         <p>Chrome has the feature and this computer can run it, but the model has not been downloaded yet.</p>
         <ol>
@@ -1322,7 +1373,14 @@ export class RedactobotApp extends LitElement {
             smooth jazz?</div>
           <md-outlined-button class="jazz-button" aria-pressed=${this.jazzOn ? 'true' : 'false'} @click=${this.toggleJazz}>
             ${icon(this.jazzOn ? 'pause' : 'play_arrow', 'icon')}${this.jazzOn ? 'Pause the jazz' : 'Play smooth jazz'}
-          </md-outlined-button>`
+          </md-outlined-button>
+          ${
+            this.warmSkipped
+              ? html`<div class="muted">You chose not to wait. Names are checked once the model is ready.</div>`
+              : html`<md-text-button class="jazz-button" @click=${() => {
+                  this.warmSkipped = true;
+                }}>Go ahead without waiting</md-text-button>`
+          }`
           }
         </div>
       </div>`;

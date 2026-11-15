@@ -12,7 +12,12 @@
 
 /** Chrome's answer about the on-device model, or that the API is missing. */
 export type ModelStatus =
-  'available' | 'downloadable' | 'downloading' | 'unavailable' | 'unsupported';
+  | 'available'
+  | 'downloadable'
+  | 'downloading'
+  | 'unavailable'
+  | 'unsupported'
+  | 'unresponsive';
 
 /** Why the model cannot be used right now. */
 export type ModelGap =
@@ -27,7 +32,9 @@ export type ModelGap =
   /** Chrome has the feature but this computer cannot run the model. */
   | 'hardware'
   /** The model has not been downloaded yet. */
-  | 'download';
+  | 'download'
+  /** Chrome has the feature but is not answering right now. */
+  | 'not-responding';
 
 /** The first Chrome version Redactobot supports. */
 export const MIN_CHROME = 148;
@@ -62,6 +69,7 @@ export function modelHelp(
   if (status === 'downloadable' || status === 'downloading') {
     return {gap: 'download', browser};
   }
+  if (status === 'unresponsive') return {gap: 'not-responding', browser};
   if (/\bAndroid\b|\biPhone\b|\biPad\b|\bMobile\b/.test(ua)) {
     return {gap: 'mobile', browser};
   }

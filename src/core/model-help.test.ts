@@ -52,6 +52,10 @@ describe('why the on-device model is unavailable', () => {
     expect(modelHelp('unsupported', CHROME)?.gap).toBe('switched-off');
   });
 
+  it('reports a Chrome that does not answer', () => {
+    expect(modelHelp('unresponsive', CHROME)?.gap).toBe('not-responding');
+  });
+
   it('reports hardware limits and a pending download', () => {
     expect(modelHelp('unavailable', CHROME)?.gap).toBe('hardware');
     expect(modelHelp('downloadable', CHROME)?.gap).toBe('download');

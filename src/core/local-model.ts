@@ -79,7 +79,22 @@ export class LocalModel {
           'On-device AI is unavailable. No document was sent to a cloud model.',
         );
       }
-      const state = await api.availability(language);
+      // Chrome sometimes never answers; do not wait for ever.
+      let answerTimer: ReturnType<typeof setTimeout> | undefined;
+      const state = await Promise.race([
+        api.availability(language),
+        new Promise<never>((_, reject) => {
+          answerTimer = setTimeout(
+            () =>
+              reject(
+                new Error(
+                  'On-device AI is not responding. No document was sent to a cloud model.',
+                ),
+              ),
+            10000,
+          );
+        }),
+      ]).finally(() => clearTimeout(answerTimer));
       if (
         state === 'unavailable' ||
         (!allowDownload && state !== 'available')
